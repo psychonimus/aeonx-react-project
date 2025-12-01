@@ -1,0 +1,124 @@
+/* Container styles - equivalent to: w-full h-full overflow-hidden select-none relative */
+.three-d-image-ring-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    position: relative;
+}
+
+/* Perspective wrapper */
+.three-d-image-ring-perspective {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Ring styles - equivalent to: w-full h-full absolute */
+.three-d-image-ring {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/* Image item styles - equivalent to: w-full h-full absolute */
+.three-d-image-ring-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/* Navigation Buttons */
+.three-d-image-ring-nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(4px);
+}
+
+.three-d-image-ring-nav-button:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.three-d-image-ring-nav-button.prev {
+    left: 20px;
+}
+
+.three-d-image-ring-nav-button.next {
+    right: 20px;
+}
+
+/* Lightbox Styles */
+.three-d-image-ring-lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.three-d-image-ring-lightbox-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.three-d-image-ring-lightbox-content {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.three-d-image-ring-lightbox-overlay.active .three-d-image-ring-lightbox-content {
+    transform: scale(1);
+}
+
+.three-d-image-ring-lightbox-image {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.three-d-image-ring-lightbox-close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    transition: transform 0.2s ease;
+}
+
+.three-d-image-ring-lightbox-close:hover {
+    transform: scale(1.1);
+}
