@@ -27,7 +27,11 @@ const ExperienceSection = () => {
                 <div className="row text-white">
 
                     {/* LEFT SECTION */}
+<<<<<<< HEAD
                     <div className="col-12 col-lg-4 mb-5 mb-lg-0 text-white">
+=======
+                    <div className="col-lg-4 mb-5 mb-lg-0 text-white">
+>>>>>>> b44556d4eb4dfb77d3c2ed9dfdfa499cb88e7c1f
                         <h1 className="exp-title">
                             Augment your Professional Career
                         </h1>
@@ -45,7 +49,11 @@ const ExperienceSection = () => {
                     </div>
 
                     {/* RIGHT SECTION */}
+<<<<<<< HEAD
                     <div className="col-12 col-lg-8">
+=======
+                    <div className="col-lg-8">
+>>>>>>> b44556d4eb4dfb77d3c2ed9dfdfa499cb88e7c1f
                         <p className="exp-text mb-4">
                             Welcome to AeonX Digital, where passion meets a pinch of craziness! We're a
                             vibrant team dedicated to crafting amazing digital experiences.
