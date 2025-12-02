@@ -12,13 +12,13 @@ const FooterSection = () => {
         <div className="row gy-4">
 
           {/* Left section - Logo & Description */}
-          <div className="col-lg-3 col-md-6">
+          <div className="col-12 col-lg-3 col-md-8">
             <div className="aeonx-logo-footer">
               <a href="">
                 <img src={logo} alt="Logo" className="d-inline-block align-top" />
               </a>
             </div>
-            <p className="mt-3 small text-light">
+            <p className="mt-2 small text-light">
               AeonX offers a simple method by treating infrastructure as code to manage a group of linked AWS and third-party resources.
               It emphasizes delivering provision so you can run your business fast and in a reliable fashion with zero hassles.
             </p>
@@ -29,8 +29,8 @@ const FooterSection = () => {
           </div>
 
           {/* Solutions */}
-          <div className="col-lg-2 col-md-6">
-            <h6 className="fw-bold mb-3">Solutions</h6>
+          <div className="col-6 col-lg-2 col-md-4">
+            <h6 className="fw-bold mb-2">Solutions</h6>
             <ul className="list-unstyled text-light small">
               <li>Business Solutions</li>
               <li>Cloud Solutions</li>
@@ -40,8 +40,8 @@ const FooterSection = () => {
           </div>
 
           {/* Services */}
-          <div className="col-lg-2 col-md-6">
-            <h6 className="fw-bold mb-3">Services</h6>
+          <div className="col-6 col-lg-2 col-md-4">
+            <h6 className="fw-bold mb-2">Services</h6>
             <ul className="list-unstyled text-light small">
               <li>Implementation</li>
               <li>Support</li>
@@ -55,8 +55,8 @@ const FooterSection = () => {
 
 
           {/* Case Studies */}
-          <div className="col-lg-2 col-md-6">
-            <h6 className="fw-bold mb-3">Case Studies</h6>
+          <div className="col-6 col-lg-2 col-md-4">
+            <h6 className="fw-bold mb-2">Case Studies</h6>
             <ul className="list-unstyled text-light small">
               <li>Case Study 1</li>
               <li>Case Study 2</li>
@@ -66,8 +66,8 @@ const FooterSection = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="col-lg-3 col-md-6">
-            <h6 className="fw-bold mb-3">Quick Links</h6>
+          <div className="col-6 col-lg-3 col-md-4">
+            <h6 className="fw-bold mb-2">Quick Links</h6>
             <ul className="list-unstyled text-light small">
               <li>About Us</li>
               <li>Solutions</li>
@@ -84,7 +84,7 @@ const FooterSection = () => {
 
         {/* Bottom Row */}
         <div className="d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
-          <div className="social-icons-footer d-flex gap-2 mb-3 mb-md-0">
+          <div className="social-icons-footer d-flex gap-2 mb-2 mb-md-0">
             {/* <a href="#" className="me-3 ">Instagram</a>
             <a href="#" className="me-3 ">Facebook</a>
             <a href="#" className="me-3 ">Linkedin</a>

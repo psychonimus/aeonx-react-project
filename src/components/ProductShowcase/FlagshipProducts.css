@@ -27,7 +27,11 @@
     height: 100%;
     overflow: hidden;
     cursor: pointer;
+<<<<<<< HEAD
+    transition: flex 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+=======
     /* transition: flex 0.6s cubic-bezier(0.4, 0, 0.2, 1); */
+>>>>>>> b44556d4eb4dfb77d3c2ed9dfdfa499cb88e7c1f
     border-right: 1px solid var(--border);
 
 }
@@ -155,11 +159,15 @@
     position: absolute;
     width: 100%;
     height: 100%;
+<<<<<<< HEAD
+    animation: rotate-text 8s linear infinite;
+=======
     top: 50%;
     left: 50%;
     transform: translate(-20%, -15%);
     color: #fff;
     /* animation: rotate-text 8s linear infinite; */
+>>>>>>> b44556d4eb4dfb77d3c2ed9dfdfa499cb88e7c1f
 }
 
 @keyframes rotate-text {
@@ -338,7 +346,11 @@
     position: absolute;
     width: 100%;
     height: 100%;
+<<<<<<< HEAD
+    animation: rotate-text 8s linear infinite;
+=======
     /* animation: rotate-text 8s linear infinite; */
+>>>>>>> b44556d4eb4dfb77d3c2ed9dfdfa499cb88e7c1f
 }
 
 @keyframes rotate-text {

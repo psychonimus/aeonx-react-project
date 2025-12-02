@@ -1,4 +1,3 @@
-
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
@@ -658,6 +657,63 @@ p {
   padding: 0 100px;
 }
 
+@media (max-width: 576px) {
+  .service-slider-track {
+    display: grid;
+    gap: 20px;
+    position: absolute;
+    /* left: 10% !important;
+    right: 10% !important; */
+    top: 10%;
+    /* transform: translateY(-50%); */
+    padding: 0 10px;
+  }
+
+  .service-card {
+    width: 300px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 10px;
+    /* margin-left: 10px !important;
+    margin-right: 10px !important; */
+    /* flex: 0 0 auto; */
+    background: rgba(255, 255, 255, 0.11);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: 0.5s margin ease;
+    margin-bottom: 10px;
+  }
+
+  .service-card p {
+    color: #fff;
+    font-size: 14px !important;
+  }
+
+  .service-card {
+
+    max-width: 320px !important;
+  }
+
+  .service-slider {
+    padding: 0px !important;
+    overflow: hidden !important;
+  }
+
+  .service-title-card h2 {
+    font-family: Gilroy-Bold;
+    font-size: 1.8rem !important;
+    text-transform: uppercase;
+    color: #0173F1;
+  }
+
+  .casestudy-card {
+    margin-top: 10px !important;
+  }
+}
+
 /* Card styles (same as your inline styles, but easier to control) */
 .service-card {
   width: 600px;
@@ -746,7 +802,7 @@ p {
 
   .service-card {
     width: 100%;
-    max-width: 500px;
+    max-width: 700px;
     font-size: 1.5rem;
   }
 }
