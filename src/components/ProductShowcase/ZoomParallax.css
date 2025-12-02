@@ -1,0 +1,86 @@
+/* Main container - equivalent to: relative h-[300vh] */
+.zoom-parallax-container {
+  position: relative;
+  height: 150vh;
+}
+
+/* Sticky wrapper - equivalent to: sticky top-0 h-screen overflow-hidden */
+.zoom-parallax-sticky {
+  position: sticky;
+  top: 0;
+  height: 180vh;
+  overflow: hidden;
+}
+
+/* Base item - equivalent to: absolute top-0 flex h-full w-full items-center justify-center */
+.zoom-parallax-item {
+  position: absolute;
+  top: 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Image wrapper - equivalent to: relative h-[25vh] w-[25vw] */
+.zoom-parallax-image-wrapper {
+  position: relative;
+  height: 25vh;
+  width: 25vw;
+}
+
+/* Image - equivalent to: h-full w-full object-cover */
+.zoom-parallax-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Position overrides for specific items using child selector */
+/* Item 1 - equivalent to: [&>div]:!-top-[30vh] [&>div]:!left-[5vw] [&>div]:!h-[30vh] [&>div]:!w-[35vw] */
+.zoom-parallax-item-1 > .zoom-parallax-image-wrapper {
+  top: -30vh !important;
+  left: 5vw !important;
+  height: 30vh !important;
+  width: 35vw !important;
+}
+
+/* Item 2 - equivalent to: [&>div]:!-top-[10vh] [&>div]:!-left-[25vw] [&>div]:!h-[45vh] [&>div]:!w-[20vw] */
+.zoom-parallax-item-2 > .zoom-parallax-image-wrapper {
+  top: -10vh !important;
+  left: -25vw !important;
+  height: 45vh !important;
+  width: 20vw !important;
+}
+
+/* Item 3 - equivalent to: [&>div]:!left-[27.5vw] [&>div]:!h-[25vh] [&>div]:!w-[25vw] */
+.zoom-parallax-item-3 > .zoom-parallax-image-wrapper {
+  left: 27.5vw !important;
+  height: 25vh !important;
+  width: 25vw !important;
+}
+
+/* Item 4 - equivalent to: [&>div]:!top-[27.5vh] [&>div]:!left-[5vw] [&>div]:!h-[25vh] [&>div]:!w-[20vw] */
+.zoom-parallax-item-4 > .zoom-parallax-image-wrapper {
+  top: 27.5vh !important;
+  left: 5vw !important;
+  height: 25vh !important;
+  width: 20vw !important;
+}
+
+/* Item 5 - equivalent to: [&>div]:!top-[27.5vh] [&>div]:!-left-[22.5vw] [&>div]:!h-[25vh] [&>div]:!w-[30vw] */
+.zoom-parallax-item-5 > .zoom-parallax-image-wrapper {
+  top: 27.5vh !important;
+  left: -22.5vw !important;
+  height: 25vh !important;
+  width: 30vw !important;
+}
+
+/* Item 6 - equivalent to: [&>div]:!top-[22.5vh] [&>div]:!left-[25vw] [&>div]:!h-[15vh] [&>div]:!w-[15vw] */
+.zoom-parallax-item-6 > .zoom-parallax-image-wrapper {
+  top: 22.5vh !important;
+  left: 25vw !important;
+  height: 15vh !important;
+  width: 15vw !important;
+}

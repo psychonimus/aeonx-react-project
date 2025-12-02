@@ -1,0 +1,466 @@
+<SwiperSlide>
+                            <div className="slide-image">
+                                <img src={banner2} alt="" />
+                            </div>
+                            <div className="container swiper-content">
+                                <div className="partner-logo mt-5 mb-0 pb-0">
+                                    <img src={partner} alt="" />
+                                </div>
+                                <div className="mt-5" data-aos="fade-up" style={{ width: "70%" }}>
+                                    <h1 className="slide-title">DevOps Excellence
+                                        on AWS</h1>
+                                    <h4>AWS-native DevOps practices to streamline development, improve release cycles, and deliver secure, high-quality software faster.
+                                    </h4>
+
+                                    <div className="mt-4 d-flex gap-3">
+                                        <GlassButton href="" title="Connect with us" icon={() => <BsArrowUpRightCircleFill color="" size={28} />} >  </GlassButton>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                            <div className="slide-image">
+                                <img src={banner3} alt="" />
+                            </div>
+                            <div className="container swiper-content">
+                                <div className="partner-logo mt-5 mb-0 pb-0">
+                                    <img src={partner} alt="" />
+                                </div>
+                                <div className="mt-5" data-aos="fade-up" style={{ width: "90%" }}>
+                                    <h1 className="slide-title">15 Years of AWS Leadership,
+                                        Strengthening Our Cloud Advantage.</h1>
+                                    <h4>With AWS once again named a Leader in Gartner’s Magic Quadrant for Strategic Cloud Platform Services, our partnership ensures your business leverages proven, future-ready cloud excellence.
+                                    </h4>
+
+                                    <div className="mt-4 d-flex gap-3">
+                                        <GlassButton href="" title="Explore all Products" icon={() => <BsArrowUpRightCircleFill color="" size={28} />} >  </GlassButton>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+
+
+
+    import React, { useRef, useEffect, useState } from 'react'
+import logo from '/images/aeonx-logo-white.svg'
+import GlassButton from '../GlassButton/GlassButton'
+import { NavLink } from "react-router-dom";
+
+const Navbar = () => {
+    const [isHidden, setIsHidden] = useState(false);
+    const [openMegaIndex, setOpenMegaIndex] = useState(null);
+    const [accordionState, setAccordionState] = useState({});
+    const lastScrollY = useRef(window.scrollY);
+
+    useEffect(() => {
+        let ticking = false;
+
+        const handleScroll = () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    const currentScrollY = window.scrollY;
+
+                    if (currentScrollY > lastScrollY.current && currentScrollY > 20) {
+                        // scrolling down
+                        setIsHidden(true);
+                    } else {
+                        // scrolling up
+                        setIsHidden(false);
+                    }
+                    lastScrollY.current = currentScrollY;
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    // Handles toggling the mega menu in mobile/tablet view
+    const handleMegaMenuClick = (idx, e) => {
+        if (window.innerWidth < 992) {
+            e.preventDefault();
+            setOpenMegaIndex(openMegaIndex === idx ? null : idx);
+        }
+    };
+
+    // Handles toggling the mobile accordion panels inside mega menu
+    const handleAccordionClick = (key, e) => {
+        if (window.innerWidth < 992) {
+            e.preventDefault?.();
+            setAccordionState(accState => ({
+                ...accState,
+                [key]: !accState[key]
+            }));
+        }
+    };
+
+    // Render helper for "+" or "-" in toggles
+    const getToggleSign = idx => (openMegaIndex === idx ? '-' : '+');
+
+    return (
+        <>
+            <nav
+                className="navbar navbar-expand-lg"
+                style={{
+                    position: 'fixed',
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    width: '100%',
+                    zIndex: 1000,
+                    transform: isHidden ? 'translateY(-200px)' : 'translateY(0)',
+                    transition: 'transform 0.4s cubic-bezier(0.7, 0, 0.3, 1)'
+                }}
+            >
+                <div className="container">
+                    {/* Logo on the left */}
+                    <NavLink to="/" className="navbar-brand" >
+                        <img src={logo} alt="Logo" className="d-inline-block align-top nav-logo" />
+                    </NavLink>
+                    {/* Navbar toggler for responsive design */}
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    {/* Links on the right */}
+                    <div className="collapse navbar-collapse justify-content-end align-items-center" id="navbarNav">
+                        <ul className="navbar-nav d-flex align-items-center">
+                            <li className='nav-item'>
+                                <NavLink to="/" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>Home</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink to="/about" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>About</NavLink>
+                            </li>
+                            {/* Products Mega Menu */}
+                            <li className="nav-item has-mega-menu">
+                                <a
+                                    className="nav-link d-flex justify-content-between"
+                                    href="#"
+                                    onClick={e => handleMegaMenuClick(0, e)}
+                                >
+                                    Products <span className="d-lg-none">{getToggleSign(0)}</span>
+                                </a>
+                                <div className={`mega-menu${openMegaIndex === 0 ? ' show' : ''}`}>
+                                    <div className="mega-menu-content py-5">
+                                        this is the mega menu for products
+                                    </div>
+                                </div>
+                            </li>
+                            {/* Solutions Mega Menu */}
+                            <li className="nav-item has-mega-menu">
+                                <a
+                                    className="nav-link d-flex justify-content-between"
+                                    href="#"
+                                    onClick={e => handleMegaMenuClick(1, e)}
+                                >
+                                    Solutions <span className="d-lg-none">{getToggleSign(1)}</span>
+                                </a>
+                                <div className={`mega-menu${openMegaIndex === 1 ? ' show' : ''}`}>
+                                    <div className="mega-menu-content py-5">
+                                        <div className="container">
+                                            <div className="row">
+                                                <div className="col-md-3 d-none d-lg-block">
+                                                    <h4
+                                                        style={{ cursor: 'pointer' }}
+                                                        onClick={e => handleAccordionClick('solutions', e)}
+                                                        className={accordionState['solutions'] ? 'active' : ''}
+                                                    >
+                                                        <span>Solution</span>
+                                                    </h4>
+                                                    {/* Intentionally left blank: no ul for this column */}
+                                                </div>
+                                                <div className="col-md-3">
+                                                    <h4
+                                                        style={{ cursor: 'pointer' }}
+                                                        onClick={e => handleAccordionClick('our-solutions', e)}
+                                                        className={accordionState['our-solutions'] ? 'active' : ''}
+                                                    >
+                                                        <span>Our Solutions</span>
+                                                    </h4>
+                                                    <ul className={accordionState['our-solutions'] ? 'active' : ''}>
+                                                        <li>
+                                                            <a href="automotive-industrial-&-beyond.html">
+                                                                <span data-translate="automotive_industrial_beyond">
+                                                                    Automotive, Industrial &amp; Beyond
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="toolsAndHardware.html">
+                                                                <span data-translate="tools_hardware">
+                                                                    Tools &amp; Hardware
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="aerospace.html">
+                                                                <span data-translate="aerospace_defence">
+                                                                    Aerospace &amp; Defence
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div className="col-md-3"></div>
+                                                <div className="col-md-3"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">Services</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link " href="#">Industries</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link " href="#">Insights</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link " href="#">Careers</a>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink to="/contact" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}><GlassButton href="" title="Contact" /></NavLink>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </>
+    )
+}
+
+export default Navbar
+
+
+
+import React from 'react'
+
+const CsContent = ({icon: Icon, headline, desc, bgColor}) => {
+    return (
+        <div className="cs-content d-flex gap-2 align-items-start">
+            <div className="icon-div" style={{backgroundColor:`${bgColor}`}}>
+            {Icon && <Icon />}
+            </div>
+            <div className="content-div">
+                <h4>{headline}</h4>
+                <p>{desc}</p>
+            </div>
+        </div>
+    )
+}
+
+export default CsContent
+
+
+
+
+blogs cards section ////////////////////////////////////////////////////////////
+import React from "react";
+import Header from "../Header/Header";
+
+
+const blogData = [
+    {
+        title: "The Future of AI in Digital Transformation",
+        date: "Jan 18, 2025",
+        category: "AI & Tech",
+        desc: "desc 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse varius enim in eros elementum tristique.",
+        img: "/images/blog1.jpg",
+    },
+    {
+        title: "How Cloud Computing is Changing Businesses",
+        date: "Jan 12, 2025",
+        category: "Cloud",
+        desc: "desc 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse varius enim in eros elementum tristique.",
+        img: "/images/blog2.jpg",
+    },
+    {
+        title: "Mastering UX: Tips for Better User Experiences",
+        date: "Dec 22, 2024",
+        category: "UX Design",
+        desc: "desc 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse varius enim in eros elementum tristique.",
+        img: "/images/blog3.jpg",
+    },
+    {
+        title: "Top 10 SAP Solutions You Should Know",
+        date: "Nov 10, 2024",
+        category: "SAP",
+        desc: "desc 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse varius enim in eros elementum tristique.",
+        img: "/images/blog4.jpg",
+    },
+    {
+        title: "Building Scalable Modern Apps with AWS",
+        date: "Oct 15, 2024",
+        category: "AWS",
+        desc: "desc 5 Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse varius enim in eros elementum tristique.",
+        img: "/images/blog5.jpg",
+    },
+    {
+        title: "Digital Strategy for Modern Enterprises",
+        date: "Sep 5, 2024",
+        category: "Strategy",
+        desc: "desc 6 Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse varius enim in eros elementum tristique.",
+        img: "/images/blog6.jpg",
+    },
+];
+
+const BlogsCardsSection = () => {
+    return (
+        <section className="blogs-section mb-5">
+            <div className="container">
+                <Header
+                    subtext="Blogs"
+                    headline="Fresh Perspectives to Fuel Your Growth"
+                    highlight="Insights, Updates & Inspiration"
+                />
+
+                <div className="blogs-grid">
+                    {blogData.map((blog, index) => (
+                        <div key={index} className="blog-card p-2">
+                            
+                            <div className="blog-img">
+                                <img src={blog.img} alt="" />
+                            </div>
+
+
+
+                            <div className="blog-hover">
+                                <div className="blog-content">
+                                    <h3>{blog.title}</h3>
+                                    <p className="blog-meta">
+                                        {blog.category} • {blog.date}
+                                    </p>
+                                    <p>
+                                    {blog.desc}
+                                </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default BlogsCardsSection;
+
+
+
+
+/* blogs cards section  */
+.blogs-section {
+  background: #fff;
+  
+}
+
+.blogs-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  /* margin-bottom: 50px; */
+  color: #111;
+}
+
+.blogs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+/* BLOG CARD */
+.blog-card {
+  height: 420px;
+  background: #f7f7f7;
+  border-radius: 18px;
+  border: 1px solid #eaecf8;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 14%);
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-6px);
+}
+
+/* IMAGE AREA (placeholder color) */
+.blog-img {
+  height: 100%;
+  /* background: linear-gradient(135deg, #e0e0e0, #c9c9c9); */
+}
+.blog-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* CARD CONTENT */
+.blog-content {
+  padding: 20px;
+}
+
+.blog-content h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.blog-meta {
+  font-size: 14px;
+  margin-top: 8px;
+  color: #fff;
+}
+
+/* HOVER OVERLAY */
+.blog-hover {
+  position: absolute;
+  bottom: -25%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(90deg, #f97316 0%, #facc15 100%);
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  transition: all 0.35s ease;
+  z-index: 2;
+}
+
+.blog-card:hover .blog-hover {
+  bottom: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .blogs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .blogs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blogs-title {
+    font-size: 32px;
+  }
+}
+
