@@ -117,16 +117,7 @@ const HorizontalAccordion = () => {
               <a href={project.link} className="visit-button">
                 <div className="visit-circle">
                   <div className="visit-text">
-                    {Array.from('VISIT • VISIT • ').map((char, i) => (
-                      <span
-                        key={i}
-                        style={{
-                          transform: `rotate(${i * 22.5}deg)`,
-                        }}
-                      >
-                        {char}
-                      </span>
-                    ))}
+                    Visit
                   </div>
                 </div>
               </a>
