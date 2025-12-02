@@ -22,52 +22,57 @@ const CaseStudiesSection = () => {
                 <div className="row">
                     <div className="col-md-4">
                         <Link to="/case-study">
-                            <div className="casestudy-card">
-                                <div className="cs-image-container mb-3">
-                                    <img src={cs1} alt="" />
-                                </div>
-                                <CsContent
-                                    headline="Aashapura Case Study"
-                                    desc="Crippling SAP Procurement Delays"
-                                />
-                            </div></Link>
+                        <div className="casestudy-card">
+                            <div className="cs-image-container mb-3">
+                                <img src={cs1} alt="" />
+                            </div>
+
+                            <CsContent
+                                
+                                headline="Aashapura Case Study"
+                                desc="Crippling SAP Procurement Delays"
+                            />
+
+                            
+
+                        </div></Link>
                     </div>
                     <div className="col-md-4">
                         <Link to="/case-study">
-                            <div className="casestudy-card">
-                                <div className="cs-image-container mb-3">
-                                    <img src={cs2} alt="" />
-                                </div>
-
-                                <CsContent
-                                    bgColor="#C9291F"
-                                    icon={() => <GoGoal color="#fff" size={28} />}
-                                    headline="Industry Challenge"
-                                    desc="Crippling SAP Procurement Delays"
-                                />
-
-
-
+                        <div className="casestudy-card">
+                            <div className="cs-image-container mb-3">
+                                <img src={cs2} alt="" />
                             </div>
+
+                            <CsContent
+                                bgColor="#C9291F"
+                                icon={() => <GoGoal color="#fff" size={28} />}
+                                headline="Industry Challenge"
+                                desc="Crippling SAP Procurement Delays"
+                            />
+
+                            
+
+                        </div>
                         </Link>
                     </div>
                     <div className="col-md-4">
                         <Link to="/case-study">
-                            <div className="casestudy-card">
-                                <div className="cs-image-container mb-3">
-                                    <img src={cs3} alt="" />
-                                </div>
-
-                                <CsContent
-                                    bgColor="#C9291F"
-                                    icon={() => <GoGoal color="#fff" size={28} />}
-                                    headline="Industry Challenge"
-                                    desc="Crippling SAP Procurement Delays"
-                                />
-
-
-
+                        <div className="casestudy-card">
+                            <div className="cs-image-container mb-3">
+                                <img src={cs3} alt="" />
                             </div>
+
+                            <CsContent
+                                bgColor="#C9291F"
+                                icon={() => <GoGoal color="#fff" size={28} />}
+                                headline="Industry Challenge"
+                                desc="Crippling SAP Procurement Delays"
+                            />
+
+                            
+
+                        </div>
                         </Link>
                     </div>
                 </div>
