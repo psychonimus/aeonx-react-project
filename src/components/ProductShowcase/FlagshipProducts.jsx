@@ -3,22 +3,22 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './FlagshipProducts.css';
 
-import project1 from '/images/project-1.jpg';
-import project2 from '/images/project-2.jpg';
-import project3 from '/images/project-3.jpg';
-import project4 from '/images/project-4.jpg';
-import project5 from '/images/project-5.jpg';
-import project6 from '/images/project-6.jpg';
+import project1 from '/images/xpense-bg.png';
+import project2 from '/images/supplier-x-bg.png';
+import project3 from '/images/logystix-bg.png';
+import project4 from '/images/manufex-logo.png';
+import project5 from '/images/people-connect-logo.png';
+import project6 from '/images/aeonxiq-bg.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
-  { id: 1, title: 'Jaeger-LeCoultre', image: project1, link: '#' },
-  { id: 2, title: 'Respawwwn', image: project2, link: '#' },
-  { id: 3, title: 'Cardis', image: project3, link: '#' },
-  { id: 4, title: 'CER', image: project4, link: '#' },
-  { id: 5, title: 'Cpef', image: project5, link: '#' },
-  { id: 6, title: 'Grand', image: project6, link: '#' },
+  { id: 1, title: 'Xpense', image: project1, link: '#' },
+  { id: 2, title: 'SupplierX', image: project2, link: '#' },
+  { id: 3, title: 'Logystix', image: project3, link: '#' },
+  { id: 4, title: 'Manufex ', description: 'Monitor real-time factory operations with IoT-driven insights for better efficiency. Seamlessly integrated with Google AI to deliver predictive insights, advanced analytics, and real-time recommendations that optimize your factory performance and reduce downtime.', image: project4, link: '#' },
+  { id: 5, title: 'People connect', description: 'Cpef', image: project5, link: '#' },
+  { id: 6, title: 'aeonxiq ai ', image: project6, link: '#' },
 ];
 
 const HorizontalAccordion = () => {
@@ -86,46 +86,48 @@ const HorizontalAccordion = () => {
   return (
     <>
       <div className="flagship-products-wrapper" style={{ position: 'relative', zIndex: 5 }}>
-      {/* Pin Section */}
-      <div ref={sectionRef} className="pin-section p-4" style={{ height: '100vh', width: '100%' }}>
-        <div ref={accordionRef} className="horizontal-accordion">
-          {projects.map((project, index) => (
-            <div
-              key={project.id}
-              ref={(el) => (itemsRef.current[index] = el)}
-              className="accordion-item"
-            >
-              {/* Background Image */}
-              <div className="accordion-content">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="accordion-image"
-                />
-                <div className="accordion-overlay" />
-              </div>
-
-              {/* Number */}
-              <span className="accordion-number">
-                {formatNumber(project.id)}
-              </span>
-
-              {/* Title */}
-              <span className="accordion-label">{project.title}</span>
-
-              {/* Visit Button */}
-              <a href={project.link} className="visit-button">
-                <div className="visit-circle">
-                  <div className="visit-text">
-                    Visit
-                  </div>
+        {/* Pin Section */}
+        <div ref={sectionRef} className="pin-section p-4" style={{ height: '100vh', width: '100%' }}>
+          <div ref={accordionRef} className="horizontal-accordion">
+            {projects.map((project, index) => (
+              <div
+                key={project.id}
+                ref={(el) => (itemsRef.current[index] = el)}
+                className="accordion-item"
+              >
+                {/* Background Image */}
+                <div className={`accordion-content px-5 accordion-content-box-${index}`}>
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="accordion-image mt-5"
+                  />
+                  
+                  {/* <p className='mt-3'>{project.description}</p> */}
+                  <div className="accordion-overlay" />
                 </div>
-              </a>
-            </div>
-          ))}
+
+                {/* Number */}
+                <span className="accordion-number">
+                  {formatNumber(project.id)}
+                </span>
+
+                {/* Title */}
+                <span className="accordion-label">{project.title}</span>
+
+                {/* Visit Button */}
+                <a href={project.link} className="visit-button">
+                  <div className="visit-circle">
+                    <div className="visit-text">
+                      Visit
+                    </div>
+                  </div>
+                </a>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
     </>
   );
 };

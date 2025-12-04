@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import {Helmet} from "react-helmet";
 import AshapuraCaseStudy from "/images/Ashapura-case-study.webp";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -72,7 +73,10 @@ const CaseStudyOne = () => {
   };
 
   return (
-    <div ref={containerRef} className="case-study-wrapper" style={{ overflowX: "hidden" }}>
+    <>
+      
+      
+      <div ref={containerRef} className="case-study-wrapper" style={{ overflowX: "hidden" }}>
       {/* ================= HERO SECTION ================= */}
       <section
         ref={heroRef}
@@ -327,6 +331,7 @@ const CaseStudyOne = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

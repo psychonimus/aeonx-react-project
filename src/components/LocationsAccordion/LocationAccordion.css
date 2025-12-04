@@ -1,5 +1,5 @@
 /* Main Container */
-.accordion-preview-container {
+.location-accordion-preview-container {
   background-image: url("../../../public/images/ceo-bg-2.webp");
   background-size: cover;
   background-position: center;
@@ -8,11 +8,11 @@
 }
 
 /* Accordion Column */
-.accordion-column {
+.location-accordion-column {
   padding: 1rem;
 }
 
-.accordion-wrapper {
+.location-accordion-wrapper {
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -21,7 +21,7 @@
 /* Accordion Item */
 
 
-.accordion-header {
+.location-accordion-header {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -39,21 +39,21 @@
   text-align: left;
 }
 
-.accordion-header:hover {
+.location-accordion-header:hover {
   color: #ffffff;
 }
 
-.accordion-header.active {
+.location-accordion-header.active {
   color: #ffffff;
 }
 
-.accordion-title {
+.location-accordion-title {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.4;
 }
 
-.accordion-icon {
+.location-accordion-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,16 +62,16 @@
   margin-left: 1rem;
 }
 
-.accordion-icon.expanded {
+.location-accordion-icon.expanded {
   transform: rotate(180deg);
 }
 
-.accordion-icon svg {
+.location-accordion-icon svg {
   stroke: currentColor;
 }
 
 /* Accordion Content */
-.accordion-content {
+.location-accordion-content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
@@ -84,15 +84,15 @@
   padding: 0rem 1rem;
 }
 
-.accordion-content.expanded {
+.location-accordion-content.expanded {
   max-height: 500px;
 }
 
-.accordion-content-inner {
+.location-accordion-content-inner {
   padding: 1rem 0 1rem 0;
 }
 
-.accordion-content-inner p {
+.location-accordion-content-inner p {
   color: #aaaaaa;
   font-size: 1rem;
   line-height: 1.6;
@@ -164,11 +164,11 @@
 }
 
 @media (max-width: 767px) {
-  .accordion-title {
+  .location-accordion-title {
     font-size: 1.25rem;
   }
   
-  .accordion-content-inner p {
+  .location-accordion-content-inner p {
     font-size: 0.9rem;
   }
   
@@ -184,19 +184,19 @@
 }
 
 @media (max-width: 575px) {
-  .accordion-preview-container {
+  .location-accordion-preview-container {
     padding: 1rem 0;
   }
   
-  .accordion-title {
+  .location-accordion-title {
     font-size: 1.1rem;
   }
   
-  .accordion-header {
+  .location-accordion-header {
     padding: 1rem 0;
   }
   
-  .accordion-content-inner {
+  .location-accordion-content-inner {
     padding: 0 0 1rem 0;
   }
 }

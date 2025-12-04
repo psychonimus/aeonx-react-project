@@ -7,6 +7,40 @@ import "swiper/css/autoplay";
 import profileOne from "/images/profile-1.webp"
 import TestCard from './TestCard';
 
+import bnf from '/images/bnf-logo.jpg'
+import ck from '/images/ck-birla-logo.png'
+import ashapura from '/images/ashapura-logo.jpg'
+import bvg from '/images/bvg-logo.jpg'
+
+
+const testimonials = [
+    {
+        testimonial: "We had heard that AeonX Digital is a terrific service provider with a strong focus on customer support, and now we can confidently pass that information on. Thank you for all of your assistance with SAP Managed Services (AMS), Team AeonX. You’ve been quite helpful in getting everything up and running. We sincerely appreciate all of your efforts!",
+        profile: bnf,
+        name: "Ajay Arora",
+        designation: "CFO, BNF Forgings"
+    },
+    {
+        testimonial: "We appreciate how simple SAP managed services and SAP S/4HANA cloud migration were to implement. For our company, this has been a game-changer, and I couldn’t be happier with the outcomes. Working with AeonX Digital has been a fantastic experience for us, and we would gladly recommend them as one of the industry’s top providers.",
+        profile: ck,
+        name: "Mitali Biswas",
+        designation: "CIO, CK Birla Hospitals"
+    },
+    {
+        testimonial: "We were able to properly deploy SAP from the ground up thanks to AeonX. They were there for us every step of the journey, providing assistance and knowledge. We wouldn’t have been able to achieve it without them! Their assistance has been crucial to us, and we cannot express how grateful we are.We strongly recommend working with AeonX Digital!",
+        profile: ashapura,
+        name: "Ashish Desai",
+        designation: "CFO, Ashapura"
+    },
+    {
+        testimonial: "When it came to understanding our expectations, the team was incredibly supportive and conducted a stellar job. We are thankful to AeonX Digital for providing us with a new Disaster Recovery System and implementing SAP modules, which is helping our business run smoothly. It was a pleasure to work with AeonX. They’re a fantastic team and I loved getting to collaborate with them personally!",
+        profile: bvg,
+        name: "Bhushan Puranik",
+        designation: "Head IT & SAP, BVG India"
+    },
+    
+]
+
 const TestimonialSection = () => {
     // Create refs for navigation buttons
     const prevRef = useRef(null);
@@ -62,59 +96,20 @@ const TestimonialSection = () => {
                                     }}
                                     style={{ padding: "10px 0" }}
                                 >
-                                    <SwiperSlide>
-                                        <TestCard
-                                            testimonial="RISE with SAP assists businesses in implementing SAP cloud solutions. It hastens cloud adoption by eliminating much of the guesswork and piecemeal licencing acquisitions that plague company planning: It gives clients all of the tools they require."
-                                            profile={profileOne}
-                                            name="John Doe"
-                                            designation="SAP Lead, Manufacturing"
-                                        />
-                                    </SwiperSlide>
 
-                                    <SwiperSlide>
-                                        <TestCard
-                                            testimonial="RISE with SAP assists businesses in implementing SAP cloud solutions. It hastens cloud adoption by eliminating much of the guesswork and piecemeal licencing acquisitions that plague company planning: It gives clients all of the tools they require."
-                                            profile={profileOne}
-                                            name="John Doe"
-                                            designation="SAP Lead, Manufacturing"
-                                        />
-                                    </SwiperSlide>
-
-                                    <SwiperSlide>
-                                        <TestCard
-                                            testimonial="RISE with SAP assists businesses in implementing SAP cloud solutions. It hastens cloud adoption by eliminating much of the guesswork and piecemeal licencing acquisitions that plague company planning: It gives clients all of the tools they require."
-                                            profile={profileOne}
-                                            name="John Doe"
-                                            designation="SAP Lead, Manufacturing"
-                                        />
-                                    </SwiperSlide>
-
-                                    <SwiperSlide>
-                                        <TestCard
-                                            testimonial="RISE with SAP assists businesses in implementing SAP cloud solutions. It hastens cloud adoption by eliminating much of the guesswork and piecemeal licencing acquisitions that plague company planning: It gives clients all of the tools they require."
-                                            profile={profileOne}
-                                            name="John Doe"
-                                            designation="SAP Lead, Manufacturing"
-                                        />
-                                    </SwiperSlide>
-
-                                    <SwiperSlide>
-                                        <TestCard
-                                            testimonial="RISE with SAP assists businesses in implementing SAP cloud solutions. It hastens cloud adoption by eliminating much of the guesswork and piecemeal licencing acquisitions that plague company planning: It gives clients all of the tools they require."
-                                            profile={profileOne}
-                                            name="John Doe"
-                                            designation="SAP Lead, Manufacturing"
-                                        />
-                                    </SwiperSlide>
-
-                                    <SwiperSlide>
-                                        <TestCard
-                                            testimonial="RISE with SAP assists businesses in implementing SAP cloud solutions. It hastens cloud adoption by eliminating much of the guesswork and piecemeal licencing acquisitions that plague company planning: It gives clients all of the tools they require."
-                                            profile={profileOne}
-                                            name="John Doe"
-                                            designation="SAP Lead, Manufacturing"
-                                        />
-                                    </SwiperSlide>
+                                    {testimonials.map((testimonial,i) => {
+                                        return(
+                                            <SwiperSlide key={i}>
+                                                <TestCard
+                                                    testimonial={testimonial.testimonial}
+                                                    profile={testimonial.profile}
+                                                    name={testimonial.name}
+                                                    designation={testimonial.designation}
+                                                />
+                                            </SwiperSlide>
+                                        )
+                                    })}
+                                    
                                 </Swiper>
                             </div>
                         </div>

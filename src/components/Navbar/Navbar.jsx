@@ -180,31 +180,41 @@ const Navbar = () => {
 
 
                             <li className="nav-item has-mega-menu d-none d-lg-block">
-                                <a className="nav-link" href="#">Services</a>
+                                <NavLink
+                                    to="/services"
+                                    className={
+                                        (location.pathname === "/services")
+                                            ? "nav-link active"
+                                            : "nav-link"
+                                    }
+                                >
+                                    Services
+                                </NavLink>
                                 <div className="mega-menu">
                                     <div className="mega-menu-content py-5">
                                         <div className="container">
                                             <div className="row">
                                                 <div className="col-md-4 d-none d-lg-block">
-                                                    <h4 >SERVICES</h4>
+                                                    <h4 >Services</h4>
                                                     <p>Discover the diverse range of services we offer, from precision manufacturing to cutting-edge</p>
                                                 </div>
                                                 <div className="col-md-3">
 
                                                     <ul>
-                                                        <li><a href="#">Implementaion </a></li>
-                                                        <li><a href="#">Support</a></li>
-                                                        <li><a href="#">Migration</a></li>
+                                                        <li><NavLink to="/services">Implementation </NavLink></li>
+                                                        <li><NavLink to="/services">Support</NavLink></li>
+                                                        <li><NavLink to="/services">Migration</NavLink></li>
+                                                        
 
                                                     </ul>
                                                 </div>
                                                 <div className="col-md-3">
                                                     <ul>
-                                                        <li><a href="#">Integration </a></li>
-                                                        <li><a href="#">Innovation</a></li>
-                                                        <li><a href="#">Staffing</a></li>
-
+                                                        <li><NavLink to="/services">Integration </NavLink></li>
+                                                        <li><NavLink to="/services">Innovation</NavLink></li>
+                                                        <li><NavLink to="/services">Staffing</NavLink></li>
                                                     </ul>
+
                                                 </div>
 
                                             </div>
@@ -295,7 +305,7 @@ const Navbar = () => {
 
                                                         <li><NavLink to="/blogs">Blogs</NavLink></li>
                                                         <li><NavLink to="/events">Events</NavLink></li>
-                                                        <li><NavLink to="/aeonxlife">Life at AeonX Digital</NavLink></li>
+                                                        {/* <li><NavLink to="/aeonxlife">Life at AeonX Digital</NavLink></li> */}
 
                                                     </ul>
                                                 </div>
@@ -345,8 +355,45 @@ const Navbar = () => {
                                 <NavLink to="/careers" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>Careers</NavLink>
                             </li>
 
-                            <li className='nav-item'>
-                                <NavLink to="/investor-relations" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>Investor Relations</NavLink>
+                            <li className="nav-item has-mega-menu d-none d-lg-block">
+                                <NavLink
+                                    to="/investor-relations"
+                                    className={
+                                        (location.pathname === "/investor-relations")
+                                            ? "nav-link active"
+                                            : "nav-link"
+                                    }
+                                >
+                                    Investor Relations
+                                </NavLink>
+                                <div className="mega-menu">
+                                    <div className="mega-menu-content py-5">
+                                        <div className="container">
+                                            <div className="row">
+                                                <div className="col-md-4 d-none d-lg-block">
+                                                    <h4 >Investor Relations</h4>
+                                                    <p>Discover the diverse range of services we offer, from precision manufacturing to cutting-edge</p>
+                                                </div>
+                                                <div className="col-md-3">
+
+                                                    <ul>
+                                                        <li><NavLink to="/investor-relations">Financial Highlights </NavLink></li>
+                                                        <li><NavLink to="/investor-relations">Shareholder Information</NavLink></li>
+                                                        <li><NavLink to="/investor-relations">Corporate Governance</NavLink></li>
+                                                        <li><NavLink to="/investor-relations">Code and Policy</NavLink></li>
+
+                                                    </ul>
+                                                </div>
+                                                <div className="col-md-3">
+
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
 
 

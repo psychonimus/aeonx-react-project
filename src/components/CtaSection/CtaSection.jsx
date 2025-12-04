@@ -89,19 +89,19 @@ const CtaSection = () => {
 
                                <hr className='text-white' />
                                <div className="social-icons d-flex gap-3 justify-content-around">
-                               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                               <a href="https://www.instagram.com/aeonx.digital?igsh=MTFuNjljczFqdnoyYQ==" target="_blank" rel="noopener noreferrer">
                                    <FaInstagram style={{ color: '#fff', fontSize: 25 }}></FaInstagram>
                                </a>
-                               <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+                               <a href="https://x.com/aeonxdigital?s=21" target="_blank" rel="noopener noreferrer">
                                    <FaXTwitter  style={{ color: '#fff', fontSize: 25 }}></FaXTwitter>
                                </a>
-                               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                               <a href="https://www.facebook.com/share/1G9mrnhe1c/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
                                    <RiFacebookCircleLine style={{ color: '#fff', fontSize: 25 }}></RiFacebookCircleLine>
                                </a>
-                               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                               <a href="https://www.linkedin.com/company/aeonx-digital/" target="_blank" rel="noopener noreferrer">
                                    <TiSocialLinkedin style={{ color: '#fff', fontSize: 32 }}></TiSocialLinkedin>
                                </a>
-                               <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                               <a href="https://youtube.com/@aeonxdigital?si=Shy3x-210aaojI5y" target="_blank" rel="noopener noreferrer">
                                    <RiYoutubeLine style={{ color: '#fff', fontSize: 32 }}></RiYoutubeLine>
                                </a>
                                </div>

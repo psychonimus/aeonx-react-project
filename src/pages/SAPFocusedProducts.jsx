@@ -1,4 +1,5 @@
 import React from 'react'
+import {Helmet} from "react-helmet";
 import LifeHero from '../components/LifeAtAeonxPageSections/LifeHero'
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 import GlassButton from '../components/GlassButton/GlassButton';
@@ -23,6 +24,12 @@ import ctaImg from '/images/sap-cta.webp'
 const SAPFocusedProducts = () => {
     return (
         <>
+            <Helmet>
+                <title>SAP Focused Products - Aeonx Digital</title>
+                <meta name="description" content="At AeonX Digital, we are committed to fostering a dynamic, inclusive, and innovative workplace culture. Our team of dedicated professionals is dedicated to delivering exceptional results and creating a positive impact in the industry." />
+                <meta name="keywords" content="careers, job opportunities, employment, recruitment, talent acquisition, talent development, employee engagement, employee retention, employee satisfaction, employee well-being" />
+                <meta name="author" content="AeonX Digital" />
+            </Helmet>
             <section className="life-hero sap-focused-products-hero" style={{ height: "100vh" }} >
                 <div className="container">
                     <div className="row">

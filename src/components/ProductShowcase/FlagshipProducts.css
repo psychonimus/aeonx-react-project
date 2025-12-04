@@ -50,8 +50,8 @@
     left: 50%;
     transform: translate(-50%, -50%) rotate(-90deg);
     white-space: nowrap;
-    font-size: 1.25rem;
-    font-weight: 500;
+    font-size: 1.55rem;
+    font-weight: 900;
     letter-spacing: 0.05em;
     color: var(--muted-foreground);
     transition: all 0.4s ease;
@@ -97,16 +97,15 @@
     opacity: 1;
 }
 
-.accordion-image{
+.accordion-content .accordion-image{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    scale: 1.1;
-    transition: 0.5s all ease;
+    
 }
-.accordion-item.active:hover .accordion-image{
+/* .accordion-item.active:hover .accordion-image{
     scale: 1.2;
-}
+} */
 
 .accordion-overlay {
     position: absolute;
@@ -114,8 +113,42 @@
     background: linear-gradient(to bottom,
             transparent 0%,
             transparent 50%,
-            rgba(10, 10, 10, 0.8) 100%);
+            rgba(10, 10, 10, 0.523) 100%);
 }
+
+.flag-heading{
+    font-family: Gilroy-Bold;
+    font-size: 3rem;
+}
+.accordion-content p{
+    font-family: Gilroy;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 50%;
+
+}
+
+/* .accordion-content-box-0{
+    background-image: url("../../../public/images/xpense-bg.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.accordion-content-box-1{
+    background-image: url("../../../public/images/supplier-x-bg.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+.accordion-content-box-2{
+    background-image: url("../../../public/images/logystix-bg.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+.accordion-content-box-5{
+    background-image: url("../../../public/images/aeonxiq-bg.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+} */
 
 .visit-button {
     position: absolute;
@@ -285,20 +318,9 @@
     opacity: 1;
 }
 
-.accordion-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
-.accordion-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to bottom,
-            transparent 0%,
-            transparent 50%,
-            rgba(10, 10, 10, 0.8) 100%);
-}
+
+
 
 .visit-button {
     position: absolute;

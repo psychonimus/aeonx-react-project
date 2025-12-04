@@ -89,7 +89,8 @@ const FooterSection = () => {
             <a href="#" className="me-3 ">Facebook</a>
             <a href="#" className="me-3 ">Linkedin</a>
             <a href="#" className="">Twitter</a> */}
-            <button class="Btn instagram">
+            <a href="https://www.instagram.com/aeonx.digital?igsh=MTFuNjljczFqdnoyYQ==">
+              <button class="Btn instagram">
               <svg
                 class="svgIcon"
                 viewBox="0 0 448 512"
@@ -102,8 +103,10 @@ const FooterSection = () => {
               </svg>
               <span class="text">Instagram</span>
             </button>
+            </a>
 
-            <button class="Btn youtube">
+            <a href="https://youtube.com/@aeonxdigital?si=Shy3x-210aaojI5y">
+              <button class="Btn youtube">
               <svg
                 class="svgIcon"
                 viewBox="0 0 576 512"
@@ -116,8 +119,10 @@ const FooterSection = () => {
               </svg>
               <span class="text">YouTube</span>
             </button>
+            </a>
 
-            <button class="Btn facebook" >
+            <a href="https://www.facebook.com/share/1G9mrnhe1c/?mibextid=wwXIfr">
+              <button class="Btn facebook" >
               <svg
                 class="svgIcon"
                 viewBox="0 0 320 512"
@@ -130,8 +135,10 @@ const FooterSection = () => {
               </svg>
               <span class="text">Facebook</span>
             </button>
+            </a>
 
-            <button class="Btn twitter">
+            <a href="https://x.com/aeonxdigital?s=21">
+              <button class="Btn twitter">
               <svg
                 class="svgIcon"
                 viewBox="0 0 512 512"
@@ -144,6 +151,7 @@ const FooterSection = () => {
               </svg>
               <span class="text">X/Twitter</span>
             </button>
+            </a>
 
           </div>
 

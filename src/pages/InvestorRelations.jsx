@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {Helmet} from "react-helmet";
 import GlassButton from "../components/GlassButton/GlassButton";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 import Header from "../components/Header/Header";
@@ -56,6 +57,12 @@ const InvestorRelations = () => {
 
 
     <>
+      <Helmet>
+        <title>Investor Relations - Aeonx Digital</title>
+        <meta name="description" content="At AeonX Digital, we are committed to fostering a dynamic, inclusive, and innovative workplace culture. Our team of dedicated professionals is dedicated to delivering exceptional results and creating a positive impact in the industry." />
+        <meta name="keywords" content="careers, job opportunities, employment, recruitment, talent acquisition, talent development, employee engagement, employee retention, employee satisfaction, employee well-being" />
+        <meta name="author" content="AeonX Digital" />
+      </Helmet>
 
       {/* HERO SECTION */}
       <section className="life-hero investor-hero" style={{ height: "100vh" }} >

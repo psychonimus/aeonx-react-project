@@ -1,10 +1,18 @@
 import React from "react";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 import GlassButton from "../components/GlassButton/GlassButton";
+import {Helmet} from "react-helmet";
 
 const AWSProducts = () => {
   return (
-    <section className="aws-page">
+    <>
+    <Helmet>
+        <title>AWS Products - Aeonx Digital</title>
+        <meta name="description" content="At AeonX Digital, we help organizations modernize their IT landscape and unlock innovation through AWS cloud transformation. Our solutions simplify operations, reduce costs, and empower businesses with a fully connected, data-driven digital ecosystem." />
+        <meta name="keywords" content="AWS products, AWS cloud transformation, AWS migration, AWS support, AWS training, AWS certification, AWS best practices, AWS security, AWS compliance" />
+        <meta name="author" content="AeonX Digital" />
+      </Helmet>
+      <section className="aws-page">
 
       {/* HERO SECTION */}
       <section className="life-hero sap-focused-products-hero" style={{ height: "100vh" }} >
@@ -104,6 +112,7 @@ const AWSProducts = () => {
       </div>
 
     </section>
+    </>
   );
 };
 

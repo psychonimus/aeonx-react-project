@@ -18,8 +18,8 @@ const NumbersSectionOld = () => {
     const { ref, inView } = useInView({
         triggerOnce: true,
         threshold: 0.3,
-      });
-    
+    });
+
     return (
         <>
             <div
@@ -44,8 +44,8 @@ const NumbersSectionOld = () => {
                                     <img src={infoOne} width="90%" />
                                 </div>
                                 <div ref={ref} className="info text-center col-md-6 ">
-                                    <span  className="infoPoints">{inView ? <CountUp end={25} duration={2.5} /> : "0"}+</span>
-                                    <h6>Publicly Listed Clients</h6>
+                                    <span className="infoPoints">{inView ? <CountUp end={25} duration={2.5} /> : "0"}+</span>
+                                    <h6>Publicly Listed Companies are our customers.</h6>
                                 </div>
                             </div>
                             <div className="rightDivContent d-flex align-items-center py-4 row justify-content-center">
@@ -53,8 +53,8 @@ const NumbersSectionOld = () => {
                                     <img src={infoTwo} width="90%" />
                                 </div>
                                 <div className="info text-center col-md-6">
-                                    <span className="infoPoints">{inView ? <CountUp end={24} duration={2.5} /> : "0"}/{inView ? <CountUp end={7} duration={2.5} /> : "0"}</span>
-                                    <h6>Global Delivery Centre</h6>
+                                    <span className="infoPoints">{inView ? <CountUp end={30} duration={2.5} /> : "0"}+</span>
+                                    <h6>S/4HANA Implementation, Upgrade, Migration, Conversion & Rollout projects executed</h6>
                                 </div>
                             </div>
                             <div className="rightDivContent align-items-center py-4 row justify-content-center">
@@ -69,8 +69,8 @@ const NumbersSectionOld = () => {
                         </div>
                         <div className="centerInfo col-lg-4 col-md-4 text-center order-md-2 order-1 ">
                             <img src={xLogo} />
-                            
-                            
+
+
 
                         </div>
                         <div className="rightInfo col-lg-4 col-md-4 col-6 order-md-3 order-3">
@@ -98,7 +98,7 @@ const NumbersSectionOld = () => {
                                 </div>
                                 <div className="info text-center col-md-6">
                                     <span className="infoPoints">ISO</span>
-                                    <h6>ISO Certified & Great Place to Work® Recognized</h6>
+                                    <h6>ISO 9001-2015, 27001-2022 and Great Place to work Certified.</h6>
                                 </div>
                             </div>
                         </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Header/Header";
 import { FaArrowRight, FaMapMarkerAlt, FaClock } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const jobs = [
   {
@@ -8,6 +9,7 @@ const jobs = [
     location: "Mumbai, India",
     type: "Full-time",
     department: "Engineering",
+    url: "/careers/job-desc-one",
   },
   {
     title: "React UI/UX Designer",
@@ -70,9 +72,11 @@ const OpenPositionsSection = () => {
                     <p>📁 {job.department}</p>
                   </div>
 
-                  <button className="apply-btn">
-                    Apply Now <FaArrowRight />
-                  </button>
+                  <Link to={job.url}>
+                    <button className="apply-btn">
+                      Apply Now <FaArrowRight />
+                    </button>
+                  </Link>
                 </div>
               </div>
             ))}

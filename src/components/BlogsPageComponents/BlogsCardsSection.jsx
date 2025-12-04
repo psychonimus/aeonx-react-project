@@ -13,15 +13,15 @@ const blogData = [
         url: "/blogs/is-rise-with-sap-really-opex-freindly"
     },
     {
-        title: "How Cloud Computing is Changing Businesses",
-        date: "Jan 12, 2025",
-        category: "Cloud",
-        desc: "desc 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse varius enim in eros elementum tristique.",
-        img: "/images/blog2.webp",
+        title: "Common SAP S/4HANA Migration Mistakes Enterprises Must Avoid in 2025",
+        date: "Sep 29, 2025",
+        category: "SAP",
+        desc: "With SAP ending mainstream support for ECC in 2027, time is rushing for enterprises still working with older systems. Many organizations have kicked off their SAP S/4HANA migration journey",
+        img: "/images/sap-migration-mistakes.jpg",
     },
     {
-        title: "Mastering UX: Tips for Better User Experiences",
-        date: "Dec 22, 2024",
+        title: "ITD Cementation",
+        date: "Apr 14, 2023",
         category: "UX Design",
         desc: "desc 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse varius enim in eros elementum tristique.",
         img: "/images/blog3.webp",

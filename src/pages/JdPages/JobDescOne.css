@@ -1,0 +1,232 @@
+.jd-page-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 120px 5% 50px;
+    background-color: #fff;
+    color: #000;
+    font-family: 'Gilroy', sans-serif;
+}
+
+.jd-content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Left Side - Job Description (60%) */
+.jd-left-section {
+    flex: 0 0 60%;
+    max-width: 60%;
+    padding-right: 20px;
+}
+
+.jd-title {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #f97316 0%, #facc15 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.jd-subtitle {
+    font-size: 1.2rem;
+    color: #000;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.jd-subtitle span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.jd-section-title {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 1.8rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #000;
+    border-left: 4px solid #f97316;
+    padding-left: 15px;
+}
+
+.jd-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.jd-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.jd-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #000;
+}
+
+.jd-list li::before {
+    content: "•";
+    color: #f97316;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem;
+    line-height: 1;
+    top: -2px;
+}
+
+/* Right Side - Application Form (40%) */
+.jd-right-section {
+    flex: 0 0 35%;
+    /* Adjusted to leave some gap */
+    max-width: 40%;
+    position: relative;
+}
+
+.application-form-container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    position: sticky;
+    top: 120px;
+}
+
+.form-title {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #000;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #000;
+    font-weight: 600;   
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background: rgba(202, 202, 202, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: #000;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: #f97316;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.file-upload-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.file-upload-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border: 2px dashed rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: rgba(202, 202, 202, 0.3);
+}
+
+.file-upload-label:hover {
+    border-color: #f97316;
+    background: rgba(249, 115, 22, 0.1);
+}
+
+.file-upload-text {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #000;
+}
+
+.file-input {
+    display: none;
+}
+
+.submit-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .jd-content-wrapper {
+        flex-direction: column;
+    }
+
+    .jd-left-section {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-right: 0;
+    }
+
+    .jd-right-section {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .application-form-container {
+        position: static;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .jd-page-container {
+        padding: 100px 20px 40px;
+    }
+
+    .jd-title {
+        font-size: 2.2rem;
+    }
+
+    .jd-subtitle {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}

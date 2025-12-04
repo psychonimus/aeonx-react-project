@@ -1,12 +1,20 @@
 import React from "react";
-
+import {Helmet} from "react-helmet";
 import bannerImg from "/images/blog-1.webp"; // replace with your banner
 import GlassButton from "../../components/GlassButton/GlassButton";
 import GlassButtonLight from "../../components/GlassButton/GlassButtonLight";
 
 const BlogOne = () => {
   return (
-    <section className="blog-page" style={{marginTop:"0rem"}}>
+    <>
+      <Helmet>
+        <title>Is RISE with SAP Really OPEX Friendly? - AeonX Digital</title>
+        <meta name="description" content="RISE with SAP is a business transformation package designed to help companies shift to cloud-based SAP solutions with speed, flexibility, and minimal disruption." />
+        <meta name="keywords" content="RISE with SAP, SAP transformation, cloud-based SAP, business transformation, SAP S/4HANA Cloud, SAP BTP, SAP licensing, SAP infrastructure, SAP managed services, SAP tools, SAP business process intelligence" />
+        <meta name="author" content="AeonX Digital" />
+      </Helmet>
+
+      <section className="blog-page" style={{marginTop:"0rem"}}>
       
       {/* BANNER */}
       <div className="blog-banner" style={{height:"100vh"}}>
@@ -149,6 +157,7 @@ const BlogOne = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 
