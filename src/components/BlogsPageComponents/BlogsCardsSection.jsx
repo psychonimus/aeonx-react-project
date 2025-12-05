@@ -18,6 +18,7 @@ const blogData = [
         category: "SAP",
         desc: "With SAP ending mainstream support for ECC in 2027, time is rushing for enterprises still working with older systems. Many organizations have kicked off their SAP S/4HANA migration journey",
         img: "/images/sap-migration-mistakes.jpg",
+        url: "/blogs/sap-migration-mistakes"
     },
     {
         title: "ITD Cementation",

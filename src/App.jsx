@@ -30,6 +30,8 @@ import { ScrollTrigger } from 'gsap/all';
 import Services from "./pages/Services";
 import ContactFormPopup from "./components/ContactPageComponents/ContactFormPopup";
 import JobDescOne from "./pages/JdPages/JobDescOne";
+import Industries from "./pages/Industries";
+import BlogTwo from "./pages/AllBlogs/BlogTwo";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -58,6 +60,7 @@ const App = () => {
 
 
           <Route path="/blogs/is-rise-with-sap-really-opex-freindly" element={<BlogOne />} />
+          <Route path="/blogs/sap-migration-mistakes" element={<BlogTwo />} />
 
 
           <Route path="/aeonxlife" element={<LifeAtAeonx />} />
@@ -66,6 +69,7 @@ const App = () => {
           <Route path="/investor-relations" element={<InvestorRelations />} />
           <Route path="/services" element={<Services />} />
           <Route path="/careers/job-desc-one" element={<JobDescOne />} />
+          <Route path="/industries" element={<Industries />} />
 
         </Routes>
 

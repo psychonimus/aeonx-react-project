@@ -1,0 +1,27 @@
+
+.industry-hero {
+  background-image: url("../../../public/images/industry-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  padding: 10rem 0;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.industry-hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.industry-hero-content .eyebrow {
+  text-transform: uppercase;
+  color: #E06522;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}

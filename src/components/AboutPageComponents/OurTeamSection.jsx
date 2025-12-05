@@ -4,14 +4,14 @@ import Header from "../Header/Header";
 import AeonxX from '/images/x-icon.webp'
 
 const teamMembers = [
-    { name: "Aarav Shah", role: "CEO & Founder", img: "/images/team-1.webp" },
-    { name: "Neha Patel", role: "Creative Director", img: "/images/team-2.webp" },
-    { name: "Rohan Verma", role: "Lead Developer", img: "/images/team-3.webp" },
-    { name: "Ishita Mehta", role: "UI/UX Designer", img: "/images/team-4.webp" },
-    { name: "Arjun Singh", role: "Marketing Head", img: "/images/team-5.webp" },
-    { name: "Arjun Singh", role: "Marketing Head", img: "/images/team-3.webp" },
-    { name: "Arjun Singh", role: "Marketing Head", img: "/images/team-1.webp" },
-    { name: "Arjun Singh", role: "Marketing Head", img: "/images/team-4.webp" },
+    { name: "Priyank Pancholi", role: "Region Head - SAP", img: "/images/team/priyank-pancholi.jpeg" },
+    { name: "Amit Goregaonkar", role: "Sr. Project Manager - SAP", img: "/images/team/amit-goregaonkar.jpeg" },
+    { name: "Milan Rathod", role: "Project Manager Cloudr", img: "/images/team/milan-rathod.jpeg" },
+    { name: "Milan Hota", role: "Regional Sales Manager - Middle East", img: "/images/team/milan-hota.jpeg" },
+    { name: "Priyanka Singh", role: "Business Development Manager", img: "/images/team/priyanka-singh.jpeg" },
+    { name: "Vicky Gandhi", role: "Head SAP Projects", img: "/images/team/vicky-gandhi.jpeg" },
+    { name: "Chandresh Acharyah", role: "Head of operations", img: "/images/team/chandresh-acharya.jpeg" },
+    { name: "Vikas Sharma", role: "COO", img: "/images/team/vikas-sharma.jpeg" },
 
 ];
 

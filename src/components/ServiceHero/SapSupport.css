@@ -1,0 +1,125 @@
+.sap-support {
+    background-image: url("../../../public/images/service-bg-1-.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+.sap-support-heading h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: Gilroy-Bold;
+        background: linear-gradient(90deg, #f97316 0%, #facc15 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.sap-support-parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 12px;
+}
+
+.sap-support-child {
+    border-radius: 25px;
+    background: rgba(73, 73, 73, 0.11);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.sap-support-child:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.sap-support-child-content {
+    background-color: #fff;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.sap-support-child-1 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+
+
+}
+
+.sap-support-child-2 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 1;
+    grid-row-start: 4;
+
+
+}
+
+.sap-support-child-3 {
+    grid-column: span 2 / span 2;
+    grid-row: span 6 / span 6;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    background-image: url("../../../public/images/sap-mid-card.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.sap-support-child-3 h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: Gilroy-Bold;
+    color: #fff;
+}
+
+.sap-support-child-4 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 5;
+    grid-row-start: 1;
+
+
+}
+
+.sap-support-child-5 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 5;
+    grid-row-start: 4;
+}
+
+@media (max-width: 992px) {
+    .sap-support-parent {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .sap-support-child-1,
+    .sap-support-child-2,
+    .sap-support-child-3,
+    .sap-support-child-4,
+    .sap-support-child-5 {
+        grid-column: auto;
+        grid-row: auto;
+        grid-column-start: auto;
+        grid-row-start: auto;
+    }
+
+    .sap-support-child-3 {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 576px) {
+    .sap-support-parent {
+        grid-template-columns: 1fr;
+    }
+
+    .sap-support-child-3 {
+        grid-column: span 1;
+    }
+}
