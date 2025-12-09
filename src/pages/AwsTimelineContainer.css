@@ -1,0 +1,109 @@
+/* Index Page Styles */
+.page-container {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  .page-container {
+    background-color: #0a0a0a;
+  }
+}
+
+/* Timeline Content Text */
+.timeline-text {
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: #262626;
+}
+
+@media (min-width: 768px) {
+  .timeline-text {
+    font-size: 0.875rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .timeline-text {
+    color: #e5e5e5;
+  }
+}
+
+/* Image Grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.grid-image {
+  border-radius: 0.5rem;
+  object-fit: cover;
+  width: 100%;
+  height: 5rem;
+  box-shadow: 
+    0 0 24px rgba(34, 42, 53, 0.06),
+    0 1px 1px rgba(0, 0, 0, 0.05),
+    0 0 0 1px rgba(34, 42, 53, 0.04),
+    0 0 4px rgba(34, 42, 53, 0.08),
+    0 16px 68px rgba(47, 48, 55, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 768px) {
+  .grid-image {
+    height: 11rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-image {
+    height: 15rem;
+  }
+}
+
+/* Checklist */
+.checklist {
+  margin-bottom: 2rem;
+}
+
+.checklist-item {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: #404040;
+  font-size: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .checklist-item {
+    font-size: 0.875rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .checklist-item {
+    color: #d4d4d4;
+  }
+}
+
+.checklist-text {
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #262626;
+}
+
+@media (min-width: 768px) {
+  .checklist-text {
+    font-size: 0.875rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .checklist-text {
+    color: #e5e5e5;
+  }
+}

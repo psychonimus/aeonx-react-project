@@ -1,6 +1,6 @@
 /* Main Container */
 .flagship-products-wrapper{
-    background-color: #073DB1;
+    background: linear-gradient(340deg, rgb(6, 36, 112) 57%, rgb(0, 17, 61) 100%);
     display: flex;
     align-items: center;
     justify-content: center;

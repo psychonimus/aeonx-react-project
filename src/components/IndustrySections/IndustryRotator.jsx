@@ -26,6 +26,7 @@ const IndustryRotator = () => {
             accent: 'emerald',
             icon: 'factory',
             tailText: 'Manufacturing',
+            bgImage: '/images/manufacturing-bg.jpg',
             body: 'AeonX delivers end-to-end SAP solutions tailored for the manufacturing industry, enabling organizations to modernize operations, enhance visibility, and scale with confidence. Our SAP-driven approach helps manufacturers adopt a connected, data-led, and digitally intelligent production ecosystem.',
             ListTitle: 'Our SAP solutions for Manufacturing help you:',
             ListItems: [
@@ -243,7 +244,7 @@ const IndustryRotator = () => {
             const colors = colorMap[badge.color];
 
             result = result.replace(regex, (match) => {
-                return `<span class="highlight" style="background:${colors.bg}; box-shadow: inset 0 0 0 1px ${colors.border};">${match}</span>`;
+                return `<span className="highlight" style="background:${colors.bg}; box-shadow: inset 0 0 0 1px ${colors.border};">${match}</span>`;
             });
         });
 
@@ -254,7 +255,7 @@ const IndustryRotator = () => {
         if (timerRef.current) clearInterval(timerRef.current);
         timerRef.current = setInterval(() => {
             setActiveIndex((prev) => (prev + 1) % slides.length);
-        }, 7000);
+        }, 5000);
     };
 
     const handleBulletClick = (index) => {
@@ -316,7 +317,7 @@ const IndustryRotator = () => {
                         </div>
                         <div className="col-md-9">
                             <div className="card-wrapper">
-                                <div className="card">
+                                <div className="card" style={{ backgroundImage: `url(${currentSlide.bgImage})` }}>
                                     <div className="card-content">
                                         <div className="dots-indicator">
                                             <span className="dot"></span>

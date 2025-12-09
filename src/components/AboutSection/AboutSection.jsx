@@ -15,7 +15,8 @@ const teamImages = [
   "/images/team8.webp",
   "/images/team9.webp",
   "/images/team10.webp",
-
+  "/images/team11.jpg",
+  "/images/team12.jpg",
 ];
 
 

@@ -108,7 +108,7 @@ const privateLogos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, lo
 const LogoStrips = () => {
   return (
     <div className="logo-strip-container">
-      <div className="client-title"><a href="#" class="btn-shine">Private Sector Clients</a></div>
+      <div className="client-title"><a href="#" className="btn-shine">Private Sector Clients</a></div>
       {/* Top Row - Left to Right */}
       <div className="logo-strip">
         <div className="logo-track">
@@ -132,7 +132,7 @@ const LogoStrips = () => {
         </div>
       </div>
 
-      <div className="client-title mt-5"><a href="#" class="btn-shine">Public Sector Clients</a></div>
+      <div className="client-title mt-5"><a href="#" className="btn-shine">Public Sector Clients</a></div>
       {/* Top Row - Left to Right */}
       <div className="logo-strip">
         <div className="logo-track logo-track-2">

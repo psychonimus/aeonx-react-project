@@ -6,51 +6,40 @@ import Header from "../components/Header/Header";
 
 
 const InvestorRelations = () => {
-  const [activeTab, setActiveTab] = useState("postal");
+  const [activeTab, setActiveTab] = useState("auunalReport");
   const [activePeriod, setActivePeriod] = useState("yearly");
 
   const tabs = [
-    { id: "postal", label: "Postal Ballot & Forms" },
-    { id: "shareholding", label: "Shareholding Pattern" },
-    { id: "dividend", label: "Unclaimed / Unpaid Dividend" },
-    { id: "transfer", label: "Shares Transferred to IEPF" },
+    { id: "auunalReport", label: "Auunal Report" },
+    { id: "financialInformation", label: "Financial Information" },
+    
   ];
 
   const pdfData = {
-    postal: {
+    auunalReport: {
       yearly: [
-        { name: "Postal Ballot Notice 2025", file: "/pdfs/postal-notice-2025.pdf" },
-        { name: "Scrutinizer Report", file: "/pdfs/scrutinizer.pdf" },
+        { name: "AEONX-ANNUAL-REPORT-2023-24-final_compressed", file: "/investors/financial-highlights/annual-report/AEONX-ANNUAL-REPORT-2023-24-final_compressed.pdf" },
+        { name: "Annual-Report-2024-2025", file: "/investors/financial-highlights/annual-report/Annual-Report-2024-2025.pdf" },
       ],
       quarterly: [
-        { name: "Annexure V-CS Certificate", file: "/pdfs/annexure-v.pdf" },
-        { name: "Postal Ballot – Form", file: "/pdfs/ballot-form.pdf" },
+        
       ]
     },
-    shareholding: {
+    financialInformation: {
       yearly: [
-        { name: "Shareholding Summary 2024", file: "/pdfs/shareholding-2024.pdf" },
+        { name: "BSE-Financial-Results-30.09.2024_compressed", file: "/investors/financial-highlights/financial-information/BSE-Financial-Results-30.09.2024_compressed.pdf" },
+        { name: "BSE-Financial-Results-31.12.2024_1_11zon", file: "/investors/financial-highlights/financial-information/BSE-Financial-Results-31.12.2024_1_11zon.pdf" },
+        { name: "BSE-Financial-Results-31.12.2024_11zon", file: "/investors/financial-highlights/financial-information/BSE-Financial-Results-31.12.2024_11zon.pdf" },
+        { name: "BSE-Newspaper-Publication_compressed_compressed_compressed_11zon", file: "/investors/financial-highlights/financial-information/BSE-Newspaper-Publication_compressed_compressed_compressed_11zon.pdf" },
+        { name: "BSE-Newspaper-Publication-31.12.2024_11zon", file: "/investors/financial-highlights/financial-information/BSE-Newspaper-Publication-31.12.2024_11zon.pdf" },
+        { name: "BSE-Results-31.03.2025_compressed", file: "/investors/financial-highlights/financial-information/BSE-Results-31.03.2025_compressed.pdf" },
+        { name: "BSE-UFR-30.06.2025-1", file: "/investors/financial-highlights/financial-information/BSE-UFR-30.06.2025-1.pdf" },
       ],
       quarterly: [
-        { name: "Quarterly Holdings Report", file: "/pdfs/quarterly-holding.pdf" },
+        
       ]
     },
-    dividend: {
-      yearly: [
-        { name: "Unclaimed Dividend 2023", file: "/pdfs/dividend-2023.pdf" },
-      ],
-      quarterly: [
-        { name: "Unpaid Dividend Summary", file: "/pdfs/unpaid-summary.pdf" },
-      ]
-    },
-    transfer: {
-      yearly: [
-        { name: "IEPF Transfer List 2023", file: "/pdfs/iepf-transfer-2023.pdf" },
-      ],
-      quarterly: [
-        { name: "Claim Form – IEPF5", file: "/pdfs/iepf5.pdf" },
-      ]
-    },
+    
   };
 
   return (
@@ -65,7 +54,7 @@ const InvestorRelations = () => {
       </Helmet>
 
       {/* HERO SECTION */}
-      <section className="life-hero investor-hero" style={{ height: "100vh" }} >
+      <section className="life-hero investor-hero"  >
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -92,7 +81,7 @@ const InvestorRelations = () => {
       </section>
 
 
-      <section className="investor-container">
+      <section className="investor-container mb-5">
         {/* <h1 className="ir-title">Investor Relations</h1>
         <p className="ir-sub">
           Transparent Communication For Our Stakeholders & Shareholders
@@ -137,7 +126,7 @@ const InvestorRelations = () => {
           <div className="ir-content">
             {pdfData[activeTab][activePeriod]?.length > 0 ? (
               pdfData[activeTab][activePeriod].map((item, i) => (
-                <a href={item.file} download key={i} className="ir-link">
+                <a target="_blank" href={item.file} key={i} className="ir-link">
                   <span>{item.name}</span>
                   <button className="ir-download-btn">Download ⬇</button>
                 </a>

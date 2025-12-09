@@ -1,12 +1,44 @@
 import React from "react";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 import GlassButton from "../components/GlassButton/GlassButton";
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
+import AwsTechStack from "../components/AwsPageComponents/AwsTechStack";
+import Header from "../components/Header/Header";
+import WorkspaceSolution from "/images/aws-worspace-sol-banner.jpg";
+import workspaceLogo from "/images/amazonWorkspaceLogo.png";
+import implementation from "/images/implementation.webp";
+import smallBusiness from "/images/small-businesses.webp";
+import cloud from "/images/cloud-computing.webp";
+import cost from "/images/price-down.webp";
+import Ai from "/images/ai.webp";
+import cloudSolutions from '/images/awsCloudSolutions.jpg'
+import cloudFront from '/images/awsCloudFront.png'
+import saponaws from '/images/saponaws.png'
+import AwsTimeline from "../components/AwsTimeline/AwsTimeline";
+import StorageSolutions from "../components/AwsTimeline/StorageSolutions";
+import awsmachinelearning from '/images/awsmachinelearning.png'
+import awsmachineLearning from '/images/aws-machine-learning-tools.png'
+import awsIotSolutionsBanner from '/images/awsIotBanner.png'
+import awsIot from '/images/awsIot.png'
+import awsDevOps from '/images/awsDevops.webp'
+import DevOpsLogo from '/images/DevOpsLogo.png'
+import awsDatabaseLogo from '/images/awsDatabaseLogo.png'
+import awsDB from '/images/awsDBSolutions.jpg'
+import cloudMigrationBanner from '/images/awsCloudMigrationBanner.png'
+import managedServiceLogo from '/images/awsManagedServiceProviderLogo.png'
+import awsManagedServiceBanner from '/images/aws-managed-services.png'
+import MsOnAwsLogo from '/images/MsOnAws.png'
+
+
+
+
+
+
 
 const AWSProducts = () => {
   return (
     <>
-    <Helmet>
+      <Helmet>
         <title>AWS Products - Aeonx Digital</title>
         <meta name="description" content="At AeonX Digital, we help organizations modernize their IT landscape and unlock innovation through AWS cloud transformation. Our solutions simplify operations, reduce costs, and empower businesses with a fully connected, data-driven digital ecosystem." />
         <meta name="keywords" content="AWS products, AWS cloud transformation, AWS migration, AWS support, AWS training, AWS certification, AWS best practices, AWS security, AWS compliance" />
@@ -14,104 +46,1668 @@ const AWSProducts = () => {
       </Helmet>
       <section className="aws-page">
 
-      {/* HERO SECTION */}
-      <section className="life-hero sap-focused-products-hero" style={{ height: "100vh" }} >
-                <div className="container">
-                    <div className="row">
-                        <div className="col-12">
-                            <div className="life-hero-content text-center d-flex flex-column justify-content-center  h-100">
-                                <p className="eyebrow">AWS-Focused Products</p>
-                                <h1 className="mb-2">
-                                    Transform Your Infrastructure and Accelerate Innovation with AWS
-                                </h1>
-                                <p className="mb-4">At AeonX Digital, we help organizations modernize their IT landscape and unlock innovation through AWS cloud transformation. Our solutions are designed to simplify operations, reduce costs, and empower businesses with a fully connected, data-driven digital ecosystem.
-</p>
+        {/* HERO SECTION */}
+        <section className="life-hero sap-focused-products-hero" style={{ height: "100vh" }} >
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <div className="life-hero-content text-center d-flex flex-column justify-content-center  h-100">
+                  <p className="eyebrow">AWS-Focused Products</p>
+                  <h1 className="mb-2">
+                    Transform Your Infrastructure and Accelerate Innovation with AWS
+                  </h1>
+                  <p className="mb-4">At AeonX Digital, we help organizations modernize their IT landscape and unlock innovation through AWS cloud transformation. Our solutions are designed to simplify operations, reduce costs, and empower businesses with a fully connected, data-driven digital ecosystem.
+                  </p>
+                  <p>With proven expertise in SAP on AWS, server migration, backup and disaster recovery, CI/CD automation, managed services, analytics, integration, and machine learning, AeonX enables enterprises to transition seamlessly to a scalable, cloud-native infrastructure.
+                  </p>
 
-                                <div className="event-hero-buttons d-flex justify-content-center">
-                                    <GlassButton
-                                        title="Explore SAP Products"
-                                        icon={() => <IoIosArrowDropdownCircle size={30} />}
-                                    />
+                  <div className="event-hero-buttons d-flex justify-content-center">
+                    <GlassButton
+                      title="Explore AWS Products"
+                      icon={() => <IoIosArrowDropdownCircle size={30} />}
+                    />
 
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
+                  </div>
                 </div>
-            </section>
+              </div>
 
-      {/* OVERVIEW */}
-      <div className="container aws-intro">
-        <p>
-          At AeonX Digital, we help organizations modernize their IT landscape
-          and unlock innovation through AWS cloud transformation. Our solutions simplify
-          operations, reduce cost & help enterprises transition seamlessly into a scalable,
-          cloud-native ecosystem.
-        </p>
-      </div>
-
-      {/* PILLARS */}
-      <div className="container aws-pillars">
-        <div className="pillar-box">
-          <h3>Limitless Data Access</h3>
-          <p>Elastic compute, flexible storage & seamless scaling for dynamic workloads.</p>
-        </div>
-        <div className="pillar-box">
-          <h3>Insight Driven Analytics</h3>
-          <p>Modern analytics & ML enable real-time business decisions.</p>
-        </div>
-        <div className="pillar-box">
-          <h3>Organizational Agility</h3>
-          <p>Modernize legacy systems & accelerate digital transformation.</p>
-        </div>
-      </div>
-
-      {/* AWS SERVICES GRID */}
-      <div className="container aws-services">
-        <h2 className="section-title">Our AWS Expertise</h2>
-
-        <div className="aws-grid">
-          {[
-            "Amazon Workspaces","Amazon CloudFront","SAP on AWS","Machine Learning","IoT",
-            "DevOps","Database Services","Cloud Migration","Microsoft on AWS","Storage Solutions",
-            "Security & Compliance","Disaster Recovery","Data Analytics","API Gateway",
-            "Amazon Aurora","Dynamo DB","Lambda","Industrial Solutions"
-          ].map((item,i)=>(
-            <div className="aws-card" key={i}>
-              <p>{item}</p>
             </div>
-          ))}
+
+          </div>
+        </section>
+
+
+
+        {/* AWS SERVICES GRID */}
+        <div className="container aws-services mt-5">
+          <Header
+            subtext="AWS-Focused Products"
+            headline="Our AWS Expertise"
+
+          />
+
+          <AwsTechStack />
         </div>
-      </div>
 
-      {/* AMAZON WORKSPACES SECTION */}
-      <div className="container aws-workspaces">
-        <h2>Amazon Workspaces</h2>
-        <p>
-          AeonX Digital is recognised globally for simplifying SAP landscapes &
-          delivering scalable WorkSpaces environments for enterprises. We enable efficient
-          workplaces, improved productivity, & high availability cloud architecture.
-        </p>
+        <section className="rise-with-sap my-5">
+          <div className="container">
+            <div className="row grey-bg">
+              <div className="col-md-6 left py-4 px-5">
+                <img src={workspaceLogo} alt="" />
+                <h2>Workspace Solutions</h2>
+                <p>
+                  AeonX Digital is recognized by leading industry analysts, including ISG, Forrester, Everest, and NelsonHall, for our ability to align SAP landscapes with evolving business needs, focusing on simplification, modernization, digital transformation, HANA roadmap planning, and cloud migration. We serve as a trusted partner for SAP application management, optimization, enhancement, and upgrade services across global enterprises.
+                </p>
+                <p>As part of an elite group of SAP service providers, AeonX successfully delivers implementations, global rollouts, upgrades, cloud migrations, and SAP support services across complex landscapes and multiple industries. Our solutions enable businesses to build efficient workplaces, enhance user experience, and improve employee productivity, while maintaining operational continuity and digital readiness.</p>
+              </div>
+              <div className="col-md-6 right px-0">
+                <div
+                  className="img-container"
+                  style={{
+                    borderTopRightRadius: "30px",
+                    borderBottomRightRadius: "30px",
+                  }}
+                >
+                  <img src={WorkspaceSolution} alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-        <div className="workspace-list">
-          <li>Deploy secure virtual desktops</li>
-          <li>Implement consistent enterprise-grade security</li>
-          <li>Reduce IT workload with automated OS & software updates</li>
-          <li>Enable BYOD & remote workforce mobility</li>
-          <li>Flexible hardware/software provisioning</li>
+        <section className="major-points my-5">
+          <div className="container">
+            <div className="point-heading ">
+              <h2>Why Choose Amazon WorkSpaces with AeonX</h2>
+            </div>
+
+            <div className="row">
+              <div className="col-md-6">
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex align-items-center">
+                    <h4>
+                      Deploy secure virtual desktops with Amazon WorkSpaces
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={Ai} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex align-items-center">
+                    <h4>
+                      Implement consistent security policies across all devices
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={implementation} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      Reduce IT workload with always up-to-date operating systems and software
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={smallBusiness} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>Support BYOD (Bring Your Own Device) flexibility</h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      Select from a wide range of hardware and software options
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={cost} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      Provide engineers and developers with high-performance virtual desktops
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section className="rise-with-sap my-5">
+          <div className="container">
+            <div className="row grey-bg">
+
+              <div className="col-md-6 right px-0">
+                <div
+                  className="img-container"
+                  style={{
+                    borderTopLeftRadius: "30px",
+                    borderBottomLeftRadius: "30px",
+                  }}
+                >
+                  <img src={cloudSolutions} alt="" />
+                </div>
+              </div>
+              <div className="col-md-6 left py-4 px-5">
+                <img src={cloudFront} alt="" />
+                <h2>AWS Cloud Solutions</h2>
+                <p>AeonX delivers robust and scalable AWS CloudFront solutions designed to enhance content delivery performance across the globe. With low latency, high transfer speeds, and a developer-friendly environment, our AWS cloud capabilities ensure secure and seamless distribution of data, applications, videos, and APIs.</p>
+                <p>Built to integrate effortlessly with AWS Shield, AWS Web Application Firewall, and Amazon Route 53, CloudFront provides enterprise-grade protection—offering features like HTTPS support, field-level encryption, and strong defenses against network-level and application-level DDoS attacks. These services operate across globally distributed edge locations, giving users a faster, safer, and more reliable digital experience.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="major-points my-5">
+          <div className="container">
+            <div className="point-heading ">
+              <h2>What you can achieve with AWS Cloud Solutions from AeonX</h2>
+            </div>
+
+            <div className="row">
+              <div className="col-md-6">
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex align-items-center">
+                    <h4>
+                      Choose between subsidized pricing or flexible pay-as-you-go models
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={Ai} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex align-items-center">
+                    <h4>
+                      Access fully functional APIs to create, configure, and manage CloudFront distributions
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={implementation} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      Deploy custom content variations using compression, cache-key configuration, and advanced optimization techniques
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={smallBusiness} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>Integrate AWS Shield Standard for layered, customizable security</h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      Accelerate delivery of both static and dynamic content with network-level performance enhancements
+                    </h4>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="rise-with-sap my-5">
+          <div className="container">
+            <div className="row grey-bg">
+              <div className="col-md-6 left py-4 px-5">
+                <img src={saponaws} alt="" />
+                <h2>SAP on AWS Capabilities</h2>
+                <p>AeonX is among a select group of SAP partners equipped to manage end-to-end SAP transformations—including implementations, rollouts, cloud migrations, upgrades, and ongoing support—across diverse industries and complex SAP landscapes. Our consultative approach ensures every deployment is tailored, scalable, and aligned with business goals.
+                </p>
+                <p>With deep expertise in running SAP workloads on AWS, our team ensures high availability, strong performance, and seamless integration with AWS services such as Amazon S3, Amazon RDS, and Amazon Redshift. This enables businesses to store, process, and analyze data efficiently while building a reliable and secure SAP environment in the cloud.
+                </p>
+                <p>Our SAP on AWS solutions give enterprises the agility, flexibility, and security required to accelerate growth and support continuous innovation.
+                </p>
+              </div>
+              <div className="col-md-6 right px-0">
+                <div
+                  className="img-container"
+                  style={{
+                    borderTopRightRadius: "30px",
+                    borderBottomRightRadius: "30px",
+                  }}
+                >
+                  <img src={WorkspaceSolution} alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <AwsTimeline />
+
+        <section className="rise-with-sap my-5">
+          <div className="container">
+            <div className="row grey-bg">
+
+              <div className="col-md-6 right px-0">
+                <div
+                  className="img-container"
+                  style={{
+                    borderTopLeftRadius: "30px",
+                    borderBottomLeftRadius: "30px",
+                  }}
+                >
+                  <img src={awsmachineLearning} alt="" />
+                </div>
+              </div>
+              <div className="col-md-6 left py-4 px-5">
+                <img src={awsmachinelearning} alt="" />
+                <h2>AWS Machine Learning Solutions</h2>
+                <p>Enterprises are increasingly turning to machine learning to solve complex business challenges. AeonX delivers end-to-end AWS machine learning solutions that help organizations unlock insights, automate processes, and drive smarter decisions. Our expertise, strong domain understanding, and collaborative approach enable businesses to innovate faster and scale with confidence.
+                </p>
+                <p>
+                  By leveraging AWS’s powerful ML ecosystem, we help companies enhance productivity, improve accuracy, and detect anomalies faster using techniques such as mathematical optimization, pattern recognition, and computational intelligence.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="major-points my-5">
+          <div className="container">
+            <div className="point-heading ">
+              <h2>What AWS Machine Learning Enables for Your Business:</h2>
+            </div>
+
+            <div className="row">
+              <div className="col-md-6">
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex align-items-center">
+                    <h4>
+                      Upgrade your systems with intelligent automation and ML-driven insights.
+
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={Ai} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex align-items-center">
+                    <h4>
+                      Extract valuable information from images, videos, and documents using computer vision.
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={implementation} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      Enable natural language understanding to automate customer service and improve user interactions.
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={smallBusiness} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>Eliminate guesswork with data-driven predictions that transform business operations.</h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      Deliver personalized customer experiences using relevant, real-time content recommendations.
+                    </h4>
+                  </div>
+                </div>
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      Detect anomalies and prevent risks, including fraud, security breaches, and operational failures.
+                    </h4>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="rise-with-sap my-5">
+          <div className="container">
+            <div className="row grey-bg">
+              <div className="col-md-6 left py-4 px-5">
+                <img src={awsIot} alt="" />
+                <h2>IoT Solutions</h2>
+                <p>AeonX helps enterprises convert IoT opportunities into real business impact by delivering advanced, cloud-enabled IoT solutions tailored to operational needs.
+                </p>
+                <p>From selecting the right sensors to building intelligent platforms and generating actionable insights, we offer end-to-end IoT services designed to improve efficiency, reduce costs, and enhance customer experiences. Our strong partnerships with leading technology providers, including AWS IoT, Microsoft Azure, PTC ThingWorx, MongoDB, Intel, WindRiver, and others, position us to meet diverse IoT requirements with confidence.</p>
+              </div>
+              <div className="col-md-6 right px-0">
+                <div
+                  className="img-container"
+                  style={{
+                    borderTopRightRadius: "30px",
+                    borderBottomRightRadius: "30px",
+                  }}
+                >
+                  <img src={awsIotSolutionsBanner} alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="major-points my-5">
+          <div className="container">
+            <div className="point-heading ">
+              <h2>Key IoT capabilities we deliver:</h2>
+            </div>
+
+            <div className="row">
+              <div className="col-md-6">
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex align-items-center">
+                    <h4>
+                      Connect devices seamlessly using cloud-based IoT platforms for rapid prototyping and deployment.
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={Ai} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex align-items-center">
+                    <h4>
+                      Showcase measurable business value through improved customer engagement and operational insights.
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={implementation} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      Build next-generation connected devices on trusted and scalable IoT platforms.
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={smallBusiness} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>Integrate IoT data with existing business systems to create smarter, more efficient applications.</h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      Establish centralized operations centers to monitor, manage, and optimize devices and business processes.
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="rise-with-sap my-5">
+          <div className="container">
+            <div className="row grey-bg">
+
+              <div className="col-md-6 right px-0">
+                <div
+                  className="img-container"
+                  style={{
+                    borderTopLeftRadius: "30px",
+                    borderBottomLeftRadius: "30px",
+                  }}
+                >
+                  <img src={awsDevOps} alt="" />
+                </div>
+              </div>
+              <div className="col-md-6 left py-4 px-5">
+                <img src={DevOpsLogo} alt="" />
+                <h2>DevOps Solutions</h2>
+                <p>AeonX delivers comprehensive AWS DevOps solutions that streamline development, improve collaboration, and accelerate software delivery. By integrating automation, continuous integration, and lean development practices, we help teams eliminate bottlenecks, enhance operational performance, and respond quickly to changing business needs. Our DevOps approach bridges the gaps between development, IT operations, and quality assurance—enabling faster, more reliable, and scalable application delivery.
+                </p>
+                <p>
+                  With end-to-end AWS DevOps tools and frameworks, we support clients in building, deploying, and managing applications efficiently while strengthening culture, processes, and engineering workflows. The result is continuous delivery, improved stability, and higher customer value.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="major-points my-5">
+          <div className="container">
+            <div className="point-heading ">
+              <h2>Our DevOps capabilities on AWS include:</h2>
+            </div>
+
+            <div className="row">
+              <div className="col-md-6">
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex align-items-center">
+                    <h4>
+                      Assessing the current DevOps maturity across culture, processes, and toolchains.
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={Ai} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex align-items-center">
+                    <h4>
+                      Defining the future state with a clear roadmap and measurable success metrics.
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={implementation} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      Building pilot frameworks to standardize DevOps practices and accelerate business outcomes.
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={smallBusiness} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>Leveraging existing tools alongside a strong ecosystem of open-source and enterprise solutions.</h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      Designing, automating, and implementing workflows to reduce errors and increase deployment reliability.
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="rise-with-sap my-5">
+          <div className="container">
+            <div className="row grey-bg">
+              <div className="col-md-6 left py-4 px-5">
+                <img src={awsDatabaseLogo} alt="" />
+                <h2>Database Solutions</h2>
+                <p>Managing the massive volumes of data generated each day has become a major challenge for modern enterprises. AeonX helps organizations unlock the full value of their data with robust AWS Database Solutions designed to support informed decision-making, improve performance, and accelerate business growth. Our experts work across SAP, Sybase, Microsoft SQL, Oracle, MySQL, MongoDB, and other leading database technologies—ensuring a strong and scalable data foundation for every business.</p>
+                <p>Our database services support end-to-end data and analytics needs using a hybrid, open-source-friendly approach. With distributed and hybrid data cloud architectures, we help businesses achieve higher performance, greater uptime, and improved cost efficiency across all environments.</p>
+              </div>
+              <div className="col-md-6 right px-0">
+                <div
+                  className="img-container"
+                  style={{
+                    borderTopRightRadius: "30px",
+                    borderBottomRightRadius: "30px",
+                  }}
+                >
+                  <img src={awsDB} alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="major-points my-5">
+          <div className="container">
+            <div className="point-heading ">
+              <h2>Key advantages of database solutions:</h2>
+            </div>
+
+            <div className="row">
+              <div className="col-md-6">
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex align-items-center">
+                    <h4>
+                      Advanced security features to protect data at rest and in transit
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={Ai} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex align-items-center">
+                    <h4>
+                      Support for all data types—structured, unstructured, SQL, NoSQL, IoT, and blockchain
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={implementation} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      Global hybrid cloud design for seamless access across devices and environments
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={smallBusiness} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>Elastic scalability to grow resources as your business expands</h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      Distributed cloud deployment across on-premise, edge, and multi-cloud environments
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="major-points my-5">
+          <div className="container">
+            <div className="point-heading ">
+              <h2>Analytics Services</h2>
+            </div>
+
+            <div className="row">
+              <div className="col-md-6">
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex align-items-center">
+                    <h4>
+                      <b>Amazon RDS</b> - Build and manage traditional relational databases with ease.
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={Ai} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex align-items-center">
+                    <h4>
+                      <b>Amazon DynamoDB</b> - Gain high-performance, fully managed NoSQL capabilities with dynamic scaling.
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={implementation} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      <b>Amazon Redshift</b> – Automate data warehousing and process large-scale analytics efficiently.
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={smallBusiness} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4><b>Amazon Neptune</b> – Manage complex relationships and graph-based data structures.
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      <b>Amazon ElastiCache</b> – Use in-memory caching for fast access to highly volatile data.
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="rise-with-sap my-5">
+          <div className="container">
+            <div className="row grey-bg">
+
+              <div className="col-md-6 right px-0">
+                <div
+                  className="img-container"
+                  style={{
+                    borderTopLeftRadius: "30px",
+                    borderBottomLeftRadius: "30px",
+                  }}
+                >
+                  <img src={cloudMigrationBanner} alt="" />
+                </div>
+              </div>
+              <div className="col-md-6 left py-4 px-5">
+                <img src={cloudFront} alt="" />
+                <h2>Cloud Migration</h2>
+                <p>AeonX enables seamless digital transformation with end-to-end AWS Cloud Migration solutions tailored to your business needs. Through the right strategy, roadmap, and migration framework, we help organizations modernize their infrastructure and move to the cloud with confidence. Our migration approach combines industry-tested methods with pre-configured tools, automation, and best practices across all cloud models—whether IaaS, PaaS, or SaaS.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="major-points my-5">
+          <div className="container">
+            <div className="point-heading ">
+              <h2>Our Cloud Migration Capabilities Include:</h2>
+            </div>
+
+            <div className="row">
+              <div className="col-md-6">
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex align-items-center">
+                    <h4>
+                      Assessing cloud readiness with proven proprietary tools
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={Ai} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex align-items-center">
+                    <h4>
+                      Evaluating existing infrastructure to enhance security, scalability, and automation
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={implementation} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      Designing a scalable, secure cloud architecture for long-term innovation
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={smallBusiness} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>Using enterprise-grade cloud technologies to simplify storage and operations</h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      Deploying and testing cloud environments for performance, usability, and reliability
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section className="rise-with-sap my-5">
+          <div className="container">
+            <div className="row grey-bg">
+
+              <div className="col-md-6 left py-4 px-5">
+                <img src={managedServiceLogo} alt="" />
+                <h2>AWS Managed Services</h2>
+                <p>AWS Managed Services help businesses maintain control of their cloud environment while reducing operational costs and improving reliability. As an AWS Advanced Tier Partner, AeonX manages your AWS infrastructure end-to-end—ensuring stability, security, and seamless performance across all applications. We set up and administer a wide range of AWS services, including Amazon EC2, Amazon RDS, Amazon S3, Elastic Load Balancing, Amazon ElastiCache, Amazon Route 53, and more.
+                </p>
+                <p>Our managed services also support smooth workload migration from on-premise or other hosting environments to AWS. Using proven methodologies and industry best practices, we simplify and accelerate migrations, enabling businesses to unlock new opportunities and scale efficiently on the cloud.
+                </p>
+              </div>
+
+              <div className="col-md-6 right px-0">
+                <div
+                  className="img-container"
+                  style={{
+                    borderTopLeftRadius: "30px",
+                    borderBottomLeftRadius: "30px",
+                  }}
+                >
+                  <img src={awsManagedServiceBanner} alt="" />
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <section className="major-points my-5">
+          <div className="container">
+            <div className="point-heading ">
+              <h2>Our AWS Managed Services include:</h2>
+            </div>
+
+            <div className="row">
+              <div className="col-md-6">
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex align-items-center">
+                    <h4>
+                      Full administration and troubleshooting for uninterrupted AWS operations
+
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={Ai} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex align-items-center">
+                    <h4>
+                      Designing secure and scalable network architectures to maximize productivity
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={implementation} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      Continuous security monitoring to maintain operational integrity
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={smallBusiness} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>Regular vulnerability assessments and penetration testing to reduce risks</h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      Fast and efficient implementation of system changes to support evolving business needs
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="rise-with-sap my-5">
+          <div className="container">
+            <div className="row grey-bg">
+
+              <div className="col-md-6 right px-0">
+                <div
+                  className="img-container"
+                  style={{
+                    borderTopLeftRadius: "30px",
+                    borderBottomLeftRadius: "30px",
+                  }}
+                >
+                  <img src={cloudSolutions} alt="" />
+                </div>
+              </div>
+              <div className="col-md-6 left py-4 px-5">
+                <img src={MsOnAwsLogo} alt="" />
+                <h2>Microsoft on AWS Solutions</h2>
+                <p>AeonX delivers powerful, scalable solutions that bring together the strengths of Microsoft technologies and Amazon Web Services. From data processing and warehousing to mobile and web applications, our solutions support organizations of all sizes.
+                </p>
+                <p>As an AWS Solution Provider, we create familiar, secure, and cost-effective cloud environments that are easy to deploy and fully automated. With flexible hardware and software choices, rapid provisioning, and pay-as-you-go pricing, businesses can scale their Microsoft workloads on AWS based on real-time needs without long-term commitments or unnecessary overhead.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="major-points my-5">
+          <div className="container">
+            <div className="point-heading ">
+              <h2>What Microsoft on AWS Enables:</h2>
+            </div>
+
+            <div className="row">
+              <div className="col-md-6">
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex align-items-center">
+                    <h4>
+                      Move to a secure and reliable cloud platform for smooth, efficient operations
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={Ai} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex align-items-center">
+                    <h4>
+                      Run Microsoft SQL Server on AWS to eliminate complex database management tasks
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={implementation} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      Spin up instances on demand without long-term licensing constraints
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={smallBusiness} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>Reduce costs while increasing performance, security, and agility</h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      Scale Microsoft SharePoint environments effortlessly and pay only for what you use
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="rise-with-sap my-5">
+          <div className="container">
+            <div className="row grey-bg">
+
+              <div className="col-md-6 left py-4 px-5">
+                <img src={cloudFront} alt="" />
+                <h2>Cloud Storage Solutions</h2>
+                <p>AWS offers highly durable, scalable, and cost-efficient cloud storage designed for diverse business needs. AeonX helps organizations leverage these capabilities for secure data archiving, backup, and disaster recovery. Over the years, AWS storage has evolved to support a wide range of workloads, from databases and ERP systems to large-scale enterprise applications, all with low-latency, dedicated performance.
+                </p>
+                <p>With cloud-based storage, businesses can eliminate the cost and complexity of managing on-premise infrastructure. Storage capacity is available on demand, allowing you to scale instantly and pay only for what you use.
+                </p>
+              </div>
+
+              <div className="col-md-6 right px-0">
+                <div
+                  className="img-container"
+                  style={{
+                    borderTopLeftRadius: "30px",
+                    borderBottomLeftRadius: "30px",
+                  }}
+                >
+                  <img src={cloudSolutions} alt="" />
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <section className="major-points my-5">
+          <div className="container">
+            <div className="point-heading ">
+              <h2>What You Can Achieve with Cloud Storage Solutions:</h2>
+            </div>
+
+            <div className="row">
+              <div className="col-md-6">
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex align-items-center">
+                    <h4>
+                      Build scalable and flexible storage for analytics, backups, and long-term archiving
+
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={Ai} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex align-items-center">
+                    <h4>
+                      Develop modern applications without worrying about underlying storage management
+
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={implementation} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      Use cloud storage for large content repositories, media libraries, development environments, or user directories
+
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={smallBusiness} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>Automate data lifecycle management to efficiently shift inactive data to cold storage
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      Protect data integrity with point-in-time snapshots for long-term durability
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div className="container">
+          <div className="point-heading ">
+            <h2>Our Storage Solutions:</h2>
+          </div>
         </div>
-      </div>
 
-      {/* CTA */}
-      <div className="aws-cta">
-        <h2>Move to AWS with Confidence</h2>
-        <p>Let's build, migrate or modernize your cloud today.</p>
-        <button>Talk to an Expert →</button>
-      </div>
+        <StorageSolutions />
 
-    </section>
+        <section className="rise-with-sap my-5">
+          <div className="container">
+            <div className="row grey-bg">
+
+              <div className="col-md-6 right px-0">
+                <div
+                  className="img-container"
+                  style={{
+                    borderTopLeftRadius: "30px",
+                    borderBottomLeftRadius: "30px",
+                  }}
+                >
+                  <img src={cloudSolutions} alt="" />
+                </div>
+              </div>
+              <div className="col-md-6 left py-4 px-5">
+                <img src={cloudFront} alt="" />
+                <h2>AWS Big Data and Analytics Solutions</h2>
+                <p>AeonX partners with leading technology providers to deliver next-generation, scalable data solutions that support complete enterprise transformation. With AWS, businesses gain access to purpose-built services for data migration, storage, data lakes, big data analytics, business intelligence, and machine learning, all designed for exceptional performance, flexibility, and cost efficiency.
+                </p>
+                <p>Our AWS Big Data and Analytics services help organizations unlock meaningful insights, manage complex data pipelines, and turn raw data into actionable intelligence. We support businesses across industries in building strong analytics foundations that enhance decision-making and drive continuous improvement.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="major-points my-5">
+          <div className="container">
+            <div className="point-heading ">
+              <h2>What You Can Achieve with AWS Big Data & Analytics:</h2>
+            </div>
+
+            <div className="row">
+              <div className="col-md-6">
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex align-items-center">
+                    <h4>
+                      Enable deeper customer personalization through advanced data analysis
+
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={Ai} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex align-items-center">
+                    <h4>
+                      Understand customer behavior at scale to fuel innovation
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={implementation} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      Track, monitor, and detect anomalies to prevent fraud
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={smallBusiness} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>Run targeted, high-impact marketing campaigns that maximize ROI</h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      Streamline operations, predict failures, and improve productivity
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="rise-with-sap my-5">
+          <div className="container">
+            <div className="row grey-bg">
+
+              <div className="col-md-6 left py-4 px-5">
+                <img src={cloudFront} alt="" />
+                <h2>Security Management Solutions
+                </h2>
+                <p>At AeonX, we prioritize robust cloud security by ensuring your data is encrypted both in transit using SMB Kerberos session keys and at rest with AWS-native encryption. To protect your environment from accidental exposure, vulnerabilities, and evolving threats, we integrate a wide range of AWS security services and management tools. While AWS provides strong foundational security, we ensure these controls are implemented correctly and aligned to your business needs.</p>
+                <p>AeonX adheres to leading global standards, including ISO, PCI-DSS, and SOC, and is HIPAA-qualified to deliver solutions that meet the highest compliance requirements. With AWS-driven automation, we help development and operations teams build, deploy, and manage applications with greater speed and stronger security.
+                </p>
+              </div>
+
+              <div className="col-md-6 right px-0">
+                <div
+                  className="img-container"
+                  style={{
+                    borderTopLeftRadius: "30px",
+                    borderBottomLeftRadius: "30px",
+                  }}
+                >
+                  <img src={cloudSolutions} alt="" />
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <section className="major-points my-5">
+          <div className="container">
+            <div className="point-heading ">
+              <h2>Our Security & Compliance Capabilities Include:</h2>
+            </div>
+
+            <div className="row">
+              <div className="col-md-6">
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex align-items-center">
+                    <h4>
+                      Preventing unauthorized access to applications, data, accounts, and infrastructure
+
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={Ai} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex align-items-center">
+                    <h4>
+                      Regulating data flow and encrypting sensitive information within secure cloud architectures
+
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={implementation} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      Enabling safe storage and protection of mission-critical applications and authentication data
+
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={smallBusiness} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>Delivering identity and access controls with real-time security monitoring
+
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      Managing essential security tasks such as firewall configuration, OS and database patching, and disaster recovery
+
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="rise-with-sap my-5">
+          <div className="container">
+            <div className="row grey-bg">
+
+              <div className="col-md-6 right px-0">
+                <div
+                  className="img-container"
+                  style={{
+                    borderTopLeftRadius: "30px",
+                    borderBottomLeftRadius: "30px",
+                  }}
+                >
+                  <img src={cloudSolutions} alt="" />
+                </div>
+              </div>
+              <div className="col-md-6 left py-4 px-5">
+                <img src={cloudFront} alt="" />
+                <h2>Industry Standard Solutions</h2>
+                <p>AeonX is a trusted provider of advanced software solutions for the manufacturing and process industries, with strong capabilities across product design, production operations, and lifecycle management. As an AWS Industrial Software Competency Partner, we bring deep cloud and IoT expertise that helps enterprises streamline supply chain integration, accelerate product development, and transition toward smart, connected factory environments.
+                </p>
+                <p>With manufacturing rapidly shifting from traditional mechatronics to cyber-physical systems, our solutions support this evolution while maintaining the highest levels of security and reliability. Our implementation approach covers the complete application lifecycle, from design and deployment to training, operations, and ongoing support ensuring a seamless experience and strong customer satisfaction.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="major-points my-5">
+          <div className="container">
+            <div className="point-heading ">
+              <h2>Key Benefits of Industrial Solutions on AWS:
+              </h2>
+            </div>
+
+            <div className="row">
+              <div className="col-md-6">
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex align-items-center">
+                    <h4>
+                      Achieve end-to-end security, data privacy, scalability, and high availability
+
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={Ai} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex align-items-center">
+                    <h4>
+                      Gain a deep understanding of your current applications by aligning IT capabilities with industrial operations
+
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={implementation} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      Maintain your industrial software with 24/7 support and full lifecycle application management
+
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={smallBusiness} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>Strengthen compliance, prevent fraud, and adopt smarter, more resilient applications
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      Enhance productivity and extend application life through scalable resources and tailored services
+
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="rise-with-sap my-5">
+          <div className="container">
+            <div className="row grey-bg">
+
+              <div className="col-md-6 left py-4 px-5">
+                <img src={cloudFront} alt="" />
+                <h2>Disaster Management Solutions
+                </h2>
+                <p>AeonX empowers disaster response teams with reliable AWS cloud solutions designed to operate even in the toughest conditions. By enabling cloud services at the edge, we help agencies stay focused on critical relief operations while ensuring their data, applications, and infrastructure remain secure and accessible.
+                </p>
+                <p>With AWS, we quickly set up essential systems, deliver necessary hardware to field locations, and deploy portable infrastructure based on real-time needs. Our specialists leverage AWS edge technologies to process and analyze large volumes of data directly in the field, allowing responders to make faster, more informed decisions even when internet connectivity is limited.
+                </p>
+
+              </div>
+
+              <div className="col-md-6 right px-0">
+                <div
+                  className="img-container"
+                  style={{
+                    borderTopLeftRadius: "30px",
+                    borderBottomLeftRadius: "30px",
+                  }}
+                >
+                  <img src={cloudSolutions} alt="" />
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <section className="major-points my-5">
+          <div className="container">
+            <div className="point-heading ">
+              <h2>Key Advantages of Disaster Recovery on AWS:</h2>
+            </div>
+
+            <div className="row">
+              <div className="col-md-6">
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex align-items-center">
+                    <h4>
+                      Provide technical support to restore local connectivity and strengthen on-ground response
+
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={Ai} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex align-items-center">
+                    <h4>
+                      Build software solutions that improve preparedness, response, and recovery for public and nonprofit organizations
+
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={implementation} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      Share and analyze large datasets seamlessly through AWS for coordinated disaster operations
+
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={smallBusiness} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>Enhance community resilience and overall disaster response effectiveness
+
+
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      Deploy hardware and field-ready infrastructure rapidly to support urgent missions
+
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+      </section>
     </>
   );
 };

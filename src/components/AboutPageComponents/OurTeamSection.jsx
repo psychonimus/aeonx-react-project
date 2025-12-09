@@ -4,20 +4,20 @@ import Header from "../Header/Header";
 import AeonxX from '/images/x-icon.webp'
 
 const teamMembers = [
-    { name: "Priyank Pancholi", role: "Region Head - SAP", img: "/images/team/priyank-pancholi.jpeg" },
-    { name: "Amit Goregaonkar", role: "Sr. Project Manager - SAP", img: "/images/team/amit-goregaonkar.jpeg" },
-    { name: "Milan Rathod", role: "Project Manager Cloudr", img: "/images/team/milan-rathod.jpeg" },
-    { name: "Milan Hota", role: "Regional Sales Manager - Middle East", img: "/images/team/milan-hota.jpeg" },
-    { name: "Priyanka Singh", role: "Business Development Manager", img: "/images/team/priyanka-singh.jpeg" },
-    { name: "Vicky Gandhi", role: "Head SAP Projects", img: "/images/team/vicky-gandhi.jpeg" },
-    { name: "Chandresh Acharyah", role: "Head of operations", img: "/images/team/chandresh-acharya.jpeg" },
-    { name: "Vikas Sharma", role: "COO", img: "/images/team/vikas-sharma.jpeg" },
+    { name: "Priyank Pancholi", role: "Region Head - SAP", img: "/images/team/priyank-pancholi.png" },
+    { name: "Amit Goregaonkar", role: "Sr. Project Manager - SAP", img: "/images/team/amit-goregaonkar.png" },
+    { name: "Milan Rathod", role: "Project Manager Cloudr", img: "/images/team/milan-rathod.png" },
+    { name: "Milan Hota", role: "Regional Sales Manager - Middle East", img: "/images/team/milan-hota.png" },
+    { name: "Priyanka Singh", role: "Business Development Manager", img: "/images/team/priyanka-singh.png" },
+    { name: "Vicky Gandhi", role: "Head SAP Projects", img: "/images/team/vicky-gandhi.png" },
+    { name: "Chandresh Acharyah", role: "Head of operations", img: "/images/team/chandresh-acharya.png" },
+    { name: "Vikas Sharma", role: "COO", img: "/images/team/vikas-sharma.png" },
 
 ];
 
 const OurTeamSection = () => {
     return (
-        <section className="team-section mb-5">
+        <section className="team-section mb-5" id="team">
             <div className="container text-center">
                 <Header
                     subtext="Meet Our Team"

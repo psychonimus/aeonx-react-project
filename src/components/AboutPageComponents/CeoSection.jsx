@@ -5,7 +5,7 @@ import mananSir from '/images/manan-sir.webp'
 const CeoSection = () => {
     return (
         <>
-            <section className="ceo-msg">
+            <section className="ceo-msg" id="vision-mission">
                 <div className="container-fluid">
                     <div className="row ">
 

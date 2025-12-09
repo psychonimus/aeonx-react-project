@@ -6,7 +6,7 @@ import './FlagshipProducts.css';
 import project1 from '/images/xpense-bg.png';
 import project2 from '/images/supplier-x-bg.png';
 import project3 from '/images/logystix-bg.png';
-import project4 from '/images/manufex-logo.png';
+import project4 from '/images/manufex-bg.png';
 import project5 from '/images/people-connect-logo.png';
 import project6 from '/images/aeonxiq-bg.png';
 
@@ -16,9 +16,9 @@ const projects = [
   { id: 1, title: 'Xpense', image: project1, link: '#' },
   { id: 2, title: 'SupplierX', image: project2, link: '#' },
   { id: 3, title: 'Logystix', image: project3, link: '#' },
-  { id: 4, title: 'Manufex ', description: 'Monitor real-time factory operations with IoT-driven insights for better efficiency. Seamlessly integrated with Google AI to deliver predictive insights, advanced analytics, and real-time recommendations that optimize your factory performance and reduce downtime.', image: project4, link: '#' },
-  { id: 5, title: 'People connect', description: 'Cpef', image: project5, link: '#' },
-  { id: 6, title: 'aeonxiq ai ', image: project6, link: '#' },
+  { id: 4, title: 'Manufex ', image: project4, link: '#' },
+  { id: 5, title: 'People connect', image: project5, link: '#' },
+  { id: 6, title: 'aeonxiq.ai ', image: project6, link: '#' },
 ];
 
 const HorizontalAccordion = () => {
@@ -96,7 +96,7 @@ const HorizontalAccordion = () => {
                 className="accordion-item"
               >
                 {/* Background Image */}
-                <div className={`accordion-content px-5 accordion-content-box-${index}`}>
+                <div className={`accordion-content accordion-content-box-${index}`}>
                   <img
                     src={project.image}
                     alt={project.title}

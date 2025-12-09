@@ -8,8 +8,8 @@ import ImplementationServices from './ServCar'
 const ImplementationSection = () => {
     return (
         <>
-            <section className="implementation">
-                <div className="container py-5">
+            <section className="implementation" id="implementation">
+                <div className="container">
                     <Header
                         subtext="Implementation"
                         headline="SAP Implementation"

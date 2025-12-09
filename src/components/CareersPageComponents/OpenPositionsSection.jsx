@@ -5,41 +5,52 @@ import { Link } from "react-router-dom";
 
 const jobs = [
   {
-    title: "Frontend Developer",
-    location: "Mumbai, India",
+    title: "Associate Consultant - SAP Basis",
+    location: "Surat, India",
     type: "Full-time",
-    department: "Engineering",
+    experience: "3-4 Years",
+    openings: "1",
     url: "/careers/job-desc-one",
   },
   {
-    title: "React UI/UX Designer",
-    location: "Remote",
-    type: "Contract",
-    department: "Design",
+    title: "Associate Consultant - SAP MM",
+    location: "Ahmedabad/Bhuj/Dehradun/Mumbai",
+    type: "Full-time",
+    experience: "2-4 Years",
+    openings: "2",
+    url: "/careers/job-desc-two",
   },
   {
-    title: "Cloud Solutions Architect",
-    location: "Bangalore, India",
+    title: "Associate Consultant - SAP ABAP",
+    location: "Assam, India",
     type: "Full-time",
-    department: "Cloud & DevOps",
+    experience: "4-5 Years",
+    openings: "1",
+    url: "/careers/job-desc-three",
   },
   {
-    title: "SAP Functional Consultant",
-    location: "Gurugram, India",
+    title: "Associate Consultant - SAP PS",
+    location: "Mumbai/Dehradun/Ahmedabad/Noida",
     type: "Full-time",
-    department: "Enterprise Solutions",
+    experience: "2-3 Years",  
+    openings: "1",
+    url: "/careers/job-desc-four",
   },
   {
-    title: "SAP Functional Consultant",
-    location: "Gurugram, India",
+    title: "Flutter Developer",
+    location: "Ahmedabad/Bhuj/Noida/Dehradun",
     type: "Full-time",
-    department: "Enterprise Solutions",
+    experience: "2-3 Years",
+    openings: "2",
+    url: "/careers/job-desc-five",
   },
   {
-    title: "SAP Functional Consultant",
-    location: "Gurugram, India",
+    title: "Full Stack Developer",
+    location: "Ahmedabad/Bhuj/Dehradun",
     type: "Full-time",
-    department: "Enterprise Solutions",
+    experience: "2-3 Years",
+    openings: "4",
+    url: "/careers/job-desc-six",
   },
 ];
 
@@ -69,10 +80,11 @@ const OpenPositionsSection = () => {
                   <div className="job-meta mt-3">
                     <p><FaMapMarkerAlt /> {job.location}</p>
                     <p><FaClock /> {job.type}</p>
-                    <p>📁 {job.department}</p>
+                    <p>📁 {job.experience}</p>
+                    <p>No of Openings: {job.openings}</p>
                   </div>
 
-                  <Link to={job.url}>
+                  <Link to={job.url} className="text-decoration-none">
                     <button className="apply-btn">
                       Apply Now <FaArrowRight />
                     </button>

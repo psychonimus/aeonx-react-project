@@ -28,39 +28,22 @@ const features = [
 export const ServiceHeroSection = () => {
   return (
     <section className="integrations-hero">
-      <div className="integrations-container">
+      <div className="integrations-container pt-5">
         {/* Badge */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="badge-wrapper"
-        >
-          <span className="badge">
-            <Zap className="badge-icon" />
-            INTEGRATIONS
-          </span>
-        </motion.div>
+        
 
         {/* Main Heading */}
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="main-heading"
+          className="main-heading mt-4"
         >
           Our Expert Services
         </motion.h1>
 
         {/* Subtitle */}
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="subtitle"
-        >
-          One platform, infinite possibilities. Sync with all your favorite tools.
-        </motion.p>
+       
 
         {/* Integration Icons Row */}
         <div className="icons-row">
@@ -74,7 +57,12 @@ export const ServiceHeroSection = () => {
                 className="icon-box"
               >
                 {/* <Icon className="integration-icon" /> */}
-                <img className="integration-icon" src={Icon} alt="" />
+                <img className="integration-icon" src={Icon} alt="" style={{
+                  objectFit: 'fill',
+                   backgroundPosition: 'center',
+                   backgroundRepeat: 'no-repeat',
+                   backgroundSize: 'contain',
+                }} />
 
               </motion.div>
               <p className="text-center service-name mt-3">{title}</p>
@@ -185,20 +173,8 @@ export const ServiceHeroSection = () => {
           </motion.div>
         </div>
 
-        {/* Features List */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 1.2 }}
-          className="features-list"
-        >
-          {features.map(({ icon: FeatureIcon, text }, index) => (
-            <div key={index} className="feature-item">
-              <FeatureIcon className="feature-icon" />
-              <span className="feature-text">{text}</span>
-            </div>
-          ))}
-        </motion.div>
+        
+        
       </div>
 
       {/* Background gradient effect */}

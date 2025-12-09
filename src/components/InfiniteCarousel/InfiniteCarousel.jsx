@@ -26,7 +26,7 @@ const InfiniteCarousel = ({ images = [], slidesPerView = 4, speed = 8000 }) => {
         breakpoints={{
             320: { slidesPerView: 1 },
             640: { slidesPerView: 2 },
-            1024: { slidesPerView: 4 },
+            1024: { slidesPerView: 3 },
           }}
       >
         {images.map((src, index) => (

@@ -95,11 +95,11 @@ const Navbar = () => {
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         {/* <span className="navbar-toggler-icon"></span> */}
-                        <input hidden="" class="check-icon" id="check-icon" name="check-icon" type="checkbox" />
-                        <label class="icon-menu" for="check-icon">
-                            <div class="bar bar--1"></div>
-                            <div class="bar bar--2"></div>
-                            <div class="bar bar--3"></div>
+                        <input hidden="" className="check-icon" id="check-icon" name="check-icon" type="checkbox" />
+                        <label className="icon-menu" htmlFor="check-icon">
+                            <div className="bar bar--1"></div>
+                            <div className="bar bar--2"></div>
+                            <div className="bar bar--3"></div>
                         </label>
                     </button>
                     {/* Links on the right */}
@@ -156,13 +156,13 @@ const Navbar = () => {
                                 </div>
                             </li>
 
-                            <li class="nav-item d-lg-none">
-                                <div class="accordion no-border" id="products-mobile">
-                                    <div class="accordion-item">
-                                        <a class="accordion-header">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Products</button>
-                                        </a><div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#products-mobile">
-                                            <div class="accordion-body">
+                            <li className="nav-item d-lg-none">
+                                <div className="accordion no-border" id="products-mobile">
+                                    <div className="accordion-item">
+                                        <a className="accordion-header">
+                                            <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Products</button>
+                                        </a><div id="collapseOne" className="accordion-collapse collapse" data-bs-parent="#products-mobile">
+                                            <div className="accordion-body">
                                                 <ul>
                                                     <li><NavLink to="/sap-focused-products">SAP Products </NavLink></li>
                                                     <li><NavLink to="/aws-products">AWS Products</NavLink></li>
@@ -201,18 +201,18 @@ const Navbar = () => {
                                                 <div className="col-md-3">
 
                                                     <ul>
-                                                        <li><NavLink to="/services">Implementation </NavLink></li>
-                                                        <li><NavLink to="/services">Support</NavLink></li>
-                                                        <li><NavLink to="/services">Migration</NavLink></li>
+                                                        <li><NavLink to="/services#implementation">Implementation </NavLink></li>
+                                                        <li><NavLink to="/services#support">Support</NavLink></li>
+                                                        <li><NavLink to="/services#migration">Migration</NavLink></li>
                                                         
 
                                                     </ul>
                                                 </div>
                                                 <div className="col-md-3">
                                                     <ul>
-                                                        <li><NavLink to="/services">Integration </NavLink></li>
-                                                        <li><NavLink to="/services">Innovation</NavLink></li>
-                                                        <li><NavLink to="/services">Staffing</NavLink></li>
+                                                        <li><NavLink to="/services#integration">Integration </NavLink></li>
+                                                        <li><NavLink to="/services#innovation">Innovation</NavLink></li>
+                                                        <li><NavLink to="/services#staffing">Staffing</NavLink></li>
                                                     </ul>
 
                                                 </div>
@@ -225,20 +225,20 @@ const Navbar = () => {
                                 </div>
                             </li>
 
-                            <li class="nav-item d-lg-none mt-1">
-                                <div class="accordion no-border" id="services-mobile">
-                                    <div class="accordion-item">
-                                        <a class="accordion-header">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Services</button>
-                                        </a><div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#services-mobile">
-                                            <div class="accordion-body">
+                            <li className="nav-item d-lg-none mt-1">
+                                <div className="accordion no-border" id="services-mobile">
+                                    <div className="accordion-item">
+                                        <a className="accordion-header">
+                                            <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Services</button>
+                                        </a><div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#services-mobile">
+                                            <div className="accordion-body">
                                                 <ul>
-                                                    <li><NavLink to="/services">Implementation </NavLink></li>
-                                                    <li><NavLink to="/services">Support</NavLink></li>
-                                                    <li><NavLink to="/services">Migration</NavLink></li>
-                                                    <li><NavLink to="/services">Integration </NavLink></li>
-                                                    <li><NavLink to="/services">Innovation</NavLink></li>
-                                                    <li><NavLink to="/services">Staffing</NavLink></li>
+                                                    <li><NavLink to="/services#implementation">Implementation </NavLink></li>
+                                                    <li><NavLink to="/services#support">Support</NavLink></li>
+                                                    <li><NavLink to="/services#migration">Migration</NavLink></li>
+                                                    <li><NavLink to="/services#integration">Integration </NavLink></li>
+                                                    <li><NavLink to="/services#innovation">Innovation</NavLink></li>
+                                                    <li><NavLink to="/services#staffing">Staffing</NavLink></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -287,13 +287,13 @@ const Navbar = () => {
                                 </div>
                             </li>
 
-                            <li class="nav-item d-lg-none mt-1">
-                                <div class="accordion no-border" id="industries-mobile">
-                                    <div class="accordion-item">
-                                        <a class="accordion-header">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">Industries</button>
-                                        </a><div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#industries-mobile">
-                                            <div class="accordion-body">
+                            <li className="nav-item d-lg-none mt-1">
+                                <div className="accordion no-border" id="industries-mobile">
+                                    <div className="accordion-item">
+                                        <a className="accordion-header">
+                                            <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">Industries</button>
+                                        </a><div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#industries-mobile">
+                                            <div className="accordion-body">
                                                 <ul>
                                                     <li><NavLink to="/industries">Manufacturing </NavLink></li>
                                                     <li><NavLink to="/industries">Mining & Minerals</NavLink></li>
@@ -338,9 +338,9 @@ const Navbar = () => {
                                                 <div className="col-md-3">
 
                                                     <ul>
-                                                        <li><a href="#">SAP (Implementation playbooks) </a></li>
-                                                        <li><a href="#">AWS (Cloud optimization guides)</a></li>
-                                                        <li><a href="#">Product Spotlight (Deep dives)</a></li>
+                                                        <li><a target='_blank' href="https://help.sap.com/doc/download_multimedia_ebooks_businessone90_tb1200_01_01_story_html/9.0/en-US/story_content/external_files/implementation%20Tools%20-%20Implementation%20Methodology.pdf">SAP (Implementation playbooks) </a></li>
+                                                        <li><a target='_blank' href="https://aws.amazon.com/aws-cost-management/cost-optimization/">AWS (Cloud optimization guides)</a></li>
+                                                        <li><a target='_blank' href="#">Product Spotlight (Deep dives)</a></li>
 
 
                                                     </ul>
@@ -364,17 +364,17 @@ const Navbar = () => {
                                 </div>
                             </li>
 
-                            <li class="nav-item d-lg-none mt-1">
-                                <div class="accordion no-border" id="insights-mobile">
-                                    <div class="accordion-item">
-                                        <a class="accordion-header">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">Insights</button>
-                                        </a><div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#industries-mobile">
-                                            <div class="accordion-body">
+                            <li className="nav-item d-lg-none mt-1">
+                                <div className="accordion no-border" id="insights-mobile">
+                                    <div className="accordion-item">
+                                        <a className="accordion-header">
+                                            <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">Insights</button>
+                                        </a><div id="collapseFour" className="accordion-collapse collapse" data-bs-parent="#industries-mobile">
+                                            <div className="accordion-body">
                                                 <ul>
-                                                    <li><a href="#">SAP (Implementation playbooks) </a></li>
-                                                    <li><a href="#">AWS (Cloud optimization guides)</a></li>
-                                                    <li><a href="#">Product Spotlight (Deep dives)</a></li>
+                                                    <li><a target='_blank' href="https://help.sap.com/doc/download_multimedia_ebooks_businessone90_tb1200_01_01_story_html/9.0/en-US/story_content/external_files/implementation%20Tools%20-%20Implementation%20Methodology.pdf">SAP (Implementation playbooks) </a></li>
+                                                    <li><a target='_blank' href="https://aws.amazon.com/aws-cost-management/cost-optimization/">AWS (Cloud optimization guides)</a></li>
+                                                    <li><a target='_blank' href="#">Product Spotlight (Deep dives)</a></li>
                                                     <li><NavLink to="/blogs">Blogs</NavLink></li>
                                                     <li><NavLink to="/events">Events</NavLink></li>
                                                 </ul>
@@ -398,9 +398,9 @@ const Navbar = () => {
 
                                                     <ul>
                                                         <li><NavLink to="/about">About Us</NavLink></li>
-                                                        <li><a href="#">Leadership</a></li>
-                                                        <li><a href="#">Partners</a></li>
-                                                        <li><a href="#">Events</a></li>
+                                                        <li><NavLink to="/about#journey">Our Journey</NavLink></li>
+                                                        <li><NavLink to="/about#vision-mission">Vision & Mission</NavLink></li>
+                                                        <li><NavLink to="/about#team">Team</NavLink></li>
 
                                                     </ul>
                                                 </div>
@@ -416,18 +416,18 @@ const Navbar = () => {
                                 </div>
                             </li>
 
-                            <li class="nav-item d-lg-none mt-1">
-                                <div class="accordion no-border" id="company-mobile">
-                                    <div class="accordion-item">
-                                        <a class="accordion-header">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">Company</button>
-                                        </a><div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#company-mobile">
-                                            <div class="accordion-body">
+                            <li className="nav-item d-lg-none mt-1">
+                                <div className="accordion no-border" id="company-mobile">
+                                    <div className="accordion-item">
+                                        <a className="accordion-header">
+                                            <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">Company</button>
+                                        </a><div id="collapseFive" className="accordion-collapse collapse" data-bs-parent="#company-mobile">
+                                            <div className="accordion-body">
                                                 <ul>
                                                     <li><NavLink to="/about">About Us</NavLink></li>
-                                                    <li><NavLink to="/about">Leadership</NavLink></li>
-                                                    <li><NavLink to="/about">Partners</NavLink></li>
-                                                    <li><NavLink to="/about">Events</NavLink></li>
+                                                    <li><NavLink to="/about#journey">Our Journey</NavLink></li>
+                                                    <li><NavLink to="/about#vision-mission">Vision & Mission</NavLink></li>
+                                                    <li><NavLink to="/about#team">Team</NavLink></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -462,10 +462,11 @@ const Navbar = () => {
                                                 <div className="col-md-3">
 
                                                     <ul>
-                                                        <li><NavLink to="/investor-relations">Financial Highlights </NavLink></li>
-                                                        <li><NavLink to="/investor-relations">Shareholder Information</NavLink></li>
-                                                        <li><NavLink to="/investor-relations">Corporate Governance</NavLink></li>
-                                                        <li><NavLink to="/investor-relations">Code and Policy</NavLink></li>
+                                                        <li><NavLink to="/financial-highlights">Financial Highlights </NavLink></li>
+                                                        <li><NavLink to="/shareholder-information">Shareholder Information</NavLink></li>
+                                                        <li><NavLink to="/corporate-governance">Corporate Governance</NavLink></li>
+                                                        <li><NavLink to="/code-and-policy">Code and Policy</NavLink></li>
+                                                        <li><NavLink to="/other-documents">Other Documents</NavLink></li>
 
                                                     </ul>
                                                 </div>
@@ -481,18 +482,19 @@ const Navbar = () => {
                                 </div>
                             </li>
 
-                            <li class="nav-item d-lg-none mt-1">
-                                <div class="accordion no-border" id="investor-mobile">
-                                    <div class="accordion-item">
-                                        <a class="accordion-header">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">Investor Relations</button>
-                                        </a><div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#investor-mobile">
-                                            <div class="accordion-body">
+                            <li className="nav-item d-lg-none mt-1">
+                                <div className="accordion no-border" id="investor-mobile">
+                                    <div className="accordion-item">
+                                        <a className="accordion-header">
+                                            <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">Investor Relations</button>
+                                        </a><div id="collapseSix" className="accordion-collapse collapse" data-bs-parent="#investor-mobile">
+                                            <div className="accordion-body">
                                                 <ul>
                                                     <li><NavLink to="/investor-relations">Financial Highlights </NavLink></li>
-                                                    <li><NavLink to="/investor-relations">Shareholder Information</NavLink></li>
-                                                    <li><NavLink to="/investor-relations">Corporate Governance</NavLink></li>
-                                                    <li><NavLink to="/investor-relations">Code and Policy</NavLink></li>
+                                                    <li><NavLink to="/shareholder-information">Shareholder Information</NavLink></li>
+                                                    <li><NavLink to="/corporate-governance">Corporate Governance</NavLink></li>
+                                                    <li><NavLink to="/code-and-policy">Code and Policy</NavLink></li>
+                                                    <li><NavLink to="/other-documents">Other Documents</NavLink></li>
                                                 </ul>
                                             </div>
                                         </div>

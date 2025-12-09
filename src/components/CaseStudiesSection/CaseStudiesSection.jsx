@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../Header/Header'
-import cs1 from "/images/cs-1.webp"
-import cs2 from "/images/cs-2.webp"
+import cs1 from "/images/sap-case-studies.png"
+import cs2 from "/images/aws-case-studies.png"
 import cs3 from "/images/cs-3.webp"
 import { GoGoal } from "react-icons/go";
 import CsContent from './CsContent';
@@ -21,7 +21,7 @@ const CaseStudiesSection = () => {
 
                 <div className="row">
                     <div className="col-md-4">
-                        <Link to="/case-study">
+                        <Link to="/case-studies">
                         <div className="casestudy-card">
                             <div className="cs-image-container mb-3">
                                 <img src={cs1} alt="" />
@@ -29,8 +29,8 @@ const CaseStudiesSection = () => {
 
                             <CsContent
                                 
-                                headline="Aashapura Case Study"
-                                desc="Crippling SAP Procurement Delays"
+                                headline="SAP Case Studies"
+                                desc="SAP Success Stories"
                             />
 
                             
@@ -38,7 +38,7 @@ const CaseStudiesSection = () => {
                         </div></Link>
                     </div>
                     <div className="col-md-4">
-                        <Link to="/case-study">
+                        <Link to="/case-studies">
                         <div className="casestudy-card">
                             <div className="cs-image-container mb-3">
                                 <img src={cs2} alt="" />
@@ -47,8 +47,8 @@ const CaseStudiesSection = () => {
                             <CsContent
                                 bgColor="#C9291F"
                                 icon={() => <GoGoal color="#fff" size={28} />}
-                                headline="Industry Challenge"
-                                desc="Crippling SAP Procurement Delays"
+                                headline="AWS Case Studies"
+                                desc="AWS Success Stories"
                             />
 
                             
@@ -57,7 +57,7 @@ const CaseStudiesSection = () => {
                         </Link>
                     </div>
                     <div className="col-md-4">
-                        <Link to="/case-study">
+                        <Link to="/case-studies">
                         <div className="casestudy-card">
                             <div className="cs-image-container mb-3">
                                 <img src={cs3} alt="" />
@@ -66,8 +66,8 @@ const CaseStudiesSection = () => {
                             <CsContent
                                 bgColor="#C9291F"
                                 icon={() => <GoGoal color="#fff" size={28} />}
-                                headline="Industry Challenge"
-                                desc="Crippling SAP Procurement Delays"
+                                headline="AeonX's Solutions"
+                                desc="Aashapura Case Study"
                             />
 
                             

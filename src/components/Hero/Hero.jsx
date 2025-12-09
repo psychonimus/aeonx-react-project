@@ -131,7 +131,7 @@ const Hero = () => {
                                 </div>
                                 <div className="mt-3 mt-md-5 slide-content">
                                     <h1 className="slide-title">Innovate. Automate. Elevate</h1>
-                                    <h2 className='slide-subtitle'>with AWS, AI, SAP, and Custom Apps</h2>
+                                    <h2 className='slide-subtitle'>with AWS, AI, SAP®, and Custom Apps</h2>
                                     <h4 className='slide-para'>We combine deep domain expertise with the latest in AWS Cloud, AI, and SAP technologies to build secure, scalable, and intelligent solutions that power modern business transformation.</h4>
 
                                     <div className="mt-4 d-flex flex-column flex-md-row gap-3 slide-buttons">

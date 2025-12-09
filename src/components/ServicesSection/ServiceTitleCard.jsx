@@ -4,7 +4,7 @@ import GlassButton from '../GlassButton/GlassButton'
 
 const ServiceTitleCard = ({image, title, description, buttonText, buttonIcon, titleColor, descColor}) => {
   return (
-    <div className="service-card service-title-card">
+    <div className="service-card service-title-card md:text-left ">
                     <img style={{ width: "100px" }} src={image} alt="" />
                     <h5 className="" style={{color: `${titleColor}`}}>{title}</h5>
                     <h2 className='' style={{color: `${descColor}`}}>{description}</h2>

@@ -3,11 +3,13 @@ import Header from '../Header/Header'
 import './SapSupport.css'
 import flex from '/images/sap-support-1.png'
 import buildX from '/images/sap-support-2.png'
+import absoluteX from '/images/absoluteX.png'
+import limitlessX from '/images/limitlessX.png'
 
 const SapSupport = () => {
     return (
         <>
-            <section className="sap-support">
+            <section className="sap-support" id="support">
                 <div className="container py-5">
                     <div className="sap-support-heading text-center">
                         <h2>SAP SUPPORT SERVICES</h2>
@@ -47,7 +49,7 @@ const SapSupport = () => {
                         </div>
                         <div className="sap-support-child sap-support-child-4 p-3">
                             <div className="sap-support-child-content p-3">
-                                <img src={flex} alt="" />
+                                <img src={absoluteX} alt="" />
                                 {/* <h2>FLEX</h2> */}
                                 <ul className='mt-3'>
                                     <li>Annual Commitment.</li>
@@ -60,7 +62,7 @@ const SapSupport = () => {
                         </div>
                         <div className="sap-support-child sap-support-child-5 p-3">
                             <div className="sap-support-child-content p-3">
-                                <img src={flex} alt="" />
+                                <img src={limitlessX} alt="" />
                                 {/* <h2>FLEX</h2> */}
                                 <ul className='mt-3'>
                                     <li>Annual commitment.</li>

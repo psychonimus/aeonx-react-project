@@ -48,7 +48,7 @@ const JourneySlider = () => {
   };
 
   return (
-    <section className="journey-section">
+    <section className="journey-section" id="journey">
       {/* <div className="journey-header">
         <h2>PAST, PRESENT & FUTURE</h2>
         <p>With 17+ years in the business, we have used compelling data insights and creativity to deliver experiences that drive commerce for global brands.</p>
