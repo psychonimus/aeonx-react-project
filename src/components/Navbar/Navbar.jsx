@@ -83,7 +83,7 @@ const Navbar = () => {
                     zIndex: 1000,
                     transform: isHidden ? 'translateY(-200px)' : 'translateY(0)',
                     transition: 'transform 0.4s cubic-bezier(0.7, 0, 0.3, 1)',
-                    
+
                 }}
             >
                 <div className="container">
@@ -115,7 +115,7 @@ const Navbar = () => {
 
                             <li className="nav-item has-mega-menu d-none d-lg-block">
                                 <NavLink
-                                    to="/sap-focused-products"
+                                    to="javascript:void(0)"
                                     className={
                                         (location.pathname === "/sap-focused-products" ||
                                             location.pathname === "/aws-products" ||
@@ -138,9 +138,9 @@ const Navbar = () => {
                                                 <div className="col-md-3">
 
                                                     <ul>
-                                                        <li><NavLink to="/sap-focused-products">SAP Products </NavLink></li>
-                                                        <li><NavLink to="/aws-products">AWS Products</NavLink></li>
-                                                        <li><NavLink to="/aeonx-flagship-products">AeonX Flagship Products</NavLink></li>
+                                                        <li><NavLink to="/sap-focused-products">SAP Service Portfolio </NavLink></li>
+                                                        <li><NavLink to="/aws-products">AWS Service Portfolio</NavLink></li>
+                                                        <li><NavLink to="/aeonx-flagship-products">AeonX Accelerators</NavLink></li>
 
                                                     </ul>
                                                 </div>
@@ -164,9 +164,9 @@ const Navbar = () => {
                                         </a><div id="collapseOne" className="accordion-collapse collapse" data-bs-parent="#products-mobile">
                                             <div className="accordion-body">
                                                 <ul>
-                                                    <li><NavLink to="/sap-focused-products">SAP Products </NavLink></li>
-                                                    <li><NavLink to="/aws-products">AWS Products</NavLink></li>
-                                                    <li><NavLink to="/aeonx-flagship-products">AeonX Flagship Products</NavLink></li>
+                                                    <li><NavLink to="/sap-focused-products">SAP Service Portfolio </NavLink></li>
+                                                    <li><NavLink to="/aws-products">AWS Service Portfolio</NavLink></li>
+                                                    <li><NavLink to="/aeonx-flagship-products">AeonX Accelerators</NavLink></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -174,7 +174,7 @@ const Navbar = () => {
                                 </div>
                             </li>
 
-                            
+
 
 
 
@@ -204,7 +204,7 @@ const Navbar = () => {
                                                         <li><NavLink to="/services#implementation">Implementation </NavLink></li>
                                                         <li><NavLink to="/services#support">Support</NavLink></li>
                                                         <li><NavLink to="/services#migration">Migration</NavLink></li>
-                                                        
+
 
                                                     </ul>
                                                 </div>
@@ -315,7 +315,7 @@ const Navbar = () => {
 
                             <li className="nav-item has-mega-menu d-none d-lg-block">
                                 <NavLink
-                                    to="/blogs"
+                                    to="javascript:void(0)"
                                     className={
                                         (location.pathname === "/blogs" ||
                                             location.pathname === "/events" ||
@@ -442,7 +442,7 @@ const Navbar = () => {
 
                             <li className="nav-item has-mega-menu d-none d-lg-block">
                                 <NavLink
-                                    to="/investor-relations"
+                                    to="javascript:void(0)"
                                     className={
                                         (location.pathname === "/investor-relations")
                                             ? "nav-link active"
@@ -504,9 +504,10 @@ const Navbar = () => {
 
 
                             <li className="nav-item">
-                                <NavLink to="/contact" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}><GlassButton href="" title="Contact" /></NavLink>
+                                <GlassButton href="/contact" title="Contact" />
 
                             </li>
+
                         </ul>
                     </div>
                 </div>

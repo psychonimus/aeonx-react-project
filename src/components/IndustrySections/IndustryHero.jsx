@@ -11,15 +11,15 @@ const IndustryHero = () => {
                 <div className="row">
                     <div className="col-12">
                         <div className="industry-hero-content d-flex flex-column justify-content-center  h-100">
-                            <p className="eyebrow">Industries</p>
+                            {/* <p className="eyebrow">Industries</p> */}
                             <h1 className="mb-0">
-                                Explore Our Served Industries
+                                Industries We Serve
                             </h1>
-                            <h3 className="mb-4">Different Domains, Specific Solutions</h3>
+                            <h3 className="mb-4">Diverse Domains, Tailored Solutions</h3>
 
                             <div className="event-hero-buttons">
                                 <GlassButton
-                                    title="Explore Our Industries"
+                                    title="View Sectors"
                                     icon={() => <IoIosArrowDropdownCircle size={30} />}
                                 />
 

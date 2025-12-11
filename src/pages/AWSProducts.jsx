@@ -11,23 +11,30 @@ import smallBusiness from "/images/small-businesses.webp";
 import cloud from "/images/cloud-computing.webp";
 import cost from "/images/price-down.webp";
 import Ai from "/images/ai.webp";
-import cloudSolutions from '/images/awsCloudSolutions.jpg'
+import cloudSolutions from '/images/aws-cloud-solutions.png'
 import cloudFront from '/images/awsCloudFront.png'
 import saponaws from '/images/saponaws.png'
+import saponawsCap from '/images/sap-on-aws-capabilities.png'
 import AwsTimeline from "../components/AwsTimeline/AwsTimeline";
 import StorageSolutions from "../components/AwsTimeline/StorageSolutions";
 import awsmachinelearning from '/images/awsmachinelearning.png'
-import awsmachineLearning from '/images/aws-machine-learning-tools.png'
+import awsmachineLearningAbout from '/images/aws-ml.png'
 import awsIotSolutionsBanner from '/images/awsIotBanner.png'
 import awsIot from '/images/awsIot.png'
 import awsDevOps from '/images/awsDevops.webp'
 import DevOpsLogo from '/images/DevOpsLogo.png'
 import awsDatabaseLogo from '/images/awsDatabaseLogo.png'
-import awsDB from '/images/awsDBSolutions.jpg'
-import cloudMigrationBanner from '/images/awsCloudMigrationBanner.png'
+import awsDB from '/images/database-solutions.png'
+import cloudMigrationBanner from '/images/cloud-migration.png'
 import managedServiceLogo from '/images/awsManagedServiceProviderLogo.png'
-import awsManagedServiceBanner from '/images/aws-managed-services.png'
+import awsManagedServiceBanner from '/images/Aws-manged-services-about.png'
 import MsOnAwsLogo from '/images/MsOnAws.png'
+import MsonAwsAbout from '/images/Microsoft-on-aws.png'
+import cloudStorageSolutions from '/images/cloud-storage-solutions.png'
+import awsBigDataAnalytics from '/images/aws-big-data-anlytics.png'
+import SecurityManagementSolutions from '/images/security-management-solutions.png'
+import industryStandardSolutions from '/images/industry-standard-solutions.png'
+import disasterManagement from '/images/disaster-management-sol.png'
 
 
 
@@ -65,6 +72,7 @@ const AWSProducts = () => {
                     <GlassButton
                       title="Explore AWS Products"
                       icon={() => <IoIosArrowDropdownCircle size={30} />}
+                      href="/aws-products#aws-services"
                     />
 
                   </div>
@@ -79,7 +87,7 @@ const AWSProducts = () => {
 
 
         {/* AWS SERVICES GRID */}
-        <div className="container aws-services mt-5">
+        <div className="container aws-services mt-5" id="aws-services">
           <Header
             subtext="AWS-Focused Products"
             headline="Our AWS Expertise"
@@ -89,7 +97,8 @@ const AWSProducts = () => {
           <AwsTechStack />
         </div>
 
-        <section className="rise-with-sap my-5">
+        {/* WORKSPACE SOLUTIONS */}
+        <section className="rise-with-sap my-5" id="workspace-solutions">
           <div className="container">
             <div className="row grey-bg">
               <div className="col-md-6 left py-4 px-5">
@@ -114,6 +123,8 @@ const AWSProducts = () => {
             </div>
           </div>
         </section>
+
+
 
         <section className="major-points my-5">
           <div className="container">
@@ -204,8 +215,8 @@ const AWSProducts = () => {
           </div>
         </section>
 
-
-        <section className="rise-with-sap my-5">
+        {/* CLOUD SOLUTIONS */}
+        <section className="rise-with-sap my-5" id="cloud-solutions">
           <div className="container">
             <div className="row grey-bg">
 
@@ -308,7 +319,9 @@ const AWSProducts = () => {
           </div>
         </section>
 
-        <section className="rise-with-sap my-5">
+        {/* SAP ON AWS */}
+
+        <section className="rise-with-sap my-5" id="sap-on-aws">
           <div className="container">
             <div className="row grey-bg">
               <div className="col-md-6 left py-4 px-5">
@@ -329,7 +342,7 @@ const AWSProducts = () => {
                     borderBottomRightRadius: "30px",
                   }}
                 >
-                  <img src={WorkspaceSolution} alt="" />
+                  <img src={saponawsCap} alt="" />
                 </div>
               </div>
             </div>
@@ -339,7 +352,9 @@ const AWSProducts = () => {
 
         <AwsTimeline />
 
-        <section className="rise-with-sap my-5">
+        {/* MACHINE LEARNING */}
+
+        <section className="rise-with-sap my-5" id="machine-learning">
           <div className="container">
             <div className="row grey-bg">
 
@@ -351,7 +366,7 @@ const AWSProducts = () => {
                     borderBottomLeftRadius: "30px",
                   }}
                 >
-                  <img src={awsmachineLearning} alt="" />
+                  <img src={awsmachineLearningAbout} alt="" />
                 </div>
               </div>
               <div className="col-md-6 left py-4 px-5">
@@ -458,7 +473,9 @@ const AWSProducts = () => {
           </div>
         </section>
 
-        <section className="rise-with-sap my-5">
+        {/* IOT SOLUTIONS */}
+
+        <section className="rise-with-sap my-5" id="iot-solutions">
           <div className="container">
             <div className="row grey-bg">
               <div className="col-md-6 left py-4 px-5">
@@ -559,7 +576,9 @@ const AWSProducts = () => {
           </div>
         </section>
 
-        <section className="rise-with-sap my-5">
+        {/* DEVOPS SOLUTIONS */}
+
+        <section className="rise-with-sap my-5" id="devops-solutions">
           <div className="container">
             <div className="row grey-bg">
 
@@ -663,7 +682,9 @@ const AWSProducts = () => {
           </div>
         </section>
 
-        <section className="rise-with-sap my-5">
+        {/* DATABASE SOLUTIONS */}
+
+        <section className="rise-with-sap my-5" id="database-solutions">
           <div className="container">
             <div className="row grey-bg">
               <div className="col-md-6 left py-4 px-5">
@@ -840,7 +861,9 @@ const AWSProducts = () => {
           </div>
         </section>
 
-        <section className="rise-with-sap my-5">
+        {/* CLOUD MIGRATION */}
+
+        <section className="rise-with-sap my-5" id="cloud-migration">
           <div className="container">
             <div className="row grey-bg">
 
@@ -940,8 +963,9 @@ const AWSProducts = () => {
           </div>
         </section>
 
+        {/* AWS MANAGED SERVICES */}
 
-        <section className="rise-with-sap my-5">
+        <section className="rise-with-sap my-5" id="aws-managed-services">
           <div className="container">
             <div className="row grey-bg">
 
@@ -1047,7 +1071,9 @@ const AWSProducts = () => {
           </div>
         </section>
 
-        <section className="rise-with-sap my-5">
+        {/* Microsoft on AWS */}
+
+        <section className="rise-with-sap my-5" id="ms-on-aws">
           <div className="container">
             <div className="row grey-bg">
 
@@ -1059,7 +1085,7 @@ const AWSProducts = () => {
                     borderBottomLeftRadius: "30px",
                   }}
                 >
-                  <img src={cloudSolutions} alt="" />
+                  <img src={MsonAwsAbout} alt="" />
                 </div>
               </div>
               <div className="col-md-6 left py-4 px-5">
@@ -1149,7 +1175,9 @@ const AWSProducts = () => {
           </div>
         </section>
 
-        <section className="rise-with-sap my-5">
+        {/* CLOUD STORAGE SOLUTIONS */}
+
+        <section className="rise-with-sap my-5" id="cloud-storage-solutions">
           <div className="container">
             <div className="row grey-bg">
 
@@ -1166,11 +1194,11 @@ const AWSProducts = () => {
                 <div
                   className="img-container"
                   style={{
-                    borderTopLeftRadius: "30px",
-                    borderBottomLeftRadius: "30px",
+                    borderTopRightRadius: "30px",
+                    borderBottomRightRadius: "30px",
                   }}
                 >
-                  <img src={cloudSolutions} alt="" />
+                  <img src={cloudStorageSolutions} alt="" />
                 </div>
               </div>
 
@@ -1258,7 +1286,9 @@ const AWSProducts = () => {
           </div>
         </section>
 
-        <div className="container">
+        {/* STORAGE SOLUTIONS */}
+
+        <div className="container" id="storage-solutions">
           <div className="point-heading ">
             <h2>Our Storage Solutions:</h2>
           </div>
@@ -1266,7 +1296,9 @@ const AWSProducts = () => {
 
         <StorageSolutions />
 
-        <section className="rise-with-sap my-5">
+        {/* aws big data and analytics */}
+
+        <section className="rise-with-sap my-5" id="big-data-solutions">
           <div className="container">
             <div className="row grey-bg">
 
@@ -1278,7 +1310,7 @@ const AWSProducts = () => {
                     borderBottomLeftRadius: "30px",
                   }}
                 >
-                  <img src={cloudSolutions} alt="" />
+                  <img src={awsBigDataAnalytics} alt="" />
                 </div>
               </div>
               <div className="col-md-6 left py-4 px-5">
@@ -1370,7 +1402,9 @@ const AWSProducts = () => {
           </div>
         </section>
 
-        <section className="rise-with-sap my-5">
+        {/* SECURITY MANAGEMENT SOLUTIONS */}
+
+        <section className="rise-with-sap my-5" id="security-management-solutions">
           <div className="container">
             <div className="row grey-bg">
 
@@ -1387,11 +1421,11 @@ const AWSProducts = () => {
                 <div
                   className="img-container"
                   style={{
-                    borderTopLeftRadius: "30px",
-                    borderBottomLeftRadius: "30px",
+                    borderTopRightRadius: "30px",
+                    borderBottomRightRadius: "30px",
                   }}
                 >
-                  <img src={cloudSolutions} alt="" />
+                  <img src={SecurityManagementSolutions} alt="" />
                 </div>
               </div>
 
@@ -1481,7 +1515,9 @@ const AWSProducts = () => {
           </div>
         </section>
 
-        <section className="rise-with-sap my-5">
+        {/* industry STORAGE SOLUTIONS */}
+
+        <section className="rise-with-sap my-5" id="industry-standard-solutions">
           <div className="container">
             <div className="row grey-bg">
 
@@ -1493,7 +1529,7 @@ const AWSProducts = () => {
                     borderBottomLeftRadius: "30px",
                   }}
                 >
-                  <img src={cloudSolutions} alt="" />
+                  <img src={industryStandardSolutions} alt="" />
                 </div>
               </div>
               <div className="col-md-6 left py-4 px-5">
@@ -1590,7 +1626,9 @@ const AWSProducts = () => {
           </div>
         </section>
 
-        <section className="rise-with-sap my-5">
+        {/* DISASTER MANAGEMENT SOLUTIONS */}
+
+        <section className="rise-with-sap my-5" id="disaster-management-solutions">
           <div className="container">
             <div className="row grey-bg">
 
@@ -1609,11 +1647,11 @@ const AWSProducts = () => {
                 <div
                   className="img-container"
                   style={{
-                    borderTopLeftRadius: "30px",
-                    borderBottomLeftRadius: "30px",
+                    borderTopRightRadius: "30px",
+                    borderBottomRightRadius: "30px",
                   }}
                 >
-                  <img src={cloudSolutions} alt="" />
+                  <img src={disasterManagement} alt="" />
                 </div>
               </div>
 

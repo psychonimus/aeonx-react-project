@@ -20,6 +20,7 @@ const BlogsHeader = () => {
                                 <GlassButton
                                     title="Explore Our Blogs"
                                     icon={() => <IoIosArrowDropdownCircle size={30} />}
+                                    href="#blogs"
                                 />
 
                             </div>

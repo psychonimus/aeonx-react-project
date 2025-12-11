@@ -16,6 +16,7 @@ import NumbersSectionOld from '../components/NumbersSection/NumbersSectionOld'
 import PublicClients from '../components/ClientLogosSection/PublicClients'
 import ProductShowcaseTwo from '../components/ProductShowcase/FlagshipProducts'
 import FlagshipProducts from '../components/ProductShowcase/FlagshipProducts'
+import Header from '../components/Header/Header';
 
 
 
@@ -36,16 +37,14 @@ const Home = () => {
       </Helmet>
 
       <Hero />
-      <FlagshipProducts />
-
-
       <AboutSection />
-      <ExpertiseSection />
-      {/* <NumbersSection /> */}
+      <FlagshipProducts />
       <NumbersSectionOld />
+      <ExpertiseSection />
+      
       <ServicesSection />
       <ClientLogosSection />
-      {/* <PublicClients /> */}
+      
       <CaseStudiesSection />
       <TestimonialSection />
       <AwardsSection />

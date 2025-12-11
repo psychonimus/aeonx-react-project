@@ -14,6 +14,7 @@ const ServicesCTA = () => {
                             <p>Let's discuss your SAP modernization journey and how we can help you achieve your goals.</p>
                             <GlassButton
                                 title="Get in touch"
+                                href="/contact"
                             />
                         </div>
                     </div>

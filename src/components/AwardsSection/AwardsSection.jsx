@@ -7,9 +7,10 @@ import "swiper/css/autoplay";
 import profileOne from "/images/profile-1.webp"
 import AwardCard from './AwardCard';
 import TestCard from '../TestimonialSection/TestCard';
-import awardOne from "/images/award-1.webp"
-import awardTwo from "/images/award-2.webp"
-import awardThree from "/images/award-3.webp"
+
+import gptw from "/images/award-2.webp"
+import risingStar from "/images/rising-star-partner-logo.jpg"
+import advanceTier from '/images/advance-tier-sol.png'
 
 
 const AwardsSection = () => {
@@ -68,53 +69,33 @@ const AwardsSection = () => {
                                     }}
                                     style={{ padding: "10px 0" }}
                                 >
+                                    
+
                                     <SwiperSlide>
-                                        <AwardCard
-                                            image={awardOne}
-                                            awardTitle="Top Enterprise App Developers"
-                                            awardDesc="Awarded by Clutch"
+                                    <AwardCard
+                                            image={gptw}
+                                            awardTitle="Great Place to Work Certified 2025"
+                                            
                                         />
                                     </SwiperSlide>
 
                                     <SwiperSlide>
                                     <AwardCard
-                                            image={awardTwo}
-                                            awardTitle="Top Enterprise App Developers"
-                                            awardDesc="Awarded by Clutch"
+                                            image={risingStar}
+                                            awardTitle="AWS Rising Star Partner of the Year (SI)"
+                                            awardDesc="APJ Winner 2022"
                                         />
                                     </SwiperSlide>
 
                                     <SwiperSlide>
                                     <AwardCard
-                                            image={awardThree}
-                                            awardTitle="Top Enterprise App Developers"
-                                            awardDesc="Awarded by Clutch"
+                                            image={advanceTier}
+                                            awardTitle="AWS Partner Advance Tier Services"
+                                            awardDesc="Awarded by AWS"
                                         />
                                     </SwiperSlide>
 
-                                    <SwiperSlide>
-                                    <AwardCard
-                                            image={awardOne}
-                                            awardTitle="Top Enterprise App Developers"
-                                            awardDesc="Awarded by Clutch"
-                                        />
-                                    </SwiperSlide>
-
-                                    <SwiperSlide>
-                                    <AwardCard
-                                            image={awardOne}
-                                            awardTitle="Top Enterprise App Developers"
-                                            awardDesc="Awarded by Clutch"
-                                        />
-                                    </SwiperSlide>
-
-                                    <SwiperSlide>
-                                    <AwardCard
-                                            image={awardOne}
-                                            awardTitle="Top Enterprise App Developers"
-                                            awardDesc="Awarded by Clutch"
-                                        />
-                                    </SwiperSlide>
+                                    
                                 </Swiper>
                             </div>
                         </div>

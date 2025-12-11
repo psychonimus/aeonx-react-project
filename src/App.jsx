@@ -41,6 +41,17 @@ import ShareholderInformation from "./pages/ShareholderInformation";
 import CorporateGovernance from "./pages/CorporateGovernance";
 import CodeAndPolicy from "./pages/CodeAndPolicy";
 import OtherDocuments from "./pages/OtherDocuments";
+import AeonxFlagshipProducts from "./pages/AeonxFlagshipProducts";
+import BlogThree from "./pages/AllBlogs/BlogThree";
+import BlogFour from "./pages/AllBlogs/BlogFour";
+import CaseStudyTwo from "./pages/AllCaseStudies/CaseStudyTwo";
+import CaseStudyThree from "./pages/AllCaseStudies/CaseStudyThree";
+import CaseStudyFour from "./pages/AllCaseStudies/CaseStudyFour";
+import CaseStudyFive from "./pages/AllCaseStudies/CaseStudyFive";
+import CaseStudySix from "./pages/AllCaseStudies/CaseStudySix";
+import CaseStudySeven from "./pages/AllCaseStudies/CaseStudySeven";
+import CaseStudyEight from "./pages/AllCaseStudies/CaseStudyEight";
+import CaseStudyNine from "./pages/AllCaseStudies/CaseStudyNine";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -78,12 +89,22 @@ const App = () => {
           <Route path="/careers" element={<CareersPage />} />
           <Route path="/events" element={<Events />} />
           <Route path="/blogs" element={<Blogs />} />
-          <Route path="/case-study" element={<CaseStudyOne />} />
+          <Route path="/case-study-one" element={<CaseStudyOne />} />
+          <Route path="/case-study-two" element={<CaseStudyTwo />} />
+          <Route path="/case-study-three" element={<CaseStudyThree />} />
+          <Route path="/case-study-four" element={<CaseStudyFour />} />
+          <Route path="/case-study-five" element={<CaseStudyFive />} />
+          <Route path="/case-study-six" element={<CaseStudySix />} />
+          <Route path="/case-study-seven" element={<CaseStudySeven />} />
+          <Route path="/case-study-eight" element={<CaseStudyEight />} />
+          <Route path="/case-study-nine" element={<CaseStudyNine />} />
           <Route path="/case-studies" element={<CaseStudiesAll />} />
 
 
           <Route path="/blogs/is-rise-with-sap-really-opex-freindly" element={<BlogOne />} />
           <Route path="/blogs/sap-migration-mistakes" element={<BlogTwo />} />
+          <Route path="/blogs/how-sap-protect-your-data" element={<BlogThree />} />
+          <Route path="/blogs/driving-innovation-with-sap" element={<BlogFour />} />
 
 
           <Route path="/aeonxlife" element={<LifeAtAeonx />} />
@@ -101,6 +122,8 @@ const App = () => {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-use" element={<TermsOfUse />} />
           <Route path="/case-studies" element={<CaseStudiesAll />} />
+
+          <Route path="/aeonx-flagship-products" element={<AeonxFlagshipProducts />} />
 
         </Routes>
 

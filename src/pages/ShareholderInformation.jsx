@@ -40,7 +40,10 @@ const ShareholderInformation = () => {
         
       ],
       quarterly: [
-        
+        { name: "SHP-March-2025", file: "/investors/shareholder-information/shareholding-pattern/SHP-March-2025.pdf" },
+        { name: "SHP-December-2024", file: "/investors/shareholder-information/shareholding-pattern/SHP-December-2024.pdf" },
+        { name: "SHP-September-2024", file: "/investors/shareholder-information/shareholding-pattern/SHP-September-2024.pdf" },
+        { name: "SHP-June-2024", file: "/investors/shareholder-information/shareholding-pattern/SHP-June-2024.pdf" },
       ]
     },
     unclaimed: {

@@ -131,12 +131,12 @@ const Hero = () => {
                                 </div>
                                 <div className="mt-3 mt-md-5 slide-content">
                                     <h1 className="slide-title">Innovate. Automate. Elevate</h1>
-                                    <h2 className='slide-subtitle'>with AWS, AI, SAP®, and Custom Apps</h2>
-                                    <h4 className='slide-para'>We combine deep domain expertise with the latest in AWS Cloud, AI, and SAP technologies to build secure, scalable, and intelligent solutions that power modern business transformation.</h4>
+                                    <h2 className='slide-subtitle'>with Cloud, AI, SAP<sup>®</sup>, and Custom Apps</h2>
+                                    <h4 className='slide-para'>We combine deep domain expertise with the latest in Cloud, AI, and SAP technologies to build secure, scalable, and intelligent solutions that power modern business transformation.</h4>
 
                                     <div className="mt-4 d-flex flex-column flex-md-row gap-3 slide-buttons">
-                                        <GlassButton href="" title="Explore More" icon={() => <BsArrowUpRightCircleFill color="" size={28} />} >  </GlassButton>
-                                        <GlassButton href="" title="Lets Talk" icon={() => <FaPhoneAlt color="" size={25} />} >  </GlassButton>
+                                        <GlassButton href="/services" title="Explore More" icon={() => <BsArrowUpRightCircleFill color="" size={28} />} >  </GlassButton>
+                                        <GlassButton href="/contact" title="Lets Talk" icon={() => <FaPhoneAlt color="" size={25} />} >  </GlassButton>
 
                                     </div>
                                 </div>

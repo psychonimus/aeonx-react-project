@@ -1,13 +1,15 @@
 import React from 'react'
 import GlassButtonLight from '../GlassButton/GlassButtonLight'
 import GlassButton from '../GlassButton/GlassButton'
-const ServiceCardTwo = ({image, title, description, buttonText, buttonIcon, descColor}) => {
+const ServiceCardTwo = ({image, title, description, buttonText, buttonIcon, descColor, url}) => {
   return (
     <div className="service-card">
-                    <img src={image} alt="" />
+                    <div>
+                      <img src={image} alt="" />
                     <h3>{title}</h3>
                     <p style={{color: `${descColor}`}}>{description}</p>
-                    <GlassButton href="#" title={buttonText} icon={buttonIcon} />
+                    </div>
+                    <GlassButton href={url} title={buttonText} icon={buttonIcon} />
 
     </div>
   )

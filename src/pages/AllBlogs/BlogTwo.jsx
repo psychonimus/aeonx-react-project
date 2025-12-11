@@ -14,12 +14,9 @@ const BlogTwo = () => {
         <meta name="author" content="AeonX Digital" />
       </Helmet>
 
-      <section className="blog-page" style={{marginTop:"0rem"}}>
+      <section className="blog-page" style={{marginTop:"10rem"}}>
       
-      {/* BANNER */}
-      <div className="blog-banner" style={{height:"100vh"}}>
-        <img src={bannerImg} alt="Common SAP S/4HANA Migration Mistakes" />
-      </div>
+      
 
       <div className="container blog-container">
 
@@ -36,6 +33,9 @@ const BlogTwo = () => {
           <div className="blog-content">
 
             <h1 className="blog-title">Common SAP S/4HANA Migration Mistakes Enterprises Must Avoid in 2025</h1>
+            <div className="container px-0">
+              <img className="w-100" src={bannerImg} alt="Common SAP S/4HANA Migration Mistakes" />
+            </div>
             <p className="blog-subtitle">
               With SAP ending mainstream support for ECC in 2027, time is running out for enterprises still working with older systems. Learn the critical mistakes to avoid during your migration journey.
             </p>

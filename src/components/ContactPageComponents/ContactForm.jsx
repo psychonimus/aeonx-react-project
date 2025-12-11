@@ -70,25 +70,7 @@ const ContactForm = () => {
                     </div>
                 </div>
 
-                {/* Services */}
-                <div className="mb-4">
-                    <h5 className="fw-bold mb-3">
-                        Which services are you interested in?
-                    </h5>
-                    <div className="d-flex flex-wrap gap-2">
-                        {services.map((service, i) => (
-                            <button
-                                type="button"
-                                key={i}
-                                className={`service-btn ${selectedServices.includes(service) ? "selected" : ""
-                                    }`}
-                                onClick={() => toggleService(service)}
-                            >
-                                {service}
-                            </button>
-                        ))}
-                    </div>
-                </div>
+                
 
                 
                 <div className="mb-4">
@@ -103,9 +85,9 @@ const ContactForm = () => {
                 
             </form>
 
-            <div className="robo-overlay">
+            {/* <div className="robo-overlay d-none d-md-block">
                 <ContactRobot />
-            </div>
+            </div> */}
         </section>
     );
 };

@@ -27,13 +27,21 @@ const FinancialHighlights = () => {
     },
     financialInformation: {
       yearly: [
-        { name: "BSE-Financial-Results-30.09.2024_compressed", file: "/investors/financial-highlights/financial-information/BSE-Financial-Results-30.09.2024_compressed.pdf" },
+        { name: "BSE-Results-31.03.2025_compressed", file: "/investors/financial-highlights/financial-information/BSE-Results-31.03.2025_compressed.pdf" },
+        { name: "BSE Financial Results 31.03.2025", file: "/investors/financial-highlights/financial-information/BSE Financial Results 31.03.2025.pdf" },
+
+        { name: "BSE-UFR-30.06.2025-1", file: "/investors/financial-highlights/financial-information/BSE-UFR-30.06.2025-1.pdf" },
+        { name: "BSE Financial Results 31.12.2024", file: "/investors/financial-highlights/financial-information/BSE Financial Results 31.12.2024.pdf" },
+
         { name: "BSE-Financial-Results-31.12.2024_1_11zon", file: "/investors/financial-highlights/financial-information/BSE-Financial-Results-31.12.2024_1_11zon.pdf" },
         { name: "BSE-Financial-Results-31.12.2024_11zon", file: "/investors/financial-highlights/financial-information/BSE-Financial-Results-31.12.2024_11zon.pdf" },
-        { name: "BSE-Newspaper-Publication_compressed_compressed_compressed_11zon", file: "/investors/financial-highlights/financial-information/BSE-Newspaper-Publication_compressed_compressed_compressed_11zon.pdf" },
         { name: "BSE-Newspaper-Publication-31.12.2024_11zon", file: "/investors/financial-highlights/financial-information/BSE-Newspaper-Publication-31.12.2024_11zon.pdf" },
-        { name: "BSE-Results-31.03.2025_compressed", file: "/investors/financial-highlights/financial-information/BSE-Results-31.03.2025_compressed.pdf" },
-        { name: "BSE-UFR-30.06.2025-1", file: "/investors/financial-highlights/financial-information/BSE-UFR-30.06.2025-1.pdf" },
+        { name: "BSE-Financial-Results-30.09.2024_compressed", file: "/investors/financial-highlights/financial-information/BSE-Financial-Results-30.09.2024_compressed.pdf" },
+        { name: "BSE Financial Results 30.09.2024", file: "/investors/financial-highlights/financial-information/BSE Financial Results 30.09.2024.pdf" },
+        { name: "BSE Financial Results 30.06.2024", file: "/investors/financial-highlights/financial-information/BSE Financial Results 30.06.2024.pdf" },
+        
+        { name: "BSE Financial Results 31.03.2024", file: "/investors/financial-highlights/financial-information/BSE Financial Results 31.03.2024.pdf" },
+        { name: "BSE-Newspaper-Publication_compressed_compressed_compressed_11zon", file: "/investors/financial-highlights/financial-information/BSE-Newspaper-Publication_compressed_compressed_compressed_11zon.pdf" },
       ],
       quarterly: [
         

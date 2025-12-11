@@ -5,6 +5,7 @@ import GlassButtonLight from '../GlassButton/GlassButtonLight'
 import { RiArrowRightCircleFill } from "react-icons/ri";
 import { IoCall } from "react-icons/io5";
 import { MdSms } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { RiFacebookCircleLine } from "react-icons/ri";
@@ -77,7 +78,7 @@ const CtaSection = () => {
 
                                 <div className="info-card d-flex gap-3 align-items-center p-2 mb-3">
                                     <div className="icon-container">
-                                        <IoCall color='#fff' size="35" />
+                                        <MdEmail color='#fff' size="35" />
                                     </div>
                                     <div className="info-card-desc">
                                         <h4>Email</h4>
@@ -85,26 +86,8 @@ const CtaSection = () => {
                                     </div>
                                 </div>
 
-                                <h4 className='text-white'>Contact Us</h4>
-
-                               <hr className='text-white' />
-                               <div className="social-icons d-flex gap-3 justify-content-around">
-                               <a href="https://www.instagram.com/aeonx.digital?igsh=MTFuNjljczFqdnoyYQ==" target="_blank" rel="noopener noreferrer">
-                                   <FaInstagram style={{ color: '#fff', fontSize: 25 }}></FaInstagram>
-                               </a>
-                               <a href="https://x.com/aeonxdigital?s=21" target="_blank" rel="noopener noreferrer">
-                                   <FaXTwitter  style={{ color: '#fff', fontSize: 25 }}></FaXTwitter>
-                               </a>
-                               <a href="https://www.facebook.com/share/1G9mrnhe1c/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
-                                   <RiFacebookCircleLine style={{ color: '#fff', fontSize: 25 }}></RiFacebookCircleLine>
-                               </a>
-                               <a href="https://www.linkedin.com/company/aeonx-digital/" target="_blank" rel="noopener noreferrer">
-                                   <TiSocialLinkedin style={{ color: '#fff', fontSize: 32 }}></TiSocialLinkedin>
-                               </a>
-                               <a href="https://youtube.com/@aeonxdigital?si=Shy3x-210aaojI5y" target="_blank" rel="noopener noreferrer">
-                                   <RiYoutubeLine style={{ color: '#fff', fontSize: 32 }}></RiYoutubeLine>
-                               </a>
-                               </div>
+                                
+                               
                             </div>
                         </div>
                     </div>

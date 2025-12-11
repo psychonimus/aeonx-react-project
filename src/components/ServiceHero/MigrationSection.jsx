@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./MigrationSection.css";
-import CloudMigration from "/images/cloud-migration.jpg";
-import Integration from "/images/sap-integration.jpg";
-import Innovation from "/images/sap-innovation.jpg";
-import Staffing from "/images/sap-staffing.jpg";
+import CloudMigration from "/images/migration-services.png";
+import Integration from "/images/integration-services.png";
+import Innovation from "/images/innovation-services.png";
+import Staffing from "/images/staffing-services.png";
 
 const MigrationSection = () => {
   const [hoveredMetric, setHoveredMetric] = useState(null);

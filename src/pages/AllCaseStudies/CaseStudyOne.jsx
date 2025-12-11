@@ -1,10 +1,11 @@
 import React, { useRef } from "react";
 import {Helmet} from "react-helmet";
-import AshapuraCaseStudy from "/images/Ashapura-case-study.webp";
+import ITDCaseStudy from "/images/Modernizing-ITD-Cementation’s-SAP.jpg"; // Replace with actual image
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { FaCheckCircle, FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -57,7 +58,7 @@ const CaseStudyOne = () => {
             ease: "power3.out",
             scrollTrigger: {
               trigger: section,
-              start: "top 85%", // Trigger a bit earlier
+              start: "top 85%",
               toggleActions: "play none none reverse",
             },
           }
@@ -74,7 +75,11 @@ const CaseStudyOne = () => {
 
   return (
     <>
-      
+      <Helmet>
+        <title>ITD Cementation Case Study - Modernizing SAP with RISE | AeonX Digital</title>
+        <meta name="description" content="Discover how AeonX helped ITD Cementation migrate from SAP S/4HANA 1709 to RISE with SAP, achieving enhanced system reliability and cloud scalability." />
+        <meta name="keywords" content="ITD Cementation, RISE with SAP, SAP migration, AWS Cloud, SAP S/4HANA, digital transformation, case study, AeonX" />
+      </Helmet>
       
       <div ref={containerRef} className="case-study-wrapper" style={{ overflowX: "hidden" }}>
       {/* ================= HERO SECTION ================= */}
@@ -106,12 +111,10 @@ const CaseStudyOne = () => {
                 className="display-3 fw-bold mb-4"
                 style={{ fontFamily: "Gilroy-Bold", lineHeight: "1.1" }}
               >
-                Improving Manufacturing Efficiency with <span style={{ color: "#f97316" }}>SAP S/4HANA</span>
+                Modernizing ITD Cementation's SAP Landscape with <span style={{ color: "#f97316" }}>RISE with SAP</span>
               </h1>
               <p className="lead mb-5" style={{ opacity: 0.9, fontWeight: 300 }}>
-                Discover how AeonX transformed operational workflows, boosted production
-                throughput, and optimized resource planning for a large-scale manufacturing firm
-                using SAP S/4HANA and automation-driven solutions.
+                In recent years, ITD Cementation India Private Limited has received several awards for their excellent work, including the "Best Infrastructure Company" award from CNBC TV18 and the "Outstanding Concrete Structure Award" from the Indian Concrete Institute.
               </p>
               <button className="slide-button">
                 Read Full Story <FaArrowRight className="ms-2" />
@@ -134,8 +137,8 @@ const CaseStudyOne = () => {
               ></div>
               <img
                 ref={imgRef}
-                src={AshapuraCaseStudy}
-                alt="Case Study Hero"
+                src={ITDCaseStudy}
+                alt="ITD Cementation Case Study"
                 className="img-fluid position-relative"
                 style={{ zIndex: 1, borderRadius: "20px", boxShadow: "0 20px 50px rgba(0,0,0,0.5)" }}
               />
@@ -144,17 +147,35 @@ const CaseStudyOne = () => {
         </div>
       </section>
 
-      {/* ================= OVERVIEW & PROBLEM ================= */}
+      {/* ================= EXECUTIVE SUMMARY ================= */}
       <section className="py-5" style={{ background: "#f8f9fa" }}>
+        <div className="container py-5">
+          <div className="row">
+            <div className="col-lg-10 mx-auto" ref={addToRefs}>
+              <div className="text-center mb-5">
+                <h2 className="mb-4" style={{ fontFamily: "Gilroy-Bold", fontSize: "2.5rem" }}>
+                  Executive Summary
+                </h2>
+              </div>
+              <p className="lead text-muted text-center">
+                Overall, ITD Cementation India Private Limited is a reputable and reliable construction company that is well-equipped to handle a wide range of construction projects with a commitment to safety, sustainability, and innovation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= OVERVIEW & PROBLEM ================= */}
+      <section className="py-5 bg-white">
         <div className="container py-5">
           <div className="row g-5">
             <div className="col-lg-6" ref={addToRefs}>
               <h2 className="mb-4" style={{ fontFamily: "Gilroy-Bold", fontSize: "2.5rem" }}>Overview</h2>
-              <p className="lead text-muted">
-                Our client, a leading global manufacturing enterprise, faced challenges with
-                outdated ERP systems, lack of process visibility, and inefficient production
-                planning. AeonX implemented SAP S/4HANA to streamline operations, automate
-                workflows, and enable real-time decision-making across departments.
+              <p className="text-muted">
+                ITD Cementation Ltd. aimed to migrate their SAP S/4HANA 1709 system to RISE with SAP while ensuring system readiness, safeguarding backups in the landing zone, and maintaining seamless connectivity with non SAP workloads. The company also needed to migrate additional systems to AWS Cloud, requiring meticulous planning to prevent operational disruption.
+              </p>
+              <p className="text-muted">
+                During the Lift and Shift migration, the team anticipated encountering bugs and issues that required prompt resolution. Post-migration, extensive testing was essential to ensure system stability. AeonX supported ITD Cementation Ltd. throughout the process, performing unit testing, assisting with integration testing and UAT, and ensuring a successful transition.
               </p>
             </div>
             <div className="col-lg-6" ref={addToRefs}>
@@ -168,10 +189,13 @@ const CaseStudyOne = () => {
                 <h3 className="mb-4" style={{ fontFamily: "Gilroy-Bold", color: "#f97316" }}>The Challenge</h3>
                 <ul className="list-unstyled">
                   {[
-                    "Outdated systems leading to inefficient manual processes",
-                    "No centralized data across procurement & logistics",
-                    "Lack of real-time analytics and reporting",
-                    "Difficulty in scaling operations to meet demands",
+                    "Ensuring source system readiness for migration",
+                    "Safe storage and transfer of system backups",
+                    "Migrating additional systems to AWS Cloud",
+                    "Maintaining critical connectivity between SAP and non SAP workloads",
+                    "Managing bugs and issues during Lift and Shift",
+                    "Conducting thorough post-migration testing",
+                    "Preventing business disruption during the transition",
                   ].map((item, i) => (
                     <li key={i} className="mb-3 d-flex align-items-start">
                       <FaCheckCircle className="me-3 mt-1" style={{ color: "#f97316", minWidth: "20px" }} />
@@ -180,6 +204,25 @@ const CaseStudyOne = () => {
                   ))}
                 </ul>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= WHY AEONX ================= */}
+      <section className="py-5" style={{ background: "#f8f9fa" }}>
+        <div className="container py-5">
+          <div className="row">
+            <div className="col-lg-10 mx-auto" ref={addToRefs}>
+              <h2 className="mb-4 text-center" style={{ fontFamily: "Gilroy-Bold", fontSize: "2.5rem" }}>
+                Why ITD Cementation Chose AeonX
+              </h2>
+              <p className="text-muted mb-4">
+                ITD Cementation Ltd. chose AeonX for their unique approach to RISE with SAP migration. AeonX leverages highly automated RISE with SAP Labs, enabling customers to quickly experience their SAP ERP datasets on the latest live version of RISE with SAP on Cloud, identifying remediation and complexity upfront.
+              </p>
+              <p className="text-muted">
+                Additionally, AeonX follows an established 6R migration strategy (Rehost, Replatform, Repurchase, Refactor, Retire and Retain) to create a holistic Cloud journey that maximizes the commercial benefits of RISE with SAP. Their capability to deliver tailored, high-quality solutions made AeonX the preferred migration partner.
+              </p>
             </div>
           </div>
         </div>
@@ -195,10 +238,26 @@ const CaseStudyOne = () => {
 
           <div className="row g-4">
             {[
-              { step: "01", title: "Discovery & Audit", desc: "Conducted system audit, gathered requirements, and mapped business workflows." },
-              { step: "02", title: "Process Re-engineering", desc: "Re-designed processes to fit S/4HANA best practices and industry standards." },
-              { step: "03", title: "Implementation", desc: "Implemented SAP modules and migrated all legacy data into a secure cloud environment." },
-              { step: "04", title: "Optimization", desc: "Integrated automation tools to eliminate repetitive tasks and improve efficiency." },
+              { 
+                step: "01", 
+                title: "Discovery & Audit", 
+                desc: "Validated the target system and architecture on RISE with SAP, assessed source system, and ensured readiness for migration." 
+              },
+              { 
+                step: "02", 
+                title: "Process Re-engineering", 
+                desc: "Adjusted interface and peripheral system connectivity and mapped the solution using the 6R migration strategy." 
+              },
+              { 
+                step: "03", 
+                title: "Implementation", 
+                desc: "Transferred and restored backups from on-premise to RISE with SAP, migrated SAP and non SAP workloads, and deployed SAP workloads in a hybrid model." 
+              },
+              { 
+                step: "04", 
+                title: "Optimization", 
+                desc: "Performed thorough testing and validation including unit testing, integration testing, and UAT to ensure smooth functionality." 
+              },
             ].map((item, i) => (
               <div className="col-md-6 col-lg-3" key={i} ref={addToRefs}>
                 <div
@@ -234,10 +293,30 @@ const CaseStudyOne = () => {
           </h2>
           <div className="row g-4">
             {[
-              { title: "SAP S/4HANA Implementation", desc: "End-to-end deployment with real-time dashboards and analytics." },
-              { title: "Automated Production Planning", desc: "Introduced automated material requirement planning (MRP) and workflow automation." },
-              { title: "Cloud Migration", desc: "Migrated workloads to AWS ensuring scalability and security." },
-              { title: "Unified Data Platform", desc: "Centralized data allowing seamless access across departments." },
+              { 
+                title: "Migration from SAP S/4HANA 1709 to RISE with SAP", 
+                desc: "" 
+              },
+              { 
+                title: "Backup validation and restoration on RISE with SAP", 
+                desc: "" 
+              },
+              { 
+                title: "Hybrid deployment model (S/4HANA in RISE, EP on one platform, BW and DMS on AWS)", 
+                desc: "" 
+              },
+              { 
+                title: "Interface and peripheral connectivity adjustments", 
+                desc: "" 
+              },
+              { 
+                title: "Comprehensive testing and validation", 
+                desc: "" 
+              },
+              { 
+                title: "Completion within project timeline of 2.5 months", 
+                desc: "" 
+              },
             ].map((sol, i) => (
               <div className="col-md-6" key={i} ref={addToRefs}>
                 <div
@@ -262,7 +341,7 @@ const CaseStudyOne = () => {
                   </div>
                   <div>
                     <h4 style={{ fontFamily: "Gilroy-Bold", fontSize: "1.25rem" }}>{sol.title}</h4>
-                    <p className="mb-0 text-white-50 small">{sol.desc}</p>
+                    {sol.desc && <p className="mb-0 text-white-50 small">{sol.desc}</p>}
                   </div>
                 </div>
               </div>
@@ -276,7 +355,13 @@ const CaseStudyOne = () => {
         <div className="container py-5 text-center">
           <h2 className="mb-5" ref={addToRefs} style={{ fontFamily: "Gilroy-Bold" }}>Technology Stack</h2>
           <div className="d-flex flex-wrap justify-content-center gap-3" ref={addToRefs}>
-            {["SAP S/4HANA", "AWS Cloud", "Fiori UI", "API Integrations", "Automation Tools", "Power BI"].map((tech, i) => (
+            {[
+              "SAP S/4HANA", 
+              "RISE with SAP", 
+              "AWS Cloud", 
+              "6R Migration Framework", 
+              "Automation Tools"
+            ].map((tech, i) => (
               <span
                 key={i}
                 className="px-4 py-2 rounded-pill fw-bold"
@@ -302,10 +387,10 @@ const CaseStudyOne = () => {
           </h2>
           <div className="row text-center g-4">
             {[
-              { val: "40%", label: "Increase in Efficiency" },
-              { val: "55%", label: "Reduction in Manual Work" },
-              { val: "30%", label: "Faster Production Cycles" },
-              { val: "100%", label: "Real-time Visibility" },
+              { val: "", label: "Improvement in System Reliability" },
+              { val: "", label: "Reduction in Migration Downtime" },
+              { val: "", label: "Faster Access to Latest SAP Capabilities" },
+              { val: "", label: "Enhanced Cloud Scalability & Performance" },
             ].map((res, i) => (
               <div className="col-6 col-md-3" key={i} ref={addToRefs}>
                 <div className="p-3">
@@ -325,9 +410,11 @@ const CaseStudyOne = () => {
             Want similar results?
           </h2>
           <p className="lead text-muted mb-4">Let's transform your business with smart digital solutions.</p>
-          <button className="slide-button-light">
-            Talk to an Expert
-          </button>
+          <Link to="/contact">
+            <button className="slide-button-light">
+              Talk to an Expert
+            </button>
+          </Link>
         </div>
       </section>
     </div>

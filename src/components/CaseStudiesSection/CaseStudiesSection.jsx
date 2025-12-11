@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../Header/Header'
 import cs1 from "/images/sap-case-studies.png"
 import cs2 from "/images/aws-case-studies.png"
-import cs3 from "/images/cs-3.webp"
+import cs3 from "/images/aeonx-cs-banner.jpg"
 import { GoGoal } from "react-icons/go";
 import CsContent from './CsContent';
 import { TbBulbFilled } from "react-icons/tb";
@@ -14,9 +14,9 @@ const CaseStudiesSection = () => {
         <section className="case-studies pb-3">
             <div className="container">
                 <Header
-                    subtext="Case Studies"
-                    headline="AeonX Solutions"
-                    highlight="Driving Enterprise Success"
+                    
+                    highlight="Our Success Stories"
+                    headline="Driving Real-World Business Impact"
                 />
 
                 <div className="row">

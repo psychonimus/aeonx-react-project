@@ -75,13 +75,15 @@ const Header = ({ subtext, headline, highlight, desc }) => {
         <div className="header container text-center pt-5 pb-2">
             <h5 ref={subTextRef}>{subtext}</h5>
 
-            <h2 ref={headlineRef} className="main-head">
-                {headline}
-            </h2>
+            
 
             <h2 ref={highlightRef} className="main-head-highlight">
                 {highlight}
             </h2>
+
+            <h3 ref={headlineRef} className="main-sub-head">
+                {headline}
+            </h3>
 
             <p ref={paraRef}>{desc}</p>
         </div>

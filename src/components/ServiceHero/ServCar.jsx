@@ -342,7 +342,7 @@ const ImplementationServices = () => {
               <div className="col-md-4">
                 <div className="metric-card">
                   <div className="metric-content">
-                    <h2 className="display-5 fw-bold">20%</h2>
+                    <h2 className="display-5 fw-bold">30%</h2>
                     <p className="xl-fs-5 fw-medium">
                       Reduction in overall implementation <br /> time
                     </p>

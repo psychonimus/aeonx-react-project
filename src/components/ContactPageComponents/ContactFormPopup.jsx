@@ -63,7 +63,7 @@ const ContactFormPopup = () => {
                 </div>
 
                 {/* Services */}
-                <div className="mb-2">
+                {/* <div className="mb-2">
                     <h5 className="fw-bold mb-3">
                         Which services are you interested in?
                     </h5>
@@ -80,7 +80,7 @@ const ContactFormPopup = () => {
                             </button>
                         ))}
                     </div>
-                </div>
+                </div> */}
 
                 
                 <div className="mb-2">
@@ -95,9 +95,9 @@ const ContactFormPopup = () => {
                 
             </form>
 
-            <div className="robo-overlay">
+            {/* <div className="robo-overlay d-none d-md-block">
                 <ContactRobot />
-            </div>
+            </div> */}
         </section>
     );
 };

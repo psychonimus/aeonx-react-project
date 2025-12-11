@@ -6,9 +6,12 @@ import GlassButton from "../GlassButton/GlassButton";
 import { BsArrowUpRightCircleFill } from "react-icons/bs";
 import GlassButtonLight from "../GlassButton/GlassButtonLight";
 import risewithsap from "/images/risewithsap.webp"
-import sapbtp from "/images/sapbtp.webp"
+import sapbtp from "/images/sapbtp.png"
 import sabAriba from '/images/sap-ariba.webp'
 import growWithSap from '/images/grow-with-sap-logo.png'
+import sapSuccessFactors from '/images/sap-success.png'
+import sapConcur from '/images/sap-concur.png'
+import sapAnalyticsCloud from '/images/sap-analytics-cloud.png'
 import ServiceTitleCard from "./ServiceTitleCard";
 import ServiceCard from "./ServiceCard";
 
@@ -53,22 +56,44 @@ const ServiceSlider = () => {
                         description="Powering Digital Transformation with SAP"
                         buttonText="Explore SAP Services"
                         buttonIcon={() => <BsArrowUpRightCircleFill color="#fff" size={28} />}
+                        href="/sap-focused-products"
                     />
 
                     <ServiceCard
                         image={risewithsap}
-                        title="RISE with SAP®"
-                        description="We help businesses accelerate digital transformation with RISE with SAP, offering a simplified path to Our experts design scalable SAP landscapes that improve operational agility, enhance performance, and support long-term growth. With a focus on business continuity and accelerated value realization, we enable seamless migration to SAP S/4HANA Cloud. "
+                        title="RISE with SAP"
+                        description="We help businesses accelerate digital transformation with RISE with SAP, offering a simplified path to Our experts design scalable SAP landscapes that improve operational agility, enhance performance, and support long-term growth. With a focus on business continuity and accelerated value realization, we enable seamless migration to SAP S/4HANA Cloud."
                         buttonText="Start Your SAP Transformation"
                         buttonIcon={() => <BsArrowUpRightCircleFill color="#fff" size={28} />}
+                        href="/sap-focused-products#rise-with-sap"
                     />
 
                     <ServiceCard
                         image={growWithSap}
                         title="GROW with SAP"
-                        description="We support organizations in scaling efficiently with Grow with SAP, helping them expand faster through cloud-based ERP, intelligent analytics, and streamlined operations. Our solutions are designed for growing businesses that need agility, cost efficiency, and enterprise-grade performance. By combining SAP best practices with industry expertise, we enable companies to improve productivity, accelerate decision-making, and expand sustainably."
+                        description="Grow with SAP is designed to help fast-growing organizations scale confidently with a modern, cloud-based ERP foundation. Built for companies that need speed, agility, and simplicity, it delivers ready-to-run industry best practices, intelligent analytics, and enterprise-grade capabilities, all packaged in an accessible, cost-efficient subscription model.
+"
                         buttonText="Unlock Business Growth with SAP"
                         buttonIcon={() => <BsArrowUpRightCircleFill color="#fff" size={28} />}
+                        href="/sap-focused-products#grow-with-sap"
+                    />
+
+                    <ServiceCard
+                        image={sapSuccessFactors}
+                        title="SAP SuccessFactors"
+                        description="SAP SuccessFactors delivers a modern, cloud-based HCM platform that streamlines HR processes and elevates employee experience. With intelligent, mobile-ready tools powered by SAP HXM, it helps organizations build agile, engaged, and high-performing teams."
+                        buttonText="Know More about SAP SuccessFactors"
+                        buttonIcon={() => <BsArrowUpRightCircleFill color="#fff" size={28} />}
+                        href="/sap-focused-products#grow-with-sap"
+                    />
+
+                    <ServiceCard
+                        image={sapConcur}
+                        title="SAP Concur"
+                        description="Streamline your travel and expense management with SAP Concur. A unified platform for real-time visibility, compliance, and cost control. We help businesses automate processes, reduce errors, and empower smarter financial decisions."
+                        buttonText="Know More about SAP Concur"
+                        buttonIcon={() => <BsArrowUpRightCircleFill color="#fff" size={28} />}
+                        href="/sap-focused-products#grow-with-sap"
                     />
 
                     <ServiceCard
@@ -77,14 +102,25 @@ const ServiceSlider = () => {
                         description="With seamless cloud integration and real-time analytics, our SAP Ariba solutions support efficient supplier collaboration, reduce purchasing costs, and enhance decision-making. We help businesses digitize their procurement cycle end-to-end and build stronger supply chain resilience."
                         buttonText="Transform Sourcing with SAP Ariba"
                         buttonIcon={() => <BsArrowUpRightCircleFill color="#fff" size={28} />}
+                        href="/sap-focused-products#sap-ariba"
                     />
 
                     <ServiceCard
                         image={sapbtp}
                         title="SAP BTP"
-                        description="Future-ready enterprises rely on SAP Business Technology Platform (BTP) to outpace change. At AeonX Digital, we help you harness BTP to connect applications, integrate data across systems, and unlock real-time insights. Whether you're developing new capabilities or enhancing existing SAP landscapes, our team enables agility, innovation, and intelligent automation across your business. "
+                        description="Future-ready enterprises rely on SAP Business Technology Platform (BTP) to outpace change. At AeonX Digital, we help you harness BTP to connect applications, integrate data across systems, and unlock real-time insights. Whether you're developing new capabilities or enhancing existing SAP landscapes, our team enables agility, innovation, and intelligent automation across your business."
                         buttonText="Build Smart with SAP BTP"
                         buttonIcon={() => <BsArrowUpRightCircleFill color="#fff" size={28} />}
+                        href="/sap-focused-products#sap-btp"
+                    />
+
+                    <ServiceCard
+                        image={sapAnalyticsCloud}
+                        title="SAP Analytics Cloud"
+                        description="Turn your data into actionable insights with SAP Analytics Cloud. A unified platform for analytics, planning, and predictive intelligence. We help businesses visualize trends, make informed decisions, and drive performance across the enterprise."
+                        buttonText="Build Smart with SAP Analytics Cloud"
+                        buttonIcon={() => <BsArrowUpRightCircleFill color="#fff" size={28} />}
+                        href="/sap-focused-products#sap-analytics-cloud"
                     />
 
                 </div>

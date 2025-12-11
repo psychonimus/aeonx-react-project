@@ -7,18 +7,19 @@ import project1 from '/images/xpense-bg.png';
 import project2 from '/images/supplier-x-bg.png';
 import project3 from '/images/logystix-bg.png';
 import project4 from '/images/manufex-bg.png';
-import project5 from '/images/people-connect-logo.png';
+import project5 from '/images/people-connect-bg.png';
 import project6 from '/images/aeonxiq-bg.png';
+import Header from '../Header/Header';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
-  { id: 1, title: 'Xpense', image: project1, link: '#' },
-  { id: 2, title: 'SupplierX', image: project2, link: '#' },
-  { id: 3, title: 'Logystix', image: project3, link: '#' },
-  { id: 4, title: 'Manufex ', image: project4, link: '#' },
-  { id: 5, title: 'People connect', image: project5, link: '#' },
-  { id: 6, title: 'aeonxiq.ai ', image: project6, link: '#' },
+  { id: 1, title: 'Xpense', image: project1, link: 'https://xpense.aeonx.digital/' },
+  { id: 2, title: 'SupplierX', image: project2, link: 'https://supplierx.aeonx.digital/' },
+  { id: 3, title: 'LOGYSTIX', image: project3, link: 'https://logystix.cloud/' },
+  { id: 4, title: 'Manufex ', image: project4, link: 'https://dev.manufex.cloud/' },
+  { id: 5, title: 'People connect', image: project5, link: 'https://dev.aeonxus.digital/' },
+  { id: 6, title: 'aeonxiq.ai ', image: project6, link: 'https://aeonxiq.ai/' },
 ];
 
 const HorizontalAccordion = () => {
@@ -85,6 +86,12 @@ const HorizontalAccordion = () => {
 
   return (
     <>
+      <Header
+        highlight="Our Product Suite"
+        headline="Discover Flagship Innovations"
+      
+      
+      />
       <div className="flagship-products-wrapper" style={{ position: 'relative', zIndex: 5 }}>
         {/* Pin Section */}
         <div ref={sectionRef} className="pin-section p-4" style={{ height: '100vh', width: '100%' }}>
@@ -102,7 +109,7 @@ const HorizontalAccordion = () => {
                     alt={project.title}
                     className="accordion-image mt-5"
                   />
-                  
+
                   {/* <p className='mt-3'>{project.description}</p> */}
                   <div className="accordion-overlay" />
                 </div>
@@ -116,7 +123,7 @@ const HorizontalAccordion = () => {
                 <span className="accordion-label">{project.title}</span>
 
                 {/* Visit Button */}
-                <a href={project.link} className="visit-button">
+                <a target='_blank' href={project.link} className="visit-button">
                   <div className="visit-circle">
                     <div className="visit-text">
                       Visit

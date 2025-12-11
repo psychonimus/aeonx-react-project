@@ -62,7 +62,7 @@ const JourneySlider = () => {
 
       {/* Timeline */}
       <div className="timeline-wrapper mt-5">
-        <div className="timeline-line"></div>
+        <div className="journey-timeline-line"></div>
 
         <div className="timeline-years">
           {timelineData.map((item, i) => (

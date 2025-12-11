@@ -27,7 +27,11 @@ const CorporateGovernance = () => {
         
       ],
       quarterly: [
-        
+        { name: "IG-March-2025", file: "/investors/corporate-governance/compliance-report-on-corporate-governance/IG-March-2025.pdf" },
+        { name: "IG-December-2024", file: "/investors/corporate-governance/compliance-report-on-corporate-governance/IG-December-2024.pdf" },
+        { name: "CG-June-2024", file: "/investors/corporate-governance/compliance-report-on-corporate-governance/CG-June-2024.pdf" },
+        { name: "CG-September-2024", file: "/investors/corporate-governance/compliance-report-on-corporate-governance/CG-September-2024.pdf" },
+        { name: "CG-December-2024", file: "/investors/corporate-governance/compliance-report-on-corporate-governance/CG-December-2024.pdf" },
       ]
     },
     

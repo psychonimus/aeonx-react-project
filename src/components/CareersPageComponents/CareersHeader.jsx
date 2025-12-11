@@ -43,13 +43,9 @@ const ExperienceSection = () => {
             <GlassButton
               title="Explore Open Positions"
               icon={() => <IoArrowDownCircle size={30} />}
+              href="/careers#open-positions"
             />
-            <div className="ms-3 d-flex gap-3 align-items-center mt-3">
-              <span className="fw-bold">Find us on:</span>
-              <BsLinkedin />
-              <AiFillInstagram />
-              <BsTwitterX />
-            </div>
+            
           </div>
 
           {/* RIGHT SECTION */}

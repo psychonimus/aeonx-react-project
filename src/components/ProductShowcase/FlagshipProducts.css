@@ -100,7 +100,7 @@
 .accordion-content .accordion-image{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     
 }
 /* .accordion-item.active:hover .accordion-image{
@@ -176,12 +176,17 @@
     justify-content: center;
     position: relative;
     overflow: hidden;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
+    background: linear-gradient(340deg, rgb(6, 36, 112) 57%, rgb(0, 17, 61) 100%);
+   
 }
 
 .visit-circle:hover {
-    border-color: var(--foreground);
-    background: rgba(250, 250, 250, 0.1);
+    background-color: #ffffff !important;
+    border: 2px solid rgb(81, 130, 255) !important;
+    .visit-text{
+        color: rgb(6, 36, 112);
+    }
 }
 
 .visit-text {
@@ -192,6 +197,10 @@
     left: 50%;
     transform: translate(-20%, -15%);
     color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.5s ease;
+
     /* animation: rotate-text 8s linear infinite; */
 }
 

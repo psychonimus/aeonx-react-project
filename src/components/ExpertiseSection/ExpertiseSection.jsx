@@ -42,9 +42,9 @@ const ExpertiseSection = () => {
         <>
 
             <Header
-                subtext="Our Expertise"
-                headline="Our Expert Solutions Drives Your"
-                highlight="Competitive Edge"
+                
+                highlight="Our Expertise, Your Advantage"
+                headline="Innovative Solutions That Accelerate Growth"
             />
             <div className="stack-section pt-5" ref={containerRef}>
                 <div
@@ -58,7 +58,7 @@ const ExpertiseSection = () => {
                                 <div className="h-100 d-flex flex-column justify-content-center">
                                     <h3 style={{ color: "#fff" }}>Cloud Migration & DevOps Consulting</h3>
                                     <p style={{ color: "#fff" }}><strong>We deliver end-to-end Cloud Migration and DevOps consulting to modernize infrastructure, improve agility, and speed up deployment cycles.</strong> We enable seamless migration to leading cloud platforms and implement DevOps best practices to enhance collaboration, reduce downtime, optimize costs, and scale securely in a digital-first environment.</p>
-                                    <GlassButton title="Know More" icon={() => <FaCircleArrowRight color="" size={28} />} />
+                                    <GlassButton href="/services#migration" title="Know More" icon={() => <FaCircleArrowRight color="" size={28} />} />
                                 </div>
                             </div>
                             <div className="col-md-5">
@@ -106,7 +106,7 @@ const ExpertiseSection = () => {
                                     <h3 style={{ color: "#000" }}>Business Process Transformation</h3>
                                     <p style={{ color: "#000" }}>By combining industry expertise with technology-driven strategies, we help businesses streamline workflows, eliminate redundancies, and adopt scalable models. Our transformation approach focuses on process innovation, automation, and continuous improvement, empowering companies to operate smarter, adapt faster, and deliver greater value.
 </p>
-                                    <GlassButtonLight title="Know More" icon={() => <FaCircleArrowRight color="#F97516" size={28} />} />
+                                    <GlassButtonLight href="/sap-focused-products#sap-btp" title="Know More" icon={() => <FaCircleArrowRight color="#F97516" size={28} />} />
                                 </div>
                             </div>
                             <div className="col-md-5">

@@ -57,7 +57,7 @@ const jobs = [
 const OpenPositionsSection = () => {
   return (
     <>
-      <section className="open-positions pb-5">
+      <section className="open-positions pb-5" id="open-positions">
         <Header
           subtext="Work With Us"
           headline="Dream Big. Work Bold. Join Us"
@@ -101,10 +101,10 @@ const OpenPositionsSection = () => {
             <span style={{ fontWeight: 600, color: "#f97316" }}>
               Drop your resume at{" "}
               <a
-                href="mailto:hr@aeonx.digital"
+                href="mailto:careers@aeonx.digital "
                 style={{ color: "#f97316", textDecoration: "underline" }}
               >
-                hr@aeonx.digital
+                careers@aeonx.digital 
               </a>
               .
             </span>

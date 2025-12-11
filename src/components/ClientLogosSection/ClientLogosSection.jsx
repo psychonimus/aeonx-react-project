@@ -8,7 +8,7 @@ const ClientLogosSection = () => {
     <section className="client-logos">
         <div className="container-fluid px-0">
             <Header
-            subtext="Our Clients"
+            
             headline="Trusted by Leading Organizations"
             highlight="Meet Our Clients"
             />

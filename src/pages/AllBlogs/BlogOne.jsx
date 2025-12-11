@@ -14,12 +14,10 @@ const BlogOne = () => {
         <meta name="author" content="AeonX Digital" />
       </Helmet>
 
-      <section className="blog-page" style={{marginTop:"0rem"}}>
+      <section className="blog-page" style={{marginTop:"10rem"}}>
       
       {/* BANNER */}
-      <div className="blog-banner" style={{height:"100vh"}}>
-        <img src={bannerImg} alt="RISE with SAP Banner" />
-      </div>
+      
 
       <div className="container blog-container">
 
@@ -36,6 +34,9 @@ const BlogOne = () => {
           <div className="blog-content">
 
             <h1 className="blog-title">Is RISE with SAP Really OPEX Friendly?</h1>
+            <div className="container px-0">
+              <img className="w-100" src={bannerImg} alt="RISE with SAP Banner" />
+            </div>
             <p className="blog-subtitle">
               Understanding how SAP’s modern cloud model impacts operational cost and long-term enterprise value.
             </p>

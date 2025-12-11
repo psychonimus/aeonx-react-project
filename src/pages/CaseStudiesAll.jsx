@@ -5,9 +5,16 @@ import { GoGoal } from "react-icons/go";
 import { Link } from 'react-router-dom';
 
 // Import images (reusing existing ones for now as placeholders)
-import cs1 from "/images/sap-case-studies.png";
-import cs2 from "/images/aws-case-studies.png";
-import cs3 from "/images/cs-3.webp";
+import cs1 from "/images/Modernizing-ITD-Cementation’s-SAP.jpg";
+import cs2 from "/images/Transforming-Ashapura.jpg";
+import cs3 from "/images/Unifying-Raymond.jpg";
+import cs4 from "/images/Modernizing-Delux-Bearings.jpg";
+import cs5 from "/images/Digitizing-Customer.jpg";
+import cs6 from "/images/Modernizing-CK-Birla-Hospitals.jpg";
+import cs7 from "/images/Streamlining-raymonds.jpg";
+import cs8 from "/images/xpense-case-study.jpg";
+import cs9 from "/images/Optimizing-Ashapura.jpg";
+
 
 const CaseStudiesAll = () => {
     const [activeTab, setActiveTab] = useState('SAP');
@@ -19,177 +26,85 @@ const CaseStudiesAll = () => {
         'SAP': [
             {
                 id: 1,
-                headline: "ITD Cementation",
+                headline: "Modernizing ITD Cementation’s SAP Landscape with RISE with SAP",
                 date: "Apr 14, 2023 | Success Stories - SAP",
-                desc: "Executive Summary: In recent years, ITD Cementation India Private Limited has received several awards for their excellent work,",
+                desc: "In recent years, ITD Cementation India Private Limited has received several awards for their excellent work, including the “Best Infrastructure Company” award from CNBC TV18 and the “Outstanding Concrete Structure Award” from the Indian Concrete Institute.",
                 img: cs1,
-                link: "/case-study"
+                link: "/case-study-one"
             },
             {
                 id: 2,
-                headline: "SAP AMS support for mining and exploration aimed at improving safety, compliance, and efficiency.",
+                headline: "Raymond Engineering SBU: Unifying Operations with SAP S/4HANA RISE for a Smarter, Scalable Future",
                 date: "Sep 6, 2022 | SAP, Success Stories - SAP",
-                desc: "Through our 7 years of expertise, we ensure businesses continue to outperform while technology changes",
-                img: cs1,
-                link: "/case-study"
+                desc: "Raymond Limited (Engineering SBU) the precision engineering arm of the Raymond Group,  unified three diverse verticals (Automobile, Aerospace, Tools & Hardware) into one intelligent digital core.",
+                img: cs3,
+                link: "/case-study-two"
             },
             {
                 id: 3,
-                headline: "The proliferation of brands with SAP AMS CPG.",
+                headline: "Transforming Ashapura’s Mineral Operations with Intelligent Automation",
                 date: "Sep 6, 2022 | SAP, Success Stories - SAP",
-                desc: "The recent partnership we had with a client running one of Gujarat's largest automation plants at Method",
-                img: cs1,
-                link: "/case-study"
+                desc: "With a history spanning more than 60 years, Ashapura is a top provider of multi mineral solutions with a global presence, operating across multiple Indian states and seven other nations.",
+                img: cs2,
+                link: "/case-study-three"
             },
-            {
-                id: 4,
-                headline: "SAP AMS for using multiple data sources",
-                date: "Sep 6, 2022 | SAP, Success Stories - SAP",
-                desc: "By streamlining the company operations, we help our clients enhance their business efficiency.",
-                img: cs1,
-                link: "/case-study"
-            },
-            {
-                id: 5,
-                headline: "SAP AMS to streamline and enhance Real State management processes.",
-                date: "Sep 1, 2022 | SAP, Success Stories - SAP",
-                desc: "We provide our expertise in order to help our clients' businesses expand.",
-                img: cs1,
-                link: "/case-study"
-            },
-            {
-                id: 6,
-                headline: "SAP AMS fostering advancement through developing technology.",
-                date: "Aug 30, 2022 | SAP, Success Stories - SAP",
-                desc: "Staying competitive in the market requires consistently adapting to changes and fitting into the environment.",
-                img: cs1,
-                link: "/case-study"
-            },
-            {
-                id: 7,
-                headline: "SAP AMS to establish strategic and targeted value.",
-                date: "Aug 30, 2022 | SAP, Success Stories - SAP",
-                desc: "By incorporating technology into what they do, we specialize in helping our clients.",
-                img: cs1,
-                link: "/case-study"
-            },
-            {
-                id: 8,
-                headline: "Case Study for Integration of TrackAbout with SAP ERP",
-                date: "Jul 19, 2022 | SAP, Success Stories - SAP",
-                desc: "Taiyo Nippon Sanso India (TNSI) has slashed operating expenses and service delivery times by going all-in on SAP ERP with the help of Aeonx",
-                img: cs1,
-                link: "/case-study"
-            },
+            
 
         ],
         'AWS': [
             {
                 id: 1,
-                headline: "Hosting SAP workloads on AWS",
+                headline: "Modernizing Delux Bearings’ Operations with AWS Cloud",
                 date: "Mar 1, 2023 | Success Stories - AWS",
-                desc: "Delux Bearings is India’s largest manufacturer of Clutch Release Bearings",
-                img: cs2,
+                desc: "Delux Bearings is India’s largest manufacturer of Clutch Release Bearings, with the widest range of bearing and precision components, a PAN India presence",
+                img: cs4,
                 bgColor: "#C9291F",
-                link: "/case-study"
+                link: "/case-study-four"
             },
             {
                 id: 2,
-                headline: "Ashok Alco Chem Case Study",
+                headline: "Digitizing Customer Feedback for Ashok Alco-Chem with AWS",
                 date: "Jan 3, 2023 | Success Stories - AWS",
-                desc: "Executive Summary - Ashok Alco - chem Limited (AACL) for decades has been focusing with single minded",
-                img: cs2,
+                desc: "Ashok Alco-Chem Limited (AACL), a long-established leader known for product quality and continuous improvement, wanted to strengthen",
+                img: cs5,
                 bgColor: "#C9291F",
-                link: "/case-study"
+                link: "/case-study-five"
             },
             {
                 id: 3,
-                headline: "AWS Cloud Solutions CKBH Case Study: Ready to Migrate to the Cloud? You’ll be surprised at how easy it is",
+                headline: "Modernizing CK Birla Hospitals Operations on AWS Cloud",
                 date: "Jan 3, 2023 | Success Stories - AWS",
-                desc: "The Executive Summary - Leading healthcare group in India, the CK Birla Group of Hospitals includes",
-                img: cs2,
+                desc: "The CK Birla Group of Hospitals — including BMBHRC, CMRI (Kolkata), and RBH (Jaipur) — is a leading healthcare network in India with 800+ beds",
+                img: cs6,
                 bgColor: "#C9291F",
-                link: "/case-study"
+                link: "/case-study-six"
             },
-            {
-                id: 4,
-                headline: "SAP on AWS: A Comprehensive Guide for Konark Group",
-                date: "Jan 3, 2023 | Success Stories - AWS",
-                desc: "With its first manufacturing unit established in 1972, Konark Group have multiple business",
-                img: cs2,
-                bgColor: "#C9291F",
-                link: "/case-study"
-            },
-            {
-                id: 5,
-                headline: "Reaping the benefits of AWS",
-                date: "Sep 30, 2022 | Success Stories - AWS",
-                desc: "With offices in Dubai, Oman, Abu Dhabi, and India, as well as stocking facilities in Jebel Ali,",
-                img: cs2,
-                bgColor: "#C9291F",
-                link: "/case-study"
-            },
-            {
-                id: 6,
-                headline: "BVG India Limited deploys AWS for Disaster Recovery",
-                date: "Sep 15, 2022 | aws, Success Stories - AWS",
-                desc: "BVG India Limited, founded in 1997 by Mr. Hanmantrao Gaikwad, is a responsible and forward-thinking",
-                img: cs2,
-                bgColor: "#C9291F",
-                link: "/case-study"
-            },
-            {
-                id: 7,
-                headline: "Migrate-to-Modernize: A Case Study      ",
-                date: "Jul 7, 2022 | aws, Success Stories - AWS",
-                desc: "Innovations were brewing at one of the largest automatic plants in India. Gopal Namkeen's ambitions were",
-                img: cs2,
-                bgColor: "#C9291F",
-                link: "/case-study"
-            },
-            {
-                id: 8,
-                headline: "How Gopal Namkeen improved the dealer experience by modernizing the order processing system.",
-                date: "Jun 13, 2022 | aws, SAP, Success Stories - AWS",
-                desc: "With the laying of the foundation stone, Gopal Namkeen was established in 1994.",
-                img: cs2,
-                bgColor: "#C9291F",
-                link: "/case-study"
-            },
-            {
-                id: 9,
-                headline: "Disaster Recovery for Bhilosa Industry Using AWS.",
-                date: "Mar 11, 2022 | aws, SAP, Success Stories - AWS",
-                desc: "Bhilosa Industries, headquartered in Mumbai and founded in 1989, has been in the textile business for nearly 100 years",
-                img: cs2,
-                bgColor: "#C9291F",
-                link: "/case-study"
-            }
+            
         ],
         'Aeonx Solutions': [
             {
                 id: 1,
-                headline: "Custom ERP Solution",
-                desc: "Tailor-made ERP for niche manufacturing needs.",
-                img: cs3,
+                headline: "Streamlining Raymond Limited’s Operations with AeonXIQ Executive Summary",
+                desc: "Raymond Limited, a 100-year legacy brand and one of India’s most respected textile and lifestyle conglomerates, operates across textiles, apparel, engineering, real estate, and FMCG. With a diverse workforce and large-scale operational processes.",
+                img: cs7,
                 bgColor: "#C9291F",
-                link: "/case-study"
+                link: "/case-study-seven"
             },
             {
                 id: 2,
-                headline: "Mobile App Development",
-                desc: "Engaging mobile experiences for customers.",
-                img: cs3,
+                headline: "Optimizing Ashapura Minechem’s Logistics with Logystix",
+                desc: "Ashapura Minechem Ltd, a 60+ year global leader in multi-mineral solutions operating across 70+ countries, faced major inefficiencies in freight, routing, and logistics planning due to fragmented, manual processes.",
+                img: cs9,
                 bgColor: "#C9291F",
-                link: "/case-study"
+                link: "/case-study-eight"
             },
             {
                 id: 3,
-                headline: "AI-Powered Chatbot",
-                desc: "Automating customer support with conversational AI.",
-                img: cs3,
+                headline: "Streamlining Raymond’s Expense Management with AeonX Xpense",
+                desc: "Raymond Limited, a global textile and fashion leader, faced major inefficiencies in its manual expense reimbursement process—resulting in delays, fraud risks, compliance gaps, and high operational overhead.",
+                img: cs8,
                 bgColor: "#C9291F",
-                link: "/case-study"
+                link: "/case-study-nine"
             }
         ]
     };
@@ -234,8 +149,8 @@ const CaseStudiesAll = () => {
                                         <img
                                             src={item.img}
                                             alt={item.headline}
-                                            className="w-100 h-100 object-fit-cover"
-                                            style={{ minHeight: '250px' }}
+                                            className="w-100 h-100"
+                                            style={{ minHeight: '250px', objectPosition: 'left' }}
                                         />
                                     </div>
 
