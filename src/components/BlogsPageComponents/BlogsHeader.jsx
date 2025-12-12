@@ -10,15 +10,15 @@ const BlogsHeader = () => {
                 <div className="row">
                     <div className="col-12">
                         <div className="blogs-hero-content d-flex flex-column justify-content-center  h-100">
-                            <p className="eyebrow">Latest Blogs</p>
+                            {/* <p className="eyebrow">Latest Blogs</p> */}
                             <h1 className="mb-0">
-                                Explore Our Latest Blogs
+                                Blogs Driving Digital Transformation
                             </h1>
-                            <h3 className="mb-4">Thoughtful articles designed to guide, educate, and empower you.</h3>
+                            <h3 className="mb-4">Expert analysis and actionable ideas for modern enterprises</h3>
 
-                            <div className="event-hero-buttons">
+                            <div className="event-hero-buttons d-flex justify-content-start">
                                 <GlassButton
-                                    title="Explore Our Blogs"
+                                    title="Read Now"
                                     icon={() => <IoIosArrowDropdownCircle size={30} />}
                                     href="#blogs"
                                 />

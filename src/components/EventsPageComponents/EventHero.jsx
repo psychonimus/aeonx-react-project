@@ -17,7 +17,7 @@ const EventHero = () => {
                 Your Dreams
               </h1>
 
-              <div className="event-hero-buttons">
+              <div className="event-hero-buttons d-flex justify-content-start">
                 <GlassButton
                   title="View All Events"
                   icon={() => <IoIosArrowDropdownCircle size={30} />}
@@ -26,7 +26,7 @@ const EventHero = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 mt-5 mt-md-0">
             <div className="event-headline">
               <h3 className="mb-3">Upcoming Events</h3>
             </div>
@@ -34,22 +34,22 @@ const EventHero = () => {
               
               <div className="event-card card1">
                 <div className="event-card-overlay"></div>
-                <p className="tag">Mastermind</p>
+                <p className="event-tag">Mastermind</p>
                 <h3 className="tagSub">Inner Circle Community</h3>
               </div>
               <div className="event-card card2">
                 <div className="event-card-overlay"></div>
-                <p className="tag">Coaching</p>
+                <p className="event-tag">Coaching</p>
                 <h3 className="tagSub">Business Accelerator</h3>
               </div>
               <div className="event-card card3">
                 <div className="event-card-overlay"></div>
-                <p className="tag">Partnership</p>
+                <p className="event-tag">Partnership</p>
                 <h3 className="tagSub">Platinum Partnerships</h3>
               </div>
               <div className="event-card card4">
                 <div className="event-card-overlay"></div>
-                <p className="tag">Events</p>
+                <p className="event-tag">Events</p>
                 <h3 className="tagSub">Unleash Her Power Within</h3>
               </div>
             </div>

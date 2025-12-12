@@ -17,7 +17,7 @@ const IndustryHero = () => {
                             </h1>
                             <h3 className="mb-4">Diverse Domains, Tailored Solutions</h3>
 
-                            <div className="event-hero-buttons">
+                            <div className="event-hero-buttons d-flex justify-content-start">
                                 <GlassButton
                                     title="View Sectors"
                                     icon={() => <IoIosArrowDropdownCircle size={30} />}

@@ -1,4 +1,3 @@
-
 .industry-hero {
   background-image: url("../../../public/images/industry-bg.jpg");
   background-position: center;
@@ -24,4 +23,19 @@
   font-weight: 600;
   margin-bottom: 15px;
   letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .industry-hero {
+    padding: 6rem 0;
+    min-height: 60vh;
+  }
+
+  .industry-hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .industry-hero-content .eyebrow {
+    font-size: 0.8rem;
+  }
 }

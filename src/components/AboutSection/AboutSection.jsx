@@ -25,20 +25,20 @@ const AboutSection = () => {
     <>
       <section className="about-aeonx pb-2">
         <Header
-          
+
           highlight="About AeonX Digital"
           headline="Empowering Enterprises with Strategy-Led Digital Transformation"
           desc="AeonX Digital empowers forward-thinking organizations with specialized business consulting services, enterprise application development, and end-to-end digital transformation solutions. We seamlessly integrate management consulting, corporate training programs, and bespoke education services to drive sustainable growth and market leadership."
         />
 
-        <InfiniteCarousel images={teamImages} slidesPerView={4} speed={4000} />
+        <InfiniteCarousel images={teamImages} speed={4000} />
 
         <div className='container d-flex justify-content-center'>
           <GlassButtonLight href="/about" title="More About Us" icon={() => <FaCircleArrowRight color="#F97516" size={28} />} />
         </div>
 
 
-        
+
       </section>
     </>
   )

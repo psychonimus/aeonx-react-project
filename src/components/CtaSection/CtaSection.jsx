@@ -54,7 +54,7 @@ const CtaSection = () => {
 
                         </div>
                         <div className="col-lg-4">
-                            <div className="cta-card h-100 p-4">
+                            <div className="cta-card h-100 p-4 mt-4 mt-lg-0">
                                 <h2 className='mb-4'>Hii, We are always here to help you!</h2>
                                 <div className="info-card d-flex gap-3 align-items-center p-2 mb-3">
                                     <div className="icon-container">

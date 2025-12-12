@@ -59,7 +59,7 @@ const OpenPositionsSection = () => {
     <>
       <section className="open-positions pb-5" id="open-positions">
         <Header
-          subtext="Work With Us"
+          // subtext="Work With Us"
           headline="Dream Big. Work Bold. Join Us"
           highlight="Open Positions"
         />

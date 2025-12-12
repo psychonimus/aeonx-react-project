@@ -21,13 +21,14 @@ const InfiniteCarousel = ({ images = [], slidesPerView = 4, speed = 8000 }) => {
           delay: 0,
           disableOnInteraction: false,
         }}
-        
+
         allowTouchMove={true}
         breakpoints={{
-            320: { slidesPerView: 1 },
-            640: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
-          }}
+          320: { slidesPerView: 1 },
+          500: { slidesPerView: 2 },
+          768: { slidesPerView: 3 },
+          1024: { slidesPerView: 3 },
+        }}
       >
         {images.map((src, index) => (
           <SwiperSlide key={index} className="infinite-car-container">

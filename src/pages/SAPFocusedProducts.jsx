@@ -51,7 +51,7 @@ const SAPFocusedProducts = () => {
           <div className="row">
             <div className="col-12 ">
               <div className="life-hero-content text-center d-flex flex-column justify-content-center  h-100" >
-                <p className="eyebrow">SAP Focused Products</p>
+                {/* <p className="eyebrow">SAP Focused Products</p> */}
                 <h1 className="mb-2">
                   Empowering Business Growth with Proven SAP Excellence
                 </h1>
@@ -134,7 +134,7 @@ const SAPFocusedProducts = () => {
             <h2>Why RISE With SAP?</h2>
           </div>
           <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-center align-items-center">
+            <div className="col-md-1 d-flex justify-content-start align-items-center">
               <div className="point-icon">
                 <img src={partnership} alt="" />
               </div>
@@ -155,7 +155,7 @@ const SAPFocusedProducts = () => {
           </div>
 
           <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-center align-items-center">
+            <div className="col-md-1 d-flex justify-content-start align-items-center">
               <div className="point-icon">
                 <img src={procurement} alt="" />
               </div>
@@ -173,7 +173,7 @@ const SAPFocusedProducts = () => {
           </div>
 
           <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-center align-items-center">
+            <div className="col-md-1 d-flex justify-content-start align-items-center">
               <div className="point-icon">
                 <img src={implementation} alt="" />
               </div>
@@ -193,7 +193,7 @@ const SAPFocusedProducts = () => {
           </div>
 
           <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-center align-items-center">
+            <div className="col-md-1 d-flex justify-content-start align-items-center">
               <div className="point-icon">
                 <img src={smallBusiness} alt="" />
               </div>
@@ -214,7 +214,7 @@ const SAPFocusedProducts = () => {
           </div>
 
           <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-center align-items-center">
+            <div className="col-md-1 d-flex justify-content-start align-items-center">
               <div className="point-icon">
                 <img src={cloud} alt="" />
               </div>
@@ -235,7 +235,7 @@ const SAPFocusedProducts = () => {
           </div>
 
           <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-center align-items-center">
+            <div className="col-md-1 d-flex justify-content-start align-items-center">
               <div className="point-icon">
                 <img src={cost} alt="" />
               </div>
@@ -253,7 +253,7 @@ const SAPFocusedProducts = () => {
           </div>
 
           <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-center align-items-center">
+            <div className="col-md-1 d-flex justify-content-start align-items-center">
               <div className="point-icon">
                 <img src={collab} alt="" />
               </div>
@@ -308,7 +308,7 @@ const SAPFocusedProducts = () => {
             <h2>Why Grow With SAP? </h2>
           </div>
           <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-center align-items-center">
+            <div className="col-md-1 d-flex justify-content-start align-items-center">
               <div className="point-icon">
                 <img src={partnership} alt="" />
               </div>
@@ -327,7 +327,7 @@ const SAPFocusedProducts = () => {
           </div>
 
           <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-center align-items-center">
+            <div className="col-md-1 d-flex justify-content-start align-items-center">
               <div className="point-icon">
                 <img src={procurement} alt="" />
               </div>
@@ -343,7 +343,7 @@ const SAPFocusedProducts = () => {
           </div>
 
           <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-center align-items-center">
+            <div className="col-md-1 d-flex justify-content-start align-items-center">
               <div className="point-icon">
                 <img src={implementation} alt="" />
               </div>
@@ -361,7 +361,7 @@ const SAPFocusedProducts = () => {
           </div>
 
           <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-center align-items-center">
+            <div className="col-md-1 d-flex justify-content-start align-items-center">
               <div className="point-icon">
                 <img src={smallBusiness} alt="" />
               </div>
@@ -380,7 +380,7 @@ const SAPFocusedProducts = () => {
           </div>
 
           <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-center align-items-center">
+            <div className="col-md-1 d-flex justify-content-start align-items-center">
               <div className="point-icon">
                 <img src={cloud} alt="" />
               </div>
@@ -399,7 +399,7 @@ const SAPFocusedProducts = () => {
           </div>
 
           <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-center align-items-center">
+            <div className="col-md-1 d-flex justify-content-start align-items-center">
               <div className="point-icon">
                 <img src={cloud} alt="" />
               </div>
@@ -417,7 +417,7 @@ const SAPFocusedProducts = () => {
           </div>
 
           <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-center align-items-center">
+            <div className="col-md-1 d-flex justify-content-start align-items-center">
               <div className="point-icon">
                 <img src={cost} alt="" />
               </div>
@@ -434,7 +434,7 @@ const SAPFocusedProducts = () => {
           </div>
 
           <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-center align-items-center">
+            <div className="col-md-1 d-flex justify-content-start align-items-center">
               <div className="point-icon">
                 <img src={collab} alt="" />
               </div>
@@ -499,7 +499,7 @@ const SAPFocusedProducts = () => {
             <h2>Key Advantages </h2>
           </div>
           <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-center align-items-center">
+            <div className="col-md-1 d-flex justify-content-start align-items-center">
               <div className="point-icon">
                 <img src={cloud} alt="" />
               </div>
@@ -519,7 +519,7 @@ const SAPFocusedProducts = () => {
           </div>
 
           <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-center align-items-center">
+            <div className="col-md-1 d-flex justify-content-start align-items-center">
               <div className="point-icon">
                 <img src={Ai} alt="" />
               </div>
@@ -540,7 +540,7 @@ const SAPFocusedProducts = () => {
           </div>
 
           <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-center align-items-center">
+            <div className="col-md-1 d-flex justify-content-start align-items-center">
               <div className="point-icon">
                 <img src={implementation} alt="" />
               </div>
@@ -561,7 +561,7 @@ const SAPFocusedProducts = () => {
           </div>
 
           <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-center align-items-center">
+            <div className="col-md-1 d-flex justify-content-start align-items-center">
               <div className="point-icon">
                 <img src={smallBusiness} alt="" />
               </div>
@@ -579,7 +579,7 @@ const SAPFocusedProducts = () => {
           </div>
 
           <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-center align-items-center">
+            <div className="col-md-1 d-flex justify-content-start align-items-center">
               <div className="point-icon">
                 <img src={cloud} alt="" />
               </div>
@@ -597,7 +597,7 @@ const SAPFocusedProducts = () => {
           </div>
 
           <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-center align-items-center">
+            <div className="col-md-1 d-flex justify-content-start align-items-center">
               <div className="point-icon">
                 <img src={cost} alt="" />
               </div>
@@ -615,7 +615,7 @@ const SAPFocusedProducts = () => {
           </div>
 
           <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-center align-items-center">
+            <div className="col-md-1 d-flex justify-content-start align-items-center">
               <div className="point-icon">
                 <img src={collab} alt="" />
               </div>
@@ -671,7 +671,7 @@ const SAPFocusedProducts = () => {
           <div className="row">
             <div className="col-md-6">
               <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-center align-items-center">
+                <div className="col-md-2 d-flex justify-content-start align-items-center">
                   <div className="point-icon">
                     <img src={cloud} alt="" />
                   </div>
@@ -684,7 +684,7 @@ const SAPFocusedProducts = () => {
               </div>
 
               <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-center align-items-center">
+                <div className="col-md-2 d-flex justify-content-start align-items-center">
                   <div className="point-icon">
                     <img src={Ai} alt="" />
                   </div>
@@ -697,7 +697,7 @@ const SAPFocusedProducts = () => {
               </div>
 
               <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-center align-items-center">
+                <div className="col-md-2 d-flex justify-content-start align-items-center">
                   <div className="point-icon">
                     <img src={implementation} alt="" />
                   </div>
@@ -709,7 +709,7 @@ const SAPFocusedProducts = () => {
                 </div>
               </div>
               <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-center align-items-center">
+                <div className="col-md-2 d-flex justify-content-start align-items-center">
                   <div className="point-icon">
                     <img src={cost} alt="" />
                   </div>
@@ -723,7 +723,7 @@ const SAPFocusedProducts = () => {
             </div>
             <div className="col-md-6">
               <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-center align-items-center">
+                <div className="col-md-2 d-flex justify-content-start align-items-center">
                   <div className="point-icon">
                     <img src={smallBusiness} alt="" />
                   </div>
@@ -735,7 +735,7 @@ const SAPFocusedProducts = () => {
               </div>
 
               <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-center align-items-center">
+                <div className="col-md-2 d-flex justify-content-start align-items-center">
                   <div className="point-icon">
                     <img src={cloud} alt="" />
                   </div>
@@ -749,7 +749,7 @@ const SAPFocusedProducts = () => {
               </div>
 
               <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-center align-items-center">
+                <div className="col-md-2 d-flex justify-content-start align-items-center">
                   <div className="point-icon">
                     <img src={cost} alt="" />
                   </div>
@@ -815,7 +815,7 @@ const SAPFocusedProducts = () => {
           <div className="row">
             <div className="col-md-6">
               <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-center align-items-center">
+                <div className="col-md-2 d-flex justify-content-start align-items-center">
                   <div className="point-icon">
                     <img src={cloud} alt="" />
                   </div>
@@ -829,7 +829,7 @@ const SAPFocusedProducts = () => {
               </div>
 
               <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-center align-items-center">
+                <div className="col-md-2 d-flex justify-content-start align-items-center">
                   <div className="point-icon">
                     <img src={Ai} alt="" />
                   </div>
@@ -843,7 +843,7 @@ const SAPFocusedProducts = () => {
               </div>
 
               <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-center align-items-center">
+                <div className="col-md-2 d-flex justify-content-start align-items-center">
                   <div className="point-icon">
                     <img src={implementation} alt="" />
                   </div>
@@ -857,7 +857,7 @@ const SAPFocusedProducts = () => {
             </div>
             <div className="col-md-6">
               <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-center align-items-center">
+                <div className="col-md-2 d-flex justify-content-start align-items-center">
                   <div className="point-icon">
                     <img src={smallBusiness} alt="" />
                   </div>
@@ -868,7 +868,7 @@ const SAPFocusedProducts = () => {
               </div>
 
               <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-center align-items-center">
+                <div className="col-md-2 d-flex justify-content-start align-items-center">
                   <div className="point-icon">
                     <img src={cloud} alt="" />
                   </div>
@@ -882,7 +882,7 @@ const SAPFocusedProducts = () => {
               </div>
 
               <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-center align-items-center">
+                <div className="col-md-2 d-flex justify-content-start align-items-center">
                   <div className="point-icon">
                     <img src={cost} alt="" />
                   </div>
@@ -947,7 +947,7 @@ const SAPFocusedProducts = () => {
           <div className="row">
             <div className="col-md-6">
               <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-center align-items-center">
+                <div className="col-md-2 d-flex justify-content-start align-items-center">
                   <div className="point-icon">
                     <img src={cloud} alt="" />
                   </div>
@@ -960,7 +960,7 @@ const SAPFocusedProducts = () => {
               </div>
 
               <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-center align-items-center">
+                <div className="col-md-2 d-flex justify-content-start align-items-center">
                   <div className="point-icon">
                     <img src={Ai} alt="" />
                   </div>
@@ -971,7 +971,7 @@ const SAPFocusedProducts = () => {
               </div>
 
               <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-center align-items-center">
+                <div className="col-md-2 d-flex justify-content-start align-items-center">
                   <div className="point-icon">
                     <img src={implementation} alt="" />
                   </div>
@@ -983,7 +983,7 @@ const SAPFocusedProducts = () => {
             </div>
             <div className="col-md-6">
               <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-center align-items-center">
+                <div className="col-md-2 d-flex justify-content-start align-items-center">
                   <div className="point-icon">
                     <img src={smallBusiness} alt="" />
                   </div>
@@ -994,7 +994,7 @@ const SAPFocusedProducts = () => {
               </div>
 
               <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-center align-items-center">
+                <div className="col-md-2 d-flex justify-content-start align-items-center">
                   <div className="point-icon">
                     <img src={cloud} alt="" />
                   </div>
@@ -1007,7 +1007,7 @@ const SAPFocusedProducts = () => {
               </div>
 
               <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-center align-items-center">
+                <div className="col-md-2 d-flex justify-content-start align-items-center">
                   <div className="point-icon">
                     <img src={cost} alt="" />
                   </div>
@@ -1058,7 +1058,7 @@ const SAPFocusedProducts = () => {
           <div className="row">
             <div className="col-md-6">
               <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-center align-items-center">
+                <div className="col-md-2 d-flex justify-content-start align-items-center">
                   <div className="point-icon">
                     <img src={cloud} alt="" />
                   </div>
@@ -1071,7 +1071,7 @@ const SAPFocusedProducts = () => {
               </div>
 
               <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-center align-items-center">
+                <div className="col-md-2 d-flex justify-content-start align-items-center">
                   <div className="point-icon">
                     <img src={Ai} alt="" />
                   </div>
@@ -1082,7 +1082,7 @@ const SAPFocusedProducts = () => {
               </div>
 
               <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-center align-items-center">
+                <div className="col-md-2 d-flex justify-content-start align-items-center">
                   <div className="point-icon">
                     <img src={implementation} alt="" />
                   </div>
@@ -1093,7 +1093,7 @@ const SAPFocusedProducts = () => {
               </div>
 
               <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-center align-items-center">
+                <div className="col-md-2 d-flex justify-content-start align-items-center">
                   <div className="point-icon">
                     <img src={implementation} alt="" />
                   </div>
@@ -1105,7 +1105,7 @@ const SAPFocusedProducts = () => {
             </div>
             <div className="col-md-6">
               <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-center align-items-center">
+                <div className="col-md-2 d-flex justify-content-start align-items-center">
                   <div className="point-icon">
                     <img src={smallBusiness} alt="" />
                   </div>
@@ -1116,7 +1116,7 @@ const SAPFocusedProducts = () => {
               </div>
 
               <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-center align-items-center">
+                <div className="col-md-2 d-flex justify-content-start align-items-center">
                   <div className="point-icon">
                     <img src={cloud} alt="" />
                   </div>
@@ -1129,7 +1129,7 @@ const SAPFocusedProducts = () => {
               </div>
 
               <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-center align-items-center">
+                <div className="col-md-2 d-flex justify-content-start align-items-center">
                   <div className="point-icon">
                     <img src={cost} alt="" />
                   </div>
@@ -1140,7 +1140,7 @@ const SAPFocusedProducts = () => {
               </div>
 
               <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-center align-items-center">
+                <div className="col-md-2 d-flex justify-content-start align-items-center">
                   <div className="point-icon">
                     <img src={cost} alt="" />
                   </div>

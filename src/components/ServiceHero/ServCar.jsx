@@ -78,9 +78,8 @@ const getCardStyle = (relativePos) => {
     };
   } else {
     return {
-      transform: `translateX(${relativePos * 180}px) scale(0.75) rotateY(${
-        -relativePos * 15
-      }deg)`,
+      transform: `translateX(${relativePos * 180}px) scale(0.75) rotateY(${-relativePos * 15
+        }deg)`,
       opacity: 1,
       filter: "brightness(0.5)",
       zIndex: 1,
@@ -237,7 +236,7 @@ const ImplementationServices = () => {
       <section className="serv-section" id="why">
         <div className="team-container">
           <div
-            className="carousel-container"
+            className="carousel-container mobile-stack"
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
           >
@@ -270,8 +269,8 @@ const ImplementationServices = () => {
                     relativePos > teamMembers.length / 2
                       ? relativePos - teamMembers.length
                       : relativePos < -teamMembers.length / 2
-                      ? relativePos + teamMembers.length
-                      : relativePos;
+                        ? relativePos + teamMembers.length
+                        : relativePos;
                   const isActive = adjustedPos === 0;
                   const style = getCardStyle(adjustedPos);
 
@@ -318,19 +317,19 @@ const ImplementationServices = () => {
           <div className="metric-bg">
             <div className="row text-center gy-4">
               <div className="col-md-4">
-                <div className="metric-card">
-                  <div className="metric-content">
+                <div className="metric-card h-100">
+                  <div className="metric-content h-100">
                     <h2 className="display-5 fw-bold">99%</h2>
                     <p className=" xl-fs-5 fw-medium">
-                      of projects delivered within agreed <br />timelines
+                      of projects delivered within agreed timelines
                     </p>
                   </div>
                 </div>
               </div>
 
               <div className="col-md-4">
-                <div className="metric-card">
-                  <div className="metric-content">
+                <div className="metric-card h-100">
+                  <div className="metric-content h-100">
                     <h2 className="display-5 fw-bold">40+</h2>
                     <p className="xl-fs-5 fw-medium">
                       Go-lives delivered earlier than <br /> planned
@@ -340,8 +339,8 @@ const ImplementationServices = () => {
               </div>
 
               <div className="col-md-4">
-                <div className="metric-card">
-                  <div className="metric-content">
+                <div className="metric-card h-100">
+                  <div className="metric-content h-100">
                     <h2 className="display-5 fw-bold">30%</h2>
                     <p className="xl-fs-5 fw-medium">
                       Reduction in overall implementation <br /> time

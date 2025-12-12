@@ -43,9 +43,9 @@ const BlogsCardsSection = () => {
         <section className="blogs-section mb-5" id="blogs">
             <div className="container">
                 <Header
-                    subtext="Blogs"
-                    headline="Fresh Perspectives to Fuel Your Growth"
+                    // subtext="Blogs"
                     highlight="Insights, Updates & Inspiration"
+                    headline="Fresh perspectives to drive smarter business decisions"
                 />
 
                 <div className="blogs-grid">

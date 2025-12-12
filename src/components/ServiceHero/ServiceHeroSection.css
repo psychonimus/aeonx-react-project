@@ -58,11 +58,12 @@
   line-height: 1.1;
 }
 
-.connection-svg line{
-    stroke: #4789e0;
+.connection-svg line {
+  stroke: #4789e0;
 }
-.connection-svg circle{
-    fill: #4789e0;
+
+.connection-svg circle {
+  fill: #4789e0;
 }
 
 @media (min-width: 768px) {
@@ -102,6 +103,8 @@
   align-items: center;
   gap: 1.5rem;
   margin-bottom: 5rem;
+  flex-wrap: wrap;
+  /* Allow icons to wrap on small screens */
 }
 
 @media (min-width: 768px) {
@@ -181,7 +184,7 @@
   align-items: center;
   justify-content: center;
   border: 2px solid #3926dd;
-  box-shadow: 
+  box-shadow:
     0 0 40px rgba(76, 74, 222, 0.5),
     0 0 80px rgba(76, 74, 222, 0.5);
 }
@@ -191,17 +194,25 @@
     width: 5rem;
     height: 5rem;
   }
-  
+
 }
-@media(max-width : 992px){
-    .central-icon{
-        left: 46%;
-    }
+
+@media(max-width : 992px) {
+  .central-icon {
+    left: 46%;
+  }
 }
-@media(max-width : 768px){
-    .central-icon{
-        left: 44%;
-    }
+
+@media(max-width : 768px) {
+  .central-icon {
+    left: 44%;
+  }
+}
+
+@media(max-width : 556px) {
+  .central-icon {
+    left: 42%;
+  }
 }
 
 .zap-icon {
@@ -284,10 +295,9 @@
   }
 }
 
-.service-name{
-    font-size: 1rem;
-    font-weight: 500;
-    color: #ffffff;
-    text-transform: uppercase;
+.service-name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
 }
-

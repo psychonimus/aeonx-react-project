@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Header from "../Header/Header";
 import { FaCircleArrowRight } from "react-icons/fa6";
 import GlassButton from "../GlassButton/GlassButton";
-import expertise1 from "/images/expertise1.webp"
+import expertise1 from "/images/cloud-expertise.png"
 import expertise2 from "/images/expertise2.webp"
 import expertise3 from "/images/expertise3.webp"
 import GlassButtonLight from "../GlassButton/GlassButtonLight";
@@ -42,14 +42,14 @@ const ExpertiseSection = () => {
         <>
 
             <Header
-                
+
                 highlight="Our Expertise, Your Advantage"
                 headline="Innovative Solutions That Accelerate Growth"
             />
             <div className="stack-section pt-5" ref={containerRef}>
                 <div
                     className="stack-card stack-card-1"
-                    
+
                     ref={(el) => (cardsRef.current[0] = el)}
                 >
                     <div className="container py-5">
@@ -72,7 +72,7 @@ const ExpertiseSection = () => {
 
                 <div
                     className="stack-card stack-card-2"
-                    
+
                     ref={(el) => (cardsRef.current[1] = el)}
                 >
                     <div className="container py-5">
@@ -81,7 +81,7 @@ const ExpertiseSection = () => {
                                 <div className="h-100 d-flex flex-column justify-content-center">
                                     <h3 style={{ color: "#fff" }}>Custom Application Development</h3>
                                     <p style={{ color: "#fff" }}><strong>We develop custom applications tailored to specific business needs, helping organizations enhance productivity, user experience, and scalability.</strong> Using modern frameworks and cloud-native technologies, we build secure, high-performance solutions that integrate seamlessly with existing systems. With a focus on agility and innovation, we enable businesses to automate workflows, optimize operations, and drive sustainable growth.
-</p>
+                                    </p>
                                     <GlassButton title="Know More" icon={() => <FaCircleArrowRight color="" size={28} />} />
                                 </div>
                             </div>
@@ -96,7 +96,7 @@ const ExpertiseSection = () => {
 
                 <div
                     className="stack-card stack-card-3"
-                    
+
                     ref={(el) => (cardsRef.current[2] = el)}
                 >
                     <div className="container py-5">
@@ -105,7 +105,7 @@ const ExpertiseSection = () => {
                                 <div className="h-100 d-flex flex-column justify-content-center">
                                     <h3 style={{ color: "#000" }}>Business Process Transformation</h3>
                                     <p style={{ color: "#000" }}>By combining industry expertise with technology-driven strategies, we help businesses streamline workflows, eliminate redundancies, and adopt scalable models. Our transformation approach focuses on process innovation, automation, and continuous improvement, empowering companies to operate smarter, adapt faster, and deliver greater value.
-</p>
+                                    </p>
                                     <GlassButtonLight href="/sap-focused-products#sap-btp" title="Know More" icon={() => <FaCircleArrowRight color="#F97516" size={28} />} />
                                 </div>
                             </div>

@@ -327,11 +327,7 @@ const IndustryRotator = () => {
                             <div className="card-wrapper">
                                 <div className="card" style={{ backgroundImage: `url(${currentSlide.bgImage})` }}>
                                     <div className="card-content">
-                                        <div className="dots-indicator">
-                                            <span className="dot"></span>
-                                            <span className="dot"></span>
-                                            <span className="dot"></span>
-                                        </div>
+                                        
 
                                         {/* <div className={`icon-box accent-${currentSlide.accent}`}>
                                             <IconComponent className="icon" />

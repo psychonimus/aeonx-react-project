@@ -81,7 +81,6 @@ const MigrationSection = () => {
 
   const metricH2Style = {
     fontSize: "clamp(1.8rem, 5vw, 2.5rem)",
-    fontSize: "3rem",
     fontWeight: "600",
     fontFamily: "Gilroy-Bold",
     background: "linear-gradient(90deg, #f97316 0%, #facc15 100%)",

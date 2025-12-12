@@ -99,11 +99,11 @@ const mediaItems = [
       </Helmet>
       
       <EventHero />
-      <InteractiveBentoGallery mediaItems={mediaItems} />
+      {/* <InteractiveBentoGallery mediaItems={mediaItems} /> */}
       <PastEventSection />
-      <div className='container-fluid my-5' style={{ width: '100%', height: '100vh' }}>
+      {/* <div className='container-fluid my-5' style={{ width: '100%', height: '100vh' }}>
         <ThreeDImageRing images={imageUrls} />
-      </div>
+      </div> */}
     </>
   )
 }

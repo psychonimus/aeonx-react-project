@@ -54,9 +54,9 @@ const JourneySlider = () => {
         <p>With 17+ years in the business, we have used compelling data insights and creativity to deliver experiences that drive commerce for global brands.</p>
       </div> */}
       <Header
-        subtext="Our Journey"
-        headline="PAST, PRESENT & FUTURE"
-        highlight="ALL TOGETHER"
+        // subtext="Our Journey"
+        highlight="Our Journey"
+        headline="Shaped by the Past, Driven in the Present, Built for the Future"
         desc="Founded in 2020, AeonX Digital began as a specialized SAP consulting firm and rapidly expanded into providing comprehensive ERP consulting, cloud transformation, IT strategy, and system integration services. With strong expertise in SAP managed services, infrastructure, and security support, we help businesses enhance digital engagement across procurement, marketing, and tendering. Backed by the 60-year legacy of a global multinational group, AeonX continues to scale across cutting-edge technology domains, committed to innovation, sustainability, and long-term client success."
       />
 
