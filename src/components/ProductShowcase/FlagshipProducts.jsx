@@ -4,22 +4,28 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './FlagshipProducts.css';
 
 import project1 from '/images/xpense-bg.png';
+import project1mob from '/images/xpense-bg-mob.png';
 import project2 from '/images/supplier-x-bg.png';
+import project2mob from '/images/supplier-x-bg-mob.png';
 import project3 from '/images/logystix-bg.png';
+import project3mob from '/images/logystix-bg-mob.png';
 import project4 from '/images/manufex-bg.png';
+import project4mob from '/images/manufex-bg-mob.png';
 import project5 from '/images/people-connect-bg.png';
+import project5mob from '/images/people-connect-bg-mob.png';
 import project6 from '/images/aeonxiq-bg.png';
+import project6mob from '/images/aeonxiq-bg-mob.png';
 import Header from '../Header/Header';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
-  { id: 1, title: 'Xpense', image: project1, link: 'https://xpense.aeonx.digital/' },
-  { id: 2, title: 'SupplierX', image: project2, link: 'https://supplierx.aeonx.digital/' },
-  { id: 3, title: 'LOGYSTIX', image: project3, link: 'https://logystix.cloud/' },
-  { id: 4, title: 'Manufex ', image: project4, link: 'https://dev.manufex.cloud/' },
-  { id: 5, title: 'People connect', image: project5, link: 'https://dev.aeonxus.digital/' },
-  { id: 6, title: 'aeonxiq.ai ', image: project6, link: 'https://aeonxiq.ai/' },
+  { id: 1, title: 'Xpense', image: project1, imageMob: project1mob, link: 'https://xpense.aeonx.digital/' },
+  { id: 2, title: 'SupplierX', image: project2, imageMob: project2mob, link: 'https://supplierx.aeonx.digital/' },
+  { id: 3, title: 'LOGYSTIX', image: project3, imageMob: project3mob, link: 'https://logystix.cloud/' },
+  { id: 4, title: 'Manufex ', image: project4, imageMob: project4mob, link: 'https://dev.manufex.cloud/' },
+  { id: 5, title: 'People connect', image: project5, imageMob: project5mob, link: 'https://dev.aeonxus.digital/' },
+  { id: 6, title: 'aeonxiq.ai ', image: project6, imageMob: project6mob, link: 'https://aeonxiq.ai/' },
 ];
 
 const HorizontalAccordion = () => {
@@ -50,7 +56,7 @@ const HorizontalAccordion = () => {
       ScrollTrigger.create({
         trigger: section,
         start: 'top top',
-        end: '+=3000',
+        end: '+=2000',
         pin: true,
         pinSpacing: true,
         scrub: 1,
@@ -77,7 +83,15 @@ const HorizontalAccordion = () => {
       ScrollTrigger.refresh();
     }, sectionRef); // Scope to sectionRef
 
-    return () => ctx.revert();
+    // Force refresh to handle layout shifts (e.g. from images loading)
+    const timer = setTimeout(() => {
+      ScrollTrigger.refresh();
+    }, 500);
+
+    return () => {
+      ctx.revert();
+      clearTimeout(timer);
+    };
   }, []);
 
   const formatNumber = (num) => {
@@ -86,13 +100,14 @@ const HorizontalAccordion = () => {
 
   return (
     <>
-      <Header
-        highlight="Our Product Suite"
-        headline="Discover Flagship Innovations"
-      
-      
-      />
-      <div className="flagship-products-wrapper" style={{ position: 'relative', zIndex: 5 }}>
+      <div className="contaner-fluid" style={{}} >
+        <Header
+          highlight="Our Product Suite"
+          headline="Discover Flagship Innovations"
+        />
+      </div>
+
+      <div className="flagship-products-wrapper" style={{}}>
         {/* Pin Section */}
         <div ref={sectionRef} className="pin-section p-4" style={{ height: '100vh', width: '100%' }}>
           <div ref={accordionRef} className="horizontal-accordion">
@@ -107,7 +122,13 @@ const HorizontalAccordion = () => {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="accordion-image mt-5"
+                    className="accordion-image"
+                  />
+
+                  <img
+                    src={project.imageMob}
+                    alt={project.title}
+                    className="accordion-image-mob"
                   />
 
                   {/* <p className='mt-3'>{project.description}</p> */}

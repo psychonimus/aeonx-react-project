@@ -117,7 +117,7 @@
   position: relative;
   width: 3.5rem;
   height: 3.5rem;
-  background-color: #1a1a1a;
+  background: #3926dd;
   border-radius: 0.75rem;
   display: flex;
   align-items: center;
@@ -174,10 +174,10 @@
 /* Central Glowing Icon */
 .central-icon {
   position: absolute;
-  left: 46.5%;
+  left: 45%;
   bottom: -10%;
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   background-color: #000000;
   border-radius: 50%;
   display: flex;
@@ -191,15 +191,15 @@
 
 @media (min-width: 768px) {
   .central-icon {
-    width: 5rem;
-    height: 5rem;
+    width: 7rem;
+    height: 7rem;
   }
 
 }
 
 @media(max-width : 992px) {
   .central-icon {
-    left: 46%;
+    left: 44%;
   }
 }
 
@@ -211,7 +211,7 @@
 
 @media(max-width : 556px) {
   .central-icon {
-    left: 42%;
+    left: 39%;
   }
 }
 

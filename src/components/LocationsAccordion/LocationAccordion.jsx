@@ -7,7 +7,7 @@ import { IoMail } from "react-icons/io5";
 const accordionData = [
     {
         id: 'Mumbai',
-        locationName: 'MUMBAI, INDIA',
+        locationName: 'MUMBAI OFFICE',
         address: 'AeonX Digital, 278, Jeevan Udyog Building, DN Road, Fort, Mumbai, India-400001',
         contactNumber: '+91 22 66221640',
         email: 'sales@aeonx.digital',
@@ -19,7 +19,7 @@ const accordionData = [
     },
     {
         id: 'Bhuj',
-        locationName: 'BHUJ, INDIA',
+        locationName: 'BHUJ OFFICE',
         address: '24/7 Delivery Center, C-203/206 JV Business Park 1 Opposite Smrutivan Memorial Bhuj.370001 +91 99099 86118',
         contactNumber: '+91 99099 86118',
         email: 'sales@aeonx.digital',
@@ -31,7 +31,7 @@ const accordionData = [
     },
     {
         id: 'Dubai',
-        locationName: 'DUBAI BRANCH',
+        locationName: 'DUBAI OFFICE',
         address: 'Unit 13, Level 6, GD-4, PO Box-506695, DIFC United Arab Emirates +971 -50 -1296977',
         contactNumber: '+971 -50 -1296977',
         email: 'sales@aeonx.digital',
@@ -43,7 +43,7 @@ const accordionData = [
     },
     {
         id: 'Kolkata',
-        locationName: 'KOLKATA, INDIA',
+        locationName: 'KOLKATA OFFICE',
         address: 'Unit 7WS8A, 7th Floor, Mani Casadona, Plot No: II F/04. Action Area: II-F, Rajarhat Newtown, Kolkata-700156, Land Mark – Opp. to ECO Space.',
         contactNumber: '+91 22 66221640',
         email: 'sales@aeonx.digital',
@@ -54,7 +54,7 @@ const accordionData = [
     },
     {
         id: 'Ahmedabad',
-        locationName: 'AHMEDABAD BRANCH',
+        locationName: 'AHMEDABAD OFFICE',
         address: 'AeonX Digital, D-409 A, Shivalik Corporate Park, D-Mart Building, Behind IOC Petrol Pump, Shivranjani Rasta, Satellite, Ahmedabad – 380 015',
         contactNumber: '+91 22 66221640',
         email: 'sales@aeonx.digital',
@@ -66,7 +66,7 @@ const accordionData = [
     },
     {
         id: 'Dehradun',
-        locationName: 'DEHRADUN BRANCH',
+        locationName: 'DEHRADUN OFFICE',
         address: 'AeonX Digital, K K Tower, Above HDFC Bank, Doiwala, Dehradun, 248140 Uttrakhand, India',
         contactNumber: '+91 22 66221640',
         email: 'sales@aeonx.digital',
@@ -78,7 +78,7 @@ const accordionData = [
     },
     {
         id: 'Noida',
-        locationName: 'NOIDA BRANCH',
+        locationName: 'NOIDA OFFICE',
         address: 'AeonX Digital Plot no A41, Iconic Corenthum, office no 1205B, 12th floor, sector 62. near Electronic City Metro Station. Uttar Pradesh 201301',
         contactNumber: '+91 22 66221640',
         email: 'sales@aeonx.digital',

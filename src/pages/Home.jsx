@@ -38,11 +38,19 @@ const Home = () => {
 
       <Hero />
       <AboutSection />
-      <FlagshipProducts />
-      <NumbersSectionOld />
+      
+      <div className="mt-5">
+        <NumbersSectionOld />
+      </div>
       <ExpertiseSection />
+
       
       <ServicesSection />
+
+      
+
+      <FlagshipProducts />
+
       <ClientLogosSection />
       
       <CaseStudiesSection />

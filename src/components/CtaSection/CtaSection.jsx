@@ -30,20 +30,18 @@ const CtaSection = () => {
                                 <p>Discover how we’ve collaborated with leading startups, scaleups, and enterprises to build next-gen digital solutions—from concept to </p>
                                 <form className="contact-form">
                                     <div className="form-row">
-                                        <input type="text" placeholder="Name" />
-                                        <input type="email" placeholder="Email" />
+                                        <input type="text" placeholder="Company Name" name="company_name" />
+                                        <input type="text" placeholder="Name" name="contact_name" />
                                     </div>
                                     <div className="form-row">
-                                        <input type="text" placeholder="Contact" />
-                                        <select>
-                                            <option value="">Industry</option>
-                                            <option value="technology">Technology</option>
-                                            <option value="finance">Finance</option>
-                                            <option value="healthcare">Healthcare</option>
-                                            <option value="education">Education</option>
-                                        </select>
+                                        <input type="text" placeholder="Role" name='contact_role' />
+                                        
                                     </div>
-                                    <textarea placeholder="Tell us about your project or goals..."></textarea>
+                                    <div className="form-row">
+                                        <input type="text" placeholder="Phone" name="phone_no" />
+                                        <input type="email" placeholder="Email" name="email" />
+                                    </div>
+                                    <textarea placeholder="Tell us about your project or goals..." name="notes"></textarea>
 
                                     <GlassButtonLight
                                         title="send message"

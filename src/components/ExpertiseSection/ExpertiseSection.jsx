@@ -5,8 +5,8 @@ import Header from "../Header/Header";
 import { FaCircleArrowRight } from "react-icons/fa6";
 import GlassButton from "../GlassButton/GlassButton";
 import expertise1 from "/images/cloud-expertise.png"
-import expertise2 from "/images/expertise2.webp"
-import expertise3 from "/images/expertise3.webp"
+import expertise2 from "/images/custom-app-dev.png"
+import expertise3 from "/images/business-process-transformation-bg.jpg"
 import GlassButtonLight from "../GlassButton/GlassButtonLight";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -102,11 +102,11 @@ const ExpertiseSection = () => {
                     <div className="container py-5">
                         <div className="row py-4">
                             <div className="col-md-7">
-                                <div className="h-100 d-flex flex-column justify-content-center">
-                                    <h3 style={{ color: "#000" }}>Business Process Transformation</h3>
-                                    <p style={{ color: "#000" }}>By combining industry expertise with technology-driven strategies, we help businesses streamline workflows, eliminate redundancies, and adopt scalable models. Our transformation approach focuses on process innovation, automation, and continuous improvement, empowering companies to operate smarter, adapt faster, and deliver greater value.
+                                <div className="h-100 d-flex flex-column justify-content-center text-white">
+                                    <h3 >Business Process Transformation</h3>
+                                    <p >By combining industry expertise with technology-driven strategies, we help businesses streamline workflows, eliminate redundancies, and adopt scalable models. Our transformation approach focuses on process innovation, automation, and continuous improvement, empowering companies to operate smarter, adapt faster, and deliver greater value.
                                     </p>
-                                    <GlassButtonLight href="/sap-focused-products#sap-btp" title="Know More" icon={() => <FaCircleArrowRight color="#F97516" size={28} />} />
+                                    <GlassButton href="/sap-focused-products#sap-btp" title="Know More" icon={() => <FaCircleArrowRight color="#F97516" size={28} />} />
                                 </div>
                             </div>
                             <div className="col-md-5">

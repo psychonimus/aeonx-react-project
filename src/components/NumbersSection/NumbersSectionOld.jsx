@@ -29,7 +29,7 @@ const NumbersSectionOld = () => {
                 <span className="radar" />
                 <span className="radar" />
                 <span className="radar" />
-                <div className="container mb-5">
+                <div className="container-fluid mb-5">
                     <div className="text-center">
                         <div className="metrics-title">
                             <h2>GLOBAL IMPACT</h2>

@@ -28,6 +28,16 @@ import SapAnalyticsCloud from '/images/SAP-Analytics-Cloud-about.png'
 
 import growWithSap from '/images/grow-with-sap-logo.png'
 
+import { RiContractLine } from "react-icons/ri";
+import { PiDesktopFill } from "react-icons/pi";
+import { GrBusinessService } from "react-icons/gr";
+import { IoMdBusiness } from "react-icons/io";
+import { IoCloudDownloadSharp } from "react-icons/io5";
+import { MdOutlinePriceCheck } from "react-icons/md";
+import { RiTeamFill } from "react-icons/ri";
+
+
+
 const SAPFocusedProducts = () => {
   return (
     <>
@@ -44,7 +54,7 @@ const SAPFocusedProducts = () => {
         <meta name="author" content="AeonX Digital" />
       </Helmet>
       <section
-        className="life-hero sap-focused-products-hero" style={{ backgroundImage:"url(/images/sap-products-banner.png)" }}
+        className="life-hero sap-focused-products-hero" style={{ backgroundImage: "url(/images/sap-products-banner.png)" }}
       // style={{ height: "100vh" }}
       >
         <div className="container">
@@ -80,20 +90,7 @@ const SAPFocusedProducts = () => {
         </div>
       </section>
 
-      {/* <section className='about-sap-products'>
-                <div className="container">
-                    <div className="row my-5">
-                        <div className="col-md-6">
-                            <h2>Our Core  Values</h2>
-                            <h4>Principles That Guide Every Step We Take</h4>
-                        </div>
-                        <div className="col-md-6">
-                            <p>AeonX Digital brings 7+ years of hands-on SAP expertise, delivering next-gen digital transformation, S/4HANA implementation, and high-performance AMS support. With a team of 100+ SAP-certified consultants, we have successfully executed 25+ SAP S/4HANA implementation and support projects and proudly partner with 8 publicly listed enterprises in India. Our 24/7 Global Delivery Center currently supports 10,000+ SAP end users, ensuring uninterrupted business operations and measurable ROI.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
+
 
       <section className="rise-with-sap my-5" id="rise-with-sap">
         <div className="container">
@@ -128,147 +125,66 @@ const SAPFocusedProducts = () => {
         </div>
       </section>
 
-      <section className="major-points my-5">
+      <section className="feature-list my-5">
         <div className="container">
-          <div className="point-heading ">
-            <h2>Why RISE With SAP?</h2>
-          </div>
-          <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-start align-items-center">
-              <div className="point-icon">
-                <img src={partnership} alt="" />
-              </div>
-            </div>
-            <div className="col-md-6 point-text d-flex align-items-center">
-              <h4>
-                Single contract, single subscription covering cloud editions,
-                SAP BTP, and business network access
-              </h4>
-            </div>
-            <div className="col-md-5">
-              <p>
-                With a single contract and unified subscription, businesses can
-                access cloud editions, SAP BTP, and the SAP Business Network
-                without managing multiple licensing layers
-              </p>
-            </div>
-          </div>
+          <div className="row">
+            <div className="col-md-6">
+              <div class="list-timeline">
+                <div class="list-timeline-item">
+                  <div class="icon"><RiContractLine size={20} /></div>
+                  <h4>Single contract, single subscription covering cloud editions, SAP BTP, and business network access
+                  </h4>
+                  
+                </div>
 
-          <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-start align-items-center">
-              <div className="point-icon">
-                <img src={procurement} alt="" />
-              </div>
-            </div>
-            <div className="col-md-6 point-text d-flex align-items-center">
-              <h4>Streamlined procurement & vendor management</h4>
-            </div>
-            <div className="col-md-5">
-              <p>
-                With a single contract and unified subscription, businesses can
-                access cloud editions, SAP BTP, and the SAP Business Network
-                without managing multiple licensing layers
-              </p>
-            </div>
-          </div>
+                <div class="list-timeline-item">
+                  <div class="icon"><PiDesktopFill size={20} /></div>
+                  <h4>Streamlined procurement & vendor management
+                  </h4>
+                  
+                </div>
 
-          <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-start align-items-center">
-              <div className="point-icon">
-                <img src={implementation} alt="" />
-              </div>
-            </div>
-            <div className="col-md-6 point-text d-flex  align-items-center">
-              <h4>
-                Flexible implementation tailored to business-specific needs
-              </h4>
-            </div>
-            <div className="col-md-5">
-              <p>
-                With a single contract and unified subscription, businesses can
-                access cloud editions, SAP BTP, and the SAP Business Network
-                without managing multiple licensing layers
-              </p>
-            </div>
-          </div>
+                <div class="list-timeline-item">
+                  <div class="icon"><GrBusinessService size={20} /></div>
+                  <h4>Flexible implementation tailored to business-specific needs
+                  </h4>
+                  
+                </div>
 
-          <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-start align-items-center">
-              <div className="point-icon">
-                <img src={smallBusiness} alt="" />
+                <div class="list-timeline-item">
+                  <div class="icon"><IoMdBusiness size={20} /></div>
+                  <h4>Works for businesses with smaller IT footprints or limited budgets
+                  </h4>
+                  
+                </div>
               </div>
             </div>
-            <div className="col-md-6 point-text d-flex  align-items-center">
-              <h4>
-                Works for businesses with smaller IT footprints or limited
-                budgets
-              </h4>
-            </div>
-            <div className="col-md-5">
-              <p>
-                With a single contract and unified subscription, businesses can
-                access cloud editions, SAP BTP, and the SAP Business Network
-                without managing multiple licensing layers
-              </p>
-            </div>
-          </div>
+            <div className="col-md-6">
+              <div class="list-timeline">
+                <div class="list-timeline-item">
+                  <div class="icon"><IoCloudDownloadSharp size={20} /></div>
+                  <h4>Access to SAP Cloud Application Lifecycle Management (CALM) at no cost
 
-          <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-start align-items-center">
-              <div className="point-icon">
-                <img src={cloud} alt="" />
-              </div>
-            </div>
-            <div className="col-md-6 point-text d-flex  align-items-center">
-              <h4>
-                Access to SAP Cloud Application Lifecycle Management (CALM) at
-                no cost
-              </h4>
-            </div>
-            <div className="col-md-5">
-              <p>
-                With a single contract and unified subscription, businesses can
-                access cloud editions, SAP BTP, and the SAP Business Network
-                without managing multiple licensing layers
-              </p>
-            </div>
-          </div>
+                  </h4>
+                  
+                </div>
 
-          <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-start align-items-center">
-              <div className="point-icon">
-                <img src={cost} alt="" />
-              </div>
-            </div>
-            <div className="col-md-6 point-text d-flex  align-items-center">
-              <h4>Reduces maintenance costs for ECC users</h4>
-            </div>
-            <div className="col-md-5">
-              <p>
-                With a single contract and unified subscription, businesses can
-                access cloud editions, SAP BTP, and the SAP Business Network
-                without managing multiple licensing layers
-              </p>
-            </div>
-          </div>
+                <div class="list-timeline-item">
+                  <div class="icon"><MdOutlinePriceCheck size={20} /></div>
+                  <h4>Reduces maintenance costs for ECC users
+                  </h4>
+                  
+                </div>
 
-          <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-start align-items-center">
-              <div className="point-icon">
-                <img src={collab} alt="" />
+                <div class="list-timeline-item">
+                  <div class="icon"><RiTeamFill size={20} /></div>
+                  <h4>Enables collaboration across suppliers and trading partners
+                  </h4>
+                  
+                </div>
+
+
               </div>
-            </div>
-            <div className="col-md-6 point-text d-flex  align-items-center">
-              <h4>
-                Enables collaboration across suppliers and trading partners
-              </h4>
-            </div>
-            <div className="col-md-5">
-              <p>
-                With a single contract and unified subscription, businesses can
-                access cloud editions, SAP BTP, and the SAP Business Network
-                without managing multiple licensing layers
-              </p>
             </div>
           </div>
         </div>
@@ -302,154 +218,90 @@ const SAPFocusedProducts = () => {
         </div>
       </section>
 
-      <section className="major-points my-5">
+      
+
+      <section className="feature-list my-5">
         <div className="container">
-          <div className="point-heading ">
-            <h2>Why Grow With SAP? </h2>
-          </div>
-          <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-start align-items-center">
-              <div className="point-icon">
-                <img src={partnership} alt="" />
+          <div className="row">
+            <div className="col-md-6">
+              <div class="list-timeline">
+                <div class="list-timeline-item">
+                  <div class="icon"><RiContractLine size={20} /></div>
+                  <h4>Ready-to-run cloud ERP for fast implementation
+                  </h4>
+                  <p>Adopt SAP S/4HANA Cloud quickly with preconfigured industry best practices tailored for growing businesses.
+</p>
+                  
+                </div>
+
+                <div class="list-timeline-item">
+                  <div class="icon"><PiDesktopFill size={20} /></div>
+                  <h4>Scales easily as your business grows
+                  </h4>
+                  <p>Add users, processes, and locations seamlessly without redesigning your ERP or disrupting operations.
+</p>
+                  
+                </div>
+
+                <div class="list-timeline-item">
+                  <div class="icon"><GrBusinessService size={20} /></div>
+                  <h4>Affordable, predictable subscription pricing
+                  </h4>
+                  <p>Built for SMBs and mid-market companies, offering high value without large upfront investments.
+</p>
+                  
+                </div>
+
+                <div class="list-timeline-item">
+                  <div class="icon"><IoMdBusiness size={20} /></div>
+                  <h4>Embedded analytics for faster decision-making
+                  </h4>
+                  <p>AI-powered insights, dashboards, and real-time reporting help teams act quickly and confidently.
+</p>
+                  
+                </div>
               </div>
             </div>
-            <div className="col-md-6 point-text d-flex align-items-center">
-              <h4>
-                Ready-to-run cloud ERP for fast implementation
-              </h4>
+            <div className="col-md-6">
+              <div class="list-timeline">
+                <div class="list-timeline-item">
+                  <div class="icon"><IoCloudDownloadSharp size={20} /></div>
+                  <h4>Extend and innovate easily with SAP BTP
+                  </h4>
+                  <p>Leverage low-code tools, automation, and ready-made integrations to build new capabilities as you scale.
+</p>
+                  
+                </div>
 
-            </div>
-            <div className="col-md-5">
-              <p>
-                Adopt SAP S/4HANA Cloud quickly with preconfigured industry best practices tailored for growing businesses.
-              </p>
-            </div>
-          </div>
+                <div class="list-timeline-item">
+                  <div class="icon"><MdOutlinePriceCheck size={20} /></div>
+                  <h4>Simplified onboarding for teams with limited IT resources
+                  </h4>
+                  <p>Guided configuration, accelerators, and best practices reduce dependency on large IT teams.
+</p>
+                  
+                </div>
 
-          <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-start align-items-center">
-              <div className="point-icon">
-                <img src={procurement} alt="" />
+                <div class="list-timeline-item">
+                  <div class="icon"><RiTeamFill size={20} /></div>
+                  <h4>Enterprise-grade security and reliability from day one
+                  </h4>
+                  <p>Built on SAP’s trusted cloud infrastructure with strong compliance, data protection, and uptime.</p>
+
+                  
+                </div>
+
+                <div class="list-timeline-item">
+                  <div class="icon"><RiTeamFill size={20} /></div>
+                  <h4>Enables collaboration across suppliers and trading partners
+
+                  </h4>
+                  <p>With a single contract and unified subscription, businesses can access cloud editions, SAP BTP, and the SAP Business Network without managing multiple licensing layers
+                  </p>
+                </div>
+
+
               </div>
-            </div>
-            <div className="col-md-6 point-text d-flex align-items-center">
-              <h4>Scales easily as your business grows</h4>
-            </div>
-            <div className="col-md-5">
-              <p>
-                Add users, processes, and locations seamlessly without redesigning your ERP or disrupting operations.
-              </p>
-            </div>
-          </div>
-
-          <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-start align-items-center">
-              <div className="point-icon">
-                <img src={implementation} alt="" />
-              </div>
-            </div>
-            <div className="col-md-6 point-text d-flex  align-items-center">
-              <h4>
-                Affordable, predictable subscription pricing
-              </h4>
-            </div>
-            <div className="col-md-5">
-              <p>
-                Built for SMBs and mid-market companies, offering high value without large upfront investments.
-              </p>
-            </div>
-          </div>
-
-          <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-start align-items-center">
-              <div className="point-icon">
-                <img src={smallBusiness} alt="" />
-              </div>
-            </div>
-            <div className="col-md-6 point-text d-flex  align-items-center">
-              <h4>
-                Embedded analytics for faster decision-making
-              </h4>
-            </div>
-            <div className="col-md-5">
-              <p>
-                AI-powered insights, dashboards, and real-time reporting help teams act quickly and confidently.
-
-              </p>
-            </div>
-          </div>
-
-          <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-start align-items-center">
-              <div className="point-icon">
-                <img src={cloud} alt="" />
-              </div>
-            </div>
-            <div className="col-md-6 point-text d-flex  align-items-center">
-              <h4>
-                Extend and innovate easily with SAP BTP
-              </h4>
-            </div>
-            <div className="col-md-5">
-              <p>
-                Leverage low-code tools, automation, and ready-made integrations to build new capabilities as you scale.
-
-              </p>
-            </div>
-          </div>
-
-          <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-start align-items-center">
-              <div className="point-icon">
-                <img src={cloud} alt="" />
-              </div>
-            </div>
-            <div className="col-md-6 point-text d-flex  align-items-center">
-              <h4>
-                Enterprise-grade security and reliability from day one
-              </h4>
-            </div>
-            <div className="col-md-5">
-              <p>
-                Built on SAP’s trusted cloud infrastructure with strong compliance, data protection, and uptime.
-              </p>
-            </div>
-          </div>
-
-          <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-start align-items-center">
-              <div className="point-icon">
-                <img src={cost} alt="" />
-              </div>
-            </div>
-            <div className="col-md-6 point-text d-flex  align-items-center">
-              <h4> Simplified onboarding for teams with limited IT resources</h4>
-            </div>
-            <div className="col-md-5">
-              <p>
-                Guided configuration, accelerators, and best practices reduce dependency on large IT teams.
-
-              </p>
-            </div>
-          </div>
-
-          <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-start align-items-center">
-              <div className="point-icon">
-                <img src={collab} alt="" />
-              </div>
-            </div>
-            <div className="col-md-6 point-text d-flex  align-items-center">
-              <h4>
-                Enables collaboration across suppliers and trading partners
-              </h4>
-            </div>
-            <div className="col-md-5">
-              <p>
-                With a single contract and unified subscription, businesses can
-                access cloud editions, SAP BTP, and the SAP Business Network
-                without managing multiple licensing layers
-              </p>
             </div>
           </div>
         </div>
@@ -492,143 +344,67 @@ const SAPFocusedProducts = () => {
         </div>
       </section>
 
-
-      <section className="major-points my-5">
+      <section className="feature-list my-5">
         <div className="container">
-          <div className="point-heading ">
-            <h2>Key Advantages </h2>
-          </div>
-          <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-start align-items-center">
-              <div className="point-icon">
-                <img src={cloud} alt="" />
-              </div>
-            </div>
-            <div className="col-md-6 point-text d-flex align-items-center">
-              <h4>
-                Cloud-based HCM & HXM platform for end-to-end HR transformation
-              </h4>
-            </div>
-            <div className="col-md-5">
-              <p>
-                With a single contract and unified subscription, businesses can
-                access cloud editions, SAP BTP, and the SAP Business Network
-                without managing multiple licensing layers
-              </p>
-            </div>
-          </div>
+          <div className="row">
+            <div className="col-md-6">
+              <div class="list-timeline">
+                <div class="list-timeline-item">
+                  <div class="icon"><RiContractLine size={20} /></div>
+                  <h4>Cloud-based HCM & HXM platform for end-to-end HR transformation
+                  </h4>
+                  
+                </div>
 
-          <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-start align-items-center">
-              <div className="point-icon">
-                <img src={Ai} alt="" />
-              </div>
-            </div>
-            <div className="col-md-6 point-text d-flex align-items-center">
-              <h4>
-                AI-powered tools, including digital assistants and machine
-                learning
-              </h4>
-            </div>
-            <div className="col-md-5">
-              <p>
-                With a single contract and unified subscription, businesses can
-                access cloud editions, SAP BTP, and the SAP Business Network
-                without managing multiple licensing layers
-              </p>
-            </div>
-          </div>
+                <div class="list-timeline-item">
+                  <div class="icon"><PiDesktopFill size={20} /></div>
+                  <h4>AI-powered tools, including digital assistants and machine learning
+                  </h4>
+                  
+                </div>
 
-          <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-start align-items-center">
-              <div className="point-icon">
-                <img src={implementation} alt="" />
-              </div>
-            </div>
-            <div className="col-md-6 point-text d-flex  align-items-center">
-              <h4>
-                User-friendly interfaces across all devices for seamless
-                engagement
-              </h4>
-            </div>
-            <div className="col-md-5">
-              <p>
-                With a single contract and unified subscription, businesses can
-                access cloud editions, SAP BTP, and the SAP Business Network
-                without managing multiple licensing layers
-              </p>
-            </div>
-          </div>
+                <div class="list-timeline-item">
+                  <div class="icon"><GrBusinessService size={20} /></div>
+                  <h4>User-friendly interfaces across all devices for seamless engagement
+                  </h4>
+                  
+                </div>
 
-          <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-start align-items-center">
-              <div className="point-icon">
-                <img src={smallBusiness} alt="" />
+                <div class="list-timeline-item">
+                  <div class="icon"><IoMdBusiness size={20} /></div>
+                  <h4>Enhanced communication & collaboration among employees
+                  </h4>
+                  
+                </div>
               </div>
             </div>
-            <div className="col-md-6 point-text d-flex  align-items-center">
-              <h4>Enhanced communication & collaboration among employees</h4>
-            </div>
-            <div className="col-md-5">
-              <p>
-                With a single contract and unified subscription, businesses can
-                access cloud editions, SAP BTP, and the SAP Business Network
-                without managing multiple licensing layers
-              </p>
-            </div>
-          </div>
+            <div className="col-md-6">
+              <div class="list-timeline">
+                <div class="list-timeline-item">
+                  <div class="icon"><IoCloudDownloadSharp size={20} /></div>
+                  <h4>Real-time insights for smarter, faster decision-making
+                  </h4>
+                  
+                </div>
 
-          <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-start align-items-center">
-              <div className="point-icon">
-                <img src={cloud} alt="" />
-              </div>
-            </div>
-            <div className="col-md-6 point-text d-flex  align-items-center">
-              <h4>Real-time insights for smarter, faster decision-making</h4>
-            </div>
-            <div className="col-md-5">
-              <p>
-                With a single contract and unified subscription, businesses can
-                access cloud editions, SAP BTP, and the SAP Business Network
-                without managing multiple licensing layers
-              </p>
-            </div>
-          </div>
+                <div class="list-timeline-item">
+                  <div class="icon"><MdOutlinePriceCheck size={20} /></div>
+                  <h4>Effortless integration with SAP ERP & enterprise systems
+                  </h4>
+                  
+                </div>
 
-          <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-start align-items-center">
-              <div className="point-icon">
-                <img src={cost} alt="" />
-              </div>
-            </div>
-            <div className="col-md-6 point-text d-flex  align-items-center">
-              <h4>Effortless integration with SAP ERP & enterprise systems</h4>
-            </div>
-            <div className="col-md-5">
-              <p>
-                With a single contract and unified subscription, businesses can
-                access cloud editions, SAP BTP, and the SAP Business Network
-                without managing multiple licensing layers
-              </p>
-            </div>
-          </div>
+                <div class="list-timeline-item">
+                  <div class="icon"><RiTeamFill size={20} /></div>
+                  <h4>Supports global HR operations with scalable architecture
+                  </h4>
+                 
+                </div>
 
-          <div className="row point py-4">
-            <div className="col-md-1 d-flex justify-content-start align-items-center">
-              <div className="point-icon">
-                <img src={collab} alt="" />
+                
+
+
               </div>
-            </div>
-            <div className="col-md-6 point-text d-flex  align-items-center">
-              <h4>Supports global HR operations with scalable architecture</h4>
-            </div>
-            <div className="col-md-5">
-              <p>
-                With a single contract and unified subscription, businesses can
-                access cloud editions, SAP BTP, and the SAP Business Network
-                without managing multiple licensing layers
-              </p>
             </div>
           </div>
         </div>
@@ -662,106 +438,76 @@ const SAPFocusedProducts = () => {
         </div>
       </section>
 
-      <section className="major-points my-5">
-        <div className="container">
-          <div className="point-heading ">
-            <h2>Why SAP Concur</h2>
-          </div>
+      
 
+      <section className="feature-list my-5">
+        <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-start align-items-center">
-                  <div className="point-icon">
-                    <img src={cloud} alt="" />
-                  </div>
-                </div>
-                <div className="col-md-10 point-text d-flex align-items-center">
-                  <h4>
-                    Automated Expense Management: Reduce manual entry and errors with intelligent workflows.
+              <div class="list-timeline">
+                <div class="list-timeline-item">
+                  <div class="icon"><RiContractLine size={20} /></div>
+                  <h4>Automated Expense Management
                   </h4>
+                  <p>Reduce manual entry and errors with intelligent workflows.</p>
+                  
                 </div>
-              </div>
 
-              <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-start align-items-center">
-                  <div className="point-icon">
-                    <img src={Ai} alt="" />
-                  </div>
-                </div>
-                <div className="col-md-10 point-text d-flex align-items-center">
-                  <h4>
-                    Real-Time Visibility: Access up-to-date spend data for smarter decision-making.
+                <div class="list-timeline-item">
+                  <div class="icon"><PiDesktopFill size={20} /></div>
+                  <h4>Real-Time Visibility
                   </h4>
+                  <p>Access up-to-date spend data for smarter decision-making.</p>
+                  
                 </div>
-              </div>
 
-              <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-start align-items-center">
-                  <div className="point-icon">
-                    <img src={implementation} alt="" />
-                  </div>
-                </div>
-                <div className="col-md-10 point-text d-flex  align-items-center">
-                  <h4>
-                    Compliance & Control : Enforce company policies and ensure regulatory compliance.
+                <div class="list-timeline-item">
+                  <div class="icon"><GrBusinessService size={20} /></div>
+                  <h4>Compliance & Control
                   </h4>
+                  <p>Enforce company policies and ensure regulatory compliance.</p>
+                  
                 </div>
-              </div>
-              <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-start align-items-center">
-                  <div className="point-icon">
-                    <img src={cost} alt="" />
-                  </div>
-                </div>
-                <div className="col-md-10 point-text d-flex  align-items-center">
-                  <h4>
-                    Rapid ROI: Accelerated adoption and measurable benefits through expert implementation.
+
+                <div class="list-timeline-item">
+                  <div class="icon"><IoMdBusiness size={20} /></div>
+                  <h4>Integrated Travel Booking
                   </h4>
+                  <p>Seamlessly connect travel planning with expense reporting.</p>
+                  
                 </div>
               </div>
             </div>
             <div className="col-md-6">
-              <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-start align-items-center">
-                  <div className="point-icon">
-                    <img src={smallBusiness} alt="" />
-                  </div>
-                </div>
-                <div className="col-md-10 point-text d-flex  align-items-center">
-                  <h4>Integrated Travel Booking: Seamlessly connect travel planning with expense reporting.
+              <div class="list-timeline">
+                <div class="list-timeline-item">
+                  <div class="icon"><IoCloudDownloadSharp size={20} /></div>
+                  <h4>Scalable & Cloud-Based
                   </h4>
+                  <p>Flexible deployment for businesses of all sizes, with secure cloud infrastructure.</p>
+                  
                 </div>
-              </div>
 
-              <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-start align-items-center">
-                  <div className="point-icon">
-                    <img src={cloud} alt="" />
-                  </div>
-                </div>
-                <div className="col-md-10 point-text d-flex  align-items-center">
-                  <h4>
-                    Scalable & Cloud-Based: Flexible deployment for businesses of all sizes, with secure cloud infrastructure.
-
+                <div class="list-timeline-item">
+                  <div class="icon"><MdOutlinePriceCheck size={20} /></div>
+                  <h4>Actionable Insights
                   </h4>
+                  <p>Analytics and reporting to optimize costs and improve financial planning.</p>
+                  
                 </div>
-              </div>
 
-              <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-start align-items-center">
-                  <div className="point-icon">
-                    <img src={cost} alt="" />
-                  </div>
-                </div>
-                <div className="col-md-10 point-text d-flex  align-items-center">
-                  <h4>
-                    Actionable Insights: Analytics and reporting to optimize costs and improve financial planning.
+                <div class="list-timeline-item">
+                  <div class="icon"><RiTeamFill size={20} /></div>
+                  <h4>Rapid ROI
                   </h4>
+                  <p>Accelerated adoption and measurable benefits through expert implementation.</p>
+                 
                 </div>
+
+                
+
+
               </div>
-
-
             </div>
           </div>
         </div>
@@ -806,92 +552,62 @@ const SAPFocusedProducts = () => {
 
 
 
-      <section className="major-points my-5">
-        <div className="container">
-          <div className="point-heading ">
-            <h2>Key Benefits </h2>
-          </div>
 
+      <section className="feature-list my-5">
+        <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-start align-items-center">
-                  <div className="point-icon">
-                    <img src={cloud} alt="" />
-                  </div>
-                </div>
-                <div className="col-md-10 point-text d-flex align-items-center">
-                  <h4>
-                    Access to the world’s largest supplier network for smarter
-                    sourcing
+              <div class="list-timeline">
+                <div class="list-timeline-item">
+                  <div class="icon"><RiContractLine size={20} /></div>
+                  <h4>Access to the world’s largest supplier network for smarter sourcing
                   </h4>
+                  
                 </div>
-              </div>
 
-              <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-start align-items-center">
-                  <div className="point-icon">
-                    <img src={Ai} alt="" />
-                  </div>
-                </div>
-                <div className="col-md-10 point-text d-flex align-items-center">
-                  <h4>
-                    Real-time collaboration with global vendors and trading
-                    partners
+                <div class="list-timeline-item">
+                  <div class="icon"><PiDesktopFill size={20} /></div>
+                  <h4>Real-time collaboration with global vendors and trading partners
                   </h4>
+                  
                 </div>
-              </div>
 
-              <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-start align-items-center">
-                  <div className="point-icon">
-                    <img src={implementation} alt="" />
-                  </div>
-                </div>
-                <div className="col-md-10 point-text d-flex  align-items-center">
-                  <h4>
-                    Streamlined procurement workflows with simplified processes
+                <div class="list-timeline-item">
+                  <div class="icon"><GrBusinessService size={20} /></div>
+                  <h4>Streamlined procurement workflows with simplified processes
                   </h4>
+                  
                 </div>
+
+                
               </div>
             </div>
             <div className="col-md-6">
-              <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-start align-items-center">
-                  <div className="point-icon">
-                    <img src={smallBusiness} alt="" />
-                  </div>
-                </div>
-                <div className="col-md-10 point-text d-flex  align-items-center">
-                  <h4>Increased efficiency and reduced operational spend</h4>
-                </div>
-              </div>
-
-              <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-start align-items-center">
-                  <div className="point-icon">
-                    <img src={cloud} alt="" />
-                  </div>
-                </div>
-                <div className="col-md-10 point-text d-flex  align-items-center">
-                  <h4>
-                    Scalable and dynamic platform connecting millions of
-                    suppliers
+              <div class="list-timeline">
+                <div class="list-timeline-item">
+                  <div class="icon"><IoCloudDownloadSharp size={20} /></div>
+                  <h4>Increased efficiency and reduced operational spend
                   </h4>
+                  
                 </div>
-              </div>
 
-              <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-start align-items-center">
-                  <div className="point-icon">
-                    <img src={cost} alt="" />
-                  </div>
-                </div>
-                <div className="col-md-10 point-text d-flex  align-items-center">
-                  <h4>
-                    Improved visibility and control across the supply chain
+                <div class="list-timeline-item">
+                  <div class="icon"><MdOutlinePriceCheck size={20} /></div>
+                  <h4>Scalable and dynamic platform connecting millions of suppliers
                   </h4>
+                  
                 </div>
+
+                <div class="list-timeline-item">
+                  <div class="icon"><RiTeamFill size={20} /></div>
+                  <h4>Improved visibility and control across the supply chain
+                  </h4>
+                 
+                </div>
+
+                
+
+
               </div>
             </div>
           </div>
@@ -938,83 +654,63 @@ const SAPFocusedProducts = () => {
         </div>
       </section>
 
-      <section className="major-points my-5">
-        <div className="container">
-          <div className="point-heading ">
-            <h2>Key Benefits </h2>
-          </div>
+      
 
+      <section className="feature-list my-5">
+        <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-start align-items-center">
-                  <div className="point-icon">
-                    <img src={cloud} alt="" />
-                  </div>
-                </div>
-                <div className="col-md-10 point-text d-flex align-items-center">
-                  <h4>
-                    Unified platform for data, AI, automation & app development
+              <div class="list-timeline">
+                <div class="list-timeline-item">
+                  <div class="icon"><RiContractLine size={20} /></div>
+                  <h4>Unified platform for data, AI, automation & app development
                   </h4>
+                  
                 </div>
-              </div>
 
-              <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-start align-items-center">
-                  <div className="point-icon">
-                    <img src={Ai} alt="" />
-                  </div>
+                <div class="list-timeline-item">
+                  <div class="icon"><PiDesktopFill size={20} /></div>
+                  <h4>Seamless SAP and multi-cloud integration
+                  </h4>
+                  
                 </div>
-                <div className="col-md-10 point-text d-flex align-items-center">
-                  <h4>Seamless SAP and multi-cloud integration</h4>
-                </div>
-              </div>
 
-              <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-start align-items-center">
-                  <div className="point-icon">
-                    <img src={implementation} alt="" />
-                  </div>
+                <div class="list-timeline-item">
+                  <div class="icon"><GrBusinessService size={20} /></div>
+                  <h4>Enables faster innovation with business context
+                  </h4>
+                  
                 </div>
-                <div className="col-md-10 point-text d-flex  align-items-center">
-                  <h4>Enables faster innovation with business context</h4>
-                </div>
+
+                
               </div>
             </div>
             <div className="col-md-6">
-              <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-start align-items-center">
-                  <div className="point-icon">
-                    <img src={smallBusiness} alt="" />
-                  </div>
-                </div>
-                <div className="col-md-10 point-text d-flex  align-items-center">
-                  <h4>Customizable user experiences across SAP applications</h4>
-                </div>
-              </div>
-
-              <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-start align-items-center">
-                  <div className="point-icon">
-                    <img src={cloud} alt="" />
-                  </div>
-                </div>
-                <div className="col-md-10 point-text d-flex  align-items-center">
-                  <h4>
-                    Runs on a secure, enterprise-grade cloud infrastructure
+              <div class="list-timeline">
+                <div class="list-timeline-item">
+                  <div class="icon"><IoCloudDownloadSharp size={20} /></div>
+                  <h4>Customizable user experiences across SAP applications
                   </h4>
+                  
                 </div>
-              </div>
 
-              <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-start align-items-center">
-                  <div className="point-icon">
-                    <img src={cost} alt="" />
-                  </div>
+                <div class="list-timeline-item">
+                  <div class="icon"><MdOutlinePriceCheck size={20} /></div>
+                  <h4>Runs on a secure, enterprise-grade cloud infrastructure
+                  </h4>
+                  
                 </div>
-                <div className="col-md-10 point-text d-flex  align-items-center">
-                  <h4>Accelerates digital transformation & IT modernization</h4>
+
+                <div class="list-timeline-item">
+                  <div class="icon"><RiTeamFill size={20} /></div>
+                  <h4>Accelerates digital transformation & IT modernization
+                  </h4>
+                 
                 </div>
+
+                
+
+
               </div>
             </div>
           </div>
@@ -1049,105 +745,85 @@ const SAPFocusedProducts = () => {
         </div>
       </section>
 
-      <section className="major-points my-5">
-        <div className="container">
-          <div className="point-heading ">
-            <h2>Why SAP Analytics Cloud</h2>
-          </div>
 
+      <section className="feature-list my-5">
+        <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-start align-items-center">
-                  <div className="point-icon">
-                    <img src={cloud} alt="" />
-                  </div>
-                </div>
-                <div className="col-md-10 point-text d-flex align-items-center">
-                  <h4>
-                    Unified Analytics & Planning: Combine BI, predictive analytics, and planning in one platform.
+              <div class="list-timeline">
+                <div class="list-timeline-item">
+                  <div class="icon"><RiContractLine size={20} /></div>
+                  <h4>Unified Analytics & Planning
                   </h4>
+                  <p>Combine BI, predictive analytics, and planning in one platform.</p>
+                  
+                  
                 </div>
-              </div>
 
-              <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-start align-items-center">
-                  <div className="point-icon">
-                    <img src={Ai} alt="" />
-                  </div>
+                <div class="list-timeline-item">
+                  <div class="icon"><PiDesktopFill size={20} /></div>
+                  <h4>Real-Time Insights
+                  </h4>
+                  <p>Make decisions based on up-to-date, integrated data.</p>
+                  
+                  
                 </div>
-                <div className="col-md-10 point-text d-flex align-items-center">
-                  <h4>Real-Time Insights: Make decisions based on up-to-date, integrated data.</h4>
-                </div>
-              </div>
 
-              <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-start align-items-center">
-                  <div className="point-icon">
-                    <img src={implementation} alt="" />
-                  </div>
+                <div class="list-timeline-item">
+                  <div class="icon"><GrBusinessService size={20} /></div>
+                  <h4>Intuitive Dashboards
+                  </h4>
+                  <p>Create interactive visualizations for faster understanding of trends.</p>
+                  
+                  
                 </div>
-                <div className="col-md-10 point-text d-flex  align-items-center">
-                  <h4>Intuitive Dashboards: Create interactive visualizations for faster understanding of trends.</h4>
-                </div>
-              </div>
 
-              <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-start align-items-center">
-                  <div className="point-icon">
-                    <img src={implementation} alt="" />
-                  </div>
-                </div>
-                <div className="col-md-10 point-text d-flex  align-items-center">
-                  <h4>Cloud-Native & Scalable : Secure, flexible, and accessible anywhere, anytime.</h4>
+                <div class="list-timeline-item">
+                  <div class="icon"><IoMdBusiness size={20} /></div>
+                  <h4>Predictive Analytics
+                  </h4>
+                  <p>Leverage AI/ML to forecast outcomes and identify risks.</p>
+                  
                 </div>
               </div>
             </div>
             <div className="col-md-6">
-              <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-start align-items-center">
-                  <div className="point-icon">
-                    <img src={smallBusiness} alt="" />
-                  </div>
-                </div>
-                <div className="col-md-10 point-text d-flex  align-items-center">
-                  <h4>Predictive Analytics: Leverage AI/ML to forecast outcomes and identify risks.</h4>
-                </div>
-              </div>
-
-              <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-start align-items-center">
-                  <div className="point-icon">
-                    <img src={cloud} alt="" />
-                  </div>
-                </div>
-                <div className="col-md-10 point-text d-flex  align-items-center">
-                  <h4>
-                    Seamless Integration: Connect with SAP ERP, S/4HANA, and non-SAP systems.
+              <div class="list-timeline">
+                <div class="list-timeline-item">
+                  <div class="icon"><IoCloudDownloadSharp size={20} /></div>
+                  <h4>Seamless Integration
                   </h4>
+                  <p>Connect with SAP ERP, S/4HANA, and non-SAP systems.</p>
+                  
                 </div>
-              </div>
 
-              <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-start align-items-center">
-                  <div className="point-icon">
-                    <img src={cost} alt="" />
-                  </div>
+                <div class="list-timeline-item">
+                  <div class="icon"><MdOutlinePriceCheck size={20} /></div>
+                  <h4>Collaborative Planning
+                  </h4>
+                  <p>Enable cross-functional teams to plan and adjust together.</p>
+                  
                 </div>
-                <div className="col-md-10 point-text d-flex  align-items-center">
-                  <h4>Collaborative Planning: Enable cross-functional teams to plan and adjust together.</h4>
-                </div>
-              </div>
 
-              <div className="row point py-4">
-                <div className="col-md-2 d-flex justify-content-start align-items-center">
-                  <div className="point-icon">
-                    <img src={cost} alt="" />
-                  </div>
+                <div class="list-timeline-item">
+                  <div class="icon"><RiTeamFill size={20} /></div>
+                  <h4>Cloud-Native & Scalable
+                  </h4>
+                  <p>Secure, flexible, and accessible anywhere, anytime.</p>
+                  
                 </div>
-                <div className="col-md-10 point-text d-flex  align-items-center">
-                  <h4>Actionable Intelligence: Transform complex data into meaningful, business-driving insights.</h4>
+
+                <div class="list-timeline-item">
+                  <div class="icon"><RiTeamFill size={20} /></div>
+                  <h4>Actionable Intelligence
+                  </h4>
+                  <p>Transform complex data into meaningful, business-driving insights.</p>
+                  
                 </div>
+
+                
+
+
               </div>
             </div>
           </div>

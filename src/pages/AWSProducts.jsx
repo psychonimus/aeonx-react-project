@@ -4,7 +4,7 @@ import GlassButton from "../components/GlassButton/GlassButton";
 import { Helmet } from "react-helmet";
 import AwsTechStack from "../components/AwsPageComponents/AwsTechStack";
 import Header from "../components/Header/Header";
-import WorkspaceSolution from "/images/aws-worspace-sol-banner.jpg";
+import WorkspaceSolution from "/images/amz-workspace-about.png";
 import workspaceLogo from "/images/amazonWorkspaceLogo.png";
 import implementation from "/images/implementation.webp";
 import smallBusiness from "/images/small-businesses.webp";
@@ -13,15 +13,15 @@ import cost from "/images/price-down.webp";
 import Ai from "/images/ai.webp";
 import cloudSolutions from '/images/aws-cloud-solutions.png'
 import cloudFront from '/images/awsCloudFront.png'
-import saponaws from '/images/saponaws.png'
+import saponaws from '/images/sap-on-aws.png'
 import saponawsCap from '/images/sap-on-aws-capabilities.png'
 import AwsTimeline from "../components/AwsTimeline/AwsTimeline";
 import StorageSolutions from "../components/AwsTimeline/StorageSolutions";
 import awsmachinelearning from '/images/awsmachinelearning.png'
 import awsmachineLearningAbout from '/images/aws-ml.png'
-import awsIotSolutionsBanner from '/images/awsIotBanner.png'
+import awsIotSolutionsBanner from '/images/IOT-about.png'
 import awsIot from '/images/awsIot.png'
-import awsDevOps from '/images/awsDevops.webp'
+import awsDevOps from '/images/devops-about.png'
 import DevOpsLogo from '/images/DevOpsLogo.png'
 import awsDatabaseLogo from '/images/awsDatabaseLogo.png'
 import awsDB from '/images/database-solutions.png'
@@ -89,7 +89,7 @@ const AWSProducts = () => {
         {/* AWS SERVICES GRID */}
         <div className="container aws-services mt-5" id="aws-services">
           <Header
-            subtext="AWS-Focused Products"
+            highlight="AWS-Focused Products"
             headline="Our AWS Expertise"
 
           />
@@ -325,7 +325,7 @@ const AWSProducts = () => {
           <div className="container">
             <div className="row grey-bg">
               <div className="col-md-6 left py-4 px-5">
-                <img src={saponaws} alt="" />
+                <img src={saponaws} alt="" style={{filter:"brightness(0)"}} />
                 <h2>SAP on AWS Capabilities</h2>
                 <p>AeonX is among a select group of SAP partners equipped to manage end-to-end SAP transformations—including implementations, rollouts, cloud migrations, upgrades, and ongoing support—across diverse industries and complex SAP landscapes. Our consultative approach ensures every deployment is tailored, scalable, and aligned with business goals.
                 </p>

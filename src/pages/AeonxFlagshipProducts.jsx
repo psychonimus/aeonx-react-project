@@ -15,60 +15,66 @@ const AeonxFlagshipProducts = () => {
             id: 1,
             title: 'Next-Gen Expense Management for Modern Teams',
             description: 'Smart travel and expense platform for managing approvals, trips, and reimbursements. Mobile-ready and SAP integrated.',
-            image: '/images/project-5.jpg',
+            image: '/images/Xpence-cover.jpg',
             video: null,
             tags: ['Spend Control', 'Workflow Automation', 'Compliance AI', 'Real-Time Insights'],
             industry: 'Xpense',
+            url: 'https://xpense.aeonx.digital/',
             
         },
         {
             id: 2,
             title: 'Modernizing Supplier Operations with AI-Powered Procurement',
             description: 'Cloud-native procure-to-pay platform that automates onboarding, sourcing, and invoicing. Fully integrated with AWS and SAP.',
-            image: 'https://images.unsplash.com/photo-1558002038-1055907df827?w=800&h=600&fit=crop',
+            image: '/images/supplierX-logo.jpg',
             video: null,
             tags: ['Supplier Management', 'Procurement Automation', 'Risk Intelligence', 'Contract Governance'],
             industry: 'SupplierX',
+            url: 'https://supplierx.aeonx.digital/',
             
         },
         {
             id: 3,
             title: 'Elevating Logistics Efficiency with Intelligent Supply Chain Automation',
             description: 'Cloud-based logistics platform to optimize warehouse and supply chain operations with real-time tracking, order management, and end-to-end visibility.',
-            image: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&h=600&fit=crop',
+            image: '/images/Logystix-cover.jpg',
             video: null,
             tags: ['Route Intelligence', 'Ops Automation', 'Real-Time Tracking', 'Predictive Planning'],
             industry: 'LogystiX',
+            url: 'https://logystix.cloud/',
             
         },
         {
             id: 4,
             title: 'Powering Enterprise Transformation with a Unified AI Intelligence Layer',
             description: 'AI-driven platform turning data into insights for smarter decisions and automated enterprise workflows.',
-            image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop',
+            image: '/images/Aeonxiq-cover.jpg',
             video: null,
             tags: ['Agentic AI', 'Data Unification', 'Predictive Insights', 'Automation Framework'],
             industry: 'AeonXIQ',
+            url: 'https://aeonxiq.ai/',
             
         },
         {
             id: 5,
             title: 'Streamlining Workforce Operations with a Unified Self-Service Employee Hub',
             description: 'Self-service workforce portal for managing timesheets, leave, and CRM actions. Streamlines internal operations.',
-            image: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop',
+            image: '/images/People-connect-cover.jpg',
             video: null,
             tags: ['Self-Service Portal', 'Timesheet Management', 'Leave Automation', 'CRM Workflows'],
             industry: 'PeopleConnect',
+            url: 'https://dev.aeonxus.digital/',
             
         },
         {
             id: 6,
             title: 'Accelerating Smart Manufacturing with AI-Powered Quality & Performance Intelligence',
             description: 'ManufeX delivers real-time visibility into manufacturing operations by using AI to identify defects and performance issues.',
-            image: 'https://images.unsplash.com/photo-1547586696-ea22b4d4235d?w=800&h=600&fit=crop',
+            image: '/images/Manufex-cover.jpg',
             video: null,
             tags: ['Real-Time Visibility', 'Quality Detection', 'Performance Insights', 'Predictive Analytics'],
             industry: 'ManufeX',
+            url: 'https://dev.manufex.cloud/',
             
         },
         
@@ -117,7 +123,7 @@ const AeonxFlagshipProducts = () => {
 
     return (
         <>
-        <section className="life-hero sap-focused-products-hero" style={{ height: "100vh" }} >
+        <section className="life-hero aeonx-accelerators-hero" style={{ height: "100vh" }} >
           <div className="container">
             <div className="row">
               <div className="col-12">
@@ -166,6 +172,7 @@ const AeonxFlagshipProducts = () => {
                                         <GlassButton
                                           title="Explore"
                                           icon={() => <FaCircleArrowRight size={25} />}
+                                          url={study.url}
                                         />
                                     </div>
                                     </div>

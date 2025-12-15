@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./MigrationSection.css";
+import Implementation from "/images/implementation-service.png";
 import CloudMigration from "/images/migration-services.png";
 import Integration from "/images/integration-services.png";
 import Innovation from "/images/innovation-services.png";
@@ -106,6 +107,77 @@ const MigrationSection = () => {
 
   return (
     <div className="container py-5" id="migration">
+
+      <section style={sectionStyleAlt} id="implementation">
+        <div style={containerStyle}>
+          <div className="row d-flex flex-column-reverse flex-lg-row g-1 align-items-start mb-5">
+            <div
+              className="col-12 col-lg-6 order-2 order-md-1"
+              style={contentColumnStyle}
+            >
+              <div>
+                <h2 style={h2Style}>SAP Implementation Services</h2>
+                <p style={pStyle}>
+                  Business models are evolving faster than ever, and the real differentiator today is how quickly your systems can adapt. At AeonX Digital, we enable this shift by implementing SAP S/4HANA and SAP Rise as the digital backbone of your operations—making enterprises data-driven, future-ready, and operationally agile.
+                </p>
+                
+              </div>
+            </div>
+            <div className="col-12 col-lg-6 order-1 order-md-2">
+              <div className="mig-img" style={imgContainerStyle}>
+                <img
+                  src={Implementation}
+                  alt="Integration Services"
+                  style={imgStyle}
+                />
+              </div>
+              {/* <h5 style={h5Style}>Key Metrics</h5> */}
+              <div className="row g-1">
+                <div className="col-12 col-sm-6 col-md-4">
+                  <div
+                    className="text-center border rounded-3 p-3 h-100"
+                    style={getMetricBoxStyle("i1", "#f8f9fa")}
+                    onMouseEnter={() => setHoveredMetric("i1")}
+                    onMouseLeave={() => setHoveredMetric(null)}
+                  >
+                    <h2 style={metricH2Style}>99%</h2>
+                    <p style={metricPStyle}>
+                      of projects delivered within agreed timelines
+                    </p>
+                  </div>
+                </div>
+                <div className="col-12 col-sm-6 col-md-4">
+                  <div
+                    className="text-center border rounded-3 p-3 h-100"
+                    style={getMetricBoxStyle("i2", "#f8f9fa")}
+                    onMouseEnter={() => setHoveredMetric("i2")}
+                    onMouseLeave={() => setHoveredMetric(null)}
+                  >
+                    <h2 style={metricH2Style}>40+</h2>
+                    <p style={metricPStyle}>
+                      Go-lives delivered earlier than planned
+                    </p>
+                  </div>
+                </div>
+                <div className="col-12 col-sm-6 col-md-4">
+                  <div
+                    className="text-center border rounded-3 p-3 h-100"
+                    style={getMetricBoxStyle("i3", "#f8f9fa")}
+                    onMouseEnter={() => setHoveredMetric("i3")}
+                    onMouseLeave={() => setHoveredMetric(null)}
+                  >
+                    <h2 style={metricH2Style}>30%</h2>
+                    <p style={metricPStyle}>
+                      Reduction in overall implementation time
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section style={sectionStyle}>
         <div style={containerStyle}>
           <div className="row g-1 d-flex flex-column-reverse flex-lg-row align-items-start mb-5">

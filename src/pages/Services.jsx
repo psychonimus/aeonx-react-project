@@ -9,7 +9,7 @@ const Services = () => {
   return (
     <>
       <ServiceHeroSection />
-      <ImplementationSection />
+      {/* <ImplementationSection /> */}
       {/* <SapSupport /> */}
       <MigrationSection />
       <ServicesCTA />
