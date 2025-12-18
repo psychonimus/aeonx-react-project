@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import AshapuraCaseStudy from "/images/Transforming-Ashapura.jpg"; // Replace with actual image
+import AshapuraCaseStudy from "/images/Transforming-Ashapura.webp"; // Replace with actual image
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";

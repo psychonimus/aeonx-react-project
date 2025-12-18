@@ -4,17 +4,17 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { BsArrowUpRightCircleFill } from "react-icons/bs";
 import risewithsap from "/images/risewithsap.webp"
 import sapbtp from "/images/sapbtp.webp"
-import aws from "/images/aws-partner.png"
+import aws from "/images/aws-partner.webp"
 import ServiceTitleCardTwo from "./ServiceTitleCardTwo";
 import ServiceCardTwo from "./ServiceCardTwo";
-import sapaws from "/images/sap-on-aws.png"
+import sapaws from "/images/sap-on-aws.webp"
 import ml from "/images/ml.webp"
-import disasterRecovery from '/images/disaster-recovery-logo.png'
-import IndSol from '/images/industrial-sol.png'
-import AppModernization from '/images/application-modernization-logo.png'
-import MsOnAws from '/images/ms-on-aws-logo.png'
-import awsIot from '/images/awsIot.png'
-import ManagedServices from '/images/managed-services-logo.png'
+import disasterRecovery from '/images/disaster-recovery-logo.webp'
+import IndSol from '/images/industrial-sol.webp'
+import AppModernization from '/images/application-modernization-logo.webp'
+import MsOnAws from '/images/ms-on-aws-logo.webp'
+import awsIot from '/images/awsIot.webp'
+import ManagedServices from '/images/managed-services-logo.webp'
 
 gsap.registerPlugin(ScrollTrigger);
 

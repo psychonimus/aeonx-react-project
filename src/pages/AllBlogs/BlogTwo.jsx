@@ -1,6 +1,6 @@
 import React from "react";
 import {Helmet} from "react-helmet";
-import bannerImg from "/images/sap-migration-mistakes.jpg"; // replace with your banner
+import bannerImg from "/images/sap-migration-mistakes.webp"; // replace with your banner
 import GlassButton from "../../components/GlassButton/GlassButton";
 import GlassButtonLight from "../../components/GlassButton/GlassButtonLight";
 

@@ -5,18 +5,18 @@ import { FaCircleArrowRight } from "react-icons/fa6";
 import GlassButtonLight from '../GlassButton/GlassButtonLight';
 
 const teamImages = [
-  "/images/group/team1.png",
-  "/images/group/team2.png",
-  "/images/group/team3.png",
-  "/images/group/team4.png",
-  "/images/group/team5.png",
-  "/images/group/team6.png",
-  "/images/group/team7.png",
-  "/images/group/team8.png",
-  "/images/group/team9.png",
-  "/images/group/team10.png",
-  "/images/group/team11.png",
-  "/images/group/team12.png",
+  "/images/group/team1.webp",
+  "/images/group/team2.webp",
+  "/images/group/team3.webp",
+  "/images/group/team4.webp",
+  "/images/group/team5.webp",
+  "/images/group/team6.webp",
+  "/images/group/team7.webp",
+  "/images/group/team8.webp",
+  "/images/group/team9.webp",
+  "/images/group/team10.webp",
+  "/images/group/team11.webp",
+  "/images/group/team12.webp",
 ];
 
 

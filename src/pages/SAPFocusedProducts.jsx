@@ -3,10 +3,10 @@ import { Helmet } from "react-helmet";
 import LifeHero from "../components/LifeAtAeonxPageSections/LifeHero";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 import GlassButton from "../components/GlassButton/GlassButton";
-import aboutSap from "/images/rise-with-sap.png";
-import growWithSapAbout from "/images/grow-with-sap.png";
-import sapSuccessFactor from '/images/SAP-SuccessFactors.png'
-import sapConcurAbout from '/images/SAP-Concur-full.png'
+import aboutSap from "/images/rise-with-sap.webp";
+import growWithSapAbout from "/images/grow-with-sap.webp";
+import sapSuccessFactor from '/images/SAP-SuccessFactors.webp'
+import sapConcurAbout from '/images/SAP-Concur-full.webp'
 import risewithsap from "/images/risewithsap.webp";
 import partnership from "/images/partnership.webp";
 import procurement from "/images/control.webp";
@@ -17,16 +17,16 @@ import cost from "/images/price-down.webp";
 import collab from "/images/collaboration.webp";
 import SapSuccess from "/images/SAP-SuccessFactors-2.webp";
 import Ai from "/images/ai.webp";
-import SapAriba from "/images/sap-ariba.webp";
-import SapAribaBg from "/images/sap-ariba.png";
+import SapAriba from "/images/sap-ariba-top.webp";
+import SapAribaBg from "/images/sap-ariba.webp";
 import SapBtp from "/images/sapbtp.webp";
-import SapBtpBg from "/images/SAP-BTP.png";
-import cloudAnalytics from '/images/sap-analytics-cloud-dark.png'
-import ctaImg from "/images/sap-cta.png";
-import sapConcur from '/images/sap-concur-dark.png'
-import SapAnalyticsCloud from '/images/SAP-Analytics-Cloud-about.png'
+import SapBtpBg from "/images/SAP-BTP.webp";
+import cloudAnalytics from '/images/sap-analytics-cloud-dark.webp'
+import ctaImg from "/images/sap-cta.webp";
+import sapConcur from '/images/sap-concur-dark.webp'
+import SapAnalyticsCloud from '/images/SAP-Analytics-Cloud-about.webp'
 
-import growWithSap from '/images/grow-with-sap-logo.png'
+import growWithSap from '/images/grow-with-sap-logo.webp'
 
 import { RiCloudFill, RiContractLine } from "react-icons/ri";
 import { PiDesktopFill } from "react-icons/pi";
@@ -93,7 +93,7 @@ const SAPFocusedProducts = () => {
         <meta name="author" content="AeonX Digital" />
       </Helmet>
       <section
-        className="life-hero sap-focused-products-hero" style={{ backgroundImage: "url(/images/sap-products-banner.png)" }}
+        className="life-hero sap-focused-products-hero" style={{ backgroundImage: "url(/images/sap-products-banner.webp)" }}
       // style={{ height: "100vh" }}
       >
         <div className="container">

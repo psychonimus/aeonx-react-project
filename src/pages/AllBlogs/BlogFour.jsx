@@ -1,6 +1,6 @@
 import React from "react";
 import {Helmet} from "react-helmet";
-import bannerImg from "/images/driving-innovation.jpg"; // replace with your banner
+import bannerImg from "/images/driving-innovation.webp"; // replace with your banner
 import GlassButton from "../../components/GlassButton/GlassButton";
 import GlassButtonLight from "../../components/GlassButton/GlassButtonLight";   
 

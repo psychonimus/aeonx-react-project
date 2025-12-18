@@ -1,6 +1,6 @@
 import React from 'react'
 import './Implementation.css'
-import sapRight from '/images/sap-implementation-right.png'
+import sapRight from '/images/sap-implementation-right.webp'
 import Header from '../Header/Header'
 
 import ImplementationServices from './ServCar'

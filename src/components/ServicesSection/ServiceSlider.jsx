@@ -1,17 +1,17 @@
 import React, { useRef, useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import sapGoldPartner from "/images/sap-gold-partner.png"
+import sapGoldPartner from "/images/sap-gold-partner.webp"
 import GlassButton from "../GlassButton/GlassButton";
 import { BsArrowUpRightCircleFill } from "react-icons/bs";
 import GlassButtonLight from "../GlassButton/GlassButtonLight";
 import risewithsap from "/images/risewithsap.webp"
-import sapbtp from "/images/sapbtp.png"
-import sabAriba from '/images/sap-ariba.webp'
-import growWithSap from '/images/grow-with-sap-logo.png'
-import sapSuccessFactors from '/images/sap-success.png'
-import sapConcur from '/images/sap-concur.png'
-import sapAnalyticsCloud from '/images/sap-analytics-cloud.png'
+import sapbtp from "/images/sapbtp.webp"
+import sabAriba from '/images/sap-ariba-top.webp'
+import growWithSap from '/images/grow-with-sap-logo.webp'
+import sapSuccessFactors from '/images/sap-success-new.webp'
+import sapConcur from '/images/sap-concur.webp'
+import sapAnalyticsCloud from '/images/sap-analytics-cloud.webp'
 import ServiceTitleCard from "./ServiceTitleCard";
 import ServiceCard from "./ServiceCard";
 

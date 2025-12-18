@@ -70,7 +70,7 @@ const PastEventSection = () => {
       </div>
 
       <div className="container">
-        <h2 className="bento-title mt-5 ">CEO Conclave</h2>
+        <h2 className="bento-title mt-5 ">CIO Conclave</h2>
         <p className="bento-date ">November 2025</p>
 
         <div className="img-grid mb-5">

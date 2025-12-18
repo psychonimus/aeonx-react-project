@@ -4,34 +4,34 @@ import Header from "../Header/Header";
 
 const timelineData = [
   {
-    year: "2007 - 09",
+    year: "2020",
     title: "INCEPTION",
-    desc: "Started in 2020 as a focused SAP consulting firm, backed by a leadership team with deep industry experience."
+    desc: "Launch in Mumbai & Bhuj with founding team"
   },
   {
-    year: "2009 - 15",
+    year: "2021",
+    title: "ALLIANCES",
+    desc: "SAP & AWS partnerships, client base expansion"
+  },
+  {
+    year: "2022",
     title: "EXPANSION",
-    desc: "Quickly grew into a full-service provider offering ERP consulting, IT strategy, cloud, and system integration solutions."
+    desc: "Dubai presence, CMMI Level 5 & ISO certifications"
   },
   {
-    year: "2016 - 18",
-    title: "TRANSFORMATION",
-    desc: "Enabled enterprises to optimize operations, reduce costs, and elevate efficiency through strategic digital transformation."
+    year: "2023",
+    title: "SCALE",
+    desc: "175-seat infrastructure, workforce growth"
   },
   {
-    year: "2018 - 20",
-    title: "GROWTH",
-    desc: "Delivered SAP managed services, infrastructure, and security support—driving enhanced digital presence in procurement, marketing, and tendering."
-  },
-  {
-    year: "2018 - 20",
-    title: "CONSISTENCY",
-    desc: " Built long-term client relationships by delivering reliable, high-quality solutions aligned with global standards."
-  },
-  {
-    year: "2020 - Present",
+    year: "2024",
     title: "INNOVATION",
-    desc: " Leveraged modern technology and a 60-year multinational legacy to expand into cutting-edge domains and future-focused services."
+    desc: "AI / ML / IIoT deployments for key clients"
+  },
+  {
+    year: "2025",
+    title: "ACCELERATION",
+    desc: "Ahmedabad delivery center, 250+ global workforce"
   }
   
 ];

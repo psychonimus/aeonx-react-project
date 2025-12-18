@@ -1,10 +1,10 @@
 import React from 'react'
 import Header from '../Header/Header'
 import './SapSupport.css'
-import flex from '/images/sap-support-1.png'
-import buildX from '/images/sap-support-2.png'
-import absoluteX from '/images/absoluteX.png'
-import limitlessX from '/images/limitlessX.png'
+import flex from '/images/sap-support-1.webp'
+import buildX from '/images/sap-support-2.webp'
+import absoluteX from '/images/absoluteX.webp'
+import limitlessX from '/images/limitlessX.webp'
 
 const SapSupport = () => {
     return (

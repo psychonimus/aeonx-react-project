@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import RaymondCaseStudy from "/images/Unifying-Raymond.jpg"; 
+import RaymondCaseStudy from "/images/Unifying-Raymond.webp"; 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";

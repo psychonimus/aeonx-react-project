@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import CKBirlaCaseStudy from "/images/Modernizing-CK-Birla-Hospitals.jpg"; // Replace with actual image
+import CKBirlaCaseStudy from "/images/Modernizing-CK-Birla-Hospitals.webp"; // Replace with actual image
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";

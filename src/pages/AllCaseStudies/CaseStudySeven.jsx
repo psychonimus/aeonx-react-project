@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import RaymondAeonXIQCaseStudy from "/images/Streamlining-raymonds.jpg"; // Replace with actual image
+import RaymondAeonXIQCaseStudy from "/images/Streamlining-raymonds.webp"; // Replace with actual image
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";

@@ -266,20 +266,20 @@ const AwsAccordion = () => {
                                             marginTop: "1rem"
                                         }}>
                                             <div style={{ padding: "0.75rem", backgroundColor: "#f0f0f0ff", borderRadius: "0.375rem" }}>
-                                                <img src="/images/supplier-x-square.png" alt="" style={{ width: "150px", marginBlock: "1rem" }} />
+                                                <img src="/images/supplier-x-square.webp" alt="" style={{ width: "150px", marginBlock: "1rem" }} />
                                                 {/* <h3>SupplierX</h3> */}
                                                 <p style={{ fontWeight: "600", color: "#000000ff" }}>SupplierX is a smart, end-to-end supplier management platform that simplifies vendor onboarding, communication, compliance tracking, and performance monitoring. It helps businesses create transparent supplier ecosystems, reduce manual effort, and accelerate procurement cycles.
                                                 </p>
                                             </div>
                                             <div style={{ padding: "0.75rem", backgroundColor: "#f0f0f0ff", borderRadius: "0.375rem" }}>
-                                                <img src="/images/sign-x.png" alt="" style={{ width: "150px", marginBlock: "1rem" }} />
+                                                <img src="/images/sign-x.webp" alt="" style={{ width: "150px", marginBlock: "1rem" }} />
                                                 {/* <h3>SignX</h3> */}
                                                 <p style={{ fontWeight: "600", color: "#000000ff" }}>SignX is a secure digital signing and document management solution that enables organizations to automate approvals, reduce paperwork, and ensure legal compliance. With seamless integration and easy accessibility, SignX enhances speed, accuracy, and traceability across document workflows.
                                                 </p>
                                             </div>
                                             <div style={{ padding: "0.75rem", backgroundColor: "#f0f0f0ff", borderRadius: "0.375rem" }}>
-                                                <img src="/images/order-x-square.png" alt="" style={{ width: "150px", marginBlock: "1rem" }} />
-                                                <h3>OrderX</h3>
+                                                <img src="/images/order-x-square.webp" alt="" style={{ width: "150px", marginBlock: "1rem" }} />
+                                                {/* <h3>OrderX</h3> */}
                                                 <p style={{ fontWeight: "600", color: "#000000ff" }}>OrderX streamlines the complete order lifecycle—from order creation and approvals to fulfillment and tracking. Designed for accuracy and operational efficiency, OrderX helps businesses reduce errors, improve visibility, and deliver faster, more reliable order management.
                                                 </p>
                                             </div>

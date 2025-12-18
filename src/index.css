@@ -1981,7 +1981,7 @@ textarea {
 
 @media(max-width : 576px) {
   .bgBlackDiv {
-    background-image: url("../public/images/circle-bg-responsive.png");
+    background-image: url("../public/images/circle-bg-responsive.webp");
 
   }
 }
@@ -2617,7 +2617,7 @@ textarea {
 
 /* event page css starts  */
 .event-hero {
-  background-image: url("../public/images/event-bg.webp");
+  background-image: url("../public/images/event-hero-banner.webp");
   background-position: center;
   background-size: cover;
   color: #fff;
@@ -2731,25 +2731,25 @@ textarea {
 
 /* Dummy Background Colors */
 .card1 {
-  background-image: url("../public/images/event-pre-1.webp");
+  background-image: url("../public/images/sap-innovation-event-1.webp");
   background-position: center;
   background-size: cover;
 }
 
 .card2 {
-  background-image: url("../public/images/event-pre-2.webp");
+  background-image: url("../public/images/sap-now-mumbai.webp");
   background-position: center;
   background-size: cover;
 }
 
 .card3 {
-  background-image: url("../public/images/event-pre-3.webp");
+  background-image: url("../public/images/sap-innovation-event-2.webp");
   background-position: center;
   background-size: cover;
 }
 
 .card4 {
-  background-image: url("../public/images/event-pre-4.webp");
+  background-image: url("../public/images/sap-now-delhi.webp");
   background-position: center;
   background-size: cover;
 }
@@ -2997,7 +2997,7 @@ textarea {
 }
 
 .blogs-hero {
-  background-image: url("../public/images/blogs-bg-new.jpg");
+  background-image: url("../public/images/blogs-bg-new.webp");
   background-position: center;
   background-size: cover;
   color: #fff;
@@ -3161,11 +3161,11 @@ textarea {
 }
 
 .sap-focused-products-hero {
-  background-image: url("../public/images/aws-service-portfolio-banner.jpg");
+  background-image: url("../public/images/aws-service-portfolio-banner.webp");
 }
 
 .aeonx-accelerators-hero {
-  background-image: url("../public/images/aeonx-accelerators-bg.jpg");
+  background-image: url("../public/images/aeonx-accelerators-bg.webp");
 }
 
 .life-hero-content h1 {
@@ -3329,34 +3329,34 @@ textarea {
 }
 
 .value-1 {
-  background-image: url("../public/images/innovation.png");
+  background-image: url("../public/images/innovation.webp");
   grid-column: span 2 / span 2;
   grid-row: span 2 / span 2;
 }
 
 .value-2 {
-  background-image: url("../public/images/integrity.png");
+  background-image: url("../public/images/integrity.webp");
   grid-column: span 2 / span 2;
   grid-row: span 2 / span 2;
   grid-column-start: 3;
 }
 
 .value-3 {
-  background-image: url("../public/images/collaboration.png");
+  background-image: url("../public/images/collaboration-bg.webp");
   grid-column: span 2 / span 2;
   grid-row: span 2 / span 2;
   grid-column-start: 5;
 }
 
 .value-4 {
-  background-image: url("../public/images/excellence.png");
+  background-image: url("../public/images/excellence.webp");
   grid-column: span 3 / span 3;
   grid-row: span 2 / span 2;
   grid-row-start: 3;
 }
 
 .value-5 {
-  background-image: url("../public/images/ownership.png");
+  background-image: url("../public/images/ownership.webp");
   grid-column: span 3 / span 3;
   grid-row: span 2 / span 2;
   grid-column-start: 4;
@@ -3646,25 +3646,25 @@ textarea {
 
 .case-hero {
   padding: 100px 0;
-  background-image: url("../public/images/case-study-bg.jpg");
+  background-image: url("../public/images/case-study-bg.webp");
   background-size: cover;
   background-position: center;
 }
 
 .case-study-nums {
-  background-image: url("../public/images/case-study-nums.jpg");
+  background-image: url("../public/images/case-study-nums.webp");
   background-size: cover;
   background-position: center;
 }
 
 .case-study-sol-del {
-  background-image: url("../public/images/cases-study-sol-del.jpg");
+  background-image: url("../public/images/cases-study-sol-del.webp");
   background-size: cover;
   background-position: center;
 }
 
 .case-study-challenge {
-  background-image: url("../public/images/case-study-challenge.jpg");
+  background-image: url("../public/images/case-study-challenge.webp");
   background-size: cover;
   background-position: bottom center;
 }

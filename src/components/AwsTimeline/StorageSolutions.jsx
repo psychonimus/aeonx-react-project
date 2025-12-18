@@ -6,8 +6,8 @@ import {
 } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 import "./AwsTimeline.css";
-import Hana from '/images/HANA_HA.png'
-import sapWithRise from '/images/sap-with-rise.png'
+import Hana from '/images/HANA_HA.webp'
+import sapWithRise from '/images/sap-with-rise.webp'
 
 
 

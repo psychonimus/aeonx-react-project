@@ -4,9 +4,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Header from "../Header/Header";
 import { FaCircleArrowRight } from "react-icons/fa6";
 import GlassButton from "../GlassButton/GlassButton";
-import expertise1 from "/images/cloud-expertise.png"
-import expertise2 from "/images/custom-app-dev.png"
-import expertise3 from "/images/business-process-transformation-bg.jpg"
+import expertise1 from "/images/cloud-expertise.webp"
+import expertise2 from "/images/custom-app-dev.webp"
+import expertise3 from "/images/business-process-transformation-bg.webp"
 import GlassButtonLight from "../GlassButton/GlassButtonLight";
 
 gsap.registerPlugin(ScrollTrigger);

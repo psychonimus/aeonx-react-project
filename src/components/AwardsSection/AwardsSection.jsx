@@ -8,9 +8,9 @@ import profileOne from "/images/profile-1.webp"
 import AwardCard from './AwardCard';
 import TestCard from '../TestimonialSection/TestCard';
 
-import gptw from "/images/Great-Place-To-Work-logo-updated.png"
-import risingStar from "/images/rising-star-partner-logo.jpg"
-import advanceTier from '/images/advance-tier-sol.png'
+import gptw from "/images/Great-Place-To-Work-logo-updated.webp"
+import risingStar from "/images/rising-star-partner-logo.webp"
+import advanceTier from '/images/advance-tier-sol.webp'
 
 
 const AwardsSection = () => {

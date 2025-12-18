@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import DeluxCaseStudy from "/images/Modernizing-Delux-Bearings.jpg"; 
+import DeluxCaseStudy from "/images/Modernizing-Delux-Bearings.webp"; 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";

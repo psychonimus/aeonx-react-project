@@ -26,7 +26,7 @@ const IndustryRotator = () => {
             accent: 'emerald',
             icon: 'factory',
             tailText: 'Manufacturing',
-            bgImage: '/images/manufacturing-bg.png',
+            bgImage: '/images/manufacturing-bg.webp',
             body: 'AeonX delivers end-to-end SAP solutions tailored for the manufacturing industry, enabling organizations to modernize operations, enhance visibility, and scale with confidence. Our SAP-driven approach helps manufacturers adopt a connected, data-led, and digitally intelligent production ecosystem.',
             ListTitle: 'Our SAP solutions for Manufacturing help you:',
             ListItems: [
@@ -48,7 +48,7 @@ const IndustryRotator = () => {
             accent: 'amber',
             icon: 'pickaxe',
             tailText: 'Mining & Minerals',
-            bgImage: '/images/mining-bg.png',
+            bgImage: '/images/mining-bg.webp',
             body: 'The mining and minerals sector operates in a highly technical and operationally demanding environment. AeonX helps mining enterprises streamline processes, improve visibility, and enhance productivity through robust SAP-driven solutions. With a unified digital landscape, organizations can achieve greater transparency, safer operations, and smarter decision-making across the entire mining value chain.',
             ListTitle: 'Our SAP solutions for Mining & Minerals enables you to:',
             ListItems: [
@@ -71,7 +71,7 @@ const IndustryRotator = () => {
             accent: 'violet',
             icon: 'truck',
             tailText: 'Logistics',
-            bgImage: '/images/logistics-bg.png',
+            bgImage: '/images/logistics-bg.webp',
             body: 'AeonX helps logistics businesses strengthen operational efficiency and enhance productivity through intelligent SAP solutions designed to deliver end-to-end visibility and control. By leveraging SAP ERP, we enable logistics organizations to modernize their processes, reduce operational costs, and elevate customer satisfaction—all while ensuring faster, more accurate decision-making powered by real-time insights. Our solutions support digital growth with innovative business models, seamless tracking tools, and robust process optimization.',
             ListTitle: 'Our SAP solutions for Logistics help you:',
             ListItems: [
@@ -93,7 +93,7 @@ const IndustryRotator = () => {
             accent: 'sky',
             icon: 'biohazard',
             tailText: 'Chemical',
-            bgImage: '/images/chemical.png',
+            bgImage: '/images/chemical.webp',
             body: 'We help companies in the chemical sector modernize processes, strengthen product traceability, and maintain consistent quality across their operations. With SAP, chemical companies can stay agile, reduce risks, and adapt quickly to evolving market demands. Our solutions support end-to-end chemical operations, from product development and safety documentation to logistics, inventory management, and customer fulfillment. By providing real-time visibility and predictive intelligence, we help businesses enhance decision-making, ensure regulatory compliance, and improve overall operational efficiency.',
             ListTitle: 'Our SAP solutions for Chemicals help you:',
             ListItems: [
@@ -114,7 +114,7 @@ const IndustryRotator = () => {
             accent: 'emerald',
             icon: 'pill-bottle',
             tailText: 'Pharmaceuticals',
-            bgImage: '/images/pharmaceuticals-bg.png',
+            bgImage: '/images/pharmaceuticals-bg.webp',
             body: 'AeonX empowers pharma companies to stay ahead of transformation with SAP solutions that enhance product quality, optimize operations, and support end-to-end compliance. By enabling digital agility, we help organizations adapt quickly, maintain market leadership, and accelerate time-to-market.',
             ListTitle: 'Our SAP solutions for Pharmaceuticals help you:',
             ListItems: [
@@ -135,7 +135,7 @@ const IndustryRotator = () => {
             accent: 'amber',
             icon: 'hospital',
             tailText: 'Healthcare',
-            bgImage: '/images/healthcare-bg.png',
+            bgImage: '/images/healthcare-bg.webp',
             body: 'By digitizing manual processes and creating a connected ecosystem, we help healthcare providers deliver timely, accurate, and patient-centric care. Our solutions focus on reducing paperwork, optimizing operational workflows, strengthening vendor and inventory management, and improving workforce performance, enabling healthcare institutions to operate with greater agility, transparency, and reliability.',
             ListTitle: 'Our SAP solutions for Healthcare help you:',
             ListItems: [
@@ -156,7 +156,7 @@ const IndustryRotator = () => {
             accent: 'violet',
             icon: 'fuel',
             tailText: 'Oil & Gas',
-            bgImage: '/images/oilandgas-bg.png',
+            bgImage: '/images/oilandgas-bg.webp',
             body: 'AeonX empowers oil and gas enterprises with SAP-driven digital solutions that enhance operational control, increase visibility, and improve agility across upstream, midstream, and downstream operations. Our integrated systems streamline asset management, optimize supply chains, and accelerate decision-making for safer, more efficient operations.',
             ListTitle: 'Our SAP solutions for Oil & Gas help you:',
             ListItems: [
@@ -177,7 +177,7 @@ const IndustryRotator = () => {
             accent: 'sky',
             icon: 'phone-outgoing',
             tailText: 'Telecom',
-            bgImage: '/images/telecom-bg.png',
+            bgImage: '/images/telecom-bg.webp',
             body: 'The telecommunications industry is rapidly transforming, driven by 5G, digital services, and the need for agile, scalable, and data-rich platforms. AeonX enables telecom companies to modernize their operations with SAP-powered solutions that enhance network performance, accelerate monetization, and improve customer experiences. By digitizing internal systems, enabling real-time insights, and supporting complex business models, we help telecom providers stay competitive in a fast-evolving landscape.',
             ListTitle: 'Our SAP solutions for Telecom help you:',
             ListItems: [
@@ -204,7 +204,7 @@ const IndustryRotator = () => {
             accent: 'emerald',
             icon: 'book-user',
             tailText: 'Retail',
-            bgImage: '/images/retail-bg.png',
+            bgImage: '/images/retail-bg.webp',
             body: 'AeonX empowers retailers with advanced data analytics, AI-driven tools, and integrated SAP and AWS solutions that enhance visibility, streamline supply chains, and support smarter decision-making. Our approach helps retailers optimize operations, reduce costs, and deliver seamless shopping experiences across channels. By combining digital transformation, scalable architectures, and DevOps-driven improvements, we help retail businesses stay competitive in a continuously shifting marketplace.',
             ListTitle: 'Our SAP solutions for Retail help you:',
             ListItems: [

@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { Helmet } from "react-helmet";
-import ITDCaseStudy from "/images/Modernizing-ITD-Cementation’s-SAP.jpg";
+import ITDCaseStudy from "/images/Modernizing-ITD-Cementation’s-SAP.webp";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";

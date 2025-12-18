@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./MigrationSection.css";
-import Implementation from "/images/implementation-service.png";
-import CloudMigration from "/images/migration-services.png";
-import Integration from "/images/integration-services.jpg";
-import Innovation from "/images/innovation-services.png";
-import Staffing from "/images/staffing-services.png";
+import Implementation from "/images/implementation-service.webp";
+import CloudMigration from "/images/migration-services.webp";
+import Integration from "/images/integration-services.webp";
+import Innovation from "/images/innovation-services.webp";
+import Staffing from "/images/staffing-services.webp";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { inView } from "framer-motion";

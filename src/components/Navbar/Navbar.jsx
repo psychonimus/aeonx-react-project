@@ -189,7 +189,8 @@ const Navbar = () => {
                                             <div className="row">
                                                 <div className="col-md-4 d-none d-lg-block">
                                                     <h4 >PRODUCTS</h4>
-                                                    <p>Discover the diverse range of services we offer, from precision manufacturing to cutting-edge</p>
+                                                    <p>Explore AeonX’s SAP and AWS service portfolios,
+                                                        along with accelerators built to speed up enterprise transformation.</p>
                                                 </div>
                                                 <div className="col-md-3">
 
@@ -260,8 +261,9 @@ const Navbar = () => {
                                         <div className="container">
                                             <div className="row">
                                                 <div className="col-md-4 d-none d-lg-block">
-                                                    <h4 >Services</h4>
-                                                    <p>Discover the diverse range of services we offer, from precision manufacturing to cutting-edge</p>
+                                                    <h4 >SERVICES</h4>
+                                                    <p>Comprehensive services covering implementation, migration, integration,
+                                                        support, innovation initiatives, and specialized staffing.</p>
                                                 </div>
                                                 <div className="col-md-3">
 
@@ -329,7 +331,8 @@ const Navbar = () => {
                                             <div className="row">
                                                 <div className="col-md-4 d-none d-lg-block">
                                                     <h4 >INDUSTRIES</h4>
-                                                    <p>Discover the diverse range of services we offer, from precision manufacturing to cutting-edge</p>
+                                                    <p>Industry-specific expertise across manufacturing, mining, logistics,
+                                                        healthcare, energy, telecom, chemicals, pharmaceuticals, and retail.</p>
                                                 </div>
                                                 <div className="col-md-3">
 
@@ -416,7 +419,8 @@ const Navbar = () => {
                                             <div className="row">
                                                 <div className="col-md-4 d-none d-lg-block">
                                                     <h4 >INSIGHTS</h4>
-                                                    <p>Discover the diverse range of services we offer, from precision manufacturing to cutting-edge</p>
+                                                    <p>Practical SAP playbooks, AWS optimization guides,
+                                                        product deep dives, blogs, and industry events.</p>
                                                 </div>
                                                 <div className="col-md-3">
 
@@ -484,7 +488,8 @@ const Navbar = () => {
                                             <div className="row">
                                                 <div className="col-md-4 d-none d-lg-block">
                                                     <h4 >COMPANY</h4>
-                                                    <p>Discover the diverse range of services we offer, from precision manufacturing to cutting-edge</p>
+                                                    <p>Learn about AeonX’s journey, vision, leadership team,
+                                                        and the values shaping our organization.</p>
                                                 </div>
                                                 <div className="col-md-3">
 
@@ -557,8 +562,9 @@ const Navbar = () => {
                                         <div className="container">
                                             <div className="row">
                                                 <div className="col-md-4 d-none d-lg-block">
-                                                    <h4 >Investor Relations</h4>
-                                                    <p>Discover the diverse range of services we offer, from precision manufacturing to cutting-edge</p>
+                                                    <h4 >INVESTOR RELATIONS</h4>
+                                                    <p>Financial disclosures, governance frameworks,
+                                                        shareholder information, policies, and statutory documents.</p>
                                                 </div>
                                                 <div className="col-md-3">
 

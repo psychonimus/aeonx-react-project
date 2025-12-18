@@ -7,10 +7,10 @@ import "swiper/css/autoplay";
 import profileOne from "/images/profile-1.webp"
 import TestCard from './TestCard';
 
-import bnf from '/images/bnf-logo.jpg'
-import ck from '/images/ck-birla-logo.png'
-import ashapura from '/images/ashapura-logo.jpg'
-import bvg from '/images/bvg-logo.jpg'
+import bnf from '/images/bnf-logo.webp'
+import ck from '/images/ck-birla-logo.webp'
+import ashapura from '/images/ashapura-logo.webp'
+import bvg from '/images/bvg-logo.webp'
 
 
 const testimonials = [

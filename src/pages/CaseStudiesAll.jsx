@@ -5,15 +5,15 @@ import { GoGoal } from "react-icons/go";
 import { Link, useSearchParams } from 'react-router-dom';
 
 // Import images (reusing existing ones for now as placeholders)
-import cs1 from "/images/Modernizing-ITD-Cementation’s-SAP.jpg";
-import cs2 from "/images/Transforming-Ashapura.jpg";
-import cs3 from "/images/Unifying-Raymond.jpg";
-import cs4 from "/images/Modernizing-Delux-Bearings.jpg";
-import cs5 from "/images/Digitizing-Customer.jpg";
-import cs6 from "/images/Modernizing-CK-Birla-Hospitals.jpg";
-import cs7 from "/images/Streamlining-raymonds.jpg";
-import cs8 from "/images/xpense-case-study.jpg";
-import cs9 from "/images/Optimizing-Ashapura.jpg";
+import cs1 from "/images/Modernizing-ITD-Cementation’s-SAP.webp";
+import cs2 from "/images/Transforming-Ashapura.webp";
+import cs3 from "/images/Unifying-Raymond.webp";
+import cs4 from "/images/Modernizing-Delux-Bearings.webp";
+import cs5 from "/images/Digitizing-Customer.webp";
+import cs6 from "/images/Modernizing-CK-Birla-Hospitals.webp";
+import cs7 from "/images/Streamlining-raymonds.webp";
+import cs8 from "/images/xpense-case-study.webp";
+import cs9 from "/images/Optimizing-Ashapura.webp";
 
 
 const CaseStudiesAll = () => {

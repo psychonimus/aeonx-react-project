@@ -4,45 +4,45 @@ import GlassButton from "../components/GlassButton/GlassButton";
 import { Helmet } from "react-helmet";
 import AwsTechStack from "../components/AwsPageComponents/AwsTechStack";
 import Header from "../components/Header/Header";
-import WorkspaceSolution from "/images/amz-workspace-about.png";
-import workspaceLogo from "/images/amazonWorkspaceLogo.png";
+import WorkspaceSolution from "/images/amz-workspace-about.webp";
+import workspaceLogo from "/images/amazonWorkspaceLogo.webp";
 import implementation from "/images/implementation.webp";
 import smallBusiness from "/images/small-businesses.webp";
 import cloud from "/images/cloud-computing.webp";
 import cost from "/images/price-down.webp";
 import Ai from "/images/ai.webp";
-import cloudSolutions from '/images/aws-cloud-solutions.png'
-import cloudFront from '/images/awsCloudFront.png'
-import saponaws from '/images/sap-on-aws.png'
-import saponawsCap from '/images/sap-on-aws-capabilities.png'
+import cloudSolutions from '/images/aws-cloud-solutions.webp'
+import cloudFront from '/images/awsCloudFront.webp'
+import saponaws from '/images/sap-on-aws.webp'
+import saponawsCap from '/images/sap-on-aws-capabilities.webp'
 import AwsTimeline from "../components/AwsTimeline/AwsTimeline";
 import StorageSolutions from "../components/AwsTimeline/StorageSolutions";
-import awsmachinelearning from '/images/awsmachinelearning.png'
-import awsmachineLearningAbout from '/images/aws-ml.png'
-import awsIotSolutionsBanner from '/images/IOT-about.png'
-import awsIot from '/images/awsIot.png'
-import awsDevOps from '/images/devops-about.png'
-import DevOpsLogo from '/images/DevOpsLogo.png'
-import awsDatabaseLogo from '/images/aws-database-new.png'
-import awsDB from '/images/database-solutions.png'
-import cloudMigrationBanner from '/images/cloud-migration.png'
-import cloudMigrationBannerTop from '/images/aws-cloud-migration-top.png'
-import appModernTop from '/images/app-modernization-top.png'
-import applicationModernizationBanner from '/images/application-modernization-cover.jpg'
-import managedServiceLogo from '/images/awsManagedServiceProviderLogo.png'
-import awsManagedServiceBanner from '/images/Aws-manged-services-about.png'
-import MsOnAwsLogo from '/images/MsOnAws.png'
-import MsonAwsAbout from '/images/Microsoft-on-aws.png'
-import cloudStorageTop from '/images/cloud-storage-top.png'
-import cloudStorageSolutions from '/images/cloud-storage-solutions.png'
-import bigDataTop from '/images/big-data-top.png'
-import awsBigDataAnalytics from '/images/aws-big-data-anlytics.png'
-import securityManagementTop from '/images/security-man-top.png'
-import SecurityManagementSolutions from '/images/security-management-solutions.png'
-import industryStandardTop from '/images/industry-standard-top.png'
-import industryStandardSolutions from '/images/industry-standard-solutions.png'
-import disasterManagementTop from '/images/dis-rec.png'
-import disasterManagement from '/images/disaster-management-sol.png'
+import awsmachinelearning from '/images/awsmachinelearning.webp'
+import awsmachineLearningAbout from '/images/aws-ml.webp'
+import awsIotSolutionsBanner from '/images/IOT-about.webp'
+import awsIot from '/images/awsIot.webp'
+import awsDevOps from '/images/devops-about.webp'
+import DevOpsLogo from '/images/DevOpsLogo.webp'
+import awsDatabaseLogo from '/images/aws-database-new.webp'
+import awsDB from '/images/database-solutions.webp'
+import cloudMigrationBanner from '/images/cloud-migration.webp'
+import cloudMigrationBannerTop from '/images/aws-cloud-migration-top.webp'
+import appModernTop from '/images/app-modernization-top.webp'
+import applicationModernizationBanner from '/images/application-modernization-cover.webp'
+import managedServiceLogo from '/images/awsManagedServiceProviderLogo.webp'
+import awsManagedServiceBanner from '/images/Aws-manged-services-about.webp'
+import MsOnAwsLogo from '/images/MsOnAws.webp'
+import MsonAwsAbout from '/images/Microsoft-on-aws.webp'
+import cloudStorageTop from '/images/cloud-storage-top.webp'
+import cloudStorageSolutions from '/images/cloud-storage-solutions.webp'
+import bigDataTop from '/images/big-data-top.webp'
+import awsBigDataAnalytics from '/images/aws-big-data-anlytics.webp'
+import securityManagementTop from '/images/security-man-top.webp'
+import SecurityManagementSolutions from '/images/security-management-solutions.webp'
+import industryStandardTop from '/images/industry-standard-top.webp'
+import industryStandardSolutions from '/images/industry-standard-solutions.webp'
+import disasterManagementTop from '/images/dis-rec.webp'
+import disasterManagement from '/images/disaster-management-sol.webp'
 import AwsAccordion from "../components/AwsTimeline/AwsAccordion";
 import CloudStorageAccordion from "../components/AwsTimeline/CloudStorageAccordion";
 
@@ -843,7 +843,7 @@ const AWSProducts = () => {
                 <div className="row point py-4">
                   <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon" style={{ background: "#ffffffff" }}>
-                      <img src="/images/amz-rds.png" alt="" />
+                      <img src="/images/amz-rds.webp" alt="" />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex align-items-center">

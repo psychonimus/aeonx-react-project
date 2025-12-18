@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import banner1 from '/images/banner.webp'
 import banner2 from '/images/banner2.webp'
 import banner3 from '/images/banner3.webp'
-import partner from '/images/partner-logo.png'
+import partner from '/images/hero-partner-logo.png'
 import { BsArrowUpRightCircleFill } from "react-icons/bs";
 import { FaPhoneAlt } from "react-icons/fa";
 import GlassButton from '../GlassButton/GlassButton';

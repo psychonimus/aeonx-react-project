@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import "./ServCar.css";
-import imp1 from "/images/sap-imp-1.png";
-import imp2 from "/images/sap-imp-2.png";
-import imp3 from "/images/sap-imp-3.png";
-import imp4 from "/images/sap-imp-4.png";
-import imp5 from "/images/sap-imp-5.png";
+import imp1 from "/images/sap-imp-1.webp";
+import imp2 from "/images/sap-imp-2.webp";
+import imp3 from "/images/sap-imp-3.webp";
+import imp4 from "/images/sap-imp-4.webp";
+import imp5 from "/images/sap-imp-5.webp";
 
 const teamMembers = [
   {

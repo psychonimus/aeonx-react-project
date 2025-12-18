@@ -35,23 +35,23 @@ const EventHero = () => {
               
               <div className="event-card card1">
                 <div className="event-card-overlay"></div>
-                <p className="event-tag">Mastermind</p>
-                <h3 className="tagSub">Inner Circle Community</h3>
+                <p className="event-tag">SAP</p>
+                <h3 className="tagSub">SAP innovation Day Q1 </h3>
               </div>
               <div className="event-card card2">
                 <div className="event-card-overlay"></div>
-                <p className="event-tag">Coaching</p>
-                <h3 className="tagSub">Business Accelerator</h3>
+                <p className="event-tag">Mumbai</p>
+                <h3 className="tagSub">SAP NOW Mumbai Q2</h3>
               </div>
               <div className="event-card card3">
                 <div className="event-card-overlay"></div>
-                <p className="event-tag">Partnership</p>
-                <h3 className="tagSub">Platinum Partnerships</h3>
+                <p className="event-tag">SAP</p>
+                <h3 className="tagSub">SAP innovation Day Q2 </h3>
               </div>
               <div className="event-card card4">
                 <div className="event-card-overlay"></div>
-                <p className="event-tag">Events</p>
-                <h3 className="tagSub">Unleash Her Power Within</h3>
+                <p className="event-tag">Delhi</p>
+                <h3 className="tagSub">SAP NOW Delhi Q3 </h3>
               </div>
             </div>
           </div>

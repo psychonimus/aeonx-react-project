@@ -17,7 +17,7 @@ const blogData = [
         date: "Sep 29, 2025",
         category: "SAP",
         desc: "With SAP ending mainstream support for ECC in 2027, time is rushing for enterprises still working with older systems. Many organizations have kicked off their SAP S/4HANA migration journey",
-        img: "/images/sap-migration-mistakes.jpg",
+        img: "/images/sap-migration-mistakes.webp",
         url: "/blogs/sap-migration-mistakes"
     },
     {
@@ -25,7 +25,7 @@ const blogData = [
         date: "Mar 15, 2021",
         category: "Blog, SAP",
         desc: "Any information or data recorded and stored by a business digitally needs to be protected.",
-        img: "/images/how-sap-protect-data.jpg",
+        img: "/images/how-sap-protect-data.webp",
         url: "/blogs/how-sap-protect-your-data"
     },
     {
@@ -33,7 +33,7 @@ const blogData = [
         date: "Feb 7, 2021",
         category: "Blog, SAP",
         desc: "Integrating and coordinating business operations for several enterprises worldwide ",
-        img: "/images/driving-innovation.jpg",
+        img: "/images/driving-innovation.webp",
         url: "/blogs/driving-innovation-with-sap"
     },
 ];
