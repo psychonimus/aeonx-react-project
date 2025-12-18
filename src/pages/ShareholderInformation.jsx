@@ -1,71 +1,80 @@
 import React, { useState } from "react";
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 import GlassButton from "../components/GlassButton/GlassButton";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 import Header from "../components/Header/Header";
+import DownloadList from "../components/DownloadList/DownloadList";
+import { ArrowBigDownDash, LayoutGrid } from "lucide-react";
 
 
 const ShareholderInformation = () => {
   const [activeTab, setActiveTab] = useState("postal");
   const [activePeriod, setActivePeriod] = useState("yearly");
+  const [activeYear, setActiveYear] = useState("All");
 
   const tabs = [
     { id: "postal", label: "Postal Ballot - Notice & Form" },
     { id: "shareholding", label: "Shareholding Pattern" },
     { id: "unclaimed", label: "Unclaimed and Unpaid Dividend Amount" },
     { id: "iepf", label: "Shares Transferred to IEPF" }
-    
-    
+
+
   ];
+
+  const years = ["All", "2025", "2024", "2023"];
 
   const pdfData = {
     postal: {
       yearly: [
-        { name: "Annexure-IV-CS-Certificate", file: "/investors/shareholder-information/postal-ballot-notice-and-form/Annexure-IV-CS-Certificate.pdf" },
-        { name: "Annexure-V-CS-Certificate", file: "/investors/shareholder-information/postal-ballot-notice-and-form/Annexure-V-CS-Certificate.pdf" },
-        { name: "POSTAL-BALLOT-NOTICE", file: "/investors/shareholder-information/postal-ballot-notice-and-form/POSTAL-BALLOT-NOTICE.pdf" },
-        { name: "POSTAL-BALLOT-NOTICE-2025-ADTL", file: "/investors/shareholder-information/postal-ballot-notice-and-form/POSTAL-BALLOT-NOTICE-2025-ADTL.pdf" },
+        { name: "Annexure-IV-CS-Certificate", file: "/investors/shareholder-information/postal-ballot-notice-and-form/Annexure-IV-CS-Certificate.pdf", year: "2024" },
+        { name: "Annexure-V-CS-Certificate", file: "/investors/shareholder-information/postal-ballot-notice-and-form/Annexure-V-CS-Certificate.pdf", year: "2024" },
+        { name: "POSTAL-BALLOT-NOTICE", file: "/investors/shareholder-information/postal-ballot-notice-and-form/POSTAL-BALLOT-NOTICE.pdf", year: "2024" },
+        { name: "POSTAL-BALLOT-NOTICE-2025-ADTL", file: "/investors/shareholder-information/postal-ballot-notice-and-form/POSTAL-BALLOT-NOTICE-2025-ADTL.pdf", year: "2025" },
       ],
       quarterly: [
-        
+
       ]
     },
     shareholding: {
       yearly: [
-        { name: "Shareholding-Pattern-30.06.2024-ADTL", file: "/investors/shareholder-information/shareholding-pattern/Shareholding-Pattern-30.06.2024-ADTL.pdf" },
-        { name: "Shareholding-Pattern-30.09.2024", file: "/investors/shareholder-information/shareholding-pattern/Shareholding-Pattern-30.09.2024.pdf" },
-        { name: "Shareholding-Pattern-31.03.2024", file: "/investors/shareholder-information/shareholding-pattern/Shareholding-Pattern-31.03.2024.pdf" },
-        { name: "Shareholding-Pattern-31.03.2025", file: "/investors/shareholder-information/shareholding-pattern/Shareholding-Pattern-31.03.2025.pdf" },
-        { name: "Shareholding-Pattern-31.12.2024-ADTL", file: "/investors/shareholder-information/shareholding-pattern/Shareholding-Pattern-31.12.2024-ADTL.pdf" },
-        
+        { name: "Shareholding-Pattern-30.06.2024-ADTL", file: "/investors/shareholder-information/shareholding-pattern/Shareholding-Pattern-30.06.2024-ADTL.pdf", year: "2024" },
+        { name: "Shareholding-Pattern-30.09.2024", file: "/investors/shareholder-information/shareholding-pattern/Shareholding-Pattern-30.09.2024.pdf", year: "2024" },
+        { name: "Shareholding-Pattern-31.03.2024", file: "/investors/shareholder-information/shareholding-pattern/Shareholding-Pattern-31.03.2024.pdf", year: "2024" },
+        { name: "Shareholding-Pattern-31.03.2025", file: "/investors/shareholder-information/shareholding-pattern/Shareholding-Pattern-31.03.2025.pdf", year: "2025" },
+        { name: "Shareholding-Pattern-31.12.2024-ADTL", file: "/investors/shareholder-information/shareholding-pattern/Shareholding-Pattern-31.12.2024-ADTL.pdf", year: "2024" },
+
       ],
       quarterly: [
-        { name: "SHP-March-2025", file: "/investors/shareholder-information/shareholding-pattern/SHP-March-2025.pdf" },
-        { name: "SHP-December-2024", file: "/investors/shareholder-information/shareholding-pattern/SHP-December-2024.pdf" },
-        { name: "SHP-September-2024", file: "/investors/shareholder-information/shareholding-pattern/SHP-September-2024.pdf" },
-        { name: "SHP-June-2024", file: "/investors/shareholder-information/shareholding-pattern/SHP-June-2024.pdf" },
+        { name: "SHP-March-2025", file: "/investors/shareholder-information/shareholding-pattern/SHP-March-2025.pdf", year: "2025" },
+        { name: "SHP-December-2024", file: "/investors/shareholder-information/shareholding-pattern/SHP-December-2024.pdf", year: "2024" },
+        { name: "SHP-September-2024", file: "/investors/shareholder-information/shareholding-pattern/SHP-September-2024.pdf", year: "2024" },
+        { name: "SHP-June-2024", file: "/investors/shareholder-information/shareholding-pattern/SHP-June-2024.pdf", year: "2024" },
       ]
     },
     unclaimed: {
       yearly: [
-        
+
       ],
       quarterly: [
-        
+
       ]
     },
-    
+
     iepf: {
       yearly: [
-        { name: "Share-Transfer-to-IEPF-2023-2024", file: "/investors/financial-highlights/shares-transferred-to-IEPF/Share-Transfer-to-IEPF-2023-2024.pdf" },
-        
+        { name: "Share-Transfer-to-IEPF-2023-2024", file: "/investors/financial-highlights/shares-transferred-to-IEPF/Share-Transfer-to-IEPF-2023-2024.pdf", year: "2024" },
+
       ],
       quarterly: [
-        
+
       ]
     },
-    
+
   };
+
+  const filteredData = pdfData[activeTab][activePeriod]?.filter(item =>
+    activeYear === "All" || item.year === activeYear
+  ) || [];
 
   return (
 
@@ -78,17 +87,17 @@ const ShareholderInformation = () => {
         <meta name="author" content="AeonX Digital" />
       </Helmet>
 
-      
 
-      <section className="investor-container mb-5" style={{marginTop:"5rem"}}>
+
+      <section className="investor-container mb-5" style={{ marginTop: "5rem" }}>
         {/* <h1 className="ir-title">Investor Relations</h1>
         <p className="ir-sub">
           Transparent Communication For Our Stakeholders & Shareholders
         </p> */}
 
         <Header
-          headline="Shareholder Information"
-          desc="Transparent Communication For Our Stakeholders & Shareholders"
+          highlight="Shareholder Information"
+          headline="Transparent Communication For Our Stakeholders & Shareholders"
         />
 
         {/* Period Filter Tabs */}
@@ -107,6 +116,19 @@ const ShareholderInformation = () => {
           </button>
         </div>
 
+        {/* Year Filter Tabs */}
+        <div className="period-tabs mt-3">
+          {years.map((year) => (
+            <button
+              key={year}
+              className={`period-tab ${activeYear === year ? "active" : ""}`}
+              onClick={() => setActiveYear(year)}
+            >
+              {year}
+            </button>
+          ))}
+        </div>
+
         <div className="ir-wrapper">
           {/* Left Side Tabs */}
           <div className="ir-tabs">
@@ -122,16 +144,27 @@ const ShareholderInformation = () => {
           </div>
 
           {/* Right Side PDF List */}
-          <div className="ir-content">
-            {pdfData[activeTab][activePeriod]?.length > 0 ? (
-              pdfData[activeTab][activePeriod].map((item, i) => (
-                <a target="_blank" href={item.file} key={i} className="ir-link">
-                  <span>{item.name}</span>
-                  <button className="ir-download-btn">Download ⬇</button>
-                </a>
-              ))
+
+          <div className="flex-grow-1" style={{ flex: 1 }}>
+            {filteredData.length > 0 ? (
+              <DownloadList
+                title="Financial"
+                subtitle="Documents"
+                categories={filteredData.map((item, index) => ({
+                  id: index,
+                  title: item.name,
+                  // subtitle: 'PDF Document',
+                  onClick: () => window.open(item.file, '_self'),
+                  icon: <ArrowBigDownDash className="w-8 h-8" />,
+                  featured: false
+                }))}
+                headerIcon={<LayoutGrid className="w-8 h-8" />}
+                className="bg-white rounded-4 shadow-sm"
+              />
             ) : (
-              <p className="text-center text-muted mt-3">No documents available for this period.</p>
+              <div className="d-flex justify-content-center align-items-center h-100 p-5 bg-white rounded-4 shadow-sm">
+                <p className="text-muted fs-5 m-0">No documents available for this selection.</p>
+              </div>
             )}
           </div>
         </div>

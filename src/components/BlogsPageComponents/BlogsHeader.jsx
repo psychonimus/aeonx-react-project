@@ -12,9 +12,9 @@ const BlogsHeader = () => {
                         <div className="blogs-hero-content d-flex flex-column justify-content-center  h-100">
                             {/* <p className="eyebrow">Latest Blogs</p> */}
                             <h1 className="mb-0">
-                                Blogs Driving Digital Transformation
+                                Perspectives that Power Transformation
                             </h1>
-                            <h3 className="mb-4">Expert analysis and actionable ideas for modern enterprises</h3>
+                            <h3 className="mb-4">Expert insights shaping the future of enterprise technology.</h3>
 
                             <div className="event-hero-buttons d-flex justify-content-start">
                                 <GlassButton

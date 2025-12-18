@@ -84,7 +84,7 @@ const ServiceSlider = () => {
                         description="SAP SuccessFactors delivers a modern, cloud-based HCM platform that streamlines HR processes and elevates employee experience. With intelligent, mobile-ready tools powered by SAP HXM, it helps organizations build agile, engaged, and high-performing teams."
                         buttonText="Know More about SAP SuccessFactors"
                         buttonIcon={() => <BsArrowUpRightCircleFill color="#fff" size={28} />}
-                        href="/sap-focused-products#grow-with-sap"
+                        href="/sap-focused-products#sap-success-factor"
                     />
 
                     <ServiceCard
@@ -93,7 +93,7 @@ const ServiceSlider = () => {
                         description="Streamline your travel and expense management with SAP Concur. A unified platform for real-time visibility, compliance, and cost control. We help businesses automate processes, reduce errors, and empower smarter financial decisions."
                         buttonText="Know More about SAP Concur"
                         buttonIcon={() => <BsArrowUpRightCircleFill color="#fff" size={28} />}
-                        href="/sap-focused-products#grow-with-sap"
+                        href="/sap-focused-products#sap-concur"
                     />
 
                     <ServiceCard

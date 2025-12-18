@@ -177,9 +177,9 @@ const CaseStudyEight = () => {
             </div>
             <div className="col-lg-6" ref={addToRefs}>
               <div
-                className="p-5 h-100 rounded-4 text-white"
+                className="p-5 h-100 rounded-4 text-white case-study-challenge"
                 style={{
-                  background: "linear-gradient(135deg, #1e1e2f 0%, #2d2d44 100%)",
+                  
                   boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
                 }}
               >
@@ -291,7 +291,7 @@ const CaseStudyEight = () => {
       </section>
 
       {/* ================= SOLUTIONS DELIVERED ================= */}
-      <section className="py-5 text-white" style={{ background: "#111" }}>
+      <section className="py-5 text-white case-study-sol-del">
         <div className="container py-5">
           <h2 className="mb-5 text-center" ref={addToRefs} style={{ fontFamily: "Gilroy-Bold", fontSize: "3rem" }}>
             Solutions Delivered
@@ -406,7 +406,7 @@ const CaseStudyEight = () => {
       </section>
 
       {/* ================= RESULTS ================= */}
-      <section className="py-5 position-relative overflow-hidden" style={{ background: "linear-gradient(135deg, #f97316 0%, #facc15 100%)" }}>
+      <section className="py-5 position-relative overflow-hidden case-study-nums">
         <div className="container py-5 position-relative" style={{ zIndex: 2 }}>
           <h2 className="text-center text-white mb-5" ref={addToRefs} style={{ fontFamily: "Gilroy-Bold", fontSize: "3rem" }}>
             Business Impact

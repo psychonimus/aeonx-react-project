@@ -12,7 +12,7 @@ const Services = () => {
       {/* <ImplementationSection /> */}
       {/* <SapSupport /> */}
       <MigrationSection />
-      <ServicesCTA />
+      {/* <ServicesCTA /> */}
     </>
   )
 }

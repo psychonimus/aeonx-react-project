@@ -98,6 +98,11 @@
   line-height: 1.6;
   margin: 0;
 }
+@media(max-width : 576px){
+  .location-accordion-content-inner p{
+    margin-top: 20px;
+  }
+}
 
 /* Preview Column */
 .preview-column {

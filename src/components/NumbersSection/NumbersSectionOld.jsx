@@ -1,5 +1,5 @@
 import React from 'react'
-import xLogo from '/images/aeonx-x-icon.webp'
+import xLogo from '/images/aeonx-x-icon.png'
 import infoOne from '/images/info-1.webp'
 import infoTwo from '/images/info-2.webp'
 import infoThree from '/images/info-3.webp'

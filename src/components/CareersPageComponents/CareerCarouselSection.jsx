@@ -4,9 +4,17 @@ import { Navigation, Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import "swiper/css/pagination";
-import imgOne from '/images/img-1.webp'
-import imgTwo from '/images/img-2.webp'
-import imgThree from '/images/img-3.webp'
+import imgOne from '/images/group/img-1.webp'
+import imgTwo from '/images/group/img-2.webp'
+import imgThree from '/images/group/img-3.webp'
+import imgFour from '/images/group/img-4.webp'
+import imgFive from '/images/group/img-5.webp'
+import imgSix from '/images/group/img-6.webp'
+import imgSeven from '/images/group/img-7.webp'
+import imgEight from '/images/group/img-8.webp'
+import imgNine from '/images/group/img-9.webp'
+import imgTen from '/images/group/img-10.webp'
+import imgEleven from '/images/group/img-11.webp'
 
 const CareerCarouselSection = () => {
   return (
@@ -39,22 +47,28 @@ const CareerCarouselSection = () => {
                                     <img src={imgThree} className="exp-image" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img src={imgOne} className="exp-image" />
+                                    <img src={imgFour} className="exp-image" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img src={imgTwo} className="exp-image" />
+                                    <img src={imgFive} className="exp-image" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img src={imgThree} className="exp-image" />
+                                    <img src={imgSix} className="exp-image" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img src={imgOne} className="exp-image" />
+                                    <img src={imgSeven} className="exp-image" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img src={imgTwo} className="exp-image" />
+                                    <img src={imgEight} className="exp-image" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img src={imgThree} className="exp-image" />
+                                    <img src={imgNine} className="exp-image" />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src={imgTen} className="exp-image" />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src={imgEleven} className="exp-image" />
                                 </SwiperSlide>
                             </Swiper>
                         </div>

@@ -3,7 +3,7 @@ import GlassButtonLight from '../GlassButton/GlassButtonLight'
 import GlassButton from '../GlassButton/GlassButton'
 const ServiceCard = ({ image, title, description, buttonText, buttonIcon, href }) => {
   return (
-    <div className="service-card">
+    <div className="service-card service-blur">
       <div>
         <img src={image} alt="" />
         <h3>{title}</h3>

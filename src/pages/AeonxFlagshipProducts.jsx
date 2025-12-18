@@ -5,7 +5,7 @@ import GlassButton from '../components/GlassButton/GlassButton';
 import { FaCircleArrowRight } from "react-icons/fa6";
 import { IoIosArrowDropdownCircle } from 'react-icons/io';
 
-const AeonxFlagshipProducts = () => {
+const  AeonxFlagshipProducts = () => {
     const [activeFilter, setActiveFilter] = useState('all');
     const [selectedServices, setSelectedServices] = useState([]);
     const [selectedIndustries, setSelectedIndustries] = useState([]);
@@ -46,6 +46,18 @@ const AeonxFlagshipProducts = () => {
         },
         {
             id: 4,
+            title: 'Accelerating Smart Manufacturing with AI-Powered Quality & Performance Intelligence',
+            description: 'ManufeX delivers real-time visibility into manufacturing operations by using AI to identify defects and performance issues.',
+            image: '/images/Manufex-cover.jpg',
+            video: null,
+            tags: ['Real-Time Visibility', 'Quality Detection', 'Performance Insights', 'Predictive Analytics'],
+            industry: 'ManufeX',
+            url: 'https://dev.manufex.cloud/',
+            
+        },
+
+        {
+            id: 5,
             title: 'Powering Enterprise Transformation with a Unified AI Intelligence Layer',
             description: 'AI-driven platform turning data into insights for smarter decisions and automated enterprise workflows.',
             image: '/images/Aeonxiq-cover.jpg',
@@ -56,7 +68,7 @@ const AeonxFlagshipProducts = () => {
             
         },
         {
-            id: 5,
+            id: 6,
             title: 'Streamlining Workforce Operations with a Unified Self-Service Employee Hub',
             description: 'Self-service workforce portal for managing timesheets, leave, and CRM actions. Streamlines internal operations.',
             image: '/images/People-connect-cover.jpg',
@@ -66,17 +78,7 @@ const AeonxFlagshipProducts = () => {
             url: 'https://dev.aeonxus.digital/',
             
         },
-        {
-            id: 6,
-            title: 'Accelerating Smart Manufacturing with AI-Powered Quality & Performance Intelligence',
-            description: 'ManufeX delivers real-time visibility into manufacturing operations by using AI to identify defects and performance issues.',
-            image: '/images/Manufex-cover.jpg',
-            video: null,
-            tags: ['Real-Time Visibility', 'Quality Detection', 'Performance Insights', 'Predictive Analytics'],
-            industry: 'ManufeX',
-            url: 'https://dev.manufex.cloud/',
-            
-        },
+        
         
     ];
 
@@ -138,6 +140,7 @@ const AeonxFlagshipProducts = () => {
                     <GlassButton
                       title="Explore Flagship Products"
                       icon={() => <IoIosArrowDropdownCircle size={30} />}
+                      url={'#aeonx-all-products'}
                     />
 
                   </div>
@@ -149,14 +152,14 @@ const AeonxFlagshipProducts = () => {
           </div>
         </section>
         
-            <div className="case-studies-wrapper">
+            <div className="case-studies-wrapper" id='aeonx-all-products'>
 
 
                 <div className="container">
 
 
                     
-                    <div className="case-studies-grid" style={{marginTop:"8rem"}}>
+                    <div className="case-studies-grid">
                        
                         {filteredCaseStudies.length > 0 ? (
                             filteredCaseStudies.map(study => (
@@ -168,11 +171,12 @@ const AeonxFlagshipProducts = () => {
                                         className="case-study-image"
                                     />
 
-                                    <div className="button-overlay">
+                                    <div className="button-overlay h-100 w-100 justify-content-center align-items-center">
                                         <GlassButton
                                           title="Explore"
                                           icon={() => <FaCircleArrowRight size={25} />}
                                           url={study.url}
+                                          
                                         />
                                     </div>
                                     </div>
@@ -180,13 +184,13 @@ const AeonxFlagshipProducts = () => {
                                     
                                     <div className="case-study-content">
                                         <div className="case-study-industry">{study.industry}</div>
-                                        <div className="case-study-tags">
+                                        {/* <div className="case-study-tags">
                                             {study.tags.map((tag, index) => (
                                                 <span key={index} className="tag">{tag}</span>
                                             ))}
-                                        </div>
-                                        <h3 className="case-study-title">{study.title}</h3>
-                                        <p className="case-study-description">{study.description}</p>
+                                        </div> */}
+                                        <h3 className="aeonx-case-study-title">{study.title}</h3>
+                                        <p className="aeonx-case-study-description">{study.description}</p>
                                     </div>
                                 </div>
                             ))

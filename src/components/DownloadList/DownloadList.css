@@ -1,0 +1,218 @@
+/* CategoryList Component Styles */
+
+/* CSS Variables for theming */
+:root {
+    --cl-background: hsl(0, 0%, 100%);
+    --cl-foreground: hsl(222.2, 84%, 4.9%);
+    --cl-card: hsl(0, 0%, 100%);
+    --cl-primary: hsl(222.2, 47.4%, 11.2%);
+    --cl-primary-foreground: hsl(210, 40%, 98%);
+    --cl-muted-foreground: hsl(215.4, 16.3%, 46.9%);
+    --cl-border: hsl(214.3, 31.8%, 91.4%);
+}
+
+/* Main Container */
+.category-list-container {
+    width: 100%;
+    background-color: transparent !important;
+    font-family: Gilroy;
+}
+
+.category-list-inner {
+    max-width: 56rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header Section */
+.category-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+    .category-header {
+        margin-bottom: 4rem;
+    }
+}
+
+.category-header-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 9999px;
+    background: linear-gradient(to bottom right, hsla(222.2, 47.4%, 11.2%, 0.8), hsl(222.2, 47.4%, 11.2%));
+    margin-bottom: 1.5rem;
+    color: var(--cl-primary-foreground);
+}
+
+
+
+
+
+
+
+/* Categories List */
+.categories-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+/* Category Item Wrapper */
+.category-item-wrapper {
+    position: relative;
+}
+
+
+
+/* Category Item */
+.category-item {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--cl-border);
+    background-color: var(--cl-card);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    height: 6rem;
+}
+
+.category-item:hover {
+    border-color: hsla(222.2, 47.4%, 11.2%, 0.5);
+}
+
+.category-item--hovered {
+    height: 8rem;
+    border-color: var(--cl-primary);
+    box-shadow: 0 10px 15px -3px hsla(222.2, 47.4%, 11.2%, 0.2),
+        0 4px 6px -4px hsla(222.2, 47.4%, 11.2%, 0.2);
+    background-color: hsla(222.2, 47.4%, 11.2%, 0.05);
+}
+
+/* Corner Brackets */
+.corner-bracket {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.corner-bracket--top-left {
+    top: 0.75rem;
+    left: 0.75rem;
+}
+
+.corner-bracket--bottom-right {
+    bottom: 0.75rem;
+    right: 0.75rem;
+}
+
+.corner-bracket--top-left .bracket-horizontal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1rem;
+    height: 2px;
+    background-color: var(--cl-primary);
+}
+
+.corner-bracket--top-left .bracket-vertical {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 1rem;
+    background-color: var(--cl-primary);
+}
+
+.corner-bracket--bottom-right .bracket-horizontal {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 1rem;
+    height: 2px;
+    background-color: var(--cl-primary);
+}
+
+.corner-bracket--bottom-right .bracket-vertical {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 2px;
+    height: 1rem;
+    background-color: var(--cl-primary);
+}
+
+/* Content */
+.category-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .category-content {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+.category-text {
+    flex: 1;
+}
+
+/* Category Item Title */
+.category-item-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+    color: var(--cl-foreground);
+}
+
+@media (min-width: 768px) {
+    .category-item-title {
+        font-size: 1.2rem;
+    }
+}
+
+.category-item-title--featured {
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .category-item-title--featured {
+        font-size: 1.875rem;
+    }
+}
+
+.category-item-title--hovered {
+    color: var(--cl-primary);
+}
+
+/* Category Item Subtitle */
+.category-item-subtitle {
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    transition: color 0.3s;
+    color: var(--cl-muted-foreground);
+    margin-bottom: 0.25rem;
+}
+
+@media (min-width: 768px) {
+    .category-item-subtitle {
+        font-size: 1rem;
+    }
+}
+
+.category-item-subtitle--hovered {
+    color: hsla(222.2, 84%, 4.9%, 0.9);
+}
+
+/* Category Icon */
+.category-icon {
+    display: block !important;
+}

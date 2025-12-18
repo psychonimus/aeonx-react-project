@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 import GlassButton from "../components/GlassButton/GlassButton";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 import Header from "../components/Header/Header";
@@ -8,39 +8,46 @@ import Header from "../components/Header/Header";
 const InvestorRelations = () => {
   const [activeTab, setActiveTab] = useState("auunalReport");
   const [activePeriod, setActivePeriod] = useState("yearly");
+  const [activeYear, setActiveYear] = useState("All");
 
   const tabs = [
     { id: "auunalReport", label: "Auunal Report" },
     { id: "financialInformation", label: "Financial Information" },
-    
+
   ];
+
+  const years = ["All", "2025", "2024", "2023"];
 
   const pdfData = {
     auunalReport: {
       yearly: [
-        { name: "AEONX-ANNUAL-REPORT-2023-24-final_compressed", file: "/investors/financial-highlights/annual-report/AEONX-ANNUAL-REPORT-2023-24-final_compressed.pdf" },
-        { name: "Annual-Report-2024-2025", file: "/investors/financial-highlights/annual-report/Annual-Report-2024-2025.pdf" },
+        { name: "AEONX-ANNUAL-REPORT-2023-24-final_compressed", file: "/investors/financial-highlights/annual-report/AEONX-ANNUAL-REPORT-2023-24-final_compressed.pdf", year: "2024" },
+        { name: "Annual-Report-2024-2025", file: "/investors/financial-highlights/annual-report/Annual-Report-2024-2025.pdf", year: "2025" },
       ],
       quarterly: [
-        
+
       ]
     },
     financialInformation: {
       yearly: [
-        { name: "BSE-Financial-Results-30.09.2024_compressed", file: "/investors/financial-highlights/financial-information/BSE-Financial-Results-30.09.2024_compressed.pdf" },
-        { name: "BSE-Financial-Results-31.12.2024_1_11zon", file: "/investors/financial-highlights/financial-information/BSE-Financial-Results-31.12.2024_1_11zon.pdf" },
-        { name: "BSE-Financial-Results-31.12.2024_11zon", file: "/investors/financial-highlights/financial-information/BSE-Financial-Results-31.12.2024_11zon.pdf" },
-        { name: "BSE-Newspaper-Publication_compressed_compressed_compressed_11zon", file: "/investors/financial-highlights/financial-information/BSE-Newspaper-Publication_compressed_compressed_compressed_11zon.pdf" },
-        { name: "BSE-Newspaper-Publication-31.12.2024_11zon", file: "/investors/financial-highlights/financial-information/BSE-Newspaper-Publication-31.12.2024_11zon.pdf" },
-        { name: "BSE-Results-31.03.2025_compressed", file: "/investors/financial-highlights/financial-information/BSE-Results-31.03.2025_compressed.pdf" },
-        { name: "BSE-UFR-30.06.2025-1", file: "/investors/financial-highlights/financial-information/BSE-UFR-30.06.2025-1.pdf" },
+        { name: "BSE-Financial-Results-30.09.2024_compressed", file: "/investors/financial-highlights/financial-information/BSE-Financial-Results-30.09.2024_compressed.pdf", year: "2024" },
+        { name: "BSE-Financial-Results-31.12.2024_1_11zon", file: "/investors/financial-highlights/financial-information/BSE-Financial-Results-31.12.2024_1_11zon.pdf", year: "2024" },
+        { name: "BSE-Financial-Results-31.12.2024_11zon", file: "/investors/financial-highlights/financial-information/BSE-Financial-Results-31.12.2024_11zon.pdf", year: "2024" },
+        { name: "BSE-Newspaper-Publication_compressed_compressed_compressed_11zon", file: "/investors/financial-highlights/financial-information/BSE-Newspaper-Publication_compressed_compressed_compressed_11zon.pdf", year: "2024" },
+        { name: "BSE-Newspaper-Publication-31.12.2024_11zon", file: "/investors/financial-highlights/financial-information/BSE-Newspaper-Publication-31.12.2024_11zon.pdf", year: "2024" },
+        { name: "BSE-Results-31.03.2025_compressed", file: "/investors/financial-highlights/financial-information/BSE-Results-31.03.2025_compressed.pdf", year: "2025" },
+        { name: "BSE-UFR-30.06.2025-1", file: "/investors/financial-highlights/financial-information/BSE-UFR-30.06.2025-1.pdf", year: "2025" },
       ],
       quarterly: [
-        
+
       ]
     },
-    
+
   };
+
+  const filteredData = pdfData[activeTab][activePeriod]?.filter(item =>
+    activeYear === "All" || item.year === activeYear
+  ) || [];
 
   return (
 
@@ -108,6 +115,19 @@ const InvestorRelations = () => {
           </button>
         </div>
 
+        {/* Year Filter Tabs */}
+        <div className="period-tabs mt-3">
+          {years.map((year) => (
+            <button
+              key={year}
+              className={`period-tab ${activeYear === year ? "active" : ""}`}
+              onClick={() => setActiveYear(year)}
+            >
+              {year}
+            </button>
+          ))}
+        </div>
+
         <div className="ir-wrapper">
           {/* Left Side Tabs */}
           <div className="ir-tabs">
@@ -124,15 +144,15 @@ const InvestorRelations = () => {
 
           {/* Right Side PDF List */}
           <div className="ir-content">
-            {pdfData[activeTab][activePeriod]?.length > 0 ? (
-              pdfData[activeTab][activePeriod].map((item, i) => (
-                <a target="_blank" href={item.file} key={i} className="ir-link">
+            {filteredData.length > 0 ? (
+              filteredData.map((item, i) => (
+                <a target="_blank" rel="noreferrer" href={item.file} key={i} className="ir-link">
                   <span>{item.name}</span>
                   <button className="ir-download-btn">Download ⬇</button>
                 </a>
               ))
             ) : (
-              <p className="text-center text-muted mt-3">No documents available for this period.</p>
+              <p className="text-center text-muted mt-3">No documents available for this selection.</p>
             )}
           </div>
         </div>

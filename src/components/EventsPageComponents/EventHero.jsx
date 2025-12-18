@@ -19,8 +19,9 @@ const EventHero = () => {
 
               <div className="event-hero-buttons d-flex justify-content-start">
                 <GlassButton
-                  title="View All Events"
+                  title="View Past Events"
                   icon={() => <IoIosArrowDropdownCircle size={30} />}
+                  url={'#past-events'}
                 />
 
               </div>

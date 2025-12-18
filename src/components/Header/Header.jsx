@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import gsap from "gsap";
 import { ScrollTrigger, SplitText } from 'gsap/all';
 import { useGSAP } from '@gsap/react';
@@ -12,11 +12,28 @@ const Header = ({ subtext, headline, highlight, desc }) => {
     const subTextRef = useRef(null);
     const paraRef = useRef(null);
 
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        let timeoutId = null;
+        const handleResize = () => {
+            clearTimeout(timeoutId);
+            timeoutId = setTimeout(() => {
+                setWindowWidth(window.innerWidth);
+            }, 200); // Debounce by 200ms
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+            clearTimeout(timeoutId);
+        };
+    }, []);
+
     useGSAP(() => {
 
         // --- SplitText animation ONLY for the headline ---
         const split = new SplitText(headlineRef.current, { type: "words, chars, lines" });
-        
+
 
         gsap.from(split.lines, {
             y: 40,
@@ -58,9 +75,9 @@ const Header = ({ subtext, headline, highlight, desc }) => {
 
         gsap.from(paraRef.current, {
             yPercent: 100,
-            stagger : 0.10,
-            ease : 'power2.out',
-            opacity : 0,
+            stagger: 0.10,
+            ease: 'power2.out',
+            opacity: 0,
             scrollTrigger: {
                 trigger: paraRef.current,
                 start: "top 85%",
@@ -69,13 +86,13 @@ const Header = ({ subtext, headline, highlight, desc }) => {
         });
 
         return () => split.revert();
-    }, []);
+    }, { dependencies: [windowWidth], revertOnUpdate: true });
 
     return (
-        <div className="header container text-center pt-5 pb-2">
+        <div key={windowWidth} className="header container text-center pt-5 pb-2">
             <h5 ref={subTextRef}>{subtext}</h5>
 
-            
+
 
             <h2 ref={highlightRef} className="main-head-highlight">
                 {highlight}

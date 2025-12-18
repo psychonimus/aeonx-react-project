@@ -117,14 +117,7 @@ const timelineData = [
           RISE with SAP on AWS gives enterprises a powerful foundation to modernize their ERP landscape with the world’s most secure, scalable, and proven cloud platform. AWS brings unmatched expertise, robust architecture, and 200+ services designed to accelerate innovation, reduce risk, and maximize the value of SAP investments. With purpose-built automation and seamless integration, businesses gain the agility needed to support digital transformation at scale.
 
         </p>
-        {/* <div style={{
-          padding: "1rem",
-          backgroundColor: "#f3f4f6",
-          borderRadius: "0.5rem",
-          marginTop: "1rem"
-        }}>
-          <p style={{ fontWeight: "600", color: "#1f2937" }}>Funding: $2M Series A</p>
-        </div> */}
+        
 
         <h4 className="mb-4">Key benefits of running RISE with SAP on AWS include:</h4>
         <ul>
@@ -170,19 +163,7 @@ const timelineData = [
         <p style={{ marginBottom: "1rem", color: "#4b5563" }}>
           A Lift & Shift migration allows organizations to move their existing SAP systems to AWS without redesigning the application or changing core configurations. This approach delivers a faster, cost-effective path to the cloud while maintaining system integrity and minimizing downtime.
         </p>
-        {/* <div style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(2, 1fr)",
-          gap: "1rem",
-          marginTop: "1rem"
-        }}>
-          <div style={{ padding: "0.75rem", backgroundColor: "#eff6ff", borderRadius: "0.375rem" }}>
-            <p style={{ fontWeight: "600", color: "#1e40af" }}>50K+ Users</p>
-          </div>
-          <div style={{ padding: "0.75rem", backgroundColor: "#f0fdf4", borderRadius: "0.375rem" }}>
-            <p style={{ fontWeight: "600", color: "#166534" }}>15+ Integrations</p>
-          </div>
-        </div> */}
+        
         <h5 className="mb-4">Key steps in an SAP Lift & Shift migration to AWS include:</h5>
         <ul>
           <li>Assess the current SAP landscape: Review the existing architecture, integrations, and system dependencies across hardware and software.</li>

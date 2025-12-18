@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import "./MigrationSection.css";
 import Implementation from "/images/implementation-service.png";
 import CloudMigration from "/images/migration-services.png";
-import Integration from "/images/integration-services.png";
+import Integration from "/images/integration-services.jpg";
 import Innovation from "/images/innovation-services.png";
 import Staffing from "/images/staffing-services.png";
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
+import { inView } from "framer-motion";
 
 const MigrationSection = () => {
   const [hoveredMetric, setHoveredMetric] = useState(null);
@@ -31,8 +34,9 @@ const MigrationSection = () => {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    minHeight: "200px",
-    padding: "10px",
+    // minHeight: "200px",
+    // padding: "10px",
+    marginBottom: "1rem",
   };
 
   const imgStyle = {
@@ -44,10 +48,14 @@ const MigrationSection = () => {
   };
 
   const h2Style = {
-    color: "#000",
+    background: "linear-gradient(90deg, #f97316 0%, #facc15 100%)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+    backgroundClip: "text",
+    color: "transparent",
     fontWeight: "700",
     marginBottom: "0.5rem",
-    fontSize: "clamp(1.5rem, 4vw, 2rem)",
+    fontSize: "clamp(1.5rem, 4vw, 2.5rem)",
   };
 
   const pStyle = {
@@ -140,7 +148,7 @@ const MigrationSection = () => {
                     onMouseEnter={() => setHoveredMetric("i1")}
                     onMouseLeave={() => setHoveredMetric(null)}
                   >
-                    <h2 style={metricH2Style}>99%</h2>
+                    <h2 style={metricH2Style}>{inView ? <CountUp end={99} duration={2.5} /> : "0"}%</h2>
                     <p style={metricPStyle}>
                       of projects delivered within agreed timelines
                     </p>
@@ -153,7 +161,7 @@ const MigrationSection = () => {
                     onMouseEnter={() => setHoveredMetric("i2")}
                     onMouseLeave={() => setHoveredMetric(null)}
                   >
-                    <h2 style={metricH2Style}>40+</h2>
+                    <h2 style={metricH2Style}>{inView ? <CountUp end={40} duration={2.5} /> : "0"}+</h2>
                     <p style={metricPStyle}>
                       Go-lives delivered earlier than planned
                     </p>
@@ -166,7 +174,7 @@ const MigrationSection = () => {
                     onMouseEnter={() => setHoveredMetric("i3")}
                     onMouseLeave={() => setHoveredMetric(null)}
                   >
-                    <h2 style={metricH2Style}>30%</h2>
+                    <h2 style={metricH2Style}>{inView ? <CountUp end={30} duration={2.5} /> : "0"}%</h2>
                     <p style={metricPStyle}>
                       Reduction in overall implementation time
                     </p>
@@ -198,7 +206,7 @@ const MigrationSection = () => {
                     onMouseEnter={() => setHoveredMetric("m1")}
                     onMouseLeave={() => setHoveredMetric(null)}
                   >
-                    <h2 style={metricH2Style}>30%</h2>
+                    <h2 style={metricH2Style}>{inView ? <CountUp end={30} duration={2.5} /> : "0"}%</h2>
                     <p style={metricPStyle}>
                       Decrease in infra & maintenance costs
                     </p>
@@ -211,7 +219,7 @@ const MigrationSection = () => {
                     onMouseEnter={() => setHoveredMetric("m2")}
                     onMouseLeave={() => setHoveredMetric(null)}
                   >
-                    <h2 style={metricH2Style}>10%</h2>
+                    <h2 style={metricH2Style}>{inView ? <CountUp end={10} duration={2.5} /> : "0"}%</h2>
                     <p style={metricPStyle}>
                       Improvement in system performance
                     </p>
@@ -224,7 +232,7 @@ const MigrationSection = () => {
                     onMouseEnter={() => setHoveredMetric("m3")}
                     onMouseLeave={() => setHoveredMetric(null)}
                   >
-                    <h2 style={metricH2Style}>50%</h2>
+                    <h2 style={metricH2Style}>{inView ? <CountUp end={50} duration={2.5} /> : "0"}%</h2>
                     <p style={metricPStyle}>
                       Automation achieved during migration
                     </p>
@@ -372,7 +380,7 @@ const MigrationSection = () => {
                     onMouseEnter={() => setHoveredMetric("in1")}
                     onMouseLeave={() => setHoveredMetric(null)}
                   >
-                    <h2 style={metricH2Style}>30%</h2>
+                    <h2 style={metricH2Style}>{inView ? <CountUp end={30} duration={2.5} /> : "0"}%</h2>
                     <p style={metricPStyle}>
                       functional adoption within 6 months of rollout
                     </p>
@@ -385,7 +393,7 @@ const MigrationSection = () => {
                     onMouseEnter={() => setHoveredMetric("in2")}
                     onMouseLeave={() => setHoveredMetric(null)}
                   >
-                    <h2 style={metricH2Style}>6</h2>
+                    <h2 style={metricH2Style}>{inView ? <CountUp end={6} duration={2.5} /> : "0"}</h2>
                     <p style={metricPStyle}>
                       reusable frameworks deployed across operations and supply
                       chain
@@ -399,7 +407,7 @@ const MigrationSection = () => {
                     onMouseEnter={() => setHoveredMetric("in3")}
                     onMouseLeave={() => setHoveredMetric(null)}
                   >
-                    <h2 style={metricH2Style}>85%</h2>
+                    <h2 style={metricH2Style}>{inView ? <CountUp end={85} duration={2.5} /> : "0"}%</h2>
                     <p style={metricPStyle}>
                       Improved data-led decision accuracy using real-time
                       analytics integration
@@ -486,7 +494,7 @@ const MigrationSection = () => {
                     onMouseEnter={() => setHoveredMetric("s1")}
                     onMouseLeave={() => setHoveredMetric(null)}
                   >
-                    <h2 style={metricH2Style}>30%</h2>
+                    <h2 style={metricH2Style}>{inView ? <CountUp end={30} duration={2.5} /> : "0"}%</h2>
                     <p style={metricPStyle}>
                       reduction in time to deploy talent
                     </p>
@@ -499,7 +507,7 @@ const MigrationSection = () => {
                     onMouseEnter={() => setHoveredMetric("s2")}
                     onMouseLeave={() => setHoveredMetric(null)}
                   >
-                    <h2 style={metricH2Style}>6</h2>
+                    <h2 style={metricH2Style}>{inView ? <CountUp end={6} duration={2.5} /> : "0"}</h2>
                     <p style={metricPStyle}>
                       Reduction in overheads, training expense and retention
                       cost
@@ -513,7 +521,7 @@ const MigrationSection = () => {
                     onMouseEnter={() => setHoveredMetric("s3")}
                     onMouseLeave={() => setHoveredMetric(null)}
                   >
-                    <h2 style={metricH2Style}>90%</h2>
+                    <h2 style={metricH2Style}>{inView ? <CountUp end={90} duration={2.5} /> : "0"}%</h2>
                     <p style={metricPStyle}>
                       alignment to technical & domain requirements
                     </p>

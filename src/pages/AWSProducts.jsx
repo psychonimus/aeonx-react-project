@@ -23,18 +23,64 @@ import awsIotSolutionsBanner from '/images/IOT-about.png'
 import awsIot from '/images/awsIot.png'
 import awsDevOps from '/images/devops-about.png'
 import DevOpsLogo from '/images/DevOpsLogo.png'
-import awsDatabaseLogo from '/images/awsDatabaseLogo.png'
+import awsDatabaseLogo from '/images/aws-database-new.png'
 import awsDB from '/images/database-solutions.png'
 import cloudMigrationBanner from '/images/cloud-migration.png'
+import cloudMigrationBannerTop from '/images/aws-cloud-migration-top.png'
+import appModernTop from '/images/app-modernization-top.png'
+import applicationModernizationBanner from '/images/application-modernization-cover.jpg'
 import managedServiceLogo from '/images/awsManagedServiceProviderLogo.png'
 import awsManagedServiceBanner from '/images/Aws-manged-services-about.png'
 import MsOnAwsLogo from '/images/MsOnAws.png'
 import MsonAwsAbout from '/images/Microsoft-on-aws.png'
+import cloudStorageTop from '/images/cloud-storage-top.png'
 import cloudStorageSolutions from '/images/cloud-storage-solutions.png'
+import bigDataTop from '/images/big-data-top.png'
 import awsBigDataAnalytics from '/images/aws-big-data-anlytics.png'
+import securityManagementTop from '/images/security-man-top.png'
 import SecurityManagementSolutions from '/images/security-management-solutions.png'
+import industryStandardTop from '/images/industry-standard-top.png'
 import industryStandardSolutions from '/images/industry-standard-solutions.png'
+import disasterManagementTop from '/images/dis-rec.png'
 import disasterManagement from '/images/disaster-management-sol.png'
+import AwsAccordion from "../components/AwsTimeline/AwsAccordion";
+import CloudStorageAccordion from "../components/AwsTimeline/CloudStorageAccordion";
+
+
+
+
+
+import { IoMdCloudy } from "react-icons/io";
+import { MdSecurity } from "react-icons/md";
+import { GrCloudSoftware } from "react-icons/gr";
+import { MdDevices } from "react-icons/md";
+import { IoHardwareChipSharp } from "react-icons/io5";
+import { TbDeviceDesktopStar } from "react-icons/tb";
+import { BiMoneyWithdraw } from "react-icons/bi";
+import { AiFillApi } from "react-icons/ai";
+import { TbManualGearbox } from "react-icons/tb";
+import { RiSecurePaymentFill } from "react-icons/ri";
+import { FaNetworkWired } from "react-icons/fa6";
+import { TbAutomation } from "react-icons/tb";
+import { VscFileMedia } from "react-icons/vsc";
+import { BsClipboard2DataFill } from "react-icons/bs";
+import { MdOutlineRecommend } from "react-icons/md";
+import { MdSmsFailed } from "react-icons/md";
+import { TbDevicesDown } from "react-icons/tb";
+import { MdOutlineInsights } from "react-icons/md";
+import { LuNetwork } from "react-icons/lu";
+import { TbNetwork } from "react-icons/tb";
+import { RiInfinityFill } from "react-icons/ri";
+import { GoProjectRoadmap } from "react-icons/go";
+import { FaConnectdevelop } from "react-icons/fa6";
+import { MdOutlineDeveloperBoard } from "react-icons/md";
+// import { TbAutomation } from "react-icons/tb";
+import { GrShieldSecurity } from "react-icons/gr";
+import { MdOutlineDatasetLinked } from "react-icons/md";
+import { IoIosCloudDone } from "react-icons/io";
+import { FaExpandArrowsAlt } from "react-icons/fa";
+import { IoCloudUploadSharp } from "react-icons/io5";
+
 
 
 
@@ -101,7 +147,7 @@ const AWSProducts = () => {
         <section className="rise-with-sap my-5" id="workspace-solutions">
           <div className="container">
             <div className="row grey-bg">
-              <div className="col-md-6 left py-4 px-5">
+              <div className="col-lg-6 left py-4 px-5">
                 <img src={workspaceLogo} alt="" />
                 <h2>Workspace Solutions</h2>
                 <p>
@@ -109,7 +155,7 @@ const AWSProducts = () => {
                 </p>
                 <p>As part of an elite group of SAP service providers, AeonX successfully delivers implementations, global rollouts, upgrades, cloud migrations, and SAP support services across complex landscapes and multiple industries. Our solutions enable businesses to build efficient workplaces, enhance user experience, and improve employee productivity, while maintaining operational continuity and digital readiness.</p>
               </div>
-              <div className="col-md-6 right px-0">
+              <div className="col-lg-6 right px-0">
                 <div
                   className="img-container"
                   style={{
@@ -135,9 +181,9 @@ const AWSProducts = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={cloud} alt="" />
+                      <IoMdCloudy size={30} />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex align-items-center">
@@ -148,9 +194,9 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={Ai} alt="" />
+                      <MdSecurity size={30} />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex align-items-center">
@@ -161,9 +207,9 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={implementation} alt="" />
+                      <GrCloudSoftware size={30} />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex  align-items-center">
@@ -175,9 +221,9 @@ const AWSProducts = () => {
               </div>
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={smallBusiness} alt="" />
+                      <MdDevices size={30} />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex  align-items-center">
@@ -186,9 +232,9 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={cloud} alt="" />
+                      <IoHardwareChipSharp size={30} />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex  align-items-center">
@@ -199,9 +245,9 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={cost} alt="" />
+                      <TbDeviceDesktopStar size={30} />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex  align-items-center">
@@ -220,7 +266,7 @@ const AWSProducts = () => {
           <div className="container">
             <div className="row grey-bg">
 
-              <div className="col-md-6 right px-0">
+              <div className="col-lg-6 right px-0 order-2 order-lg-1">
                 <div
                   className="img-container"
                   style={{
@@ -231,7 +277,7 @@ const AWSProducts = () => {
                   <img src={cloudSolutions} alt="" />
                 </div>
               </div>
-              <div className="col-md-6 left py-4 px-5">
+              <div className="col-lg-6 left py-4 px-5 order-1 order-lg-2">
                 <img src={cloudFront} alt="" />
                 <h2>AWS Cloud Solutions</h2>
                 <p>AeonX delivers robust and scalable AWS CloudFront solutions designed to enhance content delivery performance across the globe. With low latency, high transfer speeds, and a developer-friendly environment, our AWS cloud capabilities ensure secure and seamless distribution of data, applications, videos, and APIs.</p>
@@ -250,9 +296,9 @@ const AWSProducts = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={cloud} alt="" />
+                      <BiMoneyWithdraw size={30} />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex align-items-center">
@@ -263,9 +309,9 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={Ai} alt="" />
+                      <AiFillApi size={30} />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex align-items-center">
@@ -276,9 +322,9 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={implementation} alt="" />
+                      <TbManualGearbox size={30} />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex  align-items-center">
@@ -290,9 +336,9 @@ const AWSProducts = () => {
               </div>
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={smallBusiness} alt="" />
+                      <RiSecurePaymentFill size={30} />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex  align-items-center">
@@ -301,9 +347,9 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={cloud} alt="" />
+                      <FaNetworkWired size={30} />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex  align-items-center">
@@ -324,8 +370,8 @@ const AWSProducts = () => {
         <section className="rise-with-sap my-5" id="sap-on-aws">
           <div className="container">
             <div className="row grey-bg">
-              <div className="col-md-6 left py-4 px-5">
-                <img src={saponaws} alt="" style={{filter:"brightness(0)"}} />
+              <div className="col-lg-6 left py-4 px-5">
+                <img src={saponaws} alt="" style={{ filter: "brightness(0)" }} />
                 <h2>SAP on AWS Capabilities</h2>
                 <p>AeonX is among a select group of SAP partners equipped to manage end-to-end SAP transformations—including implementations, rollouts, cloud migrations, upgrades, and ongoing support—across diverse industries and complex SAP landscapes. Our consultative approach ensures every deployment is tailored, scalable, and aligned with business goals.
                 </p>
@@ -334,7 +380,7 @@ const AWSProducts = () => {
                 <p>Our SAP on AWS solutions give enterprises the agility, flexibility, and security required to accelerate growth and support continuous innovation.
                 </p>
               </div>
-              <div className="col-md-6 right px-0">
+              <div className="col-lg-6 right px-0">
                 <div
                   className="img-container"
                   style={{
@@ -349,8 +395,10 @@ const AWSProducts = () => {
           </div>
         </section>
 
+        <AwsAccordion />
 
-        <AwsTimeline />
+
+
 
         {/* MACHINE LEARNING */}
 
@@ -358,7 +406,7 @@ const AWSProducts = () => {
           <div className="container">
             <div className="row grey-bg">
 
-              <div className="col-md-6 right px-0">
+              <div className="col-lg-6 right px-0 order-2 order-lg-1">
                 <div
                   className="img-container"
                   style={{
@@ -369,7 +417,7 @@ const AWSProducts = () => {
                   <img src={awsmachineLearningAbout} alt="" />
                 </div>
               </div>
-              <div className="col-md-6 left py-4 px-5">
+              <div className="col-lg-6 left py-4 px-5 order-1 order-lg-2">
                 <img src={awsmachinelearning} alt="" />
                 <h2>AWS Machine Learning Solutions</h2>
                 <p>Enterprises are increasingly turning to machine learning to solve complex business challenges. AeonX delivers end-to-end AWS machine learning solutions that help organizations unlock insights, automate processes, and drive smarter decisions. Our expertise, strong domain understanding, and collaborative approach enable businesses to innovate faster and scale with confidence.
@@ -391,9 +439,9 @@ const AWSProducts = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={cloud} alt="" />
+                      <TbAutomation size={30} />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex align-items-center">
@@ -405,9 +453,9 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={Ai} alt="" />
+                      <VscFileMedia size={30} />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex align-items-center">
@@ -418,9 +466,9 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={implementation} alt="" />
+                      <FaNetworkWired size={30} />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex  align-items-center">
@@ -432,9 +480,9 @@ const AWSProducts = () => {
               </div>
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={smallBusiness} alt="" />
+                      <BsClipboard2DataFill size={30} />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex  align-items-center">
@@ -443,9 +491,9 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={cloud} alt="" />
+                      <MdOutlineRecommend size={30} />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex  align-items-center">
@@ -455,9 +503,9 @@ const AWSProducts = () => {
                   </div>
                 </div>
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={cloud} alt="" />
+                      <MdSmsFailed size={30} />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex  align-items-center">
@@ -478,14 +526,14 @@ const AWSProducts = () => {
         <section className="rise-with-sap my-5" id="iot-solutions">
           <div className="container">
             <div className="row grey-bg">
-              <div className="col-md-6 left py-4 px-5">
+              <div className="col-lg-6 left py-4 px-5">
                 <img src={awsIot} alt="" />
                 <h2>IoT Solutions</h2>
                 <p>AeonX helps enterprises convert IoT opportunities into real business impact by delivering advanced, cloud-enabled IoT solutions tailored to operational needs.
                 </p>
                 <p>From selecting the right sensors to building intelligent platforms and generating actionable insights, we offer end-to-end IoT services designed to improve efficiency, reduce costs, and enhance customer experiences. Our strong partnerships with leading technology providers, including AWS IoT, Microsoft Azure, PTC ThingWorx, MongoDB, Intel, WindRiver, and others, position us to meet diverse IoT requirements with confidence.</p>
               </div>
-              <div className="col-md-6 right px-0">
+              <div className="col-lg-6 right px-0">
                 <div
                   className="img-container"
                   style={{
@@ -509,9 +557,9 @@ const AWSProducts = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={cloud} alt="" />
+                      <TbDevicesDown size={30} />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex align-items-center">
@@ -522,9 +570,9 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={Ai} alt="" />
+                      <MdOutlineInsights size={30} />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex align-items-center">
@@ -535,9 +583,9 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={implementation} alt="" />
+                      <LuNetwork size={30} />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex  align-items-center">
@@ -549,9 +597,9 @@ const AWSProducts = () => {
               </div>
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={smallBusiness} alt="" />
+                      <LuNetwork size={30} />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex  align-items-center">
@@ -560,9 +608,9 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={cloud} alt="" />
+                      <TbNetwork size={30} />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex  align-items-center">
@@ -582,7 +630,7 @@ const AWSProducts = () => {
           <div className="container">
             <div className="row grey-bg">
 
-              <div className="col-md-6 right px-0">
+              <div className="col-lg-6 right px-0 order-2 order-lg-1">
                 <div
                   className="img-container"
                   style={{
@@ -593,7 +641,7 @@ const AWSProducts = () => {
                   <img src={awsDevOps} alt="" />
                 </div>
               </div>
-              <div className="col-md-6 left py-4 px-5">
+              <div className="col-lg-6 left py-4 px-5 order-1 order-lg-2">
                 <img src={DevOpsLogo} alt="" />
                 <h2>DevOps Solutions</h2>
                 <p>AeonX delivers comprehensive AWS DevOps solutions that streamline development, improve collaboration, and accelerate software delivery. By integrating automation, continuous integration, and lean development practices, we help teams eliminate bottlenecks, enhance operational performance, and respond quickly to changing business needs. Our DevOps approach bridges the gaps between development, IT operations, and quality assurance—enabling faster, more reliable, and scalable application delivery.
@@ -615,9 +663,9 @@ const AWSProducts = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={cloud} alt="" />
+                      <RiInfinityFill size={30} />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex align-items-center">
@@ -628,9 +676,9 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={Ai} alt="" />
+                      <GoProjectRoadmap size={30} />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex align-items-center">
@@ -641,9 +689,9 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={implementation} alt="" />
+                      <FaConnectdevelop size={30} />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex  align-items-center">
@@ -655,9 +703,9 @@ const AWSProducts = () => {
               </div>
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={smallBusiness} alt="" />
+                      <MdOutlineDeveloperBoard size={30} />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex  align-items-center">
@@ -666,9 +714,9 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={cloud} alt="" />
+                      <TbAutomation size={30} />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex  align-items-center">
@@ -687,13 +735,13 @@ const AWSProducts = () => {
         <section className="rise-with-sap my-5" id="database-solutions">
           <div className="container">
             <div className="row grey-bg">
-              <div className="col-md-6 left py-4 px-5">
+              <div className="col-lg-6 left py-4 px-5">
                 <img src={awsDatabaseLogo} alt="" />
                 <h2>Database Solutions</h2>
                 <p>Managing the massive volumes of data generated each day has become a major challenge for modern enterprises. AeonX helps organizations unlock the full value of their data with robust AWS Database Solutions designed to support informed decision-making, improve performance, and accelerate business growth. Our experts work across SAP, Sybase, Microsoft SQL, Oracle, MySQL, MongoDB, and other leading database technologies—ensuring a strong and scalable data foundation for every business.</p>
                 <p>Our database services support end-to-end data and analytics needs using a hybrid, open-source-friendly approach. With distributed and hybrid data cloud architectures, we help businesses achieve higher performance, greater uptime, and improved cost efficiency across all environments.</p>
               </div>
-              <div className="col-md-6 right px-0">
+              <div className="col-lg-6 right px-0">
                 <div
                   className="img-container"
                   style={{
@@ -717,9 +765,9 @@ const AWSProducts = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={cloud} alt="" />
+                      <GrShieldSecurity size={30} />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex align-items-center">
@@ -730,9 +778,9 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={Ai} alt="" />
+                      <MdOutlineDatasetLinked size={30} />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex align-items-center">
@@ -743,9 +791,9 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={implementation} alt="" />
+                      <IoIosCloudDone size={30} />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex  align-items-center">
@@ -757,9 +805,9 @@ const AWSProducts = () => {
               </div>
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={smallBusiness} alt="" />
+                      <FaExpandArrowsAlt size={30} />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex  align-items-center">
@@ -768,9 +816,9 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={cloud} alt="" />
+                      <IoCloudUploadSharp size={30} />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex  align-items-center">
@@ -793,9 +841,9 @@ const AWSProducts = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
-                    <div className="point-icon">
-                      <img src={cloud} alt="" />
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                    <div className="point-icon" style={{ background: "#ffffffff" }}>
+                      <img src="/images/amz-rds.png" alt="" />
                     </div>
                   </div>
                   <div className="col-md-10 point-text d-flex align-items-center">
@@ -806,7 +854,7 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={Ai} alt="" />
                     </div>
@@ -819,7 +867,7 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={implementation} alt="" />
                     </div>
@@ -833,7 +881,7 @@ const AWSProducts = () => {
               </div>
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={smallBusiness} alt="" />
                     </div>
@@ -845,7 +893,7 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={cloud} alt="" />
                     </div>
@@ -867,7 +915,7 @@ const AWSProducts = () => {
           <div className="container">
             <div className="row grey-bg">
 
-              <div className="col-md-6 right px-0">
+              <div className="col-lg-6 right px-0 order-2 order-lg-1">
                 <div
                   className="img-container"
                   style={{
@@ -878,14 +926,15 @@ const AWSProducts = () => {
                   <img src={cloudMigrationBanner} alt="" />
                 </div>
               </div>
-              <div className="col-md-6 left py-4 px-5">
-                <img src={cloudFront} alt="" />
+              <div className="col-lg-6 left py-4 px-5 order-1 order-lg-2">
+                <img src={cloudMigrationBannerTop} alt="" />
                 <h2>Cloud Migration</h2>
                 <p>AeonX enables seamless digital transformation with end-to-end AWS Cloud Migration solutions tailored to your business needs. Through the right strategy, roadmap, and migration framework, we help organizations modernize their infrastructure and move to the cloud with confidence. Our migration approach combines industry-tested methods with pre-configured tools, automation, and best practices across all cloud models—whether IaaS, PaaS, or SaaS.</p>
               </div>
             </div>
           </div>
         </section>
+
 
         <section className="major-points my-5">
           <div className="container">
@@ -896,7 +945,7 @@ const AWSProducts = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={cloud} alt="" />
                     </div>
@@ -909,7 +958,7 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={Ai} alt="" />
                     </div>
@@ -922,7 +971,7 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={implementation} alt="" />
                     </div>
@@ -936,7 +985,7 @@ const AWSProducts = () => {
               </div>
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={smallBusiness} alt="" />
                     </div>
@@ -947,7 +996,7 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={cloud} alt="" />
                     </div>
@@ -963,13 +1012,125 @@ const AWSProducts = () => {
           </div>
         </section>
 
+        {/* application modernization  */}
+
+        <section className="rise-with-sap my-5" id="application-modernization">
+          <div className="container">
+            <div className="row  grey-bg">
+
+              <div className="col-lg-6 right px-0 order-2 order-lg-1">
+                <div
+                  className="img-container"
+                  style={{
+                    borderTopLeftRadius: "30px",
+                    borderBottomLeftRadius: "30px",
+                  }}
+                >
+                  <img src={applicationModernizationBanner} alt="" />
+                </div>
+              </div>
+              <div className="col-lg-6 left py-4 px-5 order-1 order-lg-2">
+                <img src={appModernTop} alt="" />
+                <h2>Application Modernization</h2>
+                <p>We help organizations transform their application landscape through a comprehensive suite of modernization services, including re-platforming, re-hosting, re-architecting, re-coding, re-engineering, interoperability enhancements, and strategic application retirement. We also support architecture evaluations to determine the most effective modernization path for your business.
+                </p>
+                <p>Using proven DevOps practices, open-source platforms, and advanced automation tools, we enable faster, secure, and efficient software development. Our modernization approach delivers a consistent development and operations experience, helping organizations innovate quickly while reducing long-term costs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="major-points my-5">
+          <div className="container">
+            <div className="point-heading ">
+              <h2>Our Application Modernization Capabilities Include:</h2>
+            </div>
+
+            <div className="row">
+              <div className="col-md-6">
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex align-items-center">
+                    <h4>
+                      Assessing application readiness for continuous improvement and modern delivery models
+
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                    <div className="point-icon">
+                      <img src={Ai} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex align-items-center">
+                    <h4>
+                      Applying a declarative approach to manage policies and configurations across environments
+
+                    </h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                    <div className="point-icon">
+                      <img src={implementation} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      Reducing risk through reliable open-source technologies that enhance speed and stability
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                    <div className="point-icon">
+                      <img src={smallBusiness} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>Streamlining developer workflows with serverless architectures and automated event orchestration
+</h4>
+                  </div>
+                </div>
+
+                <div className="row point py-4">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                    <div className="point-icon">
+                      <img src={cloud} alt="" />
+                    </div>
+                  </div>
+                  <div className="col-md-10 point-text d-flex  align-items-center">
+                    <h4>
+                      Accelerating modern operations adoption to unlock the full value of cloud-native applications
+
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        
+
         {/* AWS MANAGED SERVICES */}
 
         <section className="rise-with-sap my-5" id="aws-managed-services">
           <div className="container">
             <div className="row grey-bg">
 
-              <div className="col-md-6 left py-4 px-5">
+              <div className="col-lg-6 left py-4 px-5">
                 <img src={managedServiceLogo} alt="" />
                 <h2>AWS Managed Services</h2>
                 <p>AWS Managed Services help businesses maintain control of their cloud environment while reducing operational costs and improving reliability. As an AWS Advanced Tier Partner, AeonX manages your AWS infrastructure end-to-end—ensuring stability, security, and seamless performance across all applications. We set up and administer a wide range of AWS services, including Amazon EC2, Amazon RDS, Amazon S3, Elastic Load Balancing, Amazon ElastiCache, Amazon Route 53, and more.
@@ -978,7 +1139,7 @@ const AWSProducts = () => {
                 </p>
               </div>
 
-              <div className="col-md-6 right px-0">
+              <div className="col-lg-6 right px-0">
                 <div
                   className="img-container"
                   style={{
@@ -1003,7 +1164,7 @@ const AWSProducts = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={cloud} alt="" />
                     </div>
@@ -1017,7 +1178,7 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={Ai} alt="" />
                     </div>
@@ -1030,7 +1191,7 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={implementation} alt="" />
                     </div>
@@ -1044,7 +1205,7 @@ const AWSProducts = () => {
               </div>
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={smallBusiness} alt="" />
                     </div>
@@ -1055,7 +1216,7 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={cloud} alt="" />
                     </div>
@@ -1071,13 +1232,17 @@ const AWSProducts = () => {
           </div>
         </section>
 
+        
+
+
+        
         {/* Microsoft on AWS */}
 
         <section className="rise-with-sap my-5" id="ms-on-aws">
           <div className="container">
             <div className="row grey-bg">
 
-              <div className="col-md-6 right px-0">
+              <div className="col-lg-6 right px-0 order-2 order-lg-1">
                 <div
                   className="img-container"
                   style={{
@@ -1088,7 +1253,7 @@ const AWSProducts = () => {
                   <img src={MsonAwsAbout} alt="" />
                 </div>
               </div>
-              <div className="col-md-6 left py-4 px-5">
+              <div className="col-lg-6 left py-4 px-5 order-1 order-lg-2">
                 <img src={MsOnAwsLogo} alt="" />
                 <h2>Microsoft on AWS Solutions</h2>
                 <p>AeonX delivers powerful, scalable solutions that bring together the strengths of Microsoft technologies and Amazon Web Services. From data processing and warehousing to mobile and web applications, our solutions support organizations of all sizes.
@@ -1108,7 +1273,7 @@ const AWSProducts = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={cloud} alt="" />
                     </div>
@@ -1121,7 +1286,7 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={Ai} alt="" />
                     </div>
@@ -1134,7 +1299,7 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={implementation} alt="" />
                     </div>
@@ -1148,7 +1313,7 @@ const AWSProducts = () => {
               </div>
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={smallBusiness} alt="" />
                     </div>
@@ -1159,7 +1324,7 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={cloud} alt="" />
                     </div>
@@ -1181,8 +1346,8 @@ const AWSProducts = () => {
           <div className="container">
             <div className="row grey-bg">
 
-              <div className="col-md-6 left py-4 px-5">
-                <img src={cloudFront} alt="" />
+              <div className="col-lg-6 left py-4 px-5">
+                <img src={cloudStorageTop} alt="" />
                 <h2>Cloud Storage Solutions</h2>
                 <p>AWS offers highly durable, scalable, and cost-efficient cloud storage designed for diverse business needs. AeonX helps organizations leverage these capabilities for secure data archiving, backup, and disaster recovery. Over the years, AWS storage has evolved to support a wide range of workloads, from databases and ERP systems to large-scale enterprise applications, all with low-latency, dedicated performance.
                 </p>
@@ -1190,7 +1355,7 @@ const AWSProducts = () => {
                 </p>
               </div>
 
-              <div className="col-md-6 right px-0">
+              <div className="col-lg-6 right px-0">
                 <div
                   className="img-container"
                   style={{
@@ -1215,7 +1380,7 @@ const AWSProducts = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={cloud} alt="" />
                     </div>
@@ -1229,7 +1394,7 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={Ai} alt="" />
                     </div>
@@ -1243,7 +1408,7 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={implementation} alt="" />
                     </div>
@@ -1258,7 +1423,7 @@ const AWSProducts = () => {
               </div>
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={smallBusiness} alt="" />
                     </div>
@@ -1270,7 +1435,7 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={cloud} alt="" />
                     </div>
@@ -1294,7 +1459,8 @@ const AWSProducts = () => {
           </div>
         </div>
 
-        <StorageSolutions />
+        {/* <StorageSolutions /> */}
+        <CloudStorageAccordion />
 
         {/* aws big data and analytics */}
 
@@ -1302,7 +1468,7 @@ const AWSProducts = () => {
           <div className="container">
             <div className="row grey-bg">
 
-              <div className="col-md-6 right px-0">
+              <div className="col-lg-6 right px-0 order-2 order-lg-1">
                 <div
                   className="img-container"
                   style={{
@@ -1313,8 +1479,8 @@ const AWSProducts = () => {
                   <img src={awsBigDataAnalytics} alt="" />
                 </div>
               </div>
-              <div className="col-md-6 left py-4 px-5">
-                <img src={cloudFront} alt="" />
+              <div className="col-lg-6 left py-4 px-5 order-1 order-lg-2">
+                <img src={bigDataTop} alt="" />
                 <h2>AWS Big Data and Analytics Solutions</h2>
                 <p>AeonX partners with leading technology providers to deliver next-generation, scalable data solutions that support complete enterprise transformation. With AWS, businesses gain access to purpose-built services for data migration, storage, data lakes, big data analytics, business intelligence, and machine learning, all designed for exceptional performance, flexibility, and cost efficiency.
                 </p>
@@ -1334,7 +1500,7 @@ const AWSProducts = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={cloud} alt="" />
                     </div>
@@ -1348,7 +1514,7 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={Ai} alt="" />
                     </div>
@@ -1361,7 +1527,7 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={implementation} alt="" />
                     </div>
@@ -1375,7 +1541,7 @@ const AWSProducts = () => {
               </div>
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={smallBusiness} alt="" />
                     </div>
@@ -1386,7 +1552,7 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={cloud} alt="" />
                     </div>
@@ -1408,8 +1574,8 @@ const AWSProducts = () => {
           <div className="container">
             <div className="row grey-bg">
 
-              <div className="col-md-6 left py-4 px-5">
-                <img src={cloudFront} alt="" />
+              <div className="col-lg-6 left py-4 px-5">
+                <img src={securityManagementTop} alt="" />
                 <h2>Security Management Solutions
                 </h2>
                 <p>At AeonX, we prioritize robust cloud security by ensuring your data is encrypted both in transit using SMB Kerberos session keys and at rest with AWS-native encryption. To protect your environment from accidental exposure, vulnerabilities, and evolving threats, we integrate a wide range of AWS security services and management tools. While AWS provides strong foundational security, we ensure these controls are implemented correctly and aligned to your business needs.</p>
@@ -1417,7 +1583,7 @@ const AWSProducts = () => {
                 </p>
               </div>
 
-              <div className="col-md-6 right px-0">
+              <div className="col-lg-6 right px-0">
                 <div
                   className="img-container"
                   style={{
@@ -1442,7 +1608,7 @@ const AWSProducts = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={cloud} alt="" />
                     </div>
@@ -1456,7 +1622,7 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={Ai} alt="" />
                     </div>
@@ -1470,7 +1636,7 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={implementation} alt="" />
                     </div>
@@ -1485,7 +1651,7 @@ const AWSProducts = () => {
               </div>
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={smallBusiness} alt="" />
                     </div>
@@ -1498,7 +1664,7 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={cloud} alt="" />
                     </div>
@@ -1515,13 +1681,13 @@ const AWSProducts = () => {
           </div>
         </section>
 
-        {/* industry STORAGE SOLUTIONS */}
+        {/* industry STANDARD SOLUTIONS */}
 
         <section className="rise-with-sap my-5" id="industry-standard-solutions">
           <div className="container">
             <div className="row grey-bg">
 
-              <div className="col-md-6 right px-0">
+              <div className="col-lg-6 right px-0 order-2 order-lg-1">
                 <div
                   className="img-container"
                   style={{
@@ -1532,8 +1698,8 @@ const AWSProducts = () => {
                   <img src={industryStandardSolutions} alt="" />
                 </div>
               </div>
-              <div className="col-md-6 left py-4 px-5">
-                <img src={cloudFront} alt="" />
+              <div className="col-lg-6 left py-4 px-5 order-1 order-lg-2">
+                <img src={industryStandardTop} alt="" />
                 <h2>Industry Standard Solutions</h2>
                 <p>AeonX is a trusted provider of advanced software solutions for the manufacturing and process industries, with strong capabilities across product design, production operations, and lifecycle management. As an AWS Industrial Software Competency Partner, we bring deep cloud and IoT expertise that helps enterprises streamline supply chain integration, accelerate product development, and transition toward smart, connected factory environments.
                 </p>
@@ -1554,7 +1720,7 @@ const AWSProducts = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={cloud} alt="" />
                     </div>
@@ -1568,7 +1734,7 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={Ai} alt="" />
                     </div>
@@ -1582,7 +1748,7 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={implementation} alt="" />
                     </div>
@@ -1597,7 +1763,7 @@ const AWSProducts = () => {
               </div>
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={smallBusiness} alt="" />
                     </div>
@@ -1609,7 +1775,7 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={cloud} alt="" />
                     </div>
@@ -1628,12 +1794,12 @@ const AWSProducts = () => {
 
         {/* DISASTER MANAGEMENT SOLUTIONS */}
 
-        <section className="rise-with-sap my-5" id="disaster-management-solutions">
+        <section className="rise-with-sap my-5" id="disaster-management">
           <div className="container">
             <div className="row grey-bg">
 
-              <div className="col-md-6 left py-4 px-5">
-                <img src={cloudFront} alt="" />
+              <div className="col-lg-6 left py-4 px-5">
+                <img src={disasterManagementTop} alt="" />
                 <h2>Disaster Management Solutions
                 </h2>
                 <p>AeonX empowers disaster response teams with reliable AWS cloud solutions designed to operate even in the toughest conditions. By enabling cloud services at the edge, we help agencies stay focused on critical relief operations while ensuring their data, applications, and infrastructure remain secure and accessible.
@@ -1643,7 +1809,7 @@ const AWSProducts = () => {
 
               </div>
 
-              <div className="col-md-6 right px-0">
+              <div className="col-lg-6 right px-0">
                 <div
                   className="img-container"
                   style={{
@@ -1668,7 +1834,7 @@ const AWSProducts = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={cloud} alt="" />
                     </div>
@@ -1682,7 +1848,7 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={Ai} alt="" />
                     </div>
@@ -1696,7 +1862,7 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={implementation} alt="" />
                     </div>
@@ -1711,7 +1877,7 @@ const AWSProducts = () => {
               </div>
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={smallBusiness} alt="" />
                     </div>
@@ -1725,7 +1891,7 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-center align-items-center">
+                  <div className="col-md-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <img src={cloud} alt="" />
                     </div>

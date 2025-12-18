@@ -88,7 +88,7 @@ const ServiceSliderTwo = () => {
                         description="SAP Disaster Recovery on AWS ensures high availability and business continuity by replicating critical SAP workloads to a secure, scalable secondary environment for rapid failover and minimal downtime. With AWS-native automation, low-latency connectivity, and advanced security controls, enterprises can protect SAP systems from outages, data loss, and operational disruption."
                         descColor="#fff"
                         buttonText="Ensure SAP Business Continuity"
-                        url="/aws-products#disaster-management-solutions"
+                        url="/aws-products#disaster-management"
                         buttonIcon={() => <BsArrowUpRightCircleFill color="#fff" size={28} />}
                     />
 

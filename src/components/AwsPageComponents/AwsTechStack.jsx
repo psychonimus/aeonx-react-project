@@ -4,32 +4,18 @@ import './AwsTechStack.css';
 
 
 const Feature = ({ title, description, icon, index }) => {
-  const getBorderClasses = () => {
-    let classes = 'feature-item';
-    if (index === 0 || index === 5 || index === 10 || index === 15) classes += ' border-left';
-    if (index < 18) classes += ' border-bottom';
-    return classes;
-  };
-
   return (
-    <div className={getBorderClasses()}>
-      {index < 18 && <div className="gradient-overlay gradient-top" />}
-      {index >= 18 && <div className="gradient-overlay gradient-bottom" />}
-      
+    <div className="feature-item">
+      <div className="gradient-overlay gradient-top" />
+
       <div className="icon-wrapper">
         {icon}
       </div>
-      
+
       <div className="title-wrapper">
         <div className="accent-bar" />
         <span className="title-text">{title}</span>
       </div>
-      
-      {/* <p className="description">
-        {description}
-      </p> */}
-      
-      
     </div>
   );
 };
@@ -126,29 +112,14 @@ export default function AwsTechStack() {
       description: "I just ran out of copy ideas. Accept my sincere apologies",
       icon: <img src="/images/dynamo-db.png" alt="" />,
     },
-    
+
   ];
 
   return (
-    <div style={containerStyle}>
+    <div className="features-grid-container">
       {features.map((feature, index) => (
         <Feature key={feature.title} {...feature} index={index} />
       ))}
-      
-      
     </div>
   );
 }
-
-const containerStyle = {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(5, 1fr)',
-  position: 'relative',
-  zIndex: 10,
-  
-  paddingBottom: '40px',
-//   maxWidth: '1280px',
-  marginLeft: 'auto',
-  marginRight: 'auto',
-  className: 'features-grid'
-};

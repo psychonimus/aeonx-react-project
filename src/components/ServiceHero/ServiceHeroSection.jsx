@@ -48,7 +48,7 @@ export const ServiceHeroSection = () => {
         {/* Integration Icons Row */}
         <div className="icons-row">
           {integrationIcons.map(({ Icon, delay, title }, index) => (
-            <div className="d-flex flex-column align-items-center">
+            <div className="icons-row-boxes d-flex flex-column align-items-center">
               <motion.div
                 key={index}
                 initial={{ opacity: 0, scale: 0.8 }}
@@ -65,7 +65,7 @@ export const ServiceHeroSection = () => {
                 }} />
 
               </motion.div>
-              <p className="text-center service-name mt-3">{title}</p>
+              <p className="text-center service-name ">{title}</p>
             </div>
 
           ))}

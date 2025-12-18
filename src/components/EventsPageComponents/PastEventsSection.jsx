@@ -47,7 +47,7 @@ const PastEventSection = () => {
   };
 
   return (
-    <section className="bento-section">
+    <section className="bento-section" id="past-events" >
         
         <Header 
             subtext="Past Events"

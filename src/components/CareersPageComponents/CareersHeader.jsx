@@ -11,6 +11,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import { BsTwitterX } from "react-icons/bs";
 import GPTW from "/images/Great-Place-To-Work-logo-updated.webp";
 import CareerBg from "/videos/career-bg.mp4";
+import GlowingButton from "../GlowingButton/GlowingButton";
 
 const ExperienceSection = () => {
   return (
@@ -45,6 +46,8 @@ const ExperienceSection = () => {
               icon={() => <IoArrowDownCircle size={30} />}
               href="/careers#open-positions"
             />
+
+            
             
           </div>
 

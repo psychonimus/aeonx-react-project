@@ -1,11 +1,69 @@
 import React, { useRef, useEffect, useState } from 'react'
 import logo from '/images/aeonx-logo-white.svg'
 import GlassButton from '../GlassButton/GlassButton'
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
     const [isHidden, setIsHidden] = useState(false);
     const lastScrollY = useRef(window.scrollY);
+    const location = useLocation();
+    const navRef = useRef(null);
+
+    // Helper to determine if a section is active
+    const isSectionActive = (paths) => {
+        if (Array.isArray(paths)) {
+            return paths.some(path => location.pathname.startsWith(path));
+        }
+        return location.pathname.startsWith(paths);
+    };
+
+    useEffect(() => {
+        // Close navbar and accordions on route change
+        const closeMenu = () => {
+            const navbarCollapse = document.getElementById('navbarNav');
+            if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+                navbarCollapse.classList.remove('show');
+
+                // Reset hamburger icon
+                const checkIcon = document.getElementById('check-icon');
+                if (checkIcon) checkIcon.checked = false;
+
+                // Close all open accordions
+                const openAccordions = document.querySelectorAll('.accordion-collapse.show');
+                openAccordions.forEach(acc => {
+                    acc.classList.remove('show');
+                });
+
+                // Reset accordion buttons
+                const accordionButtons = document.querySelectorAll('.accordion-button:not(.collapsed)');
+                accordionButtons.forEach(btn => {
+                    btn.classList.add('collapsed');
+                    btn.setAttribute('aria-expanded', 'false');
+                });
+            }
+        };
+
+        closeMenu();
+    }, [location]);
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (navRef.current && !navRef.current.contains(event.target)) {
+                const navbarCollapse = document.getElementById('navbarNav');
+                if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+                    // Close the menu if clicked outside
+                    navbarCollapse.classList.remove('show');
+                    const checkIcon = document.getElementById('check-icon');
+                    if (checkIcon) checkIcon.checked = false;
+                }
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
 
     useEffect(() => {
         let ticking = false;
@@ -73,6 +131,7 @@ const Navbar = () => {
     return (
         <>
             <nav
+                ref={navRef}
                 className="navbar navbar-expand-lg"
                 style={{
                     position: 'fixed',
@@ -108,9 +167,6 @@ const Navbar = () => {
                             <li className='nav-item'>
                                 <NavLink to="/" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>Home</NavLink>
                             </li>
-
-
-
 
 
                             <li className="nav-item has-mega-menu d-none d-lg-block">
@@ -160,7 +216,16 @@ const Navbar = () => {
                                 <div className="accordion no-border" id="products-mobile">
                                     <div className="accordion-item">
                                         <a className="accordion-header">
-                                            <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Products</button>
+                                            <button
+                                                className={`accordion-button ${isSectionActive(['/sap-focused-products', '/aws-products', '/aeonx-flagship-products', '/products/']) ? 'mobile-active' : ''}`}
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne"
+                                                aria-expanded="true"
+                                                aria-controls="collapseOne"
+                                            >
+                                                Products
+                                            </button>
                                         </a><div id="collapseOne" className="accordion-collapse collapse" data-bs-parent="#products-mobile">
                                             <div className="accordion-body">
                                                 <ul>
@@ -229,7 +294,16 @@ const Navbar = () => {
                                 <div className="accordion no-border" id="services-mobile">
                                     <div className="accordion-item">
                                         <a className="accordion-header">
-                                            <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Services</button>
+                                            <button
+                                                className={`accordion-button ${isSectionActive('/services') ? 'mobile-active' : ''}`}
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#collapseTwo"
+                                                aria-expanded="true"
+                                                aria-controls="collapseTwo"
+                                            >
+                                                Services
+                                            </button>
                                         </a><div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#services-mobile">
                                             <div className="accordion-body">
                                                 <ul>
@@ -291,7 +365,16 @@ const Navbar = () => {
                                 <div className="accordion no-border" id="industries-mobile">
                                     <div className="accordion-item">
                                         <a className="accordion-header">
-                                            <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">Industries</button>
+                                            <button
+                                                className={`accordion-button ${isSectionActive('/industries') ? 'mobile-active' : ''}`}
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#collapseThree"
+                                                aria-expanded="true"
+                                                aria-controls="collapseThree"
+                                            >
+                                                Industries
+                                            </button>
                                         </a><div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#industries-mobile">
                                             <div className="accordion-body">
                                                 <ul>
@@ -340,7 +423,7 @@ const Navbar = () => {
                                                     <ul>
                                                         <li><a target='_blank' href="https://help.sap.com/doc/download_multimedia_ebooks_businessone90_tb1200_01_01_story_html/9.0/en-US/story_content/external_files/implementation%20Tools%20-%20Implementation%20Methodology.pdf">SAP (Implementation playbooks) </a></li>
                                                         <li><a target='_blank' href="https://aws.amazon.com/aws-cost-management/cost-optimization/">AWS (Cloud optimization guides)</a></li>
-                                                        <li><a target='_blank' href="#">Product Spotlight (Deep dives)</a></li>
+                                                        <li><NavLink to="/aeonx-flagship-products">Product Spotlight (Deep dives)</NavLink></li>
 
 
                                                     </ul>
@@ -368,13 +451,22 @@ const Navbar = () => {
                                 <div className="accordion no-border" id="insights-mobile">
                                     <div className="accordion-item">
                                         <a className="accordion-header">
-                                            <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">Insights</button>
+                                            <button
+                                                className={`accordion-button ${isSectionActive(['/blogs', '/events', '/aeonxlife']) ? 'mobile-active' : ''}`}
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#collapseFour"
+                                                aria-expanded="true"
+                                                aria-controls="collapseFour"
+                                            >
+                                                Insights
+                                            </button>
                                         </a><div id="collapseFour" className="accordion-collapse collapse" data-bs-parent="#industries-mobile">
                                             <div className="accordion-body">
                                                 <ul>
                                                     <li><a target='_blank' href="https://help.sap.com/doc/download_multimedia_ebooks_businessone90_tb1200_01_01_story_html/9.0/en-US/story_content/external_files/implementation%20Tools%20-%20Implementation%20Methodology.pdf">SAP (Implementation playbooks) </a></li>
                                                     <li><a target='_blank' href="https://aws.amazon.com/aws-cost-management/cost-optimization/">AWS (Cloud optimization guides)</a></li>
-                                                    <li><a target='_blank' href="#">Product Spotlight (Deep dives)</a></li>
+                                                    <li><NavLink to="/aeonx-flagship-products">Product Spotlight (Deep dives)</NavLink></li>
                                                     <li><NavLink to="/blogs">Blogs</NavLink></li>
                                                     <li><NavLink to="/events">Events</NavLink></li>
                                                 </ul>
@@ -420,7 +512,16 @@ const Navbar = () => {
                                 <div className="accordion no-border" id="company-mobile">
                                     <div className="accordion-item">
                                         <a className="accordion-header">
-                                            <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">Company</button>
+                                            <button
+                                                className={`accordion-button ${isSectionActive('/about') ? 'mobile-active' : ''}`}
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#collapseFive"
+                                                aria-expanded="true"
+                                                aria-controls="collapseFive"
+                                            >
+                                                Company
+                                            </button>
                                         </a><div id="collapseFive" className="accordion-collapse collapse" data-bs-parent="#company-mobile">
                                             <div className="accordion-body">
                                                 <ul>
@@ -482,15 +583,24 @@ const Navbar = () => {
                                 </div>
                             </li>
 
-                            <li className="nav-item d-lg-none mt-1">
+                            <li className="nav-item d-lg-none mt-0 mb-3">
                                 <div className="accordion no-border" id="investor-mobile">
                                     <div className="accordion-item">
                                         <a className="accordion-header">
-                                            <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">Investor Relations</button>
+                                            <button
+                                                className={`accordion-button ${isSectionActive(['/investor-relations', '/financial-highlights', '/shareholder-information', '/corporate-governance', '/code-and-policy', '/other-documents']) ? 'mobile-active' : ''}`}
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#collapseSix"
+                                                aria-expanded="true"
+                                                aria-controls="collapseSix"
+                                            >
+                                                Investor Relations
+                                            </button>
                                         </a><div id="collapseSix" className="accordion-collapse collapse" data-bs-parent="#investor-mobile">
                                             <div className="accordion-body">
                                                 <ul>
-                                                    <li><NavLink to="/investor-relations">Financial Highlights </NavLink></li>
+                                                    <li><NavLink to="/financial-highlights">Financial Highlights </NavLink></li>
                                                     <li><NavLink to="/shareholder-information">Shareholder Information</NavLink></li>
                                                     <li><NavLink to="/corporate-governance">Corporate Governance</NavLink></li>
                                                     <li><NavLink to="/code-and-policy">Code and Policy</NavLink></li>

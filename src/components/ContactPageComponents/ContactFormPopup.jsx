@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import GlassButtonLight from "../GlassButton/GlassButtonLight";
 import { FaCircleArrowRight } from "react-icons/fa6";
 
-const ContactFormPopup = () => {
+const ContactForm = () => {
     const [formData, setFormData] = useState({
         company_name: '',
         contact_name: '',
@@ -11,23 +11,120 @@ const ContactFormPopup = () => {
         email: '',
         notes: ''
     });
-    
+
+    const [errors, setErrors] = useState({});
+
+    const handleBlur = (e) => {
+        const { name, value } = e.target;
+        validateField(name, value);
+    };
+
+    const validateField = (name, value) => {
+        let newErrors = { ...errors };
+
+        if (name === 'phone_no') {
+            // Count digits only
+            const digitCount = (value.match(/\d/g) || []).length;
+            if (digitCount !== 10) {
+                newErrors.phone_no = 'Phone number must be exactly 10 digits';
+            } else {
+                delete newErrors.phone_no;
+            }
+        }
+
+        if (name === 'email') {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (value && !emailRegex.test(value)) {
+                newErrors.email = 'Please enter a valid email address';
+            } else {
+                delete newErrors.email;
+            }
+        }
+
+        setErrors(newErrors);
+    };
+
     const [loading, setLoading] = useState(false);
     const [message, setMessage] = useState({ type: '', text: '' });
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
-        setFormData(prev => ({
-            ...prev,
-            [name]: value
-        }));
+
+        // Validation Patterns
+        const patterns = {
+            // Allow alphanumeric, spaces, and basic punctuation for names/roles/company
+            company_name: /^[a-zA-Z0-9\s.,'-]*$/,
+            contact_name: /^[a-zA-Z0-9\s.,'-]*$/,
+            contact_role: /^[a-zA-Z0-9\s.,'-]*$/,
+
+            // Allow digits, spaces, plus, and dashes for phone
+            phone_no: /^[0-9\s+\-]*$/,
+
+            // Allow standard email characters (alphanumeric, @, ., _, -, +)
+            email: /^[a-zA-Z0-9@._\-+]*$/,
+
+            // Allow alphanumeric, whitespace (incl newlines), and common punctuation for notes
+            notes: /^[a-zA-Z0-9\s.,!?'"()\-]*$/
+        };
+
+        const pattern = patterns[name];
+        let isValidInput = true;
+
+        if (pattern) {
+            isValidInput = pattern.test(value);
+        } else {
+            const emojiRegex = /(\u00a9|\u00ae|[\u2000-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/gi;
+            isValidInput = !emojiRegex.test(value);
+        }
+
+        if (isValidInput) {
+            setFormData(prev => ({
+                ...prev,
+                [name]: value
+            }));
+
+            // Real-time validation for phone length
+            if (name === 'phone_no') {
+                const digitCount = (value.match(/\d/g) || []).length;
+                if (digitCount > 10) {
+                    setErrors(prev => ({ ...prev, phone_no: 'Maximum 10 digits allowed' }));
+                } else {
+                    setErrors(prev => {
+                        const newErr = { ...prev };
+                        delete newErr.phone_no;
+                        return newErr;
+                    });
+                }
+            }
+
+            // Clear email error on change if it becomes valid or empty (optional, but good UX to clear error as they fix it)
+            if (name === 'email' && errors.email) {
+                // Basic check on change just to clear error
+                setErrors(prev => {
+                    const newErr = { ...prev };
+                    delete newErr.email; // clear conservatively
+                    return newErr;
+                });
+            }
+        }
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+        // Final validation before submit
+        const digitCount = (formData.phone_no.match(/\d/g) || []).length;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (digitCount !== 10 || (formData.email && !emailRegex.test(formData.email))) {
+            validateField('phone_no', formData.phone_no);
+            validateField('email', formData.email);
+            return;
+        }
+
         console.log("Form submit triggered");
         console.log("Form data:", formData);
-        
+
         setLoading(true);
         setMessage({ type: '', text: '' });
 
@@ -61,16 +158,16 @@ const ContactFormPopup = () => {
 
             console.log("Response status:", response.status);
             console.log("Response headers:", [...response.headers.entries()]);
-            
+
             if (response.ok) {
                 const responseData = await response.json();
                 console.log("Response data:", responseData);
-                
-                setMessage({ 
-                    type: 'success', 
-                    text: 'Thank you! Your message has been sent successfully.' 
+
+                setMessage({
+                    type: 'success',
+                    text: 'Thank you! Your message has been sent successfully.'
                 });
-                
+
                 // Reset form
                 setFormData({
                     company_name: '',
@@ -80,6 +177,7 @@ const ContactFormPopup = () => {
                     email: '',
                     notes: ''
                 });
+                setErrors({});
             } else {
                 const errorText = await response.text();
                 console.log("Error response:", errorText);
@@ -89,10 +187,10 @@ const ContactFormPopup = () => {
             console.error('Detailed error:', error);
             console.error('Error name:', error.name);
             console.error('Error message:', error.message);
-            
-            setMessage({ 
-                type: 'error', 
-                text: 'Unable to submit form. Please check your internet connection or try again later.' 
+
+            setMessage({
+                type: 'error',
+                text: 'Unable to submit form. Please check your internet connection or try again later.'
             });
         } finally {
             setLoading(false);
@@ -101,6 +199,20 @@ const ContactFormPopup = () => {
 
     const handleButtonClick = (e) => {
         e.preventDefault();
+
+        // Check errors before triggering submit
+        const digitCount = (formData.phone_no.match(/\d/g) || []).length;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (digitCount !== 10) {
+            setErrors(prev => ({ ...prev, phone_no: 'Phone number must be exactly 10 digits' }));
+            return;
+        }
+        if (formData.email && !emailRegex.test(formData.email)) {
+            setErrors(prev => ({ ...prev, email: 'Please enter a valid email address' }));
+            return;
+        }
+
         console.log("Button clicked");
         document.getElementById('contact-form').dispatchEvent(
             new Event('submit', { cancelable: true, bubbles: true })
@@ -112,7 +224,7 @@ const ContactFormPopup = () => {
             <h2 className="fw-bold mb-4">Contact us</h2>
 
             {message.text && (
-                <div 
+                <div
                     className={`alert ${message.type === 'success' ? 'alert-success' : 'alert-danger'} mb-4`}
                     role="alert"
                 >
@@ -124,74 +236,85 @@ const ContactFormPopup = () => {
                 <div className="row mb-4">
                     <div className="col-md-6 mb-3">
                         <label className="form-label">Company Name*</label>
-                        <input 
-                            type="text" 
-                            className="form-control underline" 
+                        <input
+                            type="text"
+                            className="form-control underline"
                             name="company_name"
                             value={formData.company_name}
                             onChange={handleInputChange}
-                            required 
+                            required
                             disabled={loading}
                         />
                     </div>
                     <div className="col-md-6 mb-3">
                         <label className="form-label">Name*</label>
-                        <input 
-                            type="text" 
-                            className="form-control underline" 
+                        <input
+                            type="text"
+                            className="form-control underline"
                             name="contact_name"
                             value={formData.contact_name}
                             onChange={handleInputChange}
-                            required 
+                            required
                             disabled={loading}
                         />
                     </div>
                     <div className="col-md-12 mb-3">
                         <label className="form-label">Role*</label>
-                        <input 
-                            type="text" 
-                            className="form-control underline" 
+                        <input
+                            type="text"
+                            className="form-control underline"
                             name="contact_role"
                             value={formData.contact_role}
                             onChange={handleInputChange}
-                            required 
+                            required
                             disabled={loading}
                         />
                     </div>
                 </div>
 
                 <div className="row mb-4">
-                    <div className="col-md-6 mb-3">
+                    <div className="col-md-6 mb-3 position-relative">
                         <label className="form-label">Mobile Number*</label>
-                        <input 
-                            type="text" 
-                            className="form-control underline" 
+                        <input
+                            type="text"
+                            className={`form-control underline ${errors.phone_no ? 'is-invalid' : ''}`}
                             name="phone_no"
                             value={formData.phone_no}
                             onChange={handleInputChange}
-                            required 
+                            required
                             disabled={loading}
                         />
+                        {errors.phone_no && (
+                            <div className="invalid-tooltip d-block" style={{ right: 0, top: '-10px', width: 'auto' }}>
+                                {errors.phone_no}
+                            </div>
+                        )}
                     </div>
 
-                    <div className="col-md-6 mb-3">
+                    <div className="col-md-6 mb-3 position-relative">
                         <label className="form-label">Email*</label>
-                        <input 
-                            type="email" 
-                            className="form-control underline" 
+                        <input
+                            type="email"
+                            className={`form-control underline ${errors.email ? 'is-invalid' : ''}`}
                             name="email"
                             value={formData.email}
                             onChange={handleInputChange}
-                            required 
+                            onBlur={handleBlur}
+                            required
                             disabled={loading}
                         />
+                        {errors.email && (
+                            <div className="invalid-tooltip d-block" style={{ right: 0, top: '-10px', width: 'auto' }}>
+                                {errors.email}
+                            </div>
+                        )}
                     </div>
                 </div>
 
                 <div className="mb-4">
                     <label className="form-label">Any other comments?</label>
-                    <textarea 
-                        className="form-control underline" 
+                    <textarea
+                        className="form-control underline"
                         name="notes"
                         value={formData.notes}
                         onChange={handleInputChange}
@@ -200,7 +323,7 @@ const ContactFormPopup = () => {
                     ></textarea>
                 </div>
 
-                <button type="submit" style={{display: 'none'}} id="hidden-submit">Submit</button>
+                <button type="submit" style={{ display: 'none' }} id="hidden-submit">Submit</button>
 
                 <div onClick={handleButtonClick}>
                     <GlassButtonLight
@@ -214,4 +337,4 @@ const ContactFormPopup = () => {
     );
 };
 
-export default ContactFormPopup;
+export default ContactForm;

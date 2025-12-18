@@ -1,0 +1,112 @@
+.glowing-box {
+  isolation: isolate;
+  overflow: hidden;
+  border-radius: 999px;
+  position: relative;
+  display: inline-block;
+}
+
+/* ================= BORDER MASK (DO NOT TOUCH) ================= */
+
+.glowing-box-borders-masker {
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: 999px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 1s ease;
+
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+}
+
+.glowing-box-active .glowing-box-borders-masker {
+  opacity: 1;
+}
+
+/* ================= ANIMATION CONTAINER ================= */
+
+.glowing-box-animations,
+.glowing-box-borders {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.glowing-box-animations::before,
+.glowing-box-borders::before {
+  content: "";
+  float: left;
+  padding-top: 100%;
+}
+
+.glowing-box-animations::after,
+.glowing-box-borders::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ================= ROTATING GLOW ================= */
+
+.glowing-box-borders,
+.glowing-box-glow,
+.glowing-box-stars {
+  animation: borderTurnWithTranslate var(--animation-speed) infinite linear;
+  background-image: conic-gradient(
+    from 0deg,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0) 60deg,
+    rgba(255, 255, 255, 0) 310deg,
+    rgba(255, 255, 255, 0.5)
+  );
+  background-size: cover;
+}
+
+/* ================= BUTTON ================= */
+
+.glowing-box-button {
+  position: relative;
+  z-index: 1;
+  padding: 7px 24px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.09);
+  
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.glowing-span {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.3),
+    #ffffff
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: #fff;
+  font-weight: 500;
+  padding: 2rem 0.5rem;
+  
+}
+
+/* ================= KEYFRAMES ================= */
+
+@keyframes borderTurnWithTranslate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../components/Header/Header';
 import CsContent from '../components/CaseStudiesSection/CsContent';
 import { GoGoal } from "react-icons/go";
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 
 // Import images (reusing existing ones for now as placeholders)
 import cs1 from "/images/Modernizing-ITD-Cementation’s-SAP.jpg";
@@ -17,7 +17,19 @@ import cs9 from "/images/Optimizing-Ashapura.jpg";
 
 
 const CaseStudiesAll = () => {
+    const [searchParams] = useSearchParams();
     const [activeTab, setActiveTab] = useState('SAP');
+
+    useEffect(() => {
+        const category = searchParams.get('category');
+        if (category === 'AWS') {
+            setActiveTab('AWS');
+        } else if (category === 'Aeonx') {
+            setActiveTab('Aeonx Solutions');
+        } else if (category === 'SAP') {
+            setActiveTab('SAP');
+        }
+    }, [searchParams]);
 
     const tabs = ['SAP', 'AWS', 'Aeonx Solutions'];
 
@@ -48,7 +60,7 @@ const CaseStudiesAll = () => {
                 img: cs2,
                 link: "/case-study-three"
             },
-            
+
 
         ],
         'AWS': [
@@ -79,7 +91,7 @@ const CaseStudiesAll = () => {
                 bgColor: "#C9291F",
                 link: "/case-study-six"
             },
-            
+
         ],
         'Aeonx Solutions': [
             {
@@ -119,19 +131,11 @@ const CaseStudiesAll = () => {
                 />
 
                 {/* Tabs */}
-                <div className="d-flex justify-content-center gap-4 mb-5 mt-4">
+                <div className="case-study-tabs">
                     {tabs.map((tab) => (
                         <button
                             key={tab}
-                            className={`btn ${activeTab === tab ? 'btn-primary' : 'btn-outline-primary'}`}
-                            style={{
-                                borderRadius: '30px',
-                                padding: '10px 30px',
-                                fontWeight: '600',
-                                backgroundColor: activeTab === tab ? '#041C58' : 'transparent',
-                                color: activeTab === tab ? '#fff' : '#041C58',
-                                border: '2px solid #1c77ffff'
-                            }}
+                            className={activeTab === tab ? 'active' : ''}
                             onClick={() => setActiveTab(tab)}
                         >
                             {tab}

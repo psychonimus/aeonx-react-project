@@ -99,12 +99,15 @@
 .icons-row {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   gap: 1.5rem;
   margin-bottom: 5rem;
   flex-wrap: wrap;
   /* Allow icons to wrap on small screens */
+}
+.icons-row-boxes{
+  flex-grow:1;
 }
 
 @media (min-width: 768px) {
@@ -120,6 +123,7 @@
   background: #3926dd;
   border-radius: 0.75rem;
   display: flex;
+  
   align-items: center;
   justify-content: center;
   border: 1px solid #262626;
@@ -300,4 +304,9 @@
   font-weight: 500;
   color: #ffffff;
   text-transform: uppercase;
+}
+@media(max-width : 576px){
+  .service-name{
+    font-size: 13px;
+  }
 }
