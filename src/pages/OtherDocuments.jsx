@@ -24,11 +24,11 @@ const OtherDocuments = () => {
   const pdfData = {
     otherDocuments: {
       yearly: [
-        { name: "Aeonx-Financial-FY-2023-24-1", file: "/investors/other-documents/other-documents/Aeonx-Financial-FY-2023-24-1.pdf", year: "2024" },
-        { name: "BSE-Intimation-Hina-Shah-Completion-of-2nd-Term", file: "/investors/other-documents/other-documents/BSE-Intimation-Hina-Shah-Completion-of-2nd-Term.pdf", year: "2024" },
-        { name: "BSE-Intimation-Manoj-Ganatra-Completion-of-2nd-Term", file: "/investors/other-documents/other-documents/BSE-Intimation-Manoj-Ganatra-Completion-of-2nd-Term.pdf", year: "2024" },
-        { name: "BSE-SEBI-Advisory-Letter-Change-of-Name", file: "/investors/other-documents/other-documents/BSE-SEBI-Advisory-Letter-Change-of-Name.pdf", year: "2024" },
-        { name: "Form_MGT_7_ADTL_2024_11zon", file: "/investors/other-documents/other-documents/Form_MGT_7_ADTL_2024_11zon.pdf", year: "2024" },
+        { name: "Financial Statements FY 2023-24", file: "/investors/other-documents/yearly/Financial Statements FY 2023-24.pdf", year: "2023" },
+        { name: "Form_MGT_7_ADTL_2024", file: "/investors/other-documents/yearly/Form_MGT_7_ADTL_2024.pdf", year: "2024" },
+        { name: "BSE-Intimation-Hina-Shah-Completion-of-2nd-Term", file: "/investors/other-documents/BSE-Intimation-Hina-Shah-Completion-of-2nd-Term.pdf", year: "All" },
+        { name: "BSE-Intimation-Manoj-Ganatra-Completion-of-2nd-Term", file: "/investors/other-documents/BSE-Intimation-Manoj-Ganatra-Completion-of-2nd-Term.pdf", year: "All" },
+        { name: "BSE-SEBI-Advisory-Letter-Change-of-Name", file: "/investors/other-documents/BSE-SEBI-Advisory-Letter-Change-of-Name.pdf", year: "All" },
 
 
       ],

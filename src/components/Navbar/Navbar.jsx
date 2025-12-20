@@ -8,6 +8,7 @@ const Navbar = () => {
     const lastScrollY = useRef(window.scrollY);
     const location = useLocation();
     const navRef = useRef(null);
+    const [hoveredMenu, setHoveredMenu] = useState(null);
 
     // Helper to determine if a section is active
     const isSectionActive = (paths) => {
@@ -41,6 +42,7 @@ const Navbar = () => {
                     btn.setAttribute('aria-expanded', 'false');
                 });
             }
+            setHoveredMenu(null);
         };
 
         closeMenu();
@@ -145,7 +147,7 @@ const Navbar = () => {
 
                 }}
             >
-                <div className="container">
+                <div className="container navbar-cont">
                     {/* Logo on the left */}
                     <NavLink to="/" className="navbar-brand" >
                         <img src={logo} alt="Logo" className="d-inline-block align-top nav-logo" />
@@ -169,7 +171,10 @@ const Navbar = () => {
                             </li>
 
 
-                            <li className="nav-item has-mega-menu d-none d-lg-block">
+                            <li className="nav-item has-mega-menu d-none d-lg-block"
+                                onMouseEnter={() => setHoveredMenu('products')}
+                                onMouseLeave={() => setHoveredMenu(null)}
+                            >
                                 <NavLink
                                     to="javascript:void(0)"
                                     className={
@@ -183,7 +188,7 @@ const Navbar = () => {
                                 >
                                     Products
                                 </NavLink>
-                                <div className="mega-menu">
+                                <div className={`mega-menu ${hoveredMenu === 'products' ? 'show-desktop' : ''}`}>
                                     <div className="mega-menu-content py-5">
                                         <div className="container">
                                             <div className="row">
@@ -245,7 +250,10 @@ const Navbar = () => {
 
 
 
-                            <li className="nav-item has-mega-menu d-none d-lg-block">
+                            <li className="nav-item has-mega-menu d-none d-lg-block"
+                                onMouseEnter={() => setHoveredMenu('services')}
+                                onMouseLeave={() => setHoveredMenu(null)}
+                            >
                                 <NavLink
                                     to="/services"
                                     className={
@@ -256,7 +264,7 @@ const Navbar = () => {
                                 >
                                     Services
                                 </NavLink>
-                                <div className="mega-menu">
+                                <div className={`mega-menu ${hoveredMenu === 'services' ? 'show-desktop' : ''}`}>
                                     <div className="mega-menu-content py-5">
                                         <div className="container">
                                             <div className="row">
@@ -269,15 +277,16 @@ const Navbar = () => {
 
                                                     <ul>
                                                         <li><NavLink to="/services#implementation">Implementation </NavLink></li>
-                                                        <li><NavLink to="/services#support">Support</NavLink></li>
+                                                        {/* <li><NavLink to="/services#support">Support</NavLink></li> */}
                                                         <li><NavLink to="/services#migration">Migration</NavLink></li>
+                                                        <li><NavLink to="/services#integration">Integration </NavLink></li>
+
 
 
                                                     </ul>
                                                 </div>
                                                 <div className="col-md-3">
                                                     <ul>
-                                                        <li><NavLink to="/services#integration">Integration </NavLink></li>
                                                         <li><NavLink to="/services#innovation">Innovation</NavLink></li>
                                                         <li><NavLink to="/services#staffing">Staffing</NavLink></li>
                                                     </ul>
@@ -310,7 +319,7 @@ const Navbar = () => {
                                             <div className="accordion-body">
                                                 <ul>
                                                     <li><NavLink to="/services#implementation">Implementation </NavLink></li>
-                                                    <li><NavLink to="/services#support">Support</NavLink></li>
+                                                    {/* <li><NavLink to="/services#support">Support</NavLink></li> */}
                                                     <li><NavLink to="/services#migration">Migration</NavLink></li>
                                                     <li><NavLink to="/services#integration">Integration </NavLink></li>
                                                     <li><NavLink to="/services#innovation">Innovation</NavLink></li>
@@ -323,9 +332,12 @@ const Navbar = () => {
                             </li>
 
 
-                            <li className="nav-item has-mega-menu d-none d-lg-block">
+                            <li className="nav-item has-mega-menu d-none d-lg-block"
+                                onMouseEnter={() => setHoveredMenu('industries')}
+                                onMouseLeave={() => setHoveredMenu(null)}
+                            >
                                 <NavLink to="/industries" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>Industries</NavLink>
-                                <div className="mega-menu">
+                                <div className={`mega-menu ${hoveredMenu === 'industries' ? 'show-desktop' : ''}`}>
                                     <div className="mega-menu-content py-5">
                                         <div className="container">
                                             <div className="row">
@@ -337,21 +349,21 @@ const Navbar = () => {
                                                 <div className="col-md-3">
 
                                                     <ul>
-                                                        <li><NavLink to="/industries">Manufacturing </NavLink></li>
-                                                        <li><NavLink to="/industries">Mining & Minerals</NavLink></li>
-                                                        <li><NavLink to="/industries">Logistics</NavLink></li>
-                                                        <li><NavLink to="/industries">Chemical</NavLink></li>
-                                                        <li><NavLink to="/industries">Pharmaceuticals </NavLink></li>
+                                                        <li><NavLink to="/industries#manufacturing">Manufacturing </NavLink></li>
+                                                        <li><NavLink to="/industries#mining">Mining & Minerals</NavLink></li>
+                                                        <li><NavLink to="/industries#logistics">Logistics</NavLink></li>
+                                                        <li><NavLink to="/industries#chemicals">Chemical</NavLink></li>
+                                                        <li><NavLink to="/industries#pharmaceuticals">Pharmaceuticals </NavLink></li>
 
                                                     </ul>
                                                 </div>
                                                 <div className="col-md-3">
                                                     <ul>
 
-                                                        <li><NavLink to="/industries">Healthcare</NavLink></li>
-                                                        <li><NavLink to="/industries">Oil & Gas</NavLink></li>
-                                                        <li><NavLink to="/industries">Telecom</NavLink></li>
-                                                        <li><NavLink to="/industries">Retail</NavLink></li>
+                                                        <li><NavLink to="/industries#healthcare">Healthcare</NavLink></li>
+                                                        <li><NavLink to="/industries#oil">Oil & Gas</NavLink></li>
+                                                        <li><NavLink to="/industries#telecom">Telecom</NavLink></li>
+                                                        <li><NavLink to="/industries#retail">Retail</NavLink></li>
 
                                                     </ul>
                                                 </div>
@@ -381,15 +393,15 @@ const Navbar = () => {
                                         </a><div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#industries-mobile">
                                             <div className="accordion-body">
                                                 <ul>
-                                                    <li><NavLink to="/industries">Manufacturing </NavLink></li>
-                                                    <li><NavLink to="/industries">Mining & Minerals</NavLink></li>
-                                                    <li><NavLink to="/industries">Logistics</NavLink></li>
-                                                    <li><NavLink to="/industries">Chemical</NavLink></li>
-                                                    <li><NavLink to="/industries">Pharmaceuticals </NavLink></li>
-                                                    <li><NavLink to="/industries">Healthcare</NavLink></li>
-                                                    <li><NavLink to="/industries">Oil & Gas</NavLink></li>
-                                                    <li><NavLink to="/industries">Telecom</NavLink></li>
-                                                    <li><NavLink to="/industries">Retail</NavLink></li>
+                                                    <li><NavLink to="/industries#manufacturing">Manufacturing </NavLink></li>
+                                                    <li><NavLink to="/industries#mining">Mining & Minerals</NavLink></li>
+                                                    <li><NavLink to="/industries#logistics">Logistics</NavLink></li>
+                                                    <li><NavLink to="/industries#chemicals">Chemical</NavLink></li>
+                                                    <li><NavLink to="/industries#pharmaceuticals">Pharmaceuticals </NavLink></li>
+                                                    <li><NavLink to="/industries#healthcare">Healthcare</NavLink></li>
+                                                    <li><NavLink to="/industries#oil">Oil & Gas</NavLink></li>
+                                                    <li><NavLink to="/industries#telecom">Telecom</NavLink></li>
+                                                    <li><NavLink to="/industries#retail">Retail</NavLink></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -399,7 +411,10 @@ const Navbar = () => {
 
 
 
-                            <li className="nav-item has-mega-menu d-none d-lg-block">
+                            <li className="nav-item has-mega-menu d-none d-lg-block"
+                                onMouseEnter={() => setHoveredMenu('insights')}
+                                onMouseLeave={() => setHoveredMenu(null)}
+                            >
                                 <NavLink
                                     to="javascript:void(0)"
                                     className={
@@ -413,7 +428,7 @@ const Navbar = () => {
                                 >
                                     Insights
                                 </NavLink>
-                                <div className="mega-menu">
+                                <div className={`mega-menu ${hoveredMenu === 'insights' ? 'show-desktop' : ''}`}>
                                     <div className="mega-menu-content py-5">
                                         <div className="container">
                                             <div className="row">
@@ -480,9 +495,12 @@ const Navbar = () => {
                                 </div>
                             </li>
 
-                            <li className="nav-item has-mega-menu d-none d-lg-block">
+                            <li className="nav-item has-mega-menu d-none d-lg-block"
+                                onMouseEnter={() => setHoveredMenu('company')}
+                                onMouseLeave={() => setHoveredMenu(null)}
+                            >
                                 <NavLink to="/about" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>Company</NavLink>
-                                <div className="mega-menu">
+                                <div className={`mega-menu ${hoveredMenu === 'company' ? 'show-desktop' : ''}`}>
                                     <div className="mega-menu-content py-5">
                                         <div className="container">
                                             <div className="row">
@@ -546,7 +564,10 @@ const Navbar = () => {
                                 <NavLink to="/careers" className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>Careers</NavLink>
                             </li>
 
-                            <li className="nav-item has-mega-menu d-none d-lg-block">
+                            <li className="nav-item has-mega-menu d-none d-lg-block"
+                                onMouseEnter={() => setHoveredMenu('investor')}
+                                onMouseLeave={() => setHoveredMenu(null)}
+                            >
                                 <NavLink
                                     to="javascript:void(0)"
                                     className={
@@ -557,7 +578,7 @@ const Navbar = () => {
                                 >
                                     Investor Relations
                                 </NavLink>
-                                <div className="mega-menu">
+                                <div className={`mega-menu ${hoveredMenu === 'investor' ? 'show-desktop' : ''}`}>
                                     <div className="mega-menu-content py-5">
                                         <div className="container">
                                             <div className="row">

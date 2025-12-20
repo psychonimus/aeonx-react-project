@@ -7,6 +7,7 @@ const FloatingButton = ({ onClick }) => {
   return (
     <button className="floating-btn" onClick={onClick}>
       <span><AiFillMessage size={30} /></span>
+      <span className="floating-tooltip">Talk to an expert</span>
     </button>
   );
 };

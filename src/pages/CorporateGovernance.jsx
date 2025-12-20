@@ -24,19 +24,19 @@ const CorporateGovernance = () => {
   const pdfData = {
     complianceReport: {
       yearly: [
-        { name: "ADTL-Integrated-Governance-31.03.2025", file: "/investors/corporate-governance/compliance-report-on-corporate-governance/ADTL-Integrated-Governance-31.03.2025.pdf", year: "2025" },
-        { name: "Corporate-Governance-31.03.2024", file: "/investors/corporate-governance/compliance-report-on-corporate-governance/Corporate-Governance-31.03.2024.pdf", year: "2024" },
-        { name: "Corporate-Governance-30062024", file: "/investors/corporate-governance/compliance-report-on-corporate-governance/Corporate-Governance-30062024.pdf", year: "2024" },
-        { name: "Corporate-Governance-30092024", file: "/investors/corporate-governance/compliance-report-on-corporate-governance/Corporate-Governance-30092024.pdf", year: "2024" },
-        { name: "Corporate-Governance-December-2024", file: "/investors/corporate-governance/compliance-report-on-corporate-governance/Corporate-Governance-December-2024.pdf", year: "2024" },
+        { name: "Company General Information and Compliance Disclosures", file: "/investors/corporate-governance/Yearly/Company General Information and Compliance Disclosures.pdf", year: "2025" },
+        { name: "Corporate Governance Half Yearly Compliance September 2024", file: "/investors/corporate-governance/Yearly/Corporate Governance Half Yearly Compliance September 2024.pdf", year: "2024" },
+        { name: "Corporate Governance Report March 2024", file: "/investors/corporate-governance/Yearly/Corporate Governance Report March 2024.pdf", year: "2024" },
+        { name: "Corporate Governance Report September 2024", file: "/investors/corporate-governance/Yearly/Corporate Governance Report September 2024.pdf", year: "2024" },
+        { name: "Integrated Governance & Compliance Report – FY 2024–25", file: "/investors/corporate-governance/Yearly/Integrated Governance & Compliance Report – FY 2024–25.pdf", year: "2024" },
 
       ],
       quarterly: [
-        { name: "IG-March-2025", file: "/investors/corporate-governance/compliance-report-on-corporate-governance/IG-March-2025.pdf", year: "2025" },
-        { name: "IG-December-2024", file: "/investors/corporate-governance/compliance-report-on-corporate-governance/IG-December-2024.pdf", year: "2024" },
-        { name: "CG-June-2024", file: "/investors/corporate-governance/compliance-report-on-corporate-governance/CG-June-2024.pdf", year: "2024" },
-        { name: "CG-September-2024", file: "/investors/corporate-governance/compliance-report-on-corporate-governance/CG-September-2024.pdf", year: "2024" },
-        { name: "CG-December-2024", file: "/investors/corporate-governance/compliance-report-on-corporate-governance/CG-December-2024.pdf", year: "2024" },
+        { name: "Compliance Report December 2024", file: "/investors/corporate-governance/Quarterly/Compliance Report December 2024.pdf", year: "2024" },
+        { name: "Corporate Governance Disclosure Q3", file: "/investors/corporate-governance/Quarterly/Corporate Governance Disclosure Q3.pdf", year: "2024" },
+        { name: "Corporate Governance Report – Q1 FY 2024–25", file: "/investors/corporate-governance/Quarterly/Corporate Governance Report – Q1 FY 2024–25.pdf", year: "2024" },
+        { name: "Corporate Governance Report – Q3 FY 2024–25", file: "/investors/corporate-governance/Quarterly/Corporate Governance Report – Q3 FY 2024–25.pdf", year: "2024" },
+        { name: "Corporate Governance Report June 2024", file: "/investors/corporate-governance/Quarterly/Corporate Governance Report June 2024.pdf", year: "2024" },
       ]
     },
 

@@ -112,9 +112,14 @@ p {
   border: none;
 }
 
+.nav-link:focus {
+  color: #fff;
+}
+
 @media (max-width: 992px) {
   .nav-item {
     width: 100%;
+    color: #fff;
   }
 
   .nav-item a {
@@ -567,7 +572,7 @@ p {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  border-radius : 20px !important;
+  border-radius: 20px !important;
   transition: 0.5s all ease;
 }
 
@@ -745,7 +750,7 @@ p {
     font-size: 14px !important;
   }
 
-  .service-blur{
+  .service-blur {
     backdrop-filter: blur(16px) !important;
   }
 
@@ -1108,6 +1113,12 @@ p {
   transform: translateY(-50%);
 }
 
+@media(min-width : 1025px) and (max-width : 1400px){
+  .prev-btn {
+    left: 77%;
+  }
+}
+
 @media (max-width: 1024px) {
   .prev-btn {
     left: 70%;
@@ -1195,6 +1206,81 @@ p {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+
+}
+
+.contact-form-section {
+  position: relative;
+  background-color: #fff;
+}
+
+.contact-form-section h2 {
+  font-family: Gilroy-Bold;
+  text-transform: uppercase;
+  font-size: 3rem;
+
+}
+
+@media(max-width : 576px) {
+  .contact-form-section h2 {
+    font-size: 2rem;
+  }
+}
+
+.contact-form-section form {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.robot-overlay {
+  position: absolute;
+  top: -10%;
+  right: 0;
+  width: 25%;
+  filter: brightness(1.2);
+  mix-blend-mode: darken;
+  z-index: 3;
+}
+
+@media(max-width : 576px) {
+  .robot-overlay {
+    width: 50%;
+    top: -7%;
+    right: -6%;
+  }
+}
+
+.robot-overlay video {
+  mix-blend-mode: screen;
+}
+
+
+.robot-overlay-popup {
+  position: absolute;
+  top: -3%;
+  right: -5%;
+  width: 25%;
+  filter: brightness(1.2);
+  mix-blend-mode: darken;
+  z-index: 3;
+}
+
+@media(max-width : 576px) {
+  .robot-overlay-popup {
+    width: 50%;
+    top: 1%;
+    right: -20%;
+  }
+}
+
+.robot-overlay-popup video {
+  mix-blend-mode: screen;
+}
+
+.form-control:focus {
+  background-color: transparent;
 }
 
 .form-row {
@@ -1722,23 +1808,15 @@ textarea {
     padding: 20px 0;
   }
 
-  .journey-timeline-line,
-  .pointer {
-    display: none;
-  }
+
 
   .timeline-years {
-    width: 100%;
-    overflow-x: auto;
-    justify-content: flex-start;
-    gap: 30px;
-    padding: 0 20px 10px 20px;
-    /* Add bottom padding for better scroll feel */
-    margin-top: 0;
-
-    /* Hide scrollbar */
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: -41px;
+    position: relative;
   }
 
   .timeline-years::-webkit-scrollbar {
@@ -1894,7 +1972,7 @@ textarea {
   color: #000;
 }
 
-.has-mega-menu:hover .mega-menu {
+.mega-menu.show-desktop {
   display: block;
 }
 
@@ -2977,6 +3055,30 @@ textarea {
   transform: scale(0.96);
 }
 
+.floating-tooltip {
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background-color: #333;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+
+.floating-btn:hover .floating-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+  transition-delay: 0.5s;
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .floating-btn {
@@ -3368,7 +3470,7 @@ textarea {
 @media (max-width: 1200px) {
   .value-grid {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
 
   .value-1,
@@ -4261,9 +4363,9 @@ textarea {
   font-size: 2.5rem;
   font-family: Gilroy-Bold;
   background: linear-gradient(90deg, #f97316 0%, #facc15 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .grey-bg p {
@@ -4321,6 +4423,14 @@ textarea {
   border-radius: 50px;
   color: #fff;
 }
+
+@media(max-width : 992px) {
+  .point-text {
+    padding-left: 2rem;
+  }
+}
+
+
 
 .point-icon img {
   width: 30px;
@@ -4382,21 +4492,19 @@ textarea {
     /* Reset specific radii */
   }
 
-  
-  }
 
-  @media(max-width : 992px){
-    .rise-with-sap .img-container {
+}
+
+@media(max-width : 992px) {
+  .rise-with-sap .img-container {
     height: 300px;
     border-radius: 20px !important;
     /* Reset specific radii */
   }
 
-  .major-points .point {
-    flex-direction: column;
-    text-align: start;
-    gap: 15px;
-  }
+
+
+
 
   .major-points .point .col-md-1,
   .major-points .point .col-md-6,
@@ -5256,3 +5364,64 @@ textarea {
     padding: 10px 20px;
   }
 }
+
+/* Tech Stack Item Styling - "Tech Chip" Design */
+.tech-stack-item {
+  background: #f8f9fa;
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid #f97316;
+  /* Thick orange accent */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  color: #555;
+  transition: all 0.3s ease;
+  cursor: default;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Gilroy-Bold', sans-serif;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  /* Slight rounding, mostly rectangular */
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.tech-stack-item:hover {
+  transform: translateY(-3px);
+  background: #fff;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  color: #f97316;
+}
+
+.tech-stack-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(249, 115, 22, 0.05), transparent);
+  transform: translateX(-100%);
+  transition: 0.5s;
+}
+
+.tech-stack-item:hover::before {
+  transform: translateX(100%);
+}
+
+
+@media(min-width : 993px) and (max-width : 1199px) {
+    .navbar-cont {
+       margin-inline: 0px !important;
+    }
+    .navbar-brand img{
+      width:90px !important;
+    }
+}
+
+
+@media(max-width : 576px){
+.slide-buttons{
+  width: 200px;
+}
+}
+

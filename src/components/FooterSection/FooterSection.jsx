@@ -4,7 +4,7 @@ import logo from "/images/aeonx-logo-white.svg"
 import GlassButton from "../GlassButton/GlassButton";
 import { FaDownload } from "react-icons/fa6";
 import half from "/images/aeonx-digital-half.webp"
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const FooterSection = () => {
   return (
@@ -23,10 +23,16 @@ const FooterSection = () => {
               AeonX offers a simple method by treating infrastructure as code to manage a group of linked AWS and third-party resources.
               It emphasizes delivering provision so you can run your business fast and in a reliable fashion with zero hassles.
             </p>
-            <GlassButton
+            {/* <GlassButton
               title="Company Deck"
               icon={() => <FaDownload />}
-            />
+              url="/investors/AeonX Digital Capability Deck - Latest Version.pdf"
+            /> */}
+            <a className="text-decoration-none" href="/investors/AeonX Digital Capability Deck - Latest Version.pdf" download="AeonX Digital Capability Deck - Latest Version.pdf">
+              <button className='slide-button d-flex items-center align-items-center gap-2 text-start'>
+                    Company Deck  <FaDownload />
+            </button>
+            </a>
           </div>
 
           {/* Solutions */}
@@ -170,7 +176,7 @@ const FooterSection = () => {
 
           </div>
 
-          <a href="tel:+91 22 66221640" className="text-decoration-none">
+          <a href="tel:+91 22 66221640" className="text-decoration-none d-block d-md-none">
             <div className="d-flex align-items-center gap-2">
               <div className="text-end">
                 <small className="text-light">Let’s Work Together</small>
@@ -181,6 +187,18 @@ const FooterSection = () => {
               </div>
             </div>
           </a>
+
+          <NavLink to="/contact#contact-form" className="text-decoration-none d-none d-md-block ">
+            <div className="d-flex align-items-center gap-2">
+              <div className="text-end">
+                <small className="text-light">Let’s Work Together</small>
+                <h6 className="text-warning fw-bold mb-0">CALL AEONX</h6>
+              </div>
+              <div className="call-btn">
+                <FaPhoneAlt />
+              </div>
+            </div>
+          </NavLink>
         </div>
         <hr className="border-light my-4" />
 

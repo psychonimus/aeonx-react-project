@@ -9,6 +9,7 @@ import FooterSection from "./components/FooterSection/FooterSection";
 import FloatingButton from "./components/FloatingButton/FloatingButton";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import ContactForm from "./components/ContactPageComponents/ContactForm";
+import BackToTop from "./components/BackToTop/BackToTop";
 
 import "./popup.css";
 import Home from "./pages/Home";
@@ -52,6 +53,7 @@ import CaseStudySix from "./pages/AllCaseStudies/CaseStudySix";
 import CaseStudySeven from "./pages/AllCaseStudies/CaseStudySeven";
 import CaseStudyEight from "./pages/AllCaseStudies/CaseStudyEight";
 import CaseStudyNine from "./pages/AllCaseStudies/CaseStudyNine";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -110,7 +112,7 @@ const App = () => {
           <Route path="/aeonxlife" element={<LifeAtAeonx />} />
           <Route path="/sap-focused-products" element={<SAPFocusedProducts />} />
           <Route path="/aws-products" element={<AWSProducts />} />
-          <Route path="/investor-relations" element={<InvestorRelations />} />
+          {/* <Route path="/investor-relations" element={<InvestorRelations />} /> */}
           <Route path="/financial-highlights" element={<FinancialHighlights />} />
           <Route path="/shareholder-information" element={<ShareholderInformation />} />
           <Route path="/corporate-governance" element={<CorporateGovernance />} />
@@ -129,6 +131,7 @@ const App = () => {
 
 
         <FloatingButton onClick={togglePopup} />
+        <BackToTop />
         {showPopup && (
           <div className="popup-overlay">
             <div className="popup-content" data-lenis-prevent>

@@ -106,7 +106,7 @@ const ExpertiseSection = () => {
                                     <h3 >Business Process Transformation</h3>
                                     <p >By combining industry expertise with technology-driven strategies, we help businesses streamline workflows, eliminate redundancies, and adopt scalable models. Our transformation approach focuses on process innovation, automation, and continuous improvement, empowering companies to operate smarter, adapt faster, and deliver greater value.
                                     </p>
-                                    <GlassButton href="/sap-focused-products#sap-btp" title="Know More" icon={() => <FaCircleArrowRight color="#F97516" size={28} />} />
+                                    <GlassButton href="/sap-focused-products#sap-btp" title="Know More" icon={() => <FaCircleArrowRight color="#fff" size={28} />} />
                                 </div>
                             </div>
                             <div className="col-md-5">

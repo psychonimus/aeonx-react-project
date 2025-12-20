@@ -146,7 +146,7 @@ const CaseStudiesAll = () => {
                 {/* Grid */}
                 <div className="row g-4">
                     {caseStudiesData[activeTab]?.map((item) => (
-                        <div className="col-md-4" key={item.id}>
+                        <div className="col-lg-4" key={item.id}>
                             <Link to={item.link} className="text-decoration-none text-dark">
                                 <div className="casestudy-card h-100">
                                     <div className="cs-image-container mb-3 overflow-hidden rounded-4">

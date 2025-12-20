@@ -74,7 +74,7 @@ const CaseStudyThree = () => {
   };
 
   return (
-      <div ref={containerRef} className="case-study-wrapper" style={{ overflowX: "hidden" }}>
+      <div ref={containerRef} className="case-study-wrapper" >
       {/* ================= HERO SECTION ================= */}
       <section
         ref={heroRef}
@@ -88,18 +88,7 @@ const CaseStudyThree = () => {
         <div className="container mt-5">
           <div className="row align-items-center">
             <div className="col-lg-6 mb-5 mb-lg-0">
-              <span
-                className="d-inline-block px-3 py-1 mb-3 rounded-pill"
-                style={{
-                  background: "rgba(255, 255, 255, 0.1)",
-                  border: "1px solid rgba(255, 255, 255, 0.2)",
-                  fontSize: "0.9rem",
-                  letterSpacing: "1px",
-                  textTransform: "uppercase",
-                }}
-              >
-                Case Study
-              </span>
+              
               <h1
                 className="display-3 fw-bold mb-4"
                 style={{ fontFamily: "Gilroy-Bold", lineHeight: "1.1" }}
@@ -342,32 +331,26 @@ const CaseStudyThree = () => {
 
       {/* ================= TECH STACK ================= */}
       <section className="py-5 bg-light">
-        <div className="container py-5 text-center">
-          <h2 className="mb-5" ref={addToRefs} style={{ fontFamily: "Gilroy-Bold" }}>Technology Stack</h2>
-          <div className="d-flex flex-wrap justify-content-center gap-3" ref={addToRefs}>
-            {[
-              "SAP S/4HANA 1909", 
+          <div className="container py-5 text-center">
+            <h2 className="mb-5 section-heading" ref={addToRefs} style={{ fontFamily: "Gilroy-Bold" }}>Technology Stack</h2>
+            <div className="d-flex flex-wrap justify-content-center gap-3" ref={addToRefs}>
+              {[
+                "SAP S/4HANA 1909", 
               "SAP GUI", 
               "RFID Sensors", 
               "AI Based Automation", 
               "Work Centre Tracking"
-            ].map((tech, i) => (
-              <span
-                key={i}
-                className="px-4 py-2 rounded-pill fw-bold"
-                style={{
-                  background: "#fff",
-                  border: "1px solid #e5e7eb",
-                  boxShadow: "0 2px 5px rgba(0,0,0,0.05)",
-                  color: "#333",
-                }}
-              >
-                {tech}
-              </span>
-            ))}
+              ].map((tech, i) => (
+                <span
+                  key={i}
+                  className="px-4 py-2 fw-bold tech-stack-item"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
       {/* ================= RESULTS ================= */}
       <section className="py-5 position-relative overflow-hidden case-study-nums">

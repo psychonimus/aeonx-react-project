@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import {Factory, Pickaxe, Truck, Biohazard, PillBottle, Hospital, Fuel, PhoneOutgoing, BookUser  } from 'lucide-react';
+import { useLocation } from 'react-router-dom';
+import { Factory, Pickaxe, Truck, Biohazard, PillBottle, Hospital, Fuel, PhoneOutgoing, BookUser } from 'lucide-react';
 import './IndustryRotator.css';
 
 const IndustryRotator = () => {
@@ -8,15 +9,15 @@ const IndustryRotator = () => {
     const containerRef = useRef(null);
 
     const iconComponents = {
-        'factory' : Factory,
-        'pickaxe' : Pickaxe,
-        'truck' : Truck,
-        'biohazard' : Biohazard,
-        'pill-bottle' : PillBottle,
-        'hospital' : Hospital,
-        'fuel' : Fuel,
-        'phone-outgoing' : PhoneOutgoing,
-        'book-user' : BookUser
+        'factory': Factory,
+        'pickaxe': Pickaxe,
+        'truck': Truck,
+        'biohazard': Biohazard,
+        'pill-bottle': PillBottle,
+        'hospital': Hospital,
+        'fuel': Fuel,
+        'phone-outgoing': PhoneOutgoing,
+        'book-user': BookUser
     };
 
     const slides = [
@@ -89,7 +90,7 @@ const IndustryRotator = () => {
         },
         {
             key: '4',
-            bullet: 'Chemicals',
+            bullet: 'Chemical',
             accent: 'sky',
             icon: 'biohazard',
             tailText: 'Chemical',
@@ -233,7 +234,7 @@ const IndustryRotator = () => {
         violet: { bg: 'rgba(139,92,246,0.18)', border: 'rgba(139,92,246,0.35)' },
         amber: { bg: 'rgba(245,158,11,0.18)', border: 'rgba(245,158,11,0.35)' },
         sky: { bg: 'rgba(14,165,233,0.18)', border: 'rgba(14,165,233,0.35)' },
-        
+
     };
 
     const escapeRegExp = (str) => {
@@ -279,6 +280,8 @@ const IndustryRotator = () => {
         startRotation();
     };
 
+    const location = useLocation();
+
     useEffect(() => {
         startRotation();
         return () => {
@@ -286,13 +289,36 @@ const IndustryRotator = () => {
         };
     }, []);
 
+    // Handle hash navigation
+    useEffect(() => {
+        if (location.hash) {
+            const hash = location.hash.replace('#', '').toLowerCase();
+            const index = slides.findIndex(slide =>
+                slide.bullet.toLowerCase().includes(hash) ||
+                slide.tailText.toLowerCase().includes(hash)
+            );
+
+            if (index !== -1) {
+                setActiveIndex(index);
+                if (timerRef.current) clearInterval(timerRef.current);
+
+                // Scroll to the container
+                if (containerRef.current) {
+                    setTimeout(() => {
+                        containerRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                }
+            }
+        }
+    }, [location.hash]);
+
     const currentSlide = slides[activeIndex];
     const IconComponent = iconComponents[currentSlide.icon];
 
     return (
         <>
             <div
-                className="feature-rotator"
+                className="feature-rotator" id='industry-rotator'
                 ref={containerRef}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
@@ -306,7 +332,7 @@ const IndustryRotator = () => {
                     </h1>
 
                     <div className="row">
-                        <div className="col-md-3">
+                        <div className="col-lg-3">
                             <div>
                                 <div className="bullet-list">
                                     {slides.map((slide, index) => (
@@ -323,11 +349,11 @@ const IndustryRotator = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-9">
+                        <div className="col-lg-9">
                             <div className="card-wrapper">
                                 <div className="card" style={{ backgroundImage: `url(${currentSlide.bgImage})` }}>
                                     <div className="card-content">
-                                        
+
 
                                         {/* <div className={`icon-box accent-${currentSlide.accent}`}>
                                             <IconComponent className="icon" />

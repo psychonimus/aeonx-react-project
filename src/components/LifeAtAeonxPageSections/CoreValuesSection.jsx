@@ -47,7 +47,7 @@ const CoreValuesSection = () => {
 
           <div className="value-grid">
             {ValueData.map((value, index) => (
-              <div key={index} className={`value-card value-${index + 1}`}>
+              <div key={index} className={`value-card mt-3 mt-md-0 value-${index + 1}`}>
                 <div className="value-overlay p-3">
                   <div className="content-div">
                     <h3>{value.title}</h3>

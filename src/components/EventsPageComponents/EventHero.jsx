@@ -8,7 +8,7 @@ const EventHero = () => {
     <section className="event-hero">
       <div className="container">
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-lg-6">
             <div className="event-hero-left d-flex flex-column justify-content-center h-100">
               <p className="eyebrow">Join us in our events</p>
               <h1>
@@ -27,7 +27,7 @@ const EventHero = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-6 mt-5 mt-md-0">
+          <div className="col-lg-6 mt-5 mt-lg-0">
             <div className="event-headline">
               <h3 className="mb-3">Upcoming Events</h3>
             </div>
@@ -35,23 +35,23 @@ const EventHero = () => {
               
               <div className="event-card card1">
                 <div className="event-card-overlay"></div>
-                <p className="event-tag">SAP</p>
-                <h3 className="tagSub">SAP innovation Day Q1 </h3>
+                <h3 className="tagSub">SAP innovation Day </h3>
+                <p className="event-tag">Q1</p>
               </div>
               <div className="event-card card2">
                 <div className="event-card-overlay"></div>
-                <p className="event-tag">Mumbai</p>
-                <h3 className="tagSub">SAP NOW Mumbai Q2</h3>
+                <h3 className="tagSub">SAP NOW Mumbai </h3>
+                <p className="event-tag">Q2</p>
               </div>
               <div className="event-card card3">
                 <div className="event-card-overlay"></div>
-                <p className="event-tag">SAP</p>
-                <h3 className="tagSub">SAP innovation Day Q2 </h3>
+                <h3 className="tagSub">SAP innovation Day </h3>
+                <p className="event-tag">Q2 </p>
               </div>
               <div className="event-card card4">
                 <div className="event-card-overlay"></div>
-                <p className="event-tag">Delhi</p>
-                <h3 className="tagSub">SAP NOW Delhi Q3 </h3>
+                <h3 className="tagSub">SAP NOW Delhi  </h3>
+                <p className="event-tag">Q3</p>
               </div>
             </div>
           </div>

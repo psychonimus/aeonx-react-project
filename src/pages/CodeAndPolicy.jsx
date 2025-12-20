@@ -8,12 +8,13 @@ import { ArrowBigDownDash, LayoutGrid } from "lucide-react";
 
 
 const CodeAndPolicy = () => {
-  const [activeTab, setActiveTab] = useState("complianceReport");
+  const [activeTab, setActiveTab] = useState("codeOfConduct");
   const [activePeriod, setActivePeriod] = useState("yearly");
   const [activeYear, setActiveYear] = useState("All");
 
   const tabs = [
-    { id: "complianceReport", label: "Compliance Report on Corporate Governance" },
+    { id: "codeOfConduct", label: "Code of Conduct" },
+    { id: "policies", label: "Policies" },
 
 
 
@@ -22,13 +23,25 @@ const CodeAndPolicy = () => {
   const years = ["All", "2025", "2024", "2023"];
 
   const pdfData = {
-    complianceReport: {
+    codeOfConduct: {
       yearly: [
-        { name: "ADTL-Integrated-Governance-31.03.2025", file: "/investors/corporate-governance/compliance-report-on-corporate-governance/ADTL-Integrated-Governance-31.03.2025.pdf", year: "2025" },
-        { name: "Corporate-Governance-31.03.2024", file: "/investors/corporate-governance/compliance-report-on-corporate-governance/Corporate-Governance-31.03.2024.pdf", year: "2024" },
-        { name: "Corporate-Governance-30062024", file: "/investors/corporate-governance/compliance-report-on-corporate-governance/Corporate-Governance-30062024.pdf", year: "2024" },
-        { name: "Corporate-Governance-30092024", file: "/investors/corporate-governance/compliance-report-on-corporate-governance/Corporate-Governance-30092024.pdf", year: "2024" },
-        { name: "Corporate-Governance-December-2024", file: "/investors/corporate-governance/compliance-report-on-corporate-governance/Corporate-Governance-December-2024.pdf", year: "2024" },
+        { name: "Addendum to Code of Business Conduct and Ethics", file: "/investors/code-and-policy/Code-of-conduct/Addendum to Code of Business Conduct and Ethics.pdf", year: "All" },
+        { name: "Code of Business Conduct and Ethics", file: "/investors/code-and-policy/Code-of-conduct/Code of Business Conduct and Ethics.pdf", year: "All" },
+      ],
+      quarterly: [
+
+      ]
+    },
+    policies: {
+      yearly: [
+        { name: "Code of Practices and Procedures for Fair Disclosures of Unpublished Price Sensitive Information", file: "/investors/code-and-policy/policies/Code of Practices and Procedures for Fair Disclosures of Unpublished Price Sensitive Information.pdf", year: "All" },
+        { name: "Corporate-Social-Responsibilty-Policy-ADTL", file: "/investors/code-and-policy/policies/Corporate-Social-Responsibilty-Policy-ADTL.pdf", year: "All" },
+        { name: "Familiarisation Programme for Independent Directors", file: "/investors/code-and-policy/policies/Familiarisation Programme for Independent Directors.pdf", year: "All" },
+        { name: "Nomination and Remuneration Policy", file: "/investors/code-and-policy/policies/Nomination and Remuneration Policy.pdf", year: "All" },
+        { name: "Policy for Determining Material Subsidiaries", file: "/investors/code-and-policy/policies/Policy for Determining Material Subsidiaries.pdf", year: "All" },
+        { name: "Policy on Determination of Material Events or Information", file: "/investors/code-and-policy/policies/Policy on Determination of Material Events or Information.pdf", year: "All" },
+        { name: "Policy on Related Party Transactions", file: "/investors/code-and-policy/policies/Policy on Related Party Transactions.pdf", year: "All" },
+        { name: "Vigil Mechanism  Whistle Blower Policy", file: "/investors/code-and-policy/policies/Vigil Mechanism  Whistle Blower Policy.pdf", year: "All" },
 
       ],
       quarterly: [

@@ -9,7 +9,7 @@ const PastEventSection = () => {
     "/images/event/sap-ste-tour/sap-ste-tour-5.webp",
     "/images/event/sap-ste-tour/sap-ste-tour-6.webp",
     "/images/event/sap-ste-tour/sap-ste-tour-7.webp",
-    "/images/event/sap-ste-tour/sap-ste-tour-8.webp",
+    "/images/event/sap-ste-tour/sap-ste-tour-8.jpg",
   ];
 
   const ceoConclave = [

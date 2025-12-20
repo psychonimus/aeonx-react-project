@@ -136,10 +136,10 @@ const Hero = () => {
                         <SwiperSlide>
                             <div className="slide-image">
                                 {/* <img src={banner1} alt="" /> */}
-                                <video className='earth-bg-video d-none d-md-block' style={{ width: "100%" }} autoplay="true" muted="true" loop="true" preload="metadata" playsinline="true" data-goto-next="true" data-object-fit="cover" data-object-position="center top" webkit-playsinline="true">
+                                <video className='earth-bg-video d-none d-md-block' style={{ width: "100%" }} autoPlay muted loop preload="metadata" playsInline data-goto-next="true" data-object-fit="cover" data-object-position="center top" webkit-playsinline="true">
                                     <source src={heroBg} type="video/webm" />
                                 </video>
-                                <video className='earth-bg-video d-block d-md-none' style={{ width: "100%" }} autoplay="true" muted="true" loop="true" preload="metadata" playsinline="true" data-goto-next="true" data-object-fit="cover" data-object-position="center top" webkit-playsinline="true">
+                                <video className='earth-bg-video d-block d-md-none' style={{ width: "100%" }} autoPlay muted loop preload="metadata" playsInline data-goto-next="true" data-object-fit="cover" data-object-position="center top" webkit-playsinline="true">
                                     <source src={heroBg2} type="video/webm" />
                                 </video>
                             </div>

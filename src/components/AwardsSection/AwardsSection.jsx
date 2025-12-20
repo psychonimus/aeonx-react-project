@@ -75,6 +75,7 @@ const AwardsSection = () => {
                                     <AwardCard
                                             image={gptw}
                                             awardTitle="Great Place to Work Certified 2025"
+                                            awardDesc="APR 2025 - APR 2026"
                                             
                                         />
                                     </SwiperSlide>

@@ -6,7 +6,7 @@ import GlassButton from "../GlassButton/GlassButton";
 import { BsArrowUpRightCircleFill } from "react-icons/bs";
 import GlassButtonLight from "../GlassButton/GlassButtonLight";
 import risewithsap from "/images/risewithsap.webp"
-import sapbtp from "/images/sapbtp.webp"
+import sapbtp from "/images/sapbtp-slide.png"
 import sabAriba from '/images/sap-ariba-top.webp'
 import growWithSap from '/images/grow-with-sap-logo.webp'
 import sapSuccessFactors from '/images/sap-success-new.webp'

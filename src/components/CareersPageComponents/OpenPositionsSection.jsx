@@ -32,7 +32,7 @@ const jobs = [
     title: "Associate Consultant - SAP PS",
     location: "Mumbai/Dehradun/Ahmedabad/Noida",
     type: "Full-time",
-    experience: "2-3 Years",  
+    experience: "2-3 Years",
     openings: "1",
     url: "/careers/job-desc-four",
   },
@@ -74,21 +74,25 @@ const OpenPositionsSection = () => {
           <div className="row g-4">
             {jobs.map((job, idx) => (
               <div className="col-md-6 col-lg-4" key={idx}>
-                <div className="job-card">
-                  <h3 className="job-title">{job.title}</h3>
+                <div className="job-card d-flex flex-column justify-content-between">
+                  <div>
+                    <h3 className="job-title">{job.title}</h3>
 
-                  <div className="job-meta mt-3">
-                    <p><FaMapMarkerAlt /> {job.location}</p>
-                    <p><FaClock /> {job.type}</p>
-                    <p>📁 {job.experience}</p>
-                    <p>No of Openings: {job.openings}</p>
+                    <div className="job-meta mt-3">
+                      <p><FaMapMarkerAlt /> {job.location}</p>
+                      <p><FaClock /> {job.type}</p>
+                      <p>📁 {job.experience}</p>
+                      <p>No of Openings: {job.openings}</p>
+                    </div>
                   </div>
 
-                  <Link to={job.url} className="text-decoration-none">
-                    <button className="apply-btn">
-                      Apply Now <FaArrowRight />
-                    </button>
-                  </Link>
+                  <div>
+                    <Link to={job.url} className="text-decoration-none">
+                      <button className="apply-btn">
+                        Apply Now <FaArrowRight />
+                      </button>
+                    </Link>
+                  </div>
                 </div>
               </div>
             ))}
@@ -104,9 +108,9 @@ const OpenPositionsSection = () => {
                 href="mailto:careers@aeonx.digital "
                 style={{ color: "#f97316", textDecoration: "underline" }}
               >
-                careers@aeonx.digital 
+                careers@aeonx.digital
               </a>
-              .
+
             </span>
             &nbsp;We'll reach out if there's a match!
           </p>

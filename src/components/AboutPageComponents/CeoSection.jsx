@@ -9,14 +9,14 @@ const CeoSection = () => {
                 <div className="container-fluid">
                     <div className="row ">
 
-                        <div className="col-6 order-2 col-lg-4  px-0 px-0">
+                        <div className="col-6 order-2 col-xl-4  px-0 px-0">
                             <div className="ceo-img h-100">
                                 <img src={mananSir} alt="" />
                             </div>
                         </div>
 
-                        <div className="col-12 order-1 col-lg-4 order-lg-2   h-100">
-                            <div className="msg-content text-center h-100 text-white d-flex flex-column justify-content-center mt-5">
+                        <div className="col-12 order-1 col-xl-4 order-xl-2   h-100">
+                            <div className="msg-content text-center h-100 text-white d-flex flex-column justify-content-center mt-5 px-3 px-lg-0">
                                 <h1>VISION AND MISSION</h1>
                                 <p style={{textAlign:"justify"}}>AeonX Digital delivers innovative, future-ready technology solutions that drive business efficiency and growth. We act as strategic enablers, helping organizations adopt cutting-edge tools while balancing cost and speed. Our focus is on practical, scalable, and impactful solutions. Excellence starts within our workplace and extends to clients and communities.</p>
                                 <p  style={{textAlign:"justify"}}>Our vision is to empower businesses to scale beyond current capabilities through technology and innovation. With five years of expertise in digital transformation, we help companies stay ahead while focusing on their core strengths. Built on experience, integrity, and innovation, AeonX Digital delivers tailored solutions for long-term success. We grow by helping our clients grow.</p>
@@ -34,7 +34,7 @@ const CeoSection = () => {
 
                         </div>
 
-                        <div className="col-6 order-3 col-lg-4 px-0">
+                        <div className="col-6 order-3 col-xl-4 px-0">
                             <div className="ceo-img h-100">
                                 <img src={deepakSir} alt="" />
                             </div>

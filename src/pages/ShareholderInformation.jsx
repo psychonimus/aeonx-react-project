@@ -26,10 +26,10 @@ const ShareholderInformation = () => {
   const pdfData = {
     postal: {
       yearly: [
-        { name: "Annexure-IV-CS-Certificate", file: "/investors/shareholder-information/postal-ballot-notice-and-form/Annexure-IV-CS-Certificate.pdf", year: "2024" },
-        { name: "Annexure-V-CS-Certificate", file: "/investors/shareholder-information/postal-ballot-notice-and-form/Annexure-V-CS-Certificate.pdf", year: "2024" },
-        { name: "POSTAL-BALLOT-NOTICE", file: "/investors/shareholder-information/postal-ballot-notice-and-form/POSTAL-BALLOT-NOTICE.pdf", year: "2024" },
         { name: "POSTAL-BALLOT-NOTICE-2025-ADTL", file: "/investors/shareholder-information/postal-ballot-notice-and-form/POSTAL-BALLOT-NOTICE-2025-ADTL.pdf", year: "2025" },
+        { name: "POSTAL-BALLOT-NOTICE", file: "/investors/shareholder-information/postal-ballot-notice-and-form/POSTAL-BALLOT-NOTICE.pdf", year: "2024" },
+        { name: "Annexure-V-CS-Certificate", file: "/investors/shareholder-information/postal-ballot-notice-and-form/Annexure-V-CS-Certificate.pdf", year: "2024" },
+        
       ],
       quarterly: [
 
@@ -37,18 +37,19 @@ const ShareholderInformation = () => {
     },
     shareholding: {
       yearly: [
-        { name: "Shareholding-Pattern-30.06.2024-ADTL", file: "/investors/shareholder-information/shareholding-pattern/Shareholding-Pattern-30.06.2024-ADTL.pdf", year: "2024" },
-        { name: "Shareholding-Pattern-30.09.2024", file: "/investors/shareholder-information/shareholding-pattern/Shareholding-Pattern-30.09.2024.pdf", year: "2024" },
-        { name: "Shareholding-Pattern-31.03.2024", file: "/investors/shareholder-information/shareholding-pattern/Shareholding-Pattern-31.03.2024.pdf", year: "2024" },
-        { name: "Shareholding-Pattern-31.03.2025", file: "/investors/shareholder-information/shareholding-pattern/Shareholding-Pattern-31.03.2025.pdf", year: "2025" },
-        { name: "Shareholding-Pattern-31.12.2024-ADTL", file: "/investors/shareholder-information/shareholding-pattern/Shareholding-Pattern-31.12.2024-ADTL.pdf", year: "2024" },
+        
 
       ],
       quarterly: [
-        { name: "SHP-March-2025", file: "/investors/shareholder-information/shareholding-pattern/SHP-March-2025.pdf", year: "2025" },
-        { name: "SHP-December-2024", file: "/investors/shareholder-information/shareholding-pattern/SHP-December-2024.pdf", year: "2024" },
-        { name: "SHP-September-2024", file: "/investors/shareholder-information/shareholding-pattern/SHP-September-2024.pdf", year: "2024" },
-        { name: "SHP-June-2024", file: "/investors/shareholder-information/shareholding-pattern/SHP-June-2024.pdf", year: "2024" },
+        { name: "Shareholding-Pattern-30.06.2024-ADTL", file: "/investors/shareholder-information/shareholding-pattern/quarterly/Shareholding-Pattern-30.06.2024-ADTL.pdf", year: "2024" },
+        { name: "Shareholding-Pattern-30.09.2024", file: "/investors/shareholder-information/shareholding-pattern/quarterly/Shareholding-Pattern-30.09.2024.pdf", year: "2024" },
+        { name: "Shareholding-Pattern-31.03.2024", file: "/investors/shareholder-information/shareholding-pattern/quarterly/Shareholding-Pattern-31.03.2024.pdf", year: "2024" },
+        { name: "Shareholding-Pattern-31.03.2025", file: "/investors/shareholder-information/shareholding-pattern/quarterly/Shareholding-Pattern-31.03.2025.pdf", year: "2025" },
+        { name: "Shareholding-Pattern-31.12.2024-ADTL", file: "/investors/shareholder-information/shareholding-pattern/quarterly/Shareholding-Pattern-31.12.2024-ADTL.pdf", year: "2024" },
+        { name: "SHP-March-2025", file: "/investors/shareholder-information/shareholding-pattern/quarterly/SHP-March-2025.pdf", year: "2025" },
+        { name: "SHP-December-2024", file: "/investors/shareholder-information/shareholding-pattern/quarterly/SHP-December-2024.pdf", year: "2024" },
+        { name: "SHP-September-2024", file: "/investors/shareholder-information/shareholding-pattern/quarterly/SHP-September-2024.pdf", year: "2024" },
+        { name: "SHP-June-2024", file: "/investors/shareholder-information/shareholding-pattern/quarterly/SHP-June-2024.pdf", year: "2024" },
       ]
     },
     unclaimed: {
@@ -62,7 +63,7 @@ const ShareholderInformation = () => {
 
     iepf: {
       yearly: [
-        { name: "Share-Transfer-to-IEPF-2023-2024", file: "/investors/financial-highlights/shares-transferred-to-IEPF/Share-Transfer-to-IEPF-2023-2024.pdf", year: "2024" },
+        { name: "Share-Transfer-to-IEPF-2023-2024", file: "/investors/shareholder-information/shares-transferred-to-IEPF/Share-Transfer-to-IEPF-2023-2024.pdf", year: "2023" },
 
       ],
       quarterly: [

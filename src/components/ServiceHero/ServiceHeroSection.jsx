@@ -11,7 +11,7 @@ import x from "/images/logo-x.svg"
 
 const integrationIcons = [
   { Icon: implementation, delay: 0, title: "Implementation" },
-  { Icon: support, delay: 0.1, title: "Support" },
+  // { Icon: support, delay: 0.1, title: "Support" },
   { Icon: migration, delay: 0.2, title: "Migration" },
   { Icon: integration, delay: 0.3, title: "Integration" },
   { Icon: innovation, delay: 0.4, title: "Innovation" },

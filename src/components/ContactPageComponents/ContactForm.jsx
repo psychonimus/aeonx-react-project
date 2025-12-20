@@ -220,8 +220,9 @@ const ContactForm = () => {
     };
 
     return (
-        <section className="contact-form-section container my-5">
-            <h2 className="fw-bold mb-4">Contact us</h2>
+        <section className="contact-form-section container-fluid my-5" id="contact-form">
+            <div className="container">
+                <h2 className="fw-bold mb-4">Contact us</h2>
 
             {message.text && (
                 <div
@@ -232,7 +233,7 @@ const ContactForm = () => {
                 </div>
             )}
 
-            <form id="contact-form" onSubmit={handleSubmit}>
+            <form id="contact-form" className="mt-5" onSubmit={handleSubmit}>
                 <div className="row mb-4">
                     <div className="col-md-6 mb-3">
                         <label className="form-label">Company Name*</label>
@@ -333,6 +334,14 @@ const ContactForm = () => {
                     />
                 </div>
             </form>
+
+            </div>
+
+            <div className="robot-overlay">
+                <video className='' style={{ width: "100%" }} autoplay="true" muted="true" loop="true" preload="metadata" playsinline="true" data-goto-next="true" data-object-fit="cover" data-object-position="center top" webkit-playsinline="true">
+                    <source src="/videos/contact-robot.webm" type="video/webm" />
+                </video>
+            </div>
         </section>
     );
 };

@@ -21,6 +21,7 @@ const IndustryHero = () => {
                                 <GlassButton
                                     title="View Sectors"
                                     icon={() => <IoIosArrowDropdownCircle size={30} />}
+                                    url="#industry-rotator"
                                 />
 
                             </div>

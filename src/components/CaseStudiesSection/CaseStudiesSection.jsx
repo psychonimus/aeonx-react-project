@@ -67,7 +67,7 @@ const CaseStudiesSection = () => {
                                 bgColor="#C9291F"
                                 icon={() => <GoGoal color="#fff" size={28} />}
                                 headline="AeonX's Solutions"
-                                desc="Aashapura Case Study"
+                                desc="Product Case Studies"
                             />
 
                             

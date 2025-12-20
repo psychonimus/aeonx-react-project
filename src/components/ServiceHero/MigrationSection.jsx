@@ -114,7 +114,7 @@ const MigrationSection = () => {
   };
 
   return (
-    <div className="container py-5" id="migration">
+    <div className="container py-5">
 
       <section style={sectionStyleAlt} id="implementation">
         <div style={containerStyle}>
@@ -186,7 +186,7 @@ const MigrationSection = () => {
         </div>
       </section>
 
-      <section style={sectionStyle}>
+      <section style={sectionStyle} id="migration">
         <div style={containerStyle}>
           <div className="row g-1 d-flex flex-column-reverse flex-lg-row align-items-start mb-5">
             <div className="col-12 col-lg-6 order-1 order-md-1">
@@ -244,7 +244,7 @@ const MigrationSection = () => {
               className="col-12 col-lg-6 order-2 order-md-2"
               style={contentColumnStyle}
             >
-              <div>
+              <div >
                 <h2 style={h2Style}>Migration Services</h2>
                 <p style={pStyle}>
                   Migrating to the cloud should unlock potential, not just move

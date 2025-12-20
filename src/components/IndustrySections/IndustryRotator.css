@@ -97,7 +97,7 @@
   transition: all 0.3s ease;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .bullet-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -191,7 +191,7 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
 
 }
 
@@ -367,7 +367,7 @@
 .body-copy {
   font-size: 1rem;
   color: rgb(255, 255, 255);
-  text-align: justify;
+  
 }
 
 @media (min-width: 640px) {

@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { BsArrowUpRightCircleFill } from "react-icons/bs";
 import risewithsap from "/images/risewithsap.webp"
 import sapbtp from "/images/sapbtp.webp"
-import aws from "/images/aws-partner.webp"
+import aws from "/images/aws-partner-new.png"
 import ServiceTitleCardTwo from "./ServiceTitleCardTwo";
 import ServiceCardTwo from "./ServiceCardTwo";
 import sapaws from "/images/sap-on-aws.webp"
@@ -58,7 +58,7 @@ const ServiceSliderTwo = () => {
                         description="Start building on AWS today"
                         descColor="#fff"
                         buttonText="Explore AWS Solutions"
-                        
+                        url="/aws-products"
                         buttonIcon={() => <BsArrowUpRightCircleFill color="#fff" size={28} />}
                     />
 

@@ -333,6 +333,13 @@ const ContactForm = () => {
                     />
                 </div>
             </form>
+
+
+            <div className="robot-overlay-popup">
+                <video className='' style={{ width: "100%" }} autoplay="true" muted="true" loop="true" preload="metadata" playsinline="true" data-goto-next="true" data-object-fit="cover" data-object-position="center top" webkit-playsinline="true">
+                    <source src="/videos/contact-robot.webm" type="video/webm" />
+                </video>
+            </div>
         </section>
     );
 };

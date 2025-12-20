@@ -134,7 +134,7 @@ const SAPFocusedProducts = () => {
       <section className="rise-with-sap my-5" id="rise-with-sap">
         <div className="container">
           <div className="row grey-bg">
-            <div className="col-md-6 left py-4 px-5">
+            <div className="col-lg-6 left py-4 px-5">
               <img src={risewithsap} alt="" />
               <h2>Rise With SAP</h2>
               <p>
@@ -149,7 +149,7 @@ const SAPFocusedProducts = () => {
                 and SAP BTP without impacting ongoing operations or budgets.
               </p>
             </div>
-            <div className="col-md-6 right px-0">
+            <div className="col-lg-6 right px-0">
               <div
                 className="img-container"
                 style={{
@@ -234,7 +234,7 @@ const SAPFocusedProducts = () => {
       <section className="rise-with-sap my-5" id="grow-with-sap">
         <div className="container">
           <div className="row flex-row-reverse grey-bg">
-            <div className="col-md-6 left py-4 px-5">
+            <div className="col-lg-6 left py-4 px-5">
               <img src={growWithSap} alt="" style={{ filter: "brightness(0)" }} />
               <h2>GROW WITH SAP</h2>
               <p>
@@ -242,7 +242,7 @@ const SAPFocusedProducts = () => {
               </p>
               <p>Perfect for businesses looking to expand without the complexity of traditional ERP deployments, Grow with SAP enables rapid adoption of SAP S/4HANA Cloud, giving teams real-time visibility, streamlined operations, and the flexibility to evolve as the business grows.</p>
             </div>
-            <div className="col-md-6 right px-0">
+            <div className="col-lg-6 right px-0">
               <div
                 className="img-container"
                 style={{
@@ -350,7 +350,7 @@ const SAPFocusedProducts = () => {
       <section className="rise-with-sap my-5" id="sap-success-factor">
         <div className="container">
           <div className="row flex-row-reverse grey-bg">
-            <div className="col-md-6 right px-0">
+            <div className="col-lg-6 right px-0">
               <div
                 className="img-container"
                 style={{
@@ -361,7 +361,7 @@ const SAPFocusedProducts = () => {
                 <img src={sapSuccessFactor} alt="" />
               </div>
             </div>
-            <div className="col-md-6 left py-4 px-5">
+            <div className="col-lg-6 left py-4 px-5">
               <img src={SapSuccess} alt="" />
               <h2>SAP SuccessFactors</h2>
               <p>
@@ -454,8 +454,8 @@ const SAPFocusedProducts = () => {
 
       <section className="rise-with-sap my-5" id="sap-concur">
         <div className="container">
-          <div className="row grey-bg">
-            <div className="col-md-6 right px-0">
+          <div className="row flex-row-reverse grey-bg">
+            <div className="col-lg-6 right px-0">
               <div
                 className="img-container"
                 style={{
@@ -466,7 +466,7 @@ const SAPFocusedProducts = () => {
                 <img src={sapConcurAbout} alt="" />
               </div>
             </div>
-            <div className="col-md-6 left py-4 px-5">
+            <div className="col-lg-6 left py-4 px-5">
               <img src={sapConcur} alt="" />
               <h2>SAP Concur</h2>
               <p>
@@ -482,7 +482,7 @@ const SAPFocusedProducts = () => {
       <section className="feature-list my-5">
         <div className="container">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-lg-6">
               <div class="list-timeline">
                 <div class="list-timeline-item">
                   <div class="icon"><GiExpense size={20} /></div>
@@ -517,7 +517,7 @@ const SAPFocusedProducts = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-lg-6">
               <div class="list-timeline">
                 <div class="list-timeline-item">
                   <div class="icon"><MdZoomOutMap size={20} /></div>
@@ -563,7 +563,7 @@ const SAPFocusedProducts = () => {
       <section className="rise-with-sap my-5" id="sap-ariba">
         <div className="container">
           <div className="row grey-bg">
-            <div className="col-md-6 left py-4 px-5">
+            <div className="col-lg-6 left py-4 px-5">
               <img src={SapAriba} alt="" />
               <h2>SAP Ariba</h2>
               <p>
@@ -574,7 +574,7 @@ const SAPFocusedProducts = () => {
                 collaboration and enhances procurement efficiency at scale.
               </p>
             </div>
-            <div className="col-md-6 right px-0">
+            <div className="col-lg-6 right px-0">
               <div
                 className="img-container"
                 style={{
@@ -655,7 +655,7 @@ const SAPFocusedProducts = () => {
       <section className="rise-with-sap my-5" id="sap-btp">
         <div className="container">
           <div className="row grey-bg">
-            <div className="col-md-6 right px-0">
+            <div className="col-lg-6 right px-0">
               <div
                 className="img-container"
                 style={{
@@ -667,7 +667,7 @@ const SAPFocusedProducts = () => {
               </div>
             </div>
 
-            <div className="col-md-6 left py-4 px-5">
+            <div className="col-lg-6 left py-4 px-5">
               <img src={SapBtp} alt="" style={{ width: "100px" }} />
               <h2>SAP BTP</h2>
               <p>
@@ -759,7 +759,7 @@ const SAPFocusedProducts = () => {
       <section className="rise-with-sap my-5" id="sap-analytics-cloud">
         <div className="container">
           <div className="row flex-row-reverse grey-bg">
-            <div className="col-md-6 right px-0">
+            <div className="col-lg-6 right px-0">
               <div
                 className="img-container"
                 style={{
@@ -771,7 +771,7 @@ const SAPFocusedProducts = () => {
               </div>
             </div>
 
-            <div className="col-md-6 left py-4 px-5">
+            <div className="col-lg-6 left py-4 px-5">
               <img src={cloudAnalytics} alt="" style={{ width: "100px" }} />
               <h2>SAP Analytics Cloud</h2>
               <p>
@@ -870,7 +870,7 @@ const SAPFocusedProducts = () => {
 
       {/* cta section  */}
 
-      <div className="container sap-cta mb-5  ">
+      <div className="container sap-cta mb-5 px-3">
         <div className="row py-4 px-2 px-md-5 text-white">
           <div className="col-md-6">
             <div className="text-part">

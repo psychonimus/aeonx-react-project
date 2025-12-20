@@ -1,0 +1,63 @@
+.back-to-top-btn {
+    position: fixed;
+    bottom: 35px;
+    right: 120px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ff6b00;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease-in-out;
+    z-index: 9999;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media(max-width : 576px) {
+    .back-to-top-btn {
+        right: 100px;
+        bottom: 20px;
+    }
+}
+
+.back-to-top-btn.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top-btn:hover {
+    background: #e68a00;
+    transform: translateY(-5px);
+}
+
+.back-to-top-tooltip {
+    position: absolute;
+    bottom: 60px;
+    right: 50%;
+    transform: translateX(50%) translateY(10px);
+    background-color: #333;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+}
+
+.back-to-top-btn:hover .back-to-top-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(50%) translateY(0);
+    transition-delay: 0.5s;
+}

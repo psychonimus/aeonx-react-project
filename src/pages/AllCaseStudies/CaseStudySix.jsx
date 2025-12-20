@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { FaCheckCircle, FaArrowRight } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -72,7 +73,7 @@ const CaseStudySix = () => {
   };
 
   return (
-      <div ref={containerRef} className="case-study-wrapper" style={{ overflowX: "hidden" }}>
+      <div ref={containerRef} className="case-study-wrapper" >
       {/* ================= HERO SECTION ================= */}
       <section
         ref={heroRef}
@@ -86,7 +87,7 @@ const CaseStudySix = () => {
         <div className="container mt-5">
           <div className="row align-items-center">
             <div className="col-lg-6 mb-5 mb-lg-0">
-              <span
+              {/* <span
                 className="d-inline-block px-3 py-1 mb-3 rounded-pill"
                 style={{
                   background: "rgba(255, 255, 255, 0.1)",
@@ -97,7 +98,7 @@ const CaseStudySix = () => {
                 }}
               >
                 Case Study
-              </span>
+              </span> */}
               <h1
                 className="display-3 fw-bold mb-4"
                 style={{ fontFamily: "Gilroy-Bold", lineHeight: "1.1" }}
@@ -301,11 +302,11 @@ const CaseStudySix = () => {
 
       {/* ================= TECH STACK ================= */}
       <section className="py-5 bg-light">
-        <div className="container py-5 text-center">
-          <h2 className="mb-5" ref={addToRefs} style={{ fontFamily: "Gilroy-Bold" }}>Technology Stack</h2>
-          <div className="d-flex flex-wrap justify-content-center gap-3" ref={addToRefs}>
-            {[
-              "AWS Lambda", 
+          <div className="container py-5 text-center">
+            <h2 className="mb-5 section-heading" ref={addToRefs} style={{ fontFamily: "Gilroy-Bold" }}>Technology Stack</h2>
+            <div className="d-flex flex-wrap justify-content-center gap-3" ref={addToRefs}>
+              {[
+                "AWS Lambda", 
               "Amazon S3", 
               "Amazon Glacier", 
               "Amazon CloudWatch", 
@@ -313,23 +314,17 @@ const CaseStudySix = () => {
               "Amazon EC2",
               "AWS-native SAP migration tools",
               "SAP ECC"
-            ].map((tech, i) => (
-              <span
-                key={i}
-                className="px-4 py-2 rounded-pill fw-bold"
-                style={{
-                  background: "#fff",
-                  border: "1px solid #e5e7eb",
-                  boxShadow: "0 2px 5px rgba(0,0,0,0.05)",
-                  color: "#333",
-                }}
-              >
-                {tech}
-              </span>
-            ))}
+              ].map((tech, i) => (
+                <span
+                  key={i}
+                  className="px-4 py-2 fw-bold tech-stack-item"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
       {/* ================= RESULTS ================= */}
       <section className="py-5 position-relative overflow-hidden case-study-nums">
@@ -367,9 +362,11 @@ const CaseStudySix = () => {
             Move your SAP workloads to a secure, scalable, and high-performing AWS environment.
           </h2>
           <p className="lead text-muted mb-4">Partner with AeonX Digital for future-ready cloud transformation.</p>
-          <button className="slide-button-light">
+          <NavLink to="/contact">
+            <button className="slide-button-light">
             Talk to an AWS Expert
           </button>
+          </NavLink>
         </div>
       </section>
     </div>

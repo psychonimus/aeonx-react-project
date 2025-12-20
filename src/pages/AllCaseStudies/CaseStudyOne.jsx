@@ -7,6 +7,7 @@ import { useGSAP } from "@gsap/react";
 import { FaCheckCircle, FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
+
 gsap.registerPlugin(ScrollTrigger);
 
 const CaseStudyOne = () => {
@@ -81,7 +82,7 @@ const CaseStudyOne = () => {
         <meta name="keywords" content="ITD Cementation, RISE with SAP, SAP migration, AWS Cloud, SAP S/4HANA, digital transformation, case study, AeonX" />
       </Helmet>
 
-      <div ref={containerRef} className="case-study-wrapper" style={{ overflowX: "hidden" }}>
+      <div ref={containerRef} className="case-study-wrapper">
         {/* ================= HERO SECTION ================= */}
         <section
           ref={heroRef}
@@ -95,18 +96,7 @@ const CaseStudyOne = () => {
           <div className="container mt-5">
             <div className="row align-items-center">
               <div className="col-lg-6 mb-5 mb-lg-0">
-                <span
-                  className="d-inline-block px-3 py-1 mb-3 rounded-pill"
-                  style={{
-                    background: "rgba(255, 255, 255, 0.1)",
-                    border: "1px solid rgba(255, 255, 255, 0.2)",
-                    fontSize: "0.9rem",
-                    letterSpacing: "1px",
-                    textTransform: "uppercase",
-                  }}
-                >
-                  Case Study
-                </span>
+
                 <h1
                   className="display-3 fw-bold mb-4 case-study-title"
                   style={{ fontFamily: "Gilroy-Bold", lineHeight: "1.1" }}
@@ -363,13 +353,7 @@ const CaseStudyOne = () => {
               ].map((tech, i) => (
                 <span
                   key={i}
-                  className="px-4 py-2 rounded-pill fw-bold"
-                  style={{
-                    background: "#fff",
-                    border: "1px solid #e5e7eb",
-                    boxShadow: "0 2px 5px rgba(0,0,0,0.05)",
-                    color: "#333",
-                  }}
+                  className="px-4 py-2 fw-bold tech-stack-item"
                 >
                   {tech}
                 </span>

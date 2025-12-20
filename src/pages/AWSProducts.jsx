@@ -51,7 +51,7 @@ import CloudStorageAccordion from "../components/AwsTimeline/CloudStorageAccordi
 
 
 import { IoMdCloudy } from "react-icons/io";
-import { MdSecurity } from "react-icons/md";
+import { MdOutlineSecurity, MdSecurity } from "react-icons/md";
 import { GrCloudSoftware } from "react-icons/gr";
 import { MdDevices } from "react-icons/md";
 import { IoHardwareChipSharp } from "react-icons/io5";
@@ -80,6 +80,49 @@ import { MdOutlineDatasetLinked } from "react-icons/md";
 import { IoIosCloudDone } from "react-icons/io";
 import { FaExpandArrowsAlt } from "react-icons/fa";
 import { IoCloudUploadSharp } from "react-icons/io5";
+import { IoCloudDone } from "react-icons/io5";
+import { SiInstructure } from "react-icons/si";
+import { GiExpand } from "react-icons/gi";
+import { FaCloud } from "react-icons/fa";
+import { TbBrandSpeedtest } from "react-icons/tb";
+import { MdOutlineSettingsApplications } from "react-icons/md";
+import { IoDocumentSharp } from "react-icons/io5";
+import { VscDebugLineByLine } from "react-icons/vsc";
+import { CgServerless } from "react-icons/cg";
+import { BsGearWideConnected } from "react-icons/bs";
+import { VscDebugConsole } from "react-icons/vsc";
+
+import { AiFillSecurityScan } from "react-icons/ai";
+import { GrVulnerability } from "react-icons/gr";
+import { GiGears } from "react-icons/gi";
+import { BsFiletypeSql } from "react-icons/bs";
+import { TbLicenseOff } from "react-icons/tb";
+import { MdOutlineMoneyOffCsred } from "react-icons/md";
+import { TfiMicrosoft } from "react-icons/tfi";
+import { MdOutlineStorage } from "react-icons/md";
+import { TiCloudStorage } from "react-icons/ti";
+import { MdOutlineDataSaverOff } from "react-icons/md";
+import { BsClipboard2Data } from "react-icons/bs";
+import { IoPersonSharp } from "react-icons/io5";
+import { VscDebugDisconnect } from "react-icons/vsc";
+import { MdOutlineCampaign } from "react-icons/md";
+import { TbLockAccess } from "react-icons/tb";
+import { SiGoogledataflow } from "react-icons/si";
+import { MdStorage } from "react-icons/md";
+import { MdOnDeviceTraining } from "react-icons/md";
+import { MdOutlineSupportAgent } from "react-icons/md";
+import { GrDocumentText } from "react-icons/gr";
+import { MdOutlineAutoGraph } from "react-icons/md";
+import { FaCodepen } from "react-icons/fa";
+import { BsDatabaseFillCheck } from "react-icons/bs";
+import { LuDatabaseBackup } from "react-icons/lu";
+import { IoHardwareChipOutline } from "react-icons/io5";
+
+
+
+
+
+
 
 
 
@@ -181,12 +224,12 @@ const AWSProducts = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <IoMdCloudy size={30} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex align-items-center">
+                  <div className="col-10 point-text d-flex align-items-center">
                     <h4>
                       Deploy secure virtual desktops with Amazon WorkSpaces
                     </h4>
@@ -194,12 +237,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <MdSecurity size={30} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex align-items-center">
+                  <div className="col-10 point-text d-flex align-items-center">
                     <h4>
                       Implement consistent security policies across all devices
                     </h4>
@@ -207,12 +250,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <GrCloudSoftware size={30} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       Reduce IT workload with always up-to-date operating systems and software
                     </h4>
@@ -221,23 +264,23 @@ const AWSProducts = () => {
               </div>
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <MdDevices size={30} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>Support BYOD (Bring Your Own Device) flexibility</h4>
                   </div>
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <IoHardwareChipSharp size={30} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       Select from a wide range of hardware and software options
                     </h4>
@@ -245,12 +288,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <TbDeviceDesktopStar size={30} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       Provide engineers and developers with high-performance virtual desktops
                     </h4>
@@ -296,12 +339,12 @@ const AWSProducts = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <BiMoneyWithdraw size={30} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex align-items-center">
+                  <div className="col-10 point-text d-flex align-items-center">
                     <h4>
                       Choose between subsidized pricing or flexible pay-as-you-go models
                     </h4>
@@ -309,12 +352,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <AiFillApi size={30} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex align-items-center">
+                  <div className="col-10 point-text d-flex align-items-center">
                     <h4>
                       Access fully functional APIs to create, configure, and manage CloudFront distributions
                     </h4>
@@ -322,12 +365,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <TbManualGearbox size={30} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       Deploy custom content variations using compression, cache-key configuration, and advanced optimization techniques
                     </h4>
@@ -336,23 +379,23 @@ const AWSProducts = () => {
               </div>
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <RiSecurePaymentFill size={30} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>Integrate AWS Shield Standard for layered, customizable security</h4>
                   </div>
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <FaNetworkWired size={30} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       Accelerate delivery of both static and dynamic content with network-level performance enhancements
                     </h4>
@@ -439,12 +482,12 @@ const AWSProducts = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <TbAutomation size={30} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex align-items-center">
+                  <div className="col-10 point-text d-flex align-items-center">
                     <h4>
                       Upgrade your systems with intelligent automation and ML-driven insights.
 
@@ -453,12 +496,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <VscFileMedia size={30} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex align-items-center">
+                  <div className="col-10 point-text d-flex align-items-center">
                     <h4>
                       Extract valuable information from images, videos, and documents using computer vision.
                     </h4>
@@ -466,12 +509,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <FaNetworkWired size={30} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       Enable natural language understanding to automate customer service and improve user interactions.
                     </h4>
@@ -480,35 +523,35 @@ const AWSProducts = () => {
               </div>
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <BsClipboard2DataFill size={30} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>Eliminate guesswork with data-driven predictions that transform business operations.</h4>
                   </div>
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <MdOutlineRecommend size={30} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       Deliver personalized customer experiences using relevant, real-time content recommendations.
                     </h4>
                   </div>
                 </div>
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <MdSmsFailed size={30} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       Detect anomalies and prevent risks, including fraud, security breaches, and operational failures.
                     </h4>
@@ -527,7 +570,7 @@ const AWSProducts = () => {
           <div className="container">
             <div className="row grey-bg">
               <div className="col-lg-6 left py-4 px-5">
-                <img src={awsIot} alt="" />
+                <img src={awsIot} alt="" style={{filter: "brightness(0)"}} />
                 <h2>IoT Solutions</h2>
                 <p>AeonX helps enterprises convert IoT opportunities into real business impact by delivering advanced, cloud-enabled IoT solutions tailored to operational needs.
                 </p>
@@ -557,12 +600,12 @@ const AWSProducts = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <TbDevicesDown size={30} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex align-items-center">
+                  <div className="col-10 point-text d-flex align-items-center">
                     <h4>
                       Connect devices seamlessly using cloud-based IoT platforms for rapid prototyping and deployment.
                     </h4>
@@ -570,12 +613,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <MdOutlineInsights size={30} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex align-items-center">
+                  <div className="col-10 point-text d-flex align-items-center">
                     <h4>
                       Showcase measurable business value through improved customer engagement and operational insights.
                     </h4>
@@ -583,12 +626,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <LuNetwork size={30} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       Build next-generation connected devices on trusted and scalable IoT platforms.
                     </h4>
@@ -597,23 +640,23 @@ const AWSProducts = () => {
               </div>
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <LuNetwork size={30} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>Integrate IoT data with existing business systems to create smarter, more efficient applications.</h4>
                   </div>
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <TbNetwork size={30} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       Establish centralized operations centers to monitor, manage, and optimize devices and business processes.
                     </h4>
@@ -663,12 +706,12 @@ const AWSProducts = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <RiInfinityFill size={30} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex align-items-center">
+                  <div className="col-10 point-text d-flex align-items-center">
                     <h4>
                       Assessing the current DevOps maturity across culture, processes, and toolchains.
                     </h4>
@@ -676,12 +719,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <GoProjectRoadmap size={30} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex align-items-center">
+                  <div className="col-10 point-text d-flex align-items-center">
                     <h4>
                       Defining the future state with a clear roadmap and measurable success metrics.
                     </h4>
@@ -689,12 +732,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <FaConnectdevelop size={30} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       Building pilot frameworks to standardize DevOps practices and accelerate business outcomes.
                     </h4>
@@ -703,23 +746,23 @@ const AWSProducts = () => {
               </div>
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <MdOutlineDeveloperBoard size={30} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>Leveraging existing tools alongside a strong ecosystem of open-source and enterprise solutions.</h4>
                   </div>
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <TbAutomation size={30} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       Designing, automating, and implementing workflows to reduce errors and increase deployment reliability.
                     </h4>
@@ -765,12 +808,12 @@ const AWSProducts = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <GrShieldSecurity size={30} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex align-items-center">
+                  <div className="col-10 point-text d-flex align-items-center">
                     <h4>
                       Advanced security features to protect data at rest and in transit
                     </h4>
@@ -778,12 +821,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <MdOutlineDatasetLinked size={30} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex align-items-center">
+                  <div className="col-10 point-text d-flex align-items-center">
                     <h4>
                       Support for all data types—structured, unstructured, SQL, NoSQL, IoT, and blockchain
                     </h4>
@@ -791,12 +834,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <IoIosCloudDone size={30} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       Global hybrid cloud design for seamless access across devices and environments
                     </h4>
@@ -805,23 +848,23 @@ const AWSProducts = () => {
               </div>
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <FaExpandArrowsAlt size={30} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>Elastic scalability to grow resources as your business expands</h4>
                   </div>
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
                       <IoCloudUploadSharp size={30} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       Distributed cloud deployment across on-premise, edge, and multi-cloud environments
                     </h4>
@@ -841,12 +884,12 @@ const AWSProducts = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon" style={{ background: "#ffffffff" }}>
                       <img src="/images/amz-rds.webp" alt="" />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex align-items-center">
+                  <div className="col-10 point-text d-flex align-items-center">
                     <h4>
                       <b>Amazon RDS</b> - Build and manage traditional relational databases with ease.
                     </h4>
@@ -854,12 +897,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
-                    <div className="point-icon">
-                      <img src={Ai} alt="" />
+                  <div className="col-2 d-flex justify-content-start align-items-center">
+                    <div className="point-icon" style={{ background: "#ffffffff" }}>
+                      <img src="/images/amz-dynamo-db.webp" alt="" />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex align-items-center">
+                  <div className="col-10 point-text d-flex align-items-center">
                     <h4>
                       <b>Amazon DynamoDB</b> - Gain high-performance, fully managed NoSQL capabilities with dynamic scaling.
                     </h4>
@@ -867,12 +910,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
-                    <div className="point-icon">
-                      <img src={implementation} alt="" />
+                  <div className="col-2 d-flex justify-content-start align-items-center">
+                    <div className="point-icon" style={{ background: "#ffffffff" }}>
+                      <img src="/images/amz-redshift-logo.webp" alt="" />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       <b>Amazon Redshift</b> – Automate data warehousing and process large-scale analytics efficiently.
                     </h4>
@@ -881,24 +924,24 @@ const AWSProducts = () => {
               </div>
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
-                    <div className="point-icon">
-                      <img src={smallBusiness} alt="" />
+                  <div className="col-2 d-flex justify-content-start align-items-center">
+                    <div className="point-icon" style={{ background: "#ffffffff" }}>
+                      <img src="/images/amz-neptune-logo.webp" alt="" />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4><b>Amazon Neptune</b> – Manage complex relationships and graph-based data structures.
                     </h4>
                   </div>
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
-                    <div className="point-icon">
-                      <img src={cloud} alt="" />
+                  <div className="col-2 d-flex justify-content-start align-items-center">
+                    <div className="point-icon" style={{ background: "#ffffffff" }}>
+                      <img src="/images/amz-elastic-cache.webp" alt="" />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       <b>Amazon ElastiCache</b> – Use in-memory caching for fast access to highly volatile data.
                     </h4>
@@ -945,12 +988,12 @@ const AWSProducts = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={cloud} alt="" />
+                      <IoCloudDone size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex align-items-center">
+                  <div className="col-10 point-text d-flex align-items-center">
                     <h4>
                       Assessing cloud readiness with proven proprietary tools
                     </h4>
@@ -958,12 +1001,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={Ai} alt="" />
+                      <SiInstructure size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex align-items-center">
+                  <div className="col-10 point-text d-flex align-items-center">
                     <h4>
                       Evaluating existing infrastructure to enhance security, scalability, and automation
                     </h4>
@@ -971,12 +1014,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={implementation} alt="" />
+                      <GiExpand size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       Designing a scalable, secure cloud architecture for long-term innovation
                     </h4>
@@ -985,23 +1028,23 @@ const AWSProducts = () => {
               </div>
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={smallBusiness} alt="" />
+                      <FaCloud size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>Using enterprise-grade cloud technologies to simplify storage and operations</h4>
                   </div>
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={cloud} alt="" />
+                      <TbBrandSpeedtest size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       Deploying and testing cloud environments for performance, usability, and reliability
                     </h4>
@@ -1050,12 +1093,12 @@ const AWSProducts = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={cloud} alt="" />
+                      <MdOutlineSettingsApplications size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex align-items-center">
+                  <div className="col-10 point-text d-flex align-items-center">
                     <h4>
                       Assessing application readiness for continuous improvement and modern delivery models
 
@@ -1064,12 +1107,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={Ai} alt="" />
+                      <IoDocumentSharp size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex align-items-center">
+                  <div className="col-10 point-text d-flex align-items-center">
                     <h4>
                       Applying a declarative approach to manage policies and configurations across environments
 
@@ -1078,12 +1121,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={implementation} alt="" />
+                      <VscDebugLineByLine size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       Reducing risk through reliable open-source technologies that enhance speed and stability
                     </h4>
@@ -1092,24 +1135,24 @@ const AWSProducts = () => {
               </div>
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={smallBusiness} alt="" />
+                      <CgServerless size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>Streamlining developer workflows with serverless architectures and automated event orchestration
 </h4>
                   </div>
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={cloud} alt="" />
+                      <BsGearWideConnected size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       Accelerating modern operations adoption to unlock the full value of cloud-native applications
 
@@ -1164,12 +1207,12 @@ const AWSProducts = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={cloud} alt="" />
+                      <VscDebugConsole size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex align-items-center">
+                  <div className="col-10 point-text d-flex align-items-center">
                     <h4>
                       Full administration and troubleshooting for uninterrupted AWS operations
 
@@ -1178,12 +1221,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={Ai} alt="" />
+                      <GiExpand size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex align-items-center">
+                  <div className="col-10 point-text d-flex align-items-center">
                     <h4>
                       Designing secure and scalable network architectures to maximize productivity
                     </h4>
@@ -1191,12 +1234,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={implementation} alt="" />
+                      <AiFillSecurityScan size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       Continuous security monitoring to maintain operational integrity
                     </h4>
@@ -1205,23 +1248,23 @@ const AWSProducts = () => {
               </div>
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={smallBusiness} alt="" />
+                      <GrVulnerability size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>Regular vulnerability assessments and penetration testing to reduce risks</h4>
                   </div>
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={cloud} alt="" />
+                      <GiGears size={24} />  
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       Fast and efficient implementation of system changes to support evolving business needs
                     </h4>
@@ -1273,12 +1316,12 @@ const AWSProducts = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={cloud} alt="" />
+                      <AiFillSecurityScan size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex align-items-center">
+                  <div className="col-10 point-text d-flex align-items-center">
                     <h4>
                       Move to a secure and reliable cloud platform for smooth, efficient operations
                     </h4>
@@ -1286,12 +1329,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={Ai} alt="" />
+                      <BsFiletypeSql size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex align-items-center">
+                  <div className="col-10 point-text d-flex align-items-center">
                     <h4>
                       Run Microsoft SQL Server on AWS to eliminate complex database management tasks
                     </h4>
@@ -1299,12 +1342,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={implementation} alt="" />
+                      <TbLicenseOff size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       Spin up instances on demand without long-term licensing constraints
                     </h4>
@@ -1313,23 +1356,23 @@ const AWSProducts = () => {
               </div>
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={smallBusiness} alt="" />
+                      <MdOutlineMoneyOffCsred size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>Reduce costs while increasing performance, security, and agility</h4>
                   </div>
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={cloud} alt="" />
+                      <TfiMicrosoft size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       Scale Microsoft SharePoint environments effortlessly and pay only for what you use
                     </h4>
@@ -1380,12 +1423,12 @@ const AWSProducts = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={cloud} alt="" />
+                     <GiExpand size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex align-items-center">
+                  <div className="col-10 point-text d-flex align-items-center">
                     <h4>
                       Build scalable and flexible storage for analytics, backups, and long-term archiving
 
@@ -1394,12 +1437,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={Ai} alt="" />
+                      <MdOutlineStorage size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex align-items-center">
+                  <div className="col-10 point-text d-flex align-items-center">
                     <h4>
                       Develop modern applications without worrying about underlying storage management
 
@@ -1408,12 +1451,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={implementation} alt="" />
+                      <TiCloudStorage size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       Use cloud storage for large content repositories, media libraries, development environments, or user directories
 
@@ -1423,24 +1466,24 @@ const AWSProducts = () => {
               </div>
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={smallBusiness} alt="" />
+                      <MdOutlineDataSaverOff size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>Automate data lifecycle management to efficiently shift inactive data to cold storage
                     </h4>
                   </div>
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={cloud} alt="" />
+                      <AiFillSecurityScan size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       Protect data integrity with point-in-time snapshots for long-term durability
                     </h4>
@@ -1500,12 +1543,12 @@ const AWSProducts = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={cloud} alt="" />
+                      <BsClipboard2Data size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex align-items-center">
+                  <div className="col-10 point-text d-flex align-items-center">
                     <h4>
                       Enable deeper customer personalization through advanced data analysis
 
@@ -1514,12 +1557,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={Ai} alt="" />
+                      <IoPersonSharp size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex align-items-center">
+                  <div className="col-10 point-text d-flex align-items-center">
                     <h4>
                       Understand customer behavior at scale to fuel innovation
                     </h4>
@@ -1527,12 +1570,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={implementation} alt="" />
+                      <VscDebugDisconnect size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       Track, monitor, and detect anomalies to prevent fraud
                     </h4>
@@ -1541,23 +1584,23 @@ const AWSProducts = () => {
               </div>
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={smallBusiness} alt="" />
+                      <MdOutlineCampaign size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>Run targeted, high-impact marketing campaigns that maximize ROI</h4>
                   </div>
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={cloud} alt="" />
+                      <GiGears size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       Streamline operations, predict failures, and improve productivity
                     </h4>
@@ -1608,12 +1651,12 @@ const AWSProducts = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={cloud} alt="" />
+                      <TbLockAccess size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex align-items-center">
+                  <div className="col-10 point-text d-flex align-items-center">
                     <h4>
                       Preventing unauthorized access to applications, data, accounts, and infrastructure
 
@@ -1622,12 +1665,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={Ai} alt="" />
+                      <SiGoogledataflow size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex align-items-center">
+                  <div className="col-10 point-text d-flex align-items-center">
                     <h4>
                       Regulating data flow and encrypting sensitive information within secure cloud architectures
 
@@ -1636,12 +1679,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={implementation} alt="" />
+                      <MdStorage size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       Enabling safe storage and protection of mission-critical applications and authentication data
 
@@ -1651,12 +1694,12 @@ const AWSProducts = () => {
               </div>
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={smallBusiness} alt="" />
+                      <TbLockAccess size={24} />
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>Delivering identity and access controls with real-time security monitoring
 
                     </h4>
@@ -1664,12 +1707,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={cloud} alt="" />
+                     <MdSecurity  size={24}/>
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       Managing essential security tasks such as firewall configuration, OS and database patching, and disaster recovery
 
@@ -1720,12 +1763,12 @@ const AWSProducts = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={cloud} alt="" />
+                      <MdSecurity size={24}/>
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex align-items-center">
+                  <div className="col-10 point-text d-flex align-items-center">
                     <h4>
                       Achieve end-to-end security, data privacy, scalability, and high availability
 
@@ -1734,12 +1777,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={Ai} alt="" />
+                      <MdOutlineSecurity size={24}/>
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex align-items-center">
+                  <div className="col-10 point-text d-flex align-items-center">
                     <h4>
                       Gain a deep understanding of your current applications by aligning IT capabilities with industrial operations
 
@@ -1748,12 +1791,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={implementation} alt="" />
+                      <MdOutlineSupportAgent size={24}/>
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       Maintain your industrial software with 24/7 support and full lifecycle application management
 
@@ -1763,24 +1806,24 @@ const AWSProducts = () => {
               </div>
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={smallBusiness} alt="" />
+                      <GrDocumentText size={24}/>
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>Strengthen compliance, prevent fraud, and adopt smarter, more resilient applications
                     </h4>
                   </div>
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={cloud} alt="" />
+                      <MdOutlineAutoGraph size={24}/>
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       Enhance productivity and extend application life through scalable resources and tailored services
 
@@ -1834,12 +1877,12 @@ const AWSProducts = () => {
             <div className="row">
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={cloud} alt="" />
+                      <MdOutlineSupportAgent size={24}/>
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex align-items-center">
+                  <div className="col-10 point-text d-flex align-items-center">
                     <h4>
                       Provide technical support to restore local connectivity and strengthen on-ground response
 
@@ -1848,12 +1891,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={Ai} alt="" />
+                      <FaCodepen size={24}/>
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex align-items-center">
+                  <div className="col-10 point-text d-flex align-items-center">
                     <h4>
                       Build software solutions that improve preparedness, response, and recovery for public and nonprofit organizations
 
@@ -1862,12 +1905,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={implementation} alt="" />
+                      <BsDatabaseFillCheck size={24}/>
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       Share and analyze large datasets seamlessly through AWS for coordinated disaster operations
 
@@ -1877,12 +1920,12 @@ const AWSProducts = () => {
               </div>
               <div className="col-md-6">
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={smallBusiness} alt="" />
+                      <LuDatabaseBackup size={24}/>
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>Enhance community resilience and overall disaster response effectiveness
 
 
@@ -1891,12 +1934,12 @@ const AWSProducts = () => {
                 </div>
 
                 <div className="row point py-4">
-                  <div className="col-md-2 d-flex justify-content-start align-items-center">
+                  <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <img src={cloud} alt="" />
+                      <IoHardwareChipOutline size={24}/>
                     </div>
                   </div>
-                  <div className="col-md-10 point-text d-flex  align-items-center">
+                  <div className="col-10 point-text d-flex  align-items-center">
                     <h4>
                       Deploy hardware and field-ready infrastructure rapidly to support urgent missions
 

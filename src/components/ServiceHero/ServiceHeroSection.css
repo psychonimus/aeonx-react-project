@@ -226,12 +226,19 @@
   fill: #3926dd;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .zap-icon {
     width: 4rem;
     height: 4rem;
   }
 }
+@media(max-width : 576px){
+  .zap-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
 
 /* Features List */
 .features-list {
