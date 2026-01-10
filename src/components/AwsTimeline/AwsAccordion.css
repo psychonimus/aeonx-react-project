@@ -7,6 +7,10 @@
     width: 100%;
 }
 
+.aws-accordion ul li{
+    font-family: Gilroy;
+}
+
 .aws-accordion .accordion-button::after {
     content: "";
     width: 1.25rem;

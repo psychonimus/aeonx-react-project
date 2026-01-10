@@ -73,7 +73,7 @@ const IndustryRotator = () => {
             icon: 'truck',
             tailText: 'Logistics',
             bgImage: '/images/logistics-bg.webp',
-            body: 'AeonX helps logistics businesses strengthen operational efficiency and enhance productivity through intelligent SAP solutions designed to deliver end-to-end visibility and control. By leveraging SAP ERP, we enable logistics organizations to modernize their processes, reduce operational costs, and elevate customer satisfaction—all while ensuring faster, more accurate decision-making powered by real-time insights. Our solutions support digital growth with innovative business models, seamless tracking tools, and robust process optimization.',
+            body: 'AeonX helps logistics businesses strengthen operational efficiency and enhance productivity through intelligent SAP solutions designed to deliver end-to-end visibility and control. By leveraging SAP ERP, we enable logistics organizations to modernize their processes, reduce operational costs, and elevate customer satisfaction, all while ensuring faster, more accurate decision-making powered by real-time insights. Our solutions support digital growth with innovative business models, seamless tracking tools, and robust process optimization.',
             ListTitle: 'Our SAP solutions for Logistics help you:',
             ListItems: [
                 'Improve cost efficiency and customer satisfaction, driving long-term revenue growth',
@@ -162,7 +162,7 @@ const IndustryRotator = () => {
             ListTitle: 'Our SAP solutions for Oil & Gas help you:',
             ListItems: [
                 'Perform precise, timely asset inspections to detect anomalies early, reduce breakdowns, and maximize equipment throughput.',
-                'Gain real-time visibility into every activity—from job creation to completion—with remote job approvals for supervisors anytime, anywhere.',
+                'Gain real-time visibility into every activity, from job creation to completion, with remote job approvals for supervisors anytime, anywhere.',
                 'Go fully digital and paperless, enabling faster decision-making with live data from field operations.',
                 'Enhance supply chain and logistics efficiency through integrated tracking, automated workflows, and better resource planning.',
                 'Ensure end-to-end transparency and zero errors across stockpile analysis, yard management, facility management, invoice processing, and field service operations.'
@@ -326,13 +326,13 @@ const IndustryRotator = () => {
                 <div className="background-gradient"></div>
 
                 <section className="section-container">
-                    <h1 className="main-heading text-start">
+                    <h1 className="main-heading text-start" data-aos="fade-up">
                         Empowering Industries with Trusted Expertise
                         <br className="heading-break" />
                     </h1>
 
                     <div className="row">
-                        <div className="col-lg-3">
+                        <div className="col-lg-3" data-aos="fade-up">
                             <div>
                                 <div className="bullet-list">
                                     {slides.map((slide, index) => (
@@ -349,7 +349,7 @@ const IndustryRotator = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-9">
+                        <div className="col-lg-9" data-aos="fade-up">
                             <div className="card-wrapper">
                                 <div className="card" style={{ backgroundImage: `url(${currentSlide.bgImage})` }}>
                                     <div className="card-content">

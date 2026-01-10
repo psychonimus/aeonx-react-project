@@ -42,7 +42,7 @@ const CaseStudiesAll = () => {
                 date: "Apr 14, 2023 | Success Stories - SAP",
                 desc: "In recent years, ITD Cementation India Private Limited has received several awards for their excellent work, including the “Best Infrastructure Company” award from CNBC TV18 and the “Outstanding Concrete Structure Award” from the Indian Concrete Institute.",
                 img: cs1,
-                link: "/case-study-one"
+                link: "/modernizing-ITD-cementations-SAP-Landscape-with-rise-with-sap"
             },
             {
                 id: 2,
@@ -50,7 +50,7 @@ const CaseStudiesAll = () => {
                 date: "Sep 6, 2022 | SAP, Success Stories - SAP",
                 desc: "Raymond Limited (Engineering SBU) the precision engineering arm of the Raymond Group,  unified three diverse verticals (Automobile, Aerospace, Tools & Hardware) into one intelligent digital core.",
                 img: cs3,
-                link: "/case-study-two"
+                link: "/raymond-engineering-sbu-unifying-operations-with-sap-s4hana-rise-for-smarter-scalable-future"
             },
             {
                 id: 3,
@@ -58,7 +58,7 @@ const CaseStudiesAll = () => {
                 date: "Sep 6, 2022 | SAP, Success Stories - SAP",
                 desc: "With a history spanning more than 60 years, Ashapura is a top provider of multi mineral solutions with a global presence, operating across multiple Indian states and seven other nations.",
                 img: cs2,
-                link: "/case-study-three"
+                link: "/transforming-ashapuras-mineral-operations-with-intelligent-automation"
             },
 
 
@@ -71,7 +71,7 @@ const CaseStudiesAll = () => {
                 desc: "Delux Bearings is India’s largest manufacturer of Clutch Release Bearings, with the widest range of bearing and precision components, a PAN India presence",
                 img: cs4,
                 bgColor: "#C9291F",
-                link: "/case-study-four"
+                link: "/modernizing-delux-bearings-operations-with-aws-cloud"
             },
             {
                 id: 2,
@@ -80,16 +80,16 @@ const CaseStudiesAll = () => {
                 desc: "Ashok Alco-Chem Limited (AACL), a long-established leader known for product quality and continuous improvement, wanted to strengthen",
                 img: cs5,
                 bgColor: "#C9291F",
-                link: "/case-study-five"
+                link: "/digitizing-customer-feedback-for-ashok-alco-chem-with-aws"
             },
             {
                 id: 3,
                 headline: "Modernizing CK Birla Hospitals Operations on AWS Cloud",
                 date: "Jan 3, 2023 | Success Stories - AWS",
-                desc: "The CK Birla Group of Hospitals — including BMBHRC, CMRI (Kolkata), and RBH (Jaipur) — is a leading healthcare network in India with 800+ beds",
+                desc: "The CK Birla Group of Hospitals including BMBHRC, CMRI (Kolkata), and RBH (Jaipur) is a leading healthcare network in India with 800+ beds",
                 img: cs6,
                 bgColor: "#C9291F",
-                link: "/case-study-six"
+                link: "/modernizing-ck-birla-hospitals-operations-on-aws-cloud"
             },
 
         ],
@@ -100,7 +100,7 @@ const CaseStudiesAll = () => {
                 desc: "Raymond Limited, a 100-year legacy brand and one of India’s most respected textile and lifestyle conglomerates, operates across textiles, apparel, engineering, real estate, and FMCG. With a diverse workforce and large-scale operational processes.",
                 img: cs7,
                 bgColor: "#C9291F",
-                link: "/case-study-seven"
+                link: "/streamlining-raymonds-operations-with-intelligent-automation"
             },
             {
                 id: 2,
@@ -108,15 +108,15 @@ const CaseStudiesAll = () => {
                 desc: "Ashapura Minechem Ltd, a 60+ year global leader in multi-mineral solutions operating across 70+ countries, faced major inefficiencies in freight, routing, and logistics planning due to fragmented, manual processes.",
                 img: cs9,
                 bgColor: "#C9291F",
-                link: "/case-study-eight"
+                link: "/optimizing-ashapuras-mineral-operations-with-intelligent-automation"
             },
             {
                 id: 3,
                 headline: "Streamlining Raymond’s Expense Management with AeonX Xpense",
-                desc: "Raymond Limited, a global textile and fashion leader, faced major inefficiencies in its manual expense reimbursement process—resulting in delays, fraud risks, compliance gaps, and high operational overhead.",
+                desc: "Raymond Limited, a global textile and fashion leader, faced major inefficiencies in its manual expense reimbursement process resulting in delays, fraud risks, compliance gaps, and high operational overhead.",
                 img: cs8,
                 bgColor: "#C9291F",
-                link: "/case-study-nine"
+                link: "/streamlining-raymonds-expense-management-with-aeon-xpense"
             }
         ]
     };

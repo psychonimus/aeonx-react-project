@@ -54,14 +54,25 @@ import CaseStudySeven from "./pages/AllCaseStudies/CaseStudySeven";
 import CaseStudyEight from "./pages/AllCaseStudies/CaseStudyEight";
 import CaseStudyNine from "./pages/AllCaseStudies/CaseStudyNine";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
+
 
 gsap.registerPlugin(ScrollTrigger);
 
 const App = () => {
   const [showPopup, setShowPopup] = useState(false);
+  const [popupCallback, setPopupCallback] = useState(null);
   const lenisRef = useRef();
 
-  const togglePopup = () => {
+  const togglePopup = (callback = null) => {
+    if (!showPopup) {
+      setPopupCallback(() => callback);
+    } else {
+      setPopupCallback(null);
+    }
     setShowPopup(!showPopup);
   };
 
@@ -72,10 +83,18 @@ const App = () => {
 
     gsap.ticker.add(update);
 
+    const handleOpenPopup = (event) => {
+      const callback = event.detail?.onSuccess;
+      togglePopup(callback);
+    };
+
+    window.addEventListener('OPEN_CONTACT_POPUP', handleOpenPopup);
+
     return () => {
       gsap.ticker.remove(update);
+      window.removeEventListener('OPEN_CONTACT_POPUP', handleOpenPopup);
     };
-  }, []);
+  }, [showPopup]);
 
   return (
     <ReactLenis root ref={lenisRef} autoRaf={false}>
@@ -91,15 +110,15 @@ const App = () => {
           <Route path="/careers" element={<CareersPage />} />
           <Route path="/events" element={<Events />} />
           <Route path="/blogs" element={<Blogs />} />
-          <Route path="/case-study-one" element={<CaseStudyOne />} />
-          <Route path="/case-study-two" element={<CaseStudyTwo />} />
-          <Route path="/case-study-three" element={<CaseStudyThree />} />
-          <Route path="/case-study-four" element={<CaseStudyFour />} />
-          <Route path="/case-study-five" element={<CaseStudyFive />} />
-          <Route path="/case-study-six" element={<CaseStudySix />} />
-          <Route path="/case-study-seven" element={<CaseStudySeven />} />
-          <Route path="/case-study-eight" element={<CaseStudyEight />} />
-          <Route path="/case-study-nine" element={<CaseStudyNine />} />
+          <Route path="/modernizing-ITD-cementations-SAP-Landscape-with-rise-with-sap" element={<CaseStudyOne />} />
+          <Route path="/raymond-engineering-sbu-unifying-operations-with-sap-s4hana-rise-for-smarter-scalable-future" element={<CaseStudyTwo />} />
+          <Route path="/transforming-ashapuras-mineral-operations-with-intelligent-automation" element={<CaseStudyThree />} />
+          <Route path="/modernizing-delux-bearings-operations-with-aws-cloud" element={<CaseStudyFour />} />
+          <Route path="/digitizing-customer-feedback-for-ashok-alco-chem-with-aws" element={<CaseStudyFive />} />
+          <Route path="/modernizing-ck-birla-hospitals-operations-on-aws-cloud" element={<CaseStudySix />} />
+          <Route path="/streamlining-raymonds-operations-with-intelligent-automation" element={<CaseStudySeven />} />
+          <Route path="/optimizing-ashapuras-mineral-operations-with-intelligent-automation" element={<CaseStudyEight />} />
+          <Route path="/streamlining-raymonds-expense-management-with-aeon-xpense" element={<CaseStudyNine />} />
           <Route path="/case-studies" element={<CaseStudiesAll />} />
 
 
@@ -135,8 +154,11 @@ const App = () => {
         {showPopup && (
           <div className="popup-overlay">
             <div className="popup-content" data-lenis-prevent>
-              <button className="popup-close-btn" onClick={togglePopup}>&times;</button>
-              <ContactFormPopup />
+              <button className="popup-close-btn" onClick={() => togglePopup()}>&times;</button>
+              <ContactFormPopup onSuccess={() => {
+                if (popupCallback) popupCallback();
+                togglePopup();
+              }} />
             </div>
           </div>
         )}

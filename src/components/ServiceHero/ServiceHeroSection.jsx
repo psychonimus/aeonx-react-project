@@ -38,6 +38,7 @@ export const ServiceHeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           className="main-heading mt-4"
+          
         >
           Our Expert Services
         </motion.h1>

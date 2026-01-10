@@ -106,9 +106,9 @@ const CaseStudyNine = () => {
                 Streamlining Raymond's Expense Management with <span style={{ color: "#f97316" }}>AeonX Xpense</span>
               </h1>
               <p className="lead mb-5" style={{ opacity: 0.9, fontWeight: 300 }}>
-                Raymond Limited, a global textile and fashion leader, faced major inefficiencies in its manual expense reimbursement process—resulting in delays, fraud risks, compliance gaps, and high operational overhead. AeonX Digital implemented an AI-powered expense automation system (Xpense) using Amazon Bedrock and Amazon SageMaker to streamline approvals, enhance financial governance, and eliminate fraud vulnerabilities. The solution enabled intelligent anomaly detection, policy validation, real-time summaries, and automated auditability—creating a fast, compliant, and employee-friendly expense management ecosystem.
+                Raymond Limited, a global textile and fashion leader, faced major inefficiencies in its manual expense reimbursement process resulting in delays, fraud risks, compliance gaps, and high operational overhead. AeonX Digital implemented an AI-powered expense automation system (Xpense) using Amazon Bedrock and Amazon SageMaker to streamline approvals, enhance financial governance, and eliminate fraud vulnerabilities. The solution enabled intelligent anomaly detection, policy validation, real-time summaries, and automated auditability creating a fast, compliant, and employee-friendly expense management ecosystem.
               </p>
-              <button className="slide-button">
+              <button className="slide-button" onClick={() => window.scrollTo({ top: document.getElementById("executive-summary").offsetTop, behavior: "smooth" })}>
                 Read Full Story <FaArrowRight className="ms-2" />
               </button>
             </div>
@@ -140,7 +140,7 @@ const CaseStudyNine = () => {
       </section>
 
       {/* ================= EXECUTIVE SUMMARY ================= */}
-      <section className="py-5" style={{ background: "#f8f9fa" }}>
+      <section id="executive-summary" className="py-5" style={{ background: "#f8f9fa" }}>
         <div className="container py-5">
           <div className="row">
             <div className="col-lg-10 mx-auto" ref={addToRefs}>
@@ -150,7 +150,7 @@ const CaseStudyNine = () => {
                 </h2>
               </div>
               <p className="lead text-muted text-center">
-                Raymond Limited, a global textile and fashion leader, faced major inefficiencies in its manual expense reimbursement process—resulting in delays, fraud risks, compliance gaps, and high operational overhead. AeonX Digital implemented an AI-powered expense automation system (Xpense) using Amazon Bedrock and Amazon SageMaker to streamline approvals, enhance financial governance, and eliminate fraud vulnerabilities. The solution enabled intelligent anomaly detection, policy validation, real-time summaries, and automated auditability—creating a fast, compliant, and employee-friendly expense management ecosystem.
+                Raymond Limited, a global textile and fashion leader, faced major inefficiencies in its manual expense reimbursement process resulting in delays, fraud risks, compliance gaps, and high operational overhead. AeonX Digital implemented an AI-powered expense automation system (Xpense) using Amazon Bedrock and Amazon SageMaker to streamline approvals, enhance financial governance, and eliminate fraud vulnerabilities. The solution enabled intelligent anomaly detection, policy validation, real-time summaries, and automated auditability, creating a fast, compliant, and employee-friendly expense management ecosystem.
               </p>
             </div>
           </div>
@@ -315,8 +315,8 @@ const CaseStudyNine = () => {
               { val: "$1.2M", label: "Annual savings from fraud reduction" },
               { val: "25%", label: "Approval cycle time reduced (14 days → 3.5 days)" },
               { val: "70%", label: "Reduction in manual finance review effort" },
-              { val: "( )", label: "Improvement in employee satisfaction & productivity" },
-              { val: "( )", label: "Compliance and audit readiness improvement" },
+              { val: "35%", label: "Improvement in employee satisfaction & productivity" },
+              
             ].map((res, i) => (
               <div className="col-md-6 col-lg-4" key={i} ref={addToRefs}>
                 <div className="p-3">

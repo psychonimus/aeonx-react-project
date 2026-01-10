@@ -11,6 +11,7 @@ import TestCard from '../TestimonialSection/TestCard';
 import gptw from "/images/Great-Place-To-Work-logo-updated.webp"
 import risingStar from "/images/rising-star-partner-logo.webp"
 import advanceTier from '/images/advance-tier-sol.webp'
+import awsUpdatedLogo from '../../../public/images/PARTNERLOGOWhite.webp'
 
 
 const AwardsSection = () => {
@@ -20,7 +21,7 @@ const AwardsSection = () => {
 
     return (
         <>
-            <section className="testimonials">
+            <section className="testimonials" data-aos="fade-up">
                 <div className="container-fluid awards-bg">
                     <div className="container">
                         <div className="heading-part">
@@ -83,6 +84,7 @@ const AwardsSection = () => {
                                     <SwiperSlide>
                                     <AwardCard
                                             image={risingStar}
+                                            width="45%"
                                             awardTitle="AWS Rising Star Partner of the Year (SI)"
                                             awardDesc="APJ Winner 2022"
                                         />
@@ -90,7 +92,8 @@ const AwardsSection = () => {
 
                                     <SwiperSlide>
                                     <AwardCard
-                                            image={advanceTier}
+                                            image={awsUpdatedLogo}
+                                            width="45%"
                                             awardTitle="AWS Partner Advance Tier Services"
                                             awardDesc="Awarded by AWS"
                                         />

@@ -55,13 +55,13 @@ const accordionData = [
     {
         id: 'Ahmedabad',
         locationName: 'AHMEDABAD OFFICE',
-        address: 'AeonX Digital, D-409 A, Shivalik Corporate Park, D-Mart Building, Behind IOC Petrol Pump, Shivranjani Rasta, Satellite, Ahmedabad – 380 015',
+        address: 'Aeonx Digital-Shyamal Unicus, B-1103, Shyamal Cross Rd, Balgayatri Society Part-2, Satellite, Shyamal, Ahmedabad, Gujarat 380015',
         contactNumber: '+91 22 66221640',
         email: 'sales@aeonx.digital',
         locationMap: (
             <div className="preview-placeholder">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.1837136748923!2d72.5276431247701!3d23.01702586653619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e855f8b4067df%3A0x7542d9bc8098427!2sAeonX%20Digital!5e0!3m2!1sen!2sin!4v1764053435337!5m2!1sen!2sin" width="100%" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.2962284092837!2d72.52791712476994!3d23.012893166690397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e851f81ee4c8f%3A0x6501ecdfec8bc521!2sUNICUS%20SHYAMAL!5e0!3m2!1sen!2sin!4v1767704802261!5m2!1sen!2sin" width="100%" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
         )
     },
     {
@@ -106,12 +106,12 @@ const LocationAccordion = () => {
         <div className="location-accordion-preview-container">
             <div className="container">
                 <div className="row">
-                    <h2 className="fw-bold mb-3 meet-heading">MEET US</h2>
-                    <p className="mb-5 meet-subheading">
+                    <h2 className="fw-bold mb-3 meet-heading" data-aos="fade-up">MEET US</h2>
+                    <p className="mb-5 meet-subheading" data-aos="fade-up">
                         Come visit us for a coffee and a chat – we're always up for a good conversation!
                     </p>
                     {/* Left Side - Accordion */}
-                    <div className="col-12 col-lg-6 location-accordion-column">
+                    <div className="col-12 col-lg-6 location-accordion-column" data-aos="fade-up">
 
                         <div className="location-accordion-wrapper">
                             {accordionData.map((item) => (
@@ -143,7 +143,10 @@ const LocationAccordion = () => {
                     </div>
 
                     {/* Right Side - Preview */}
-                    <div className="col-12 col-lg-6 preview-column">
+                    <div className="col-12 col-lg-6 preview-column" data-aos="fade-up" 
+                    
+                    
+                    >
                         <div className="preview-wrapper">
                             {currentPreview}
                         </div>

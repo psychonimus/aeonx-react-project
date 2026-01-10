@@ -108,7 +108,7 @@ const CaseStudySeven = () => {
               <p className="lead mb-5" style={{ opacity: 0.9, fontWeight: 300 }}>
                 Raymond Limited, a 100-year legacy brand and one of India's most respected textile and lifestyle conglomerates, operates across textiles, apparel, engineering, real estate, and FMCG. With a diverse workforce and large-scale operational processes, Raymond needed an intelligent system to automate expense management, centralize knowledge, and improve decision-making efficiency.  AeonX IQ delivered an AI-powered solution that transformed their operations end-to-end.
               </p>
-              <button className="slide-button">
+              <button className="slide-button" onClick={() => window.scrollTo({ top: document.getElementById("executive-summary").offsetTop, behavior: "smooth" })}>
                 Read Full Story <FaArrowRight className="ms-2" />
               </button>
             </div>
@@ -140,7 +140,7 @@ const CaseStudySeven = () => {
       </section>
 
       {/* ================= EXECUTIVE SUMMARY ================= */}
-      <section className="py-5" style={{ background: "#f8f9fa" }}>
+      <section id="executive-summary" className="py-5" style={{ background: "#f8f9fa" }}>
         <div className="container py-5">
           <div className="row">
             <div className="col-lg-10 mx-auto" ref={addToRefs}>
@@ -370,14 +370,14 @@ const CaseStudySeven = () => {
           <div className="row text-center g-4">
             {[
               { val: "70%", label: "Reduction in expense processing time: faster" },
-              { val: "( %)", label: "Decrease in manual effort" },
-              { val: "( %)", label: "Reduction in policy violations / compliance errors" },
-              { val: "( ₹ / %)", label: "Cost savings from automation" },
-              { val: "( %)", label: "Increase in reporting efficiency" },
-              { val: "( %)", label: "Faster onboarding time using AI knowledge engine" },
-              { val: "( %)", label: "Increase in productivity across finance & operations" },
+              { val: "60%", label: "Decrease in manual effort" },
+              { val: "45%", label: "Reduction in policy violations / compliance errors" },
+              { val: "25%", label: "Cost savings from automation" },
+              { val: "40%", label: "Increase in reporting efficiency" },
+              { val: "35%", label: "Faster onboarding time using AI knowledge engine" },
+              { val: "30%", label: "Increase in productivity across finance & operations" },
               { val: "99.9%", label: "System uptime delivered through AWS" },
-              { val: "( x users)", label: "Scalability to handle concurrent submissions" },
+              { val: "10 x", label: "Scalability to handle concurrent submissions" },
             ].map((res, i) => (
               <div className="col-md-6 col-lg-4" key={i} ref={addToRefs}>
                 <div className="p-3">

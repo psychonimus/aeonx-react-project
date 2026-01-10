@@ -352,7 +352,7 @@ const Navbar = () => {
                                                         <li><NavLink to="/industries#manufacturing">Manufacturing </NavLink></li>
                                                         <li><NavLink to="/industries#mining">Mining & Minerals</NavLink></li>
                                                         <li><NavLink to="/industries#logistics">Logistics</NavLink></li>
-                                                        <li><NavLink to="/industries#chemicals">Chemical</NavLink></li>
+                                                        <li><NavLink to="/industries#chemical">Chemical</NavLink></li>
                                                         <li><NavLink to="/industries#pharmaceuticals">Pharmaceuticals </NavLink></li>
 
                                                     </ul>

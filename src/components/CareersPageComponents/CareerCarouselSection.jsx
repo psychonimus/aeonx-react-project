@@ -15,10 +15,12 @@ import imgEight from '/images/group/img-8.webp'
 import imgNine from '/images/group/img-9.webp'
 import imgTen from '/images/group/img-10.webp'
 import imgEleven from '/images/group/img-11.webp'
+import imgTwelve from '/images/group/img-12.webp'
+import imgThirteen from '/images/group/img-13.webp'
 
 const CareerCarouselSection = () => {
   return (
-    <section className="career-carousel">
+    <section className="career-carousel" data-aos="fade-up">
         <div className="container-fluid px-0">
         <div className="exp-carousel-wrapper pt-0 px-0">
                             <Swiper
@@ -38,10 +40,16 @@ const CareerCarouselSection = () => {
                                 }}
                             >
                                 <SwiperSlide>
+                                    <img src={imgTwo} className="exp-image" />
+                                </SwiperSlide>
+                                <SwiperSlide>
                                     <img src={imgOne} className="exp-image" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img src={imgTwo} className="exp-image" />
+                                    <img src={imgFive} className="exp-image" />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img src={imgEight} className="exp-image" />
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <img src={imgThree} className="exp-image" />
@@ -50,7 +58,7 @@ const CareerCarouselSection = () => {
                                     <img src={imgFour} className="exp-image" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img src={imgFive} className="exp-image" />
+                                    <img src={imgEleven} className="exp-image" />
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <img src={imgSix} className="exp-image" />
@@ -59,16 +67,18 @@ const CareerCarouselSection = () => {
                                     <img src={imgSeven} className="exp-image" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img src={imgEight} className="exp-image" />
-                                </SwiperSlide>
-                                <SwiperSlide>
                                     <img src={imgNine} className="exp-image" />
+                                </SwiperSlide>
+                                
+                                <SwiperSlide>
+                                    <img src={imgThirteen} className="exp-image" />
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <img src={imgTen} className="exp-image" />
                                 </SwiperSlide>
+                                
                                 <SwiperSlide>
-                                    <img src={imgEleven} className="exp-image" />
+                                    <img src={imgTwelve} className="exp-image" />
                                 </SwiperSlide>
                             </Swiper>
                         </div>

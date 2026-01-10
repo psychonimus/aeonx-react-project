@@ -52,7 +52,7 @@ const AboutHero = () => {
                             <div className="container swiper-content-contact text-white" style={{top:"50%"}}>
 
                                 <div className="mt-5 contact-content" data-aos="fade-up" style={{ width: "100%" }}>
-                                    <h1 className="slide-title">Building Technology That Builds the Future</h1>
+                                    <h1 className="slide-title" data-aos="fade-up">Building Technology That Builds the Future</h1>
 
                                     <h5>AeonX Digital is a specialized business consulting and technology solutions partner delivering application development, cloud and DevOps integration, and business transformation services. We help companies improve efficiency, reduce costs, and accelerate growth by leveraging modern digital tools and strategic IT solutions. Committed to global standards and client satisfaction, we empower businesses to scale sustainably through innovation, technical expertise, and long-term partnership.</h5>
 

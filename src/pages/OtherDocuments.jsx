@@ -121,7 +121,7 @@ const OtherDocuments = () => {
                   id: index,
                   title: item.name,
                   // subtitle: 'PDF Document',
-                  onClick: () => window.open(item.file, '_self'),
+                  onClick: () => window.open(item.file, '_blank'),
                   icon: <ArrowBigDownDash className="w-8 h-8" />,
                   featured: false
                 }))}

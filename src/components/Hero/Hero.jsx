@@ -148,7 +148,7 @@ const Hero = () => {
                                 <div className="partner-logo mt-5 mb-0 pb-0">
                                     <img src={partner} alt="" />
                                 </div>
-                                <div key={windowWidth} className="mt-3 mt-md-5 slide-content">
+                                <div className="mt-3 mt-md-5 slide-content">
                                     <h1 className="slide-title">Innovate. Automate. Elevate</h1>
                                     <h2 className='slide-subtitle'>with Cloud, AI, SAP<sup>®</sup>, and Custom Apps</h2>
                                     <h4 className='slide-para'>We combine deep domain expertise with the latest in Cloud, AI, and SAP technologies to build secure, scalable, and intelligent solutions that power modern business transformation.</h4>

@@ -108,7 +108,7 @@ const CaseStudyFive = () => {
               <p className="lead mb-5" style={{ opacity: 0.9, fontWeight: 300 }}>
                 Ashok Alco-Chem Limited (AACL), a long-established leader known for product quality and continuous improvement, wanted to strengthen its customer engagement process by digitizing and automating feedback collection. Their goal was to streamline data gathering, reduce manual effort, and enable actionable insights.
               </p>
-              <button className="slide-button">
+              <button className="slide-button" onClick={() => window.scrollTo({ top: document.getElementById("executive-summary").offsetTop, behavior: "smooth" })}>
                 Read Full Story <FaArrowRight className="ms-2" />
               </button>
             </div>
@@ -140,7 +140,7 @@ const CaseStudyFive = () => {
       </section>
 
       {/* ================= EXECUTIVE SUMMARY ================= */}
-      <section className="py-5" style={{ background: "#f8f9fa" }}>
+      <section id="executive-summary" className="py-5" style={{ background: "#f8f9fa" }}>
         <div className="container py-5">
           <div className="row">
             <div className="col-lg-10 mx-auto" ref={addToRefs}>
@@ -201,7 +201,7 @@ const CaseStudyFive = () => {
         <div className="container py-5">
           <div className="text-center mb-5" ref={addToRefs}>
             <h2 style={{ fontFamily: "Gilroy-Bold", fontSize: "3rem" }}>Our Approach</h2>
-            <p className="text-muted">AeonX proposed a serverless, fully automated architecture leveraging AWS-managed services to minimize infrastructure overhead. We integrated SAP data, automated communication workflows, and built a centralized analytics dashboard—ensuring accuracy, scalability, and efficiency across the process.</p>
+            <p className="text-muted">AeonX proposed a serverless, fully automated architecture leveraging AWS-managed services to minimize infrastructure overhead. We integrated SAP data, automated communication workflows, and built a centralized analytics dashboard, ensuring accuracy, scalability, and efficiency across the process.</p>
           </div>
         </div>
       </section>
@@ -302,11 +302,11 @@ const CaseStudyFive = () => {
           </h2>
           <div className="row text-center g-4">
             {[
-              { val: "( )%", label: "Automated feedback collection rate" },
-              { val: "( )%", label: "Reduction in manual workload for sales team" },
-              { val: "( )%", label: "Improvement in feedback response rate or customer satisfaction tracking" },
-              { val: "( )%", label: "Reduction in total cost of ownership due to serverless architecture" },
-              { val: "( )%", label: "Increase in speed of insights / decision making after deployment" },
+              { val: "100%", label: "Automated feedback collection rate" },
+              { val: "80%", label: "Reduction in manual workload for sales team" },
+              { val: "30%", label: "Improvement in feedback response rate or customer satisfaction tracking" },
+              { val: "40%", label: "Reduction in total cost of ownership due to serverless architecture" },
+              { val: "50%", label: "Increase in speed of insights / decision making after deployment" },
             ].map((res, i) => (
               <div className="col-md-6 col-lg-4" key={i} ref={addToRefs}>
                 <div className="p-3">

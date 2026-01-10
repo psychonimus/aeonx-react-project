@@ -89,7 +89,7 @@ const Header = ({ subtext, headline, highlight, desc }) => {
     }, { dependencies: [windowWidth], revertOnUpdate: true });
 
     return (
-        <div key={windowWidth} className="header container text-center pt-5 pb-2">
+        <div className="header container text-center pt-5 pb-2">
             <h5 ref={subTextRef}>{subtext}</h5>
 
 

@@ -6,11 +6,14 @@ import GlassButton from "../GlassButton/GlassButton";
 import { BsArrowUpRightCircleFill } from "react-icons/bs";
 import GlassButtonLight from "../GlassButton/GlassButtonLight";
 import risewithsap from "/images/risewithsap.webp"
-import sapbtp from "/images/sapbtp-slide.png"
+import sapbtp from "/images/sap-btp-new-one.png"
+// import sapbtp from "/images/sapbtp-slide.png"
 import sabAriba from '/images/sap-ariba-top.webp'
 import growWithSap from '/images/grow-with-sap-logo.webp'
-import sapSuccessFactors from '/images/sap-success-new.webp'
-import sapConcur from '/images/sap-concur.webp'
+// import sapSuccessFactors from '/images/sap-success-new.webp'
+import sapSuccessFactors from '/images/ssf.png'
+import sapConcur from '/images/sap-concurr.png'
+// import sapConcur from '/images/sap-concur.webp'
 import sapAnalyticsCloud from '/images/sap-analytics-cloud.webp'
 import ServiceTitleCard from "./ServiceTitleCard";
 import ServiceCard from "./ServiceCard";
@@ -61,6 +64,7 @@ const ServiceSlider = () => {
 
                     <ServiceCard
                         image={risewithsap}
+                        // width="25%"
                         title="RISE with SAP"
                         description="We help businesses accelerate digital transformation with RISE with SAP, offering a simplified path to Our experts design scalable SAP landscapes that improve operational agility, enhance performance, and support long-term growth. With a focus on business continuity and accelerated value realization, we enable seamless migration to SAP S/4HANA Cloud."
                         buttonText="Start Your SAP Transformation"
@@ -70,6 +74,7 @@ const ServiceSlider = () => {
 
                     <ServiceCard
                         image={growWithSap}
+                        // width="25%"
                         title="GROW with SAP"
                         description="Grow with SAP is designed to help fast-growing organizations scale confidently with a modern, cloud-based ERP foundation. Built for companies that need speed, agility, and simplicity, it delivers ready-to-run industry best practices, intelligent analytics, and enterprise-grade capabilities, all packaged in an accessible, cost-efficient subscription model.
 "
@@ -80,6 +85,7 @@ const ServiceSlider = () => {
 
                     <ServiceCard
                         image={sapSuccessFactors}
+                        // width="40%"
                         title="SAP SuccessFactors"
                         description="SAP SuccessFactors delivers a modern, cloud-based HCM platform that streamlines HR processes and elevates employee experience. With intelligent, mobile-ready tools powered by SAP HXM, it helps organizations build agile, engaged, and high-performing teams."
                         buttonText="Know More about SAP SuccessFactors"
@@ -89,6 +95,7 @@ const ServiceSlider = () => {
 
                     <ServiceCard
                         image={sapConcur}
+                        // width="28%"
                         title="SAP Concur"
                         description="Streamline your travel and expense management with SAP Concur. A unified platform for real-time visibility, compliance, and cost control. We help businesses automate processes, reduce errors, and empower smarter financial decisions."
                         buttonText="Know More about SAP Concur"
@@ -98,6 +105,7 @@ const ServiceSlider = () => {
 
                     <ServiceCard
                         image={sabAriba}
+                        // width="35%"
                         title="SAP Ariba"
                         description="With seamless cloud integration and real-time analytics, our SAP Ariba solutions support efficient supplier collaboration, reduce purchasing costs, and enhance decision-making. We help businesses digitize their procurement cycle end-to-end and build stronger supply chain resilience."
                         buttonText="Transform Sourcing with SAP Ariba"
@@ -116,6 +124,7 @@ const ServiceSlider = () => {
 
                     <ServiceCard
                         image={sapAnalyticsCloud}
+                        // width="30%"
                         title="SAP Analytics Cloud"
                         description="Turn your data into actionable insights with SAP Analytics Cloud. A unified platform for analytics, planning, and predictive intelligence. We help businesses visualize trends, make informed decisions, and drive performance across the enterprise."
                         buttonText="Build Smart with SAP Analytics Cloud"

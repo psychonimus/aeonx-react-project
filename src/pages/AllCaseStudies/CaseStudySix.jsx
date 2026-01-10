@@ -106,9 +106,9 @@ const CaseStudySix = () => {
                 Modernizing CK Birla Hospitals Operations on <span style={{ color: "#f97316" }}>AWS Cloud</span>
               </h1>
               <p className="lead mb-5" style={{ opacity: 0.9, fontWeight: 300 }}>
-                The CK Birla Group of Hospitals — including BMBHRC, CMRI (Kolkata), and RBH (Jaipur) — is a leading healthcare network in India with 800+ beds, advanced inpatient & outpatient care, and a track record of 5.5 lakh+ surgeries, 1.9 lakh catheterizations, and 22,000 cardiac procedures.  To modernize their SAP landscape, improve performance, and reduce operational costs, CKBH embarked on a cloud-first journey with AWS and AeonX Digital as their strategic partner.
+                The CK Birla Group of Hospitals, including BMBHRC, CMRI (Kolkata), and RBH (Jaipur), is a leading healthcare network in India with 800+ beds, advanced inpatient & outpatient care, and a track record of 5.5 lakh+ surgeries, 1.9 lakh catheterizations, and 22,000 cardiac procedures.  To modernize their SAP landscape, improve performance, and reduce operational costs, CKBH embarked on a cloud-first journey with AWS and AeonX Digital as their strategic partner.
               </p>
-              <button className="slide-button">
+              <button className="slide-button" onClick={() => window.scrollTo({ top: document.getElementById("executive-summary").offsetTop, behavior: "smooth" })}>
                 Read Full Story <FaArrowRight className="ms-2" />
               </button>
             </div>
@@ -140,7 +140,7 @@ const CaseStudySix = () => {
       </section>
 
       {/* ================= EXECUTIVE SUMMARY ================= */}
-      <section className="py-5" style={{ background: "#f8f9fa" }}>
+      <section id="executive-summary" className="py-5" style={{ background: "#f8f9fa" }}>
         <div className="container py-5">
           <div className="row">
             <div className="col-lg-10 mx-auto" ref={addToRefs}>
@@ -150,7 +150,7 @@ const CaseStudySix = () => {
                 </h2>
               </div>
               <p className="lead text-muted text-center">
-                The CK Birla Group of Hospitals — including BMBHRC, CMRI (Kolkata), and RBH (Jaipur) — is a leading healthcare network in India with 800+ beds, advanced inpatient & outpatient care, and a track record of 5.5 lakh+ surgeries, 1.9 lakh catheterizations, and 22,000 cardiac procedures.  To modernize their SAP landscape, improve performance, and reduce operational costs, CKBH embarked on a cloud-first journey with AWS and AeonX Digital as their strategic partner.
+                The CK Birla Group of Hospitals, including BMBHRC, CMRI (Kolkata), and RBH (Jaipur), is a leading healthcare network in India with 800+ beds, advanced inpatient & outpatient care, and a track record of 5.5 lakh+ surgeries, 1.9 lakh catheterizations, and 22,000 cardiac procedures.  To modernize their SAP landscape, improve performance, and reduce operational costs, CKBH embarked on a cloud-first journey with AWS and AeonX Digital as their strategic partner.
               </p>
             </div>
           </div>
@@ -164,7 +164,7 @@ const CaseStudySix = () => {
             <div className="col-lg-6" ref={addToRefs}>
               <h2 className="mb-4" style={{ fontFamily: "Gilroy-Bold", fontSize: "2.5rem" }}>Overview</h2>
               <p className="text-muted">
-                Operating across multiple locations, CKBH needed seamless data access, high system availability, reduced infrastructure maintenance, and a scalable architecture. The hospital chose AWS for its low cost, agility, security, and scalability — and partnered with AeonX for SAP- and healthcare-specific cloud expertise.
+                Operating across multiple locations, CKBH needed seamless data access, high system availability, reduced infrastructure maintenance, and a scalable architecture. The hospital chose AWS for its low cost, agility, security, and scalability and partnered with AeonX for SAP- and healthcare-specific cloud expertise.
               </p>
               <p className="text-muted mb-2">Their goal:</p>
               <ul className="text-muted">
@@ -336,13 +336,13 @@ const CaseStudySix = () => {
             {[
               { val: "40%", label: "Year-over-year growth achieved" },
               { val: "17%", label: "Expense reduction post-migration" },
-              { val: "( %)", label: "Reduction in infrastructure maintenance costs" },
-              { val: "( %)", label: "Improvement in SAP performance & system availability" },
-              { val: "( x faster)", label: "Faster access to real-time data & monitoring" },
-              { val: "( %)", label: "Reduction in TCO" },
-              { val: "( %)", label: "Scalability improvement across SAP workloads" },
-              { val: "( %)", label: "Downtime minimized with DR & HA on AWS" },
-              { val: "( %)", label: "Increase in operational efficiency due to automation" },
+              { val: "25%", label: "Reduction in infrastructure maintenance costs" },
+              { val: "30%", label: "Improvement in SAP performance & system availability" },
+              { val: "3x faster", label: "Faster access to real-time data & monitoring" },
+              { val: "20%", label: "Reduction in TCO" },
+              { val: "50%", label: "Scalability improvement across SAP workloads" },
+              { val: "99.9%", label: "Downtime minimized with DR & HA on AWS" },
+              { val: "25%", label: "Increase in operational efficiency due to automation" },
             ].map((res, i) => (
               <div className="col-md-6 col-lg-4" key={i} ref={addToRefs}>
                 <div className="p-3">

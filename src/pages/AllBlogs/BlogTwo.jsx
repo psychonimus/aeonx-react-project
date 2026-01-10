@@ -53,7 +53,7 @@ const BlogTwo = () => {
             <p>
               With SAP ending mainstream support for ECC in 2027, time is running out for enterprises still 
               working with older systems. Many organizations have kicked off new S/4HANA projects, 
-              expecting a smooth transition — but <strong>a startling 60% of large enterprise studies show that 
+              expecting a smooth transition, but <strong>a startling 60% of large enterprise studies show that 
               more than 60% of projects face serious delays</strong>, budget overruns, and only a few 
               achieve their set business value.
             </p>
@@ -215,12 +215,12 @@ const BlogTwo = () => {
 
             <hr />
 
-            <h4>Related Blogs</h4>
+            {/* <h4>Related Blogs</h4>
             <ul>
               <li>→ Migrating to S/4HANA the Right Way</li>
               <li>→ RISE vs Traditional SAP Licensing</li>
               <li>→ OPEX vs CAPEX in Cloud ERP</li>
-            </ul>
+            </ul> */}
           </div>
 
         </div>

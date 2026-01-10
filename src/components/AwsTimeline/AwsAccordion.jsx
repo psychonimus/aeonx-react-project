@@ -6,7 +6,7 @@ const AwsAccordion = () => {
 
     return (
         <>
-            <section className="aws-accordion">
+            <section className="aws-accordion" data-aos="fade-up">
                 <div className="container">
                     <div className="aws-accordion" id="mainAwsAccordion">
                         <div className="accordion-item">
@@ -18,7 +18,7 @@ const AwsAccordion = () => {
                             <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#mainAwsAccordion">
                                 <div className="accordion-body">
                                     <div>
-                                        <p style={{ marginBottom: "1rem", color: "#4b5563" }}>
+                                        <p style={{ marginBottom: "1rem" }}>
                                             Running SAP S/4HANA on AWS allows organizations to combine the power of next-generation ERP with the scalability and reliability of the AWS Cloud. AWS offers a comprehensive suite of services to support S/4HANA deployments, including:
 
                                         </p>
@@ -51,7 +51,7 @@ const AwsAccordion = () => {
                             <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#mainAwsAccordion">
                                 <div className="accordion-body">
                                     <div>
-                                        <p style={{ marginBottom: "1rem", color: "#4b5563" }}>
+                                        <p style={{ marginBottom: "1rem" }}>
                                             RISE with SAP on AWS gives enterprises a powerful foundation to modernize their ERP landscape with the world’s most secure, scalable, and proven cloud platform. AWS brings unmatched expertise, robust architecture, and 200+ services designed to accelerate innovation, reduce risk, and maximize the value of SAP investments. With purpose-built automation and seamless integration, businesses gain the agility needed to support digital transformation at scale.
 
                                         </p>
@@ -82,7 +82,7 @@ const AwsAccordion = () => {
                             <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#mainAwsAccordion">
                                 <div className="accordion-body">
                                     <div>
-                                        <p style={{ marginBottom: "1rem", color: "#4b5563" }}>
+                                        <p style={{ marginBottom: "1rem" }}>
                                             SAP Disaster Recovery on AWS provides a reliable, scalable, and secure way to protect business-critical SAP systems from outages, data loss, and unexpected disruptions. By replicating SAP environments to a secondary AWS location, organizations can ensure rapid failover, minimal downtime, and uninterrupted business continuity. AWS offers a robust suite of services that streamline replication, automation, and recovery for SAP workloads.
                                         </p>
                                         <h5 className="mb-4">Key AWS services that strengthen SAP Disaster Recovery:</h5>
@@ -111,7 +111,7 @@ const AwsAccordion = () => {
                             <div id="collapseFour" className="accordion-collapse collapse" data-bs-parent="#mainAwsAccordion">
                                 <div className="accordion-body">
                                     <div>
-                                        <p style={{ marginBottom: "1rem", color: "#4b5563" }}>
+                                        <p style={{ marginBottom: "1rem" }}>
                                             A Lift & Shift migration allows organizations to move their existing SAP systems to AWS without redesigning the application or changing core configurations. This approach delivers a faster, cost-effective path to the cloud while maintaining system integrity and minimizing downtime.
                                         </p>
 
@@ -143,18 +143,18 @@ const AwsAccordion = () => {
                             <div id="collapseFive" className="accordion-collapse collapse" data-bs-parent="#mainAwsAccordion">
                                 <div className="accordion-body">
                                     <div>
-                                        <p style={{ marginBottom: "1rem", color: "#4b5563" }}>
+                                        <p style={{ marginBottom: "1rem" }}>
                                             The AWS Well-Architected Framework provides a structured approach to designing and operating reliable, secure, high-performing, and cost-efficient systems in the AWS Cloud. Through a Well-Architected Review (WAR), businesses can assess their current workloads, identify gaps, and implement best practices to strengthen their cloud architecture.
                                         </p>
                                         <h5 className="mb-4">The framework is built on five core pillars that guide continuous improvement:</h5>
                                         <ul>
-                                            <li>Operational Excellence: Ensures systems are monitored effectively, processes are optimized, and operations continuously improve to deliver business value.</li>
-                                            <li>Security: Protects data, applications, and infrastructure through layered defenses, risk assessments, and robust access controls.</li>
-                                            <li>Reliability: Helps systems recover quickly from failures, scale with demand, and minimize disruptions caused by misconfigurations or network issues.</li>
-                                            <li>Performance Efficiency: Enables optimal use of computing resources while adapting to evolving technologies and changing workload requirements.</li>
-                                            <li>Cost Optimization: Focuses on eliminating unnecessary expenses and maximizing business value at the lowest achievable cost.</li>
+                                            <li><b>Operational Excellence:</b> Ensures systems are monitored effectively, processes are optimized, and operations continuously improve to deliver business value.</li>
+                                            <li><b>Security:</b> Protects data, applications, and infrastructure through layered defenses, risk assessments, and robust access controls.</li>
+                                            <li><b>Reliability:</b> Helps systems recover quickly from failures, scale with demand, and minimize disruptions caused by misconfigurations or network issues.</li>
+                                            <li><b>Performance Efficiency:</b> Enables optimal use of computing resources while adapting to evolving technologies and changing workload requirements.</li>
+                                            <li><b>Cost Optimization:</b> Focuses on eliminating unnecessary expenses and maximizing business value at the lowest achievable cost.</li>
                                         </ul>
-                                        <h5 className="mb-4">The framework is built on five core pillars that guide continuous improvement:</h5>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -169,7 +169,7 @@ const AwsAccordion = () => {
                             <div id="collapseSix" className="accordion-collapse collapse" data-bs-parent="#mainAwsAccordion">
                                 <div className="accordion-body">
                                     <div>
-                                        <p style={{ marginBottom: "1rem", color: "#4b5563" }}>
+                                        <p style={{ marginBottom: "1rem" }}>
                                             A highly available SAP architecture on AWS is designed to keep critical systems running with minimal disruption, even during failures or outages. By building redundancy, automated failover, and strong disaster recovery capabilities into the cloud environment, businesses can ensure continuous operations and faster recovery times. AWS provides the scalability, resilience, and infrastructure needed to support uninterrupted SAP workloads.
                                         </p>
                                         <h5 className="mb-4">Key benefits of a highly available SAP architecture on AWS:</h5>
@@ -196,7 +196,7 @@ const AwsAccordion = () => {
                             <div id="collapseSeven" className="accordion-collapse collapse" data-bs-parent="#mainAwsAccordion">
                                 <div className="accordion-body">
                                     <div>
-                                        <p style={{ marginBottom: "1rem", color: "#4b5563" }}>
+                                        <p style={{ marginBottom: "1rem" }}>
                                             Backend services on AWS provide a reliable, scalable, and cost-efficient foundation for SAP backup and restore operations. These services ensure data durability, strong protection against loss, and seamless integration with cloud and on-premise environments. With built-in automation, compliance support, and remote accessibility, AWS enables businesses to maintain secure and resilient backup strategies for their SAP landscapes.
                                         </p>
                                         <h5 className="mb-4">Key AWS services supporting SAP backup and restore include:</h5>
@@ -223,7 +223,7 @@ const AwsAccordion = () => {
                             <div id="collapseEight" className="accordion-collapse collapse" data-bs-parent="#mainAwsAccordion">
                                 <div className="accordion-body">
                                     <div>
-                                        <p style={{ marginBottom: "1rem", color: "#4b5563" }}>
+                                        <p style={{ marginBottom: "1rem" }}>
                                             Automation for SAP on AWS leverages AWS tools and services to streamline the deployment and management of SAP workloads in the cloud. From provisioning and scaling to backups, patching, and disaster recovery, automation eliminates manual effort and ensures consistent, reliable operations across the SAP environment.
                                         </p>
                                         <h5 className="mb-4">Core benefits of automating SAP on AWS include:</h5>
@@ -256,7 +256,7 @@ const AwsAccordion = () => {
                             <div id="collapseTen" className="accordion-collapse collapse" data-bs-parent="#mainAwsAccordion">
                                 <div className="accordion-body">
                                     <div>
-                                        <p style={{ marginBottom: "1rem", color: "#4b5563" }}>
+                                        <p style={{ marginBottom: "1rem" }}>
                                             At AeonX, we specialize in building custom digital solutions tailored to unique business challenges. Our proprietary products - SupplierX, SignX, and OrderX are designed to streamline operations, enhance productivity, and deliver seamless user experiences across enterprise workflows. Each solution is built with scalability, automation, and industry best practices at its core.
                                         </p>
 
@@ -280,7 +280,7 @@ const AwsAccordion = () => {
                                             <div style={{ padding: "0.75rem", backgroundColor: "#f0f0f0ff", borderRadius: "0.375rem" }}>
                                                 <img src="/images/order-x-square.webp" alt="" style={{ width: "150px", marginBlock: "1rem" }} />
                                                 {/* <h3>OrderX</h3> */}
-                                                <p style={{ fontWeight: "600", color: "#000000ff" }}>OrderX streamlines the complete order lifecycle—from order creation and approvals to fulfillment and tracking. Designed for accuracy and operational efficiency, OrderX helps businesses reduce errors, improve visibility, and deliver faster, more reliable order management.
+                                                <p style={{ fontWeight: "600", color: "#000000ff" }}>OrderX streamlines the complete order lifecycle, from order creation and approvals to fulfillment and tracking. Designed for accuracy and operational efficiency, OrderX helps businesses reduce errors, improve visibility, and deliver faster, more reliable order management.
                                                 </p>
                                             </div>
                                         </div>

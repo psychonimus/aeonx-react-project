@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import GlassButtonLight from "../GlassButton/GlassButtonLight";
 import { FaCircleArrowRight } from "react-icons/fa6";
+import { countryCodes } from "./countryData";
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -12,7 +13,11 @@ const ContactForm = () => {
         notes: ''
     });
 
+    const [countryCode, setCountryCode] = useState('+91');
+
     const [errors, setErrors] = useState({});
+    const [warnings, setWarnings] = useState({});
+    const formRef = useRef(null);
 
     const handleBlur = (e) => {
         const { name, value } = e.target;
@@ -78,23 +83,46 @@ const ContactForm = () => {
         }
 
         if (isValidInput) {
+            if (name === 'phone_no') {
+                const digitCount = (value.match(/\d/g) || []).length;
+                if (digitCount > 10) return;
+            }
+
+            if (name === 'company_name' || name === 'contact_name' || name === 'contact_role') {
+                if (value.length > 30) {
+                    setWarnings(prev => ({ ...prev, [name]: 'Maximum characters reached' }));
+                    return; // Stop updating if limit reached (or we can truncate, but returning prevents typing more)
+                    // Actually, if we just return, they can't type. But if they paste a long string?
+                    // Better approach:
+                }
+            }
+
+            let finalValue = value;
+            if (name === 'company_name' || name === 'contact_name' || name === 'contact_role') {
+                if (value.length > 30) {
+                    finalValue = value.slice(0, 30);
+                    setWarnings(prev => ({ ...prev, [name]: 'Maximum characters reached' }));
+                } else {
+                    setWarnings(prev => {
+                        const newWarn = { ...prev };
+                        delete newWarn[name];
+                        return newWarn;
+                    });
+                }
+            }
+
             setFormData(prev => ({
                 ...prev,
-                [name]: value
+                [name]: finalValue
             }));
 
             // Real-time validation for phone length
             if (name === 'phone_no') {
-                const digitCount = (value.match(/\d/g) || []).length;
-                if (digitCount > 10) {
-                    setErrors(prev => ({ ...prev, phone_no: 'Maximum 10 digits allowed' }));
-                } else {
-                    setErrors(prev => {
-                        const newErr = { ...prev };
-                        delete newErr.phone_no;
-                        return newErr;
-                    });
-                }
+                setErrors(prev => {
+                    const newErr = { ...prev };
+                    delete newErr.phone_no;
+                    return newErr;
+                });
             }
 
             // Clear email error on change if it becomes valid or empty (optional, but good UX to clear error as they fix it)
@@ -133,7 +161,7 @@ const ContactForm = () => {
                 company_name: formData.company_name,
                 contact_name: formData.contact_name,
                 contact_role: formData.contact_role,
-                phone_no: formData.phone_no,
+                phone_no: `${countryCode} ${formData.phone_no}`,
                 email: formData.email,
                 notes: formData.notes || "",
                 referral: "AeonX Website",
@@ -214,126 +242,145 @@ const ContactForm = () => {
         }
 
         console.log("Button clicked");
-        document.getElementById('contact-form').dispatchEvent(
-            new Event('submit', { cancelable: true, bubbles: true })
-        );
+        if (formRef.current) {
+            formRef.current.requestSubmit();
+        }
     };
 
     return (
-        <section className="contact-form-section container-fluid my-5" id="contact-form">
+        <section className="contact-form-section container-fluid my-5" data-aos="fade-up" data-aos-delay="100">
             <div className="container">
                 <h2 className="fw-bold mb-4">Contact us</h2>
 
-            {message.text && (
-                <div
-                    className={`alert ${message.type === 'success' ? 'alert-success' : 'alert-danger'} mb-4`}
-                    role="alert"
-                >
-                    {message.text}
-                </div>
-            )}
+                {message.text && (
+                    <div
+                        className={`alert ${message.type === 'success' ? 'alert-success' : 'alert-danger'} mb-4`}
+                        role="alert"
+                    >
+                        {message.text}
+                    </div>
+                )}
 
-            <form id="contact-form" className="mt-5" onSubmit={handleSubmit}>
-                <div className="row mb-4">
-                    <div className="col-md-6 mb-3">
-                        <label className="form-label">Company Name*</label>
-                        <input
-                            type="text"
-                            className="form-control underline"
-                            name="company_name"
-                            value={formData.company_name}
-                            onChange={handleInputChange}
-                            required
-                            disabled={loading}
-                        />
+                <form ref={formRef} className="mt-5" onSubmit={handleSubmit}>
+                    <div className="row mb-4">
+                        <div className="col-md-6 mb-3">
+                            <label className="form-label">Company Name*</label>
+                            <input
+                                type="text"
+                                className="form-control underline"
+                                name="company_name"
+                                value={formData.company_name}
+                                onChange={handleInputChange}
+                                required
+                                disabled={loading}
+                            />
+                            {warnings.company_name && <small className="text-danger d-block">{warnings.company_name}</small>}
+                        </div>
+                        <div className="col-md-6 mb-3">
+                            <label className="form-label">Name*</label>
+                            <input
+                                type="text"
+                                className="form-control underline"
+                                name="contact_name"
+                                value={formData.contact_name}
+                                onChange={handleInputChange}
+                                required
+                                disabled={loading}
+                            />
+                            {warnings.contact_name && <small className="text-danger d-block">{warnings.contact_name}</small>}
+                        </div>
+                        <div className="col-md-12 mb-3">
+                            <label className="form-label">Role*</label>
+                            <input
+                                type="text"
+                                className="form-control underline"
+                                name="contact_role"
+                                value={formData.contact_role}
+                                onChange={handleInputChange}
+                                required
+                                disabled={loading}
+                            />
+                            {warnings.contact_role && <small className="text-danger d-block">{warnings.contact_role}</small>}
+                        </div>
                     </div>
-                    <div className="col-md-6 mb-3">
-                        <label className="form-label">Name*</label>
-                        <input
-                            type="text"
-                            className="form-control underline"
-                            name="contact_name"
-                            value={formData.contact_name}
-                            onChange={handleInputChange}
-                            required
-                            disabled={loading}
-                        />
-                    </div>
-                    <div className="col-md-12 mb-3">
-                        <label className="form-label">Role*</label>
-                        <input
-                            type="text"
-                            className="form-control underline"
-                            name="contact_role"
-                            value={formData.contact_role}
-                            onChange={handleInputChange}
-                            required
-                            disabled={loading}
-                        />
-                    </div>
-                </div>
 
-                <div className="row mb-4">
-                    <div className="col-md-6 mb-3 position-relative">
-                        <label className="form-label">Mobile Number*</label>
-                        <input
-                            type="text"
-                            className={`form-control underline ${errors.phone_no ? 'is-invalid' : ''}`}
-                            name="phone_no"
-                            value={formData.phone_no}
-                            onChange={handleInputChange}
-                            required
-                            disabled={loading}
-                        />
-                        {errors.phone_no && (
-                            <div className="invalid-tooltip d-block" style={{ right: 0, top: '-10px', width: 'auto' }}>
-                                {errors.phone_no}
+                    <div className="row mb-4">
+                        <div className="col-md-6 mb-3 position-relative">
+                            <label className="form-label">Mobile Number*</label>
+                            <div className="input-group">
+                                <select
+                                    className="form-select underline"
+                                    style={{ maxWidth: '120px',outline : 'none', borderRight: 'none', borderTop : 'none', borderLeft : 'none', borderRadius : '0' }}
+                                    value={countryCode}
+                                    onChange={(e) => setCountryCode(e.target.value)}
+                                    disabled={loading}
+                                >
+                                    {countryCodes.map((country) => (
+                                        <option key={country.code} value={country.dial_code}>
+                                            {country.code} ({country.dial_code})
+                                        </option>
+                                    ))}
+                                </select>
+                                <input
+                                    type="text"
+                                    className={`form-control underline ${errors.phone_no ? 'is-invalid' : ''}`}
+                                    name="phone_no"
+                                    value={formData.phone_no}
+                                    onChange={handleInputChange}
+                                    required
+                                    disabled={loading}
+                                    placeholder="Enter number"
+                                />
                             </div>
-                        )}
+                            {errors.phone_no && (
+                                <div className="invalid-tooltip d-block" style={{ right: 0, top: '-10px', width: 'auto' }}>
+                                    {errors.phone_no}
+                                </div>
+                            )}
+                        </div>
+
+                        <div className="col-md-6 mb-3 position-relative">
+                            <label className="form-label">Email*</label>
+                            <input
+                                type="email"
+                                className={`form-control underline ${errors.email ? 'is-invalid' : ''}`}
+                                name="email"
+                                value={formData.email}
+                                onChange={handleInputChange}
+                                onBlur={handleBlur}
+                                required
+                                disabled={loading}
+                            />
+                            {errors.email && (
+                                <div className="invalid-tooltip d-block" style={{ right: 0, top: '-10px', width: 'auto' }}>
+                                    {errors.email}
+                                </div>
+                            )}
+                        </div>
                     </div>
 
-                    <div className="col-md-6 mb-3 position-relative">
-                        <label className="form-label">Email*</label>
-                        <input
-                            type="email"
-                            className={`form-control underline ${errors.email ? 'is-invalid' : ''}`}
-                            name="email"
-                            value={formData.email}
+                    <div className="mb-4">
+                        <label className="form-label">Any other comments?</label>
+                        <textarea
+                            className="form-control underline"
+                            name="notes"
+                            value={formData.notes}
                             onChange={handleInputChange}
-                            onBlur={handleBlur}
-                            required
+                            rows="3"
+                            disabled={loading}
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" style={{ display: 'none' }} id="hidden-submit">Submit</button>
+
+                    <div onClick={handleButtonClick}>
+                        <GlassButtonLight
+                            title={loading ? "Submitting..." : "Submit"}
+                            icon={() => <FaCircleArrowRight color="#FDAE04" size="25" />}
                             disabled={loading}
                         />
-                        {errors.email && (
-                            <div className="invalid-tooltip d-block" style={{ right: 0, top: '-10px', width: 'auto' }}>
-                                {errors.email}
-                            </div>
-                        )}
                     </div>
-                </div>
-
-                <div className="mb-4">
-                    <label className="form-label">Any other comments?</label>
-                    <textarea
-                        className="form-control underline"
-                        name="notes"
-                        value={formData.notes}
-                        onChange={handleInputChange}
-                        rows="3"
-                        disabled={loading}
-                    ></textarea>
-                </div>
-
-                <button type="submit" style={{ display: 'none' }} id="hidden-submit">Submit</button>
-
-                <div onClick={handleButtonClick}>
-                    <GlassButtonLight
-                        title={loading ? "Submitting..." : "Submit"}
-                        icon={() => <FaCircleArrowRight color="#FDAE04" size="25" />}
-                        disabled={loading}
-                    />
-                </div>
-            </form>
+                </form>
 
             </div>
 

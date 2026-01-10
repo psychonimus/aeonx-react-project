@@ -15,7 +15,7 @@ const  AeonxFlagshipProducts = () => {
             id: 1,
             title: 'Next-Gen Expense Management for Modern Teams',
             description: 'Smart travel and expense platform for managing approvals, trips, and reimbursements. Mobile-ready and SAP integrated.',
-            image: '/images/Xpence-cover.webp',
+            image: '/images/xpense-cover.png',
             video: null,
             tags: ['Spend Control', 'Workflow Automation', 'Compliance AI', 'Real-Time Insights'],
             industry: 'Xpense',
@@ -37,7 +37,7 @@ const  AeonxFlagshipProducts = () => {
             id: 3,
             title: 'Elevating Logistics Efficiency with Intelligent Supply Chain Automation',
             description: 'Cloud-based logistics platform to optimize warehouse and supply chain operations with real-time tracking, order management, and end-to-end visibility.',
-            image: '/images/Logystix-cover.webp',
+            image: '/images/logystix-cover.png',
             video: null,
             tags: ['Route Intelligence', 'Ops Automation', 'Real-Time Tracking', 'Predictive Planning'],
             industry: 'LogystiX',
@@ -130,7 +130,7 @@ const  AeonxFlagshipProducts = () => {
             <div className="row">
               <div className="col-12">
                 <div className="life-hero-content text-center d-flex flex-column justify-content-center  h-100">
-                  <p className="eyebrow">AEONX FLAGSHIP PRODUCTS</p>
+                  {/* <p className="eyebrow">AEONX FLAGSHIP PRODUCTS</p> */}
                   <h1 className="mb-2">
                     Empower Your Enterprise with AeonX’s Next-Generation Digital Solutions
                   </h1>
@@ -140,7 +140,12 @@ const  AeonxFlagshipProducts = () => {
                     <GlassButton
                       title="Explore Flagship Products"
                       icon={() => <IoIosArrowDropdownCircle size={30} />}
-                      url={'#aeonx-all-products'}
+                      onClick={() => {
+                        window.scrollTo({
+                            top: document.getElementById("aeonx-all-products").offsetTop,
+                            behavior: "smooth"
+                        });
+                    }}
                     />
 
                   </div>
@@ -163,7 +168,7 @@ const  AeonxFlagshipProducts = () => {
                        
                         {filteredCaseStudies.length > 0 ? (
                             filteredCaseStudies.map(study => (
-                                <div key={study.id} className="case-study-card">
+                                <div key={study.id} className="case-study-card" >
                                     <div className='product-img-container'>
                                         <img
                                         src={study.image}
@@ -176,6 +181,7 @@ const  AeonxFlagshipProducts = () => {
                                           title="Explore"
                                           icon={() => <FaCircleArrowRight size={25} />}
                                           url={study.url}
+                                          target = '_blank'
                                           
                                         />
                                     </div>

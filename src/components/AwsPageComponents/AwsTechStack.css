@@ -86,6 +86,7 @@
     display: inline-block;
     transition: transform 0.2s ease;
     color: #000;
+    font-family: Gilroy;
 }
 
 .feature-item:hover .title-text {

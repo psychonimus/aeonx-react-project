@@ -12,12 +12,12 @@ const IndustryHero = () => {
                     <div className="col-12">
                         <div className="industry-hero-content d-flex flex-column justify-content-center  h-100">
                             {/* <p className="eyebrow">Industries</p> */}
-                            <h1 className="mb-0">
+                            <h1 className="mb-0" data-aos="fade-up">
                                 Industries We Serve
                             </h1>
-                            <h3 className="mb-4">Diverse Domains, Tailored Solutions</h3>
+                            <h3 className="mb-4" data-aos="fade-up" data-aos-delay="100">Diverse Domains, Tailored Solutions</h3>
 
-                            <div className="event-hero-buttons d-flex justify-content-start">
+                            <div className="event-hero-buttons d-flex justify-content-start" data-aos="fade-up" data-aos-delay="200">
                                 <GlassButton
                                     title="View Sectors"
                                     icon={() => <IoIosArrowDropdownCircle size={30} />}

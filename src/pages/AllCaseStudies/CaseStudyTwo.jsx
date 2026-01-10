@@ -97,7 +97,7 @@ const CaseStudyTwo = () => {
               <p className="lead mb-5" style={{ opacity: 0.9, fontWeight: 300 }}>
                 Raymond Limited (Engineering SBU) the precision engineering arm of the Raymond Group, unified three diverse verticals (Automobile, Aerospace, Tools & Hardware) into one intelligent digital core. By consolidating two SAP ECC systems and one non-SAP system onto SAP S/4HANA RISE, the organization established a future-ready, scalable platform that harmonizes processes, boosts efficiency, and accelerates decision-making.
               </p>
-              <button className="slide-button">
+              <button className="slide-button" onClick={() => window.scrollTo({ top: document.getElementById("executive-summary").offsetTop, behavior: "smooth" })}>
                 Read Full Story <FaArrowRight className="ms-2" />
               </button>
             </div>
@@ -129,7 +129,7 @@ const CaseStudyTwo = () => {
       </section>
 
       {/* ================= EXECUTIVE SUMMARY ================= */}
-      <section className="py-5" style={{ background: "#f8f9fa" }}>
+      <section id="executive-summary" className="py-5" style={{ background: "#f8f9fa" }}>
         <div className="container py-5">
           <div className="row">
             <div className="col-lg-10 mx-auto" ref={addToRefs}>
@@ -374,7 +374,7 @@ const CaseStudyTwo = () => {
               </div>
             ))}
           </div>
-          <p className="text-center text-white mt-5 lead" ref={addToRefs}>Raymond now operates on one intelligent platform—fast, accurate, and insight-driven.</p>
+          <p className="text-center text-white mt-5 lead" ref={addToRefs}>Raymond now operates on one intelligent platform, fast, accurate, and insight-driven.</p>
         </div>
       </section>
 
@@ -436,10 +436,10 @@ const CaseStudyTwo = () => {
           </h2>
           <div className="row text-center g-4">
             {[
-              { val: "70%", label: "Reduction in TAT" },
-              { val: "30%", label: "Reduction in Reporting Effort" },
-              { val: "25%", label: "Improvement in User Efficiency" },
-              { val: "100%", label: "Data Consistency" },
+              { val: "40%", label: "Reduction in TAT" },
+              { val: "45%", label: "Reduction in Reporting Effort" },
+              { val: "20%", label: "Improvement in User Efficiency" },
+              { val: "95%", label: "Data Consistency" },
             ].map((res, i) => (
               <div className="col-6 col-md-3" key={i} ref={addToRefs}>
                 <div className="p-3">
@@ -458,7 +458,7 @@ const CaseStudyTwo = () => {
           <h2 className="mb-3" style={{ fontFamily: "Gilroy-Bold", fontSize: "2.5rem" }}>
             Ready to unify your enterprise on one intelligent digital core?
           </h2>
-          <p className="lead text-muted mb-4">Let's build your SAP transformation—faster, cleaner, and smarter.</p>
+          <p className="lead text-muted mb-4">Let's build your SAP transformation faster, cleaner, and smarter.</p>
           <Link to="/contact">
             <button className="slide-button-light">
               Speak to Our SAP Experts →

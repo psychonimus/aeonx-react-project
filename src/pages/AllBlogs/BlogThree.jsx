@@ -208,12 +208,12 @@ const BlogThree = () => {
 
                             <hr />
 
-                            <h4>Related Blogs</h4>
+                            {/* <h4>Related Blogs</h4>
                             <ul>
                                 <li>→ SAP Security Best Practices</li>
                                 <li>→ Understanding GDPR Compliance</li>
                                 <li>→ Cloud Data Protection Strategies</li>
-                            </ul>
+                            </ul> */}
                         </div>
 
                     </div>

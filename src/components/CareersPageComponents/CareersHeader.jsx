@@ -40,12 +40,20 @@ const ExperienceSection = () => {
         <div className="row text-white">
           {/* LEFT SECTION */}
           <div className="col-12 col-lg-4 mb-5 mb-lg-0 text-white">
-            <h1 className="exp-title">Augment your Professional Career</h1>
-            <GlassButton
+            <h1 className="exp-title" data-aos="fade-up">Augment your Professional Career</h1>
+            <div data-aos="fade-up" data-aos-delay="100">
+              <GlassButton
               title="Explore Open Positions"
               icon={() => <IoArrowDownCircle size={30} />}
-              href="/careers#open-positions"
+              
+              onClick={() => {
+                window.scrollTo({
+                    top: document.getElementById("open-positions").offsetTop,
+                    behavior: "smooth"
+                });
+            }}
             />
+            </div>
 
             
             
@@ -53,7 +61,7 @@ const ExperienceSection = () => {
 
           {/* RIGHT SECTION */}
           <div className="col-12 col-lg-8">
-            <p className="exp-text">
+            <p className="exp-text" data-aos="fade-up" data-aos-delay="200">
               Welcome to AeonX Digital, where passion meets a pinch of
               craziness! We're a vibrant team dedicated to crafting amazing
               digital experiences. Whether you're into tech, creativity, or
@@ -61,7 +69,7 @@ const ExperienceSection = () => {
               ready to welcome you with open arms. Join our crew and let's make
               digital magic together!
             </p>
-            <div className="d-flex">
+            <div className="d-flex" data-aos="fade-up" data-aos-delay="300">
               <div className="gptw-container ">
                 <img
                   src={GPTW}

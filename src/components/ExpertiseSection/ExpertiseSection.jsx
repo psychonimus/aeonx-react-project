@@ -57,7 +57,7 @@ const ExpertiseSection = () => {
                             <div className="col-md-7">
                                 <div className="h-100 d-flex flex-column justify-content-center">
                                     <h3 style={{ color: "#fff" }}>Cloud Migration & DevOps Consulting</h3>
-                                    <p style={{ color: "#fff" }}><strong>We deliver end-to-end Cloud Migration and DevOps consulting to modernize infrastructure, improve agility, and speed up deployment cycles.</strong> We enable seamless migration to leading cloud platforms and implement DevOps best practices to enhance collaboration, reduce downtime, optimize costs, and scale securely in a digital-first environment.</p>
+                                    <p style={{ color: "#fff" }}>We deliver end-to-end Cloud Migration and DevOps consulting to modernize infrastructure, improve agility, and speed up deployment cycles. We enable seamless migration to leading cloud platforms and implement DevOps best practices to enhance collaboration, reduce downtime, optimize costs, and scale securely in a digital-first environment.</p>
                                     <GlassButton href="/services#migration" title="Know More" icon={() => <FaCircleArrowRight color="" size={28} />} />
                                 </div>
                             </div>
@@ -80,7 +80,7 @@ const ExpertiseSection = () => {
                             <div className="col-md-7">
                                 <div className="h-100 d-flex flex-column justify-content-center">
                                     <h3 style={{ color: "#fff" }}>Custom Application Development</h3>
-                                    <p style={{ color: "#fff" }}><strong>We develop custom applications tailored to specific business needs, helping organizations enhance productivity, user experience, and scalability.</strong> Using modern frameworks and cloud-native technologies, we build secure, high-performance solutions that integrate seamlessly with existing systems. With a focus on agility and innovation, we enable businesses to automate workflows, optimize operations, and drive sustainable growth.
+                                    <p style={{ color: "#fff" }}>We develop custom applications tailored to specific business needs, helping organizations enhance productivity, user experience, and scalability. Using modern frameworks and cloud-native technologies, we build secure, high-performance solutions that integrate seamlessly with existing systems. With a focus on agility and innovation, we enable businesses to automate workflows, optimize operations, and drive sustainable growth.
                                     </p>
                                     <GlassButton href="/services#innovation" title="Know More" icon={() => <FaCircleArrowRight color="" size={28} />} />
                                 </div>
@@ -104,7 +104,7 @@ const ExpertiseSection = () => {
                             <div className="col-md-7">
                                 <div className="h-100 d-flex flex-column justify-content-center text-white">
                                     <h3 >Business Process Transformation</h3>
-                                    <p >By combining industry expertise with technology-driven strategies, we help businesses streamline workflows, eliminate redundancies, and adopt scalable models. Our transformation approach focuses on process innovation, automation, and continuous improvement, empowering companies to operate smarter, adapt faster, and deliver greater value.
+                                    <p > By combining industry expertise with technology-driven strategies, we help businesses streamline workflows, eliminate redundancies, and adopt scalable models. Our transformation approach focuses on process innovation, automation, and continuous improvement, empowering companies to operate smarter, adapt faster, and deliver greater value.
                                     </p>
                                     <GlassButton href="/sap-focused-products#sap-btp" title="Know More" icon={() => <FaCircleArrowRight color="#fff" size={28} />} />
                                 </div>

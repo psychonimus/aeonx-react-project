@@ -3,6 +3,9 @@ import Header from "../Header/Header";
 import { FaArrowRight, FaMapMarkerAlt, FaClock } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
+import { IoBagRemoveSharp } from "react-icons/io5";
+import { RiTeamFill } from "react-icons/ri";
+
 const jobs = [
   {
     title: "Associate Consultant - SAP Basis",
@@ -73,7 +76,7 @@ const OpenPositionsSection = () => {
         <div className="container mt-5">
           <div className="row g-4">
             {jobs.map((job, idx) => (
-              <div className="col-md-6 col-lg-4" key={idx}>
+              <div className="col-md-6 col-lg-4" key={idx} data-aos="fade-up" data-aos-delay={idx * 100}>
                 <div className="job-card d-flex flex-column justify-content-between">
                   <div>
                     <h3 className="job-title">{job.title}</h3>
@@ -81,8 +84,8 @@ const OpenPositionsSection = () => {
                     <div className="job-meta mt-3">
                       <p><FaMapMarkerAlt /> {job.location}</p>
                       <p><FaClock /> {job.type}</p>
-                      <p>📁 {job.experience}</p>
-                      <p>No of Openings: {job.openings}</p>
+                      <p><IoBagRemoveSharp /> {job.experience}</p>
+                      <p><RiTeamFill />No of Openings: {job.openings}</p>
                     </div>
                   </div>
 

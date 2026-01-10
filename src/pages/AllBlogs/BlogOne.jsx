@@ -67,7 +67,7 @@ const BlogOne = () => {
               <h4>Quick Insight</h4>
               <p>
                 RISE with SAP is fundamentally designed to move infrastructure, licensing, 
-                and operations into an OPEX model — but the real benefit depends on your 
+                and operations into an OPEX model, but the real benefit depends on your 
                 current landscape, migration complexity, and long-term roadmap.
               </p>
             </div>
@@ -116,7 +116,7 @@ const BlogOne = () => {
 
             <h2>4. Final Verdict</h2>
             <p>
-              RISE with SAP can absolutely be OPEX-friendly — but only when implemented with a 
+              RISE with SAP can absolutely be OPEX-friendly, but only when implemented with a 
               clear roadmap, proper landscape assessment, and an experienced SAP partner.
             </p>
 
@@ -147,12 +147,12 @@ const BlogOne = () => {
 
             <hr />
 
-            <h4>Related Blogs</h4>
+            {/* <h4>Related Blogs</h4>
             <ul>
               <li>→ Migrating to S/4HANA the Right Way</li>
               <li>→ RISE vs Traditional SAP Licensing</li>
               <li>→ OPEX vs CAPEX in Cloud ERP</li>
-            </ul>
+            </ul> */}
           </div>
 
         </div>

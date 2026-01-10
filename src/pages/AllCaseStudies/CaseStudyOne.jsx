@@ -106,7 +106,7 @@ const CaseStudyOne = () => {
                 <p className="lead mb-5 case-study-lead" style={{ opacity: 0.9, fontWeight: 300 }}>
                   In recent years, ITD Cementation India Private Limited has received several awards for their excellent work, including the "Best Infrastructure Company" award from CNBC TV18 and the "Outstanding Concrete Structure Award" from the Indian Concrete Institute.
                 </p>
-                <button className="slide-button">
+                <button className="slide-button" onClick={() => window.scrollTo({ top: document.getElementById("executive-summary").offsetTop, behavior: "smooth" })}>
                   Read Full Story <FaArrowRight className="ms-2" />
                 </button>
               </div>
@@ -138,7 +138,7 @@ const CaseStudyOne = () => {
         </section>
 
         {/* ================= EXECUTIVE SUMMARY ================= */}
-        <section className="py-5" style={{ background: "#f8f9fa" }}>
+        <section id="executive-summary" className="py-5" style={{ background: "#f8f9fa" }}>
           <div className="container py-5">
             <div className="row">
               <div className="col-lg-10 mx-auto" ref={addToRefs}>
@@ -370,10 +370,10 @@ const CaseStudyOne = () => {
             </h2>
             <div className="row text-center g-4">
               {[
-                { val: "X", label: "Improvement in System Reliability" },
-                { val: "X", label: "Reduction in Migration Downtime" },
-                { val: "X", label: "Faster Access to Latest SAP Capabilities" },
-                { val: "X", label: "Enhanced Cloud Scalability & Performance" },
+                { val: "25%", label: "Improvement in System Reliability" },
+                { val: "40%", label: "Reduction in Migration Downtime" },
+                { val: "50%", label: "Faster Access to Latest SAP Capabilities" },
+                { val: "20%", label: "Enhanced Cloud Scalability & Performance" },
               ].map((res, i) => (
                 <div className="col-6 col-md-3" key={i} ref={addToRefs}>
                   <div className="p-3">

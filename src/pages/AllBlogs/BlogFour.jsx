@@ -200,12 +200,12 @@ const BlogFour = () => {
 
             <hr />
 
-            <h4>Related Blogs</h4>
+            {/* <h4>Related Blogs</h4>
             <ul>
               <li>→ SAP S/4HANA Transformation Guide</li>
               <li>→ Industry 4.0 with SAP Solutions</li>
               <li>→ Digital Transformation Best Practices</li>
-            </ul>
+            </ul> */}
           </div>
 
         </div>

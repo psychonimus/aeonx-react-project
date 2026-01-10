@@ -28,11 +28,25 @@ const FooterSection = () => {
               icon={() => <FaDownload />}
               url="/investors/AeonX Digital Capability Deck - Latest Version.pdf"
             /> */}
-            <a className="text-decoration-none" href="/investors/AeonX Digital Capability Deck - Latest Version.pdf" download="AeonX Digital Capability Deck - Latest Version.pdf">
-              <button className='slide-button d-flex items-center align-items-center gap-2 text-start'>
-                    Company Deck  <FaDownload />
+            <button
+              className='slide-button d-flex items-center align-items-center gap-2 text-start'
+              onClick={() => {
+                const downloadDeck = () => {
+                  const link = document.createElement('a');
+                  link.href = "/investors/AeonX Digital Capability Deck - Latest Version.pdf";
+                  link.download = "AeonX Digital Capability Deck - Latest Version.pdf";
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                };
+
+                window.dispatchEvent(new CustomEvent('OPEN_CONTACT_POPUP', {
+                  detail: { onSuccess: downloadDeck }
+                }));
+              }}
+            >
+              Company Deck <FaDownload />
             </button>
-            </a>
           </div>
 
           {/* Solutions */}
@@ -42,6 +56,20 @@ const FooterSection = () => {
               <li><Link className="text-decoration-none text-light" to="/sap-focused-products">SAP Service Portfolio</Link></li>
               <li><Link className="text-decoration-none text-light" to="/aws-products">AWS Service Portfolio</Link></li>
               <li><Link className="text-decoration-none text-light" to="/aeonx-flagship-products">AeonX Flagship Products</Link></li>
+            </ul>
+          </div>
+
+          
+
+
+
+          {/* Case Studies */}
+          <div className="col-6 col-lg-2 col-md-4">
+            <h6 className="fw-bold mb-2">Case Studies</h6>
+            <ul className="list-unstyled text-light small">
+              <li><Link className="text-decoration-none text-light" to="/case-studies?category=SAP">SAP Case Studies</Link></li>
+              <li><Link className="text-decoration-none text-light" to="/case-studies?category=AWS">AWS Case Studies</Link></li>
+              <li><Link className="text-decoration-none text-light" to="/case-studies?category=Aeonx">AeonX Case Studies</Link></li>
             </ul>
           </div>
 
@@ -55,18 +83,6 @@ const FooterSection = () => {
               <li><Link className="text-decoration-none text-light" to="/services#integration">Integration</Link></li>
               <li><Link className="text-decoration-none text-light" to="/services#innovation">Innovation</Link></li>
               <li><Link className="text-decoration-none text-light" to="/services#staffing">Staffing</Link></li>
-            </ul>
-          </div>
-
-
-
-          {/* Case Studies */}
-          <div className="col-6 col-lg-2 col-md-4">
-            <h6 className="fw-bold mb-2">Case Studies</h6>
-            <ul className="list-unstyled text-light small">
-              <li><Link className="text-decoration-none text-light" to="/case-studies?category=SAP">SAP Case Studies</Link></li>
-              <li><Link className="text-decoration-none text-light" to="/case-studies?category=AWS">AWS Case Studies</Link></li>
-              <li><Link className="text-decoration-none text-light" to="/case-studies?category=Aeonx">AeonX Case Studies</Link></li>
             </ul>
           </div>
 
@@ -203,7 +219,7 @@ const FooterSection = () => {
         <hr className="border-light my-4" />
 
         <div className="footer-img">
-          <h6 className="mb-4">© 2025 AeonX Digital. All rights reserved.</h6>
+          <h6 className="mb-4">© 2026 AeonX Digital. All rights reserved.</h6>
           <img src={half} alt="" />
         </div>
       </div>

@@ -106,9 +106,9 @@ const CaseStudyEight = () => {
                 Optimizing Ashapura Minechem's Logistics with <span style={{ color: "#f97316" }}>Logystix</span>
               </h1>
               <p className="lead mb-5" style={{ opacity: 0.9, fontWeight: 300 }}>
-                Ashapura Minechem Ltd, a 60+ year global leader in multi-mineral solutions operating across 70+ countries, faced major inefficiencies in freight, routing, and logistics planning due to fragmented, manual processes. AeonX implemented Logystix, an AI-driven logistics optimization platform powered by AWS Bedrock, SageMaker, and Comprehend—modernizing Ashapura's freight booking, route planning, document processing, and vendor management with predictive intelligence and automation.
+                Ashapura Minechem Ltd, a 60+ year global leader in multi-mineral solutions operating across 70+ countries, faced major inefficiencies in freight, routing, and logistics planning due to fragmented, manual processes. AeonX implemented Logystix, an AI-driven logistics optimization platform powered by AWS Bedrock, SageMaker, and Comprehend, modernizing Ashapura's freight booking, route planning, document processing, and vendor management with predictive intelligence and automation.
               </p>
-              <button className="slide-button">
+              <button className="slide-button" onClick={() => window.scrollTo({ top: document.getElementById("executive-summary").offsetTop, behavior: "smooth" })}>
                 Read Full Story <FaArrowRight className="ms-2" />
               </button>
             </div>
@@ -140,7 +140,7 @@ const CaseStudyEight = () => {
       </section>
 
       {/* ================= EXECUTIVE SUMMARY ================= */}
-      <section className="py-5" style={{ background: "#f8f9fa" }}>
+      <section id="executive-summary" className="py-5" style={{ background: "#f8f9fa" }}>
         <div className="container py-5">
           <div className="row">
             <div className="col-lg-10 mx-auto" ref={addToRefs}>
@@ -150,7 +150,7 @@ const CaseStudyEight = () => {
                 </h2>
               </div>
               <p className="lead text-muted text-center">
-                Ashapura Minechem Ltd, a 60+ year global leader in multi-mineral solutions operating across 70+ countries, faced major inefficiencies in freight, routing, and logistics planning due to fragmented, manual processes. AeonX implemented Logystix, an AI-driven logistics optimization platform powered by AWS Bedrock, SageMaker, and Comprehend—modernizing Ashapura's freight booking, route planning, document processing, and vendor management with predictive intelligence and automation.
+                Ashapura Minechem Ltd, a 60+ year global leader in multi-mineral solutions operating across 70+ countries, faced major inefficiencies in freight, routing, and logistics planning due to fragmented, manual processes. AeonX implemented Logystix, an AI-driven logistics optimization platform powered by AWS Bedrock, SageMaker, and Comprehend, modernizing Ashapura's freight booking, route planning, document processing, and vendor management with predictive intelligence and automation.
               </p>
             </div>
           </div>
@@ -410,14 +410,14 @@ const CaseStudyEight = () => {
             {[
               { val: "18%", label: "Reduction in freight costs" },
               { val: "$3.2M", label: "Annual cost savings" },
-              { val: "30%", label: "Faster freight booking cycle (4 days → <24 hrs)" },
+              { val: "30%", label: "Faster freight booking cycle" },
               { val: "12 FTEs", label: "Manual effort eliminated: repurposed" },
               { val: "97%", label: "Delivery performance improved to: on-time" },
-              { val: "( %)", label: "Fuel efficiency improved" },
-              { val: "( %)", label: "SLA violations reduced" },
-              { val: "( %)", label: "Vendor performance accuracy improved" },
+              { val: "15%", label: "Fuel efficiency improved" },
+              { val: "45%", label: "SLA violations reduced" },
+              { val: "25%", label: "Vendor performance accuracy improved" },
               { val: "100%", label: "End-to-end audit & compliance visibility: traceability" },
-              { val: "( x)", label: "Scalability to handle peak shipment volumes" },
+              { val: "5 x", label: "Scalability to handle peak shipment volumes" },
             ].map((res, i) => (
               <div className="col-md-6 col-lg-4" key={i} ref={addToRefs}>
                 <div className="p-3">

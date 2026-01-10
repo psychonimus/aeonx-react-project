@@ -15,12 +15,12 @@ const PastEventSection = () => {
   const ceoConclave = [
     "/images/event/cio-conclave-event/ceo-conclave-1.webp",
     "/images/event/cio-conclave-event/ceo-conclave-2.webp",
-    "/images/event/cio-conclave-event/ceo-conclave-3.webp",
-    "/images/event/cio-conclave-event/ceo-conclave-4.webp",
+    "/images/event/cio-conclave-event/ceo-conclave-3.JPG",
+    "/images/event/cio-conclave-event/ceo-conclave-4.jpeg",
     "/images/event/cio-conclave-event/ceo-conclave-5.webp",
     "/images/event/cio-conclave-event/ceo-conclave-6.webp",
     "/images/event/cio-conclave-event/ceo-conclave-7.webp",
-    "/images/event/cio-conclave-event/ceo-conclave-8.webp",
+    "/images/event/cio-conclave-event/ceo-conclave-8.JPG",
   ];
 
   const images2 = [
@@ -50,15 +50,15 @@ const PastEventSection = () => {
     <section className="bento-section" id="past-events" >
         
         <Header 
-            subtext="Past Events"
-            headline="A Look Back at Events"
-            highlight="That Inspired Innovation"
+            
+            highlight="A Look Back at Events"
+            headline="That Inspired Innovation"
         />
 
 
-      <div className="container">
-        <h2 className="bento-title mt-5 ">SAP STE TOUR</h2>
-        <p className="bento-date ">December 2025</p>
+      <div className="container" data-aos="fade-up">
+        <h2 className="bento-title mt-2 ">SAP STE TOUR</h2>
+        <p className="bento-date ">Kolkata, Mumbai, New Delhi, Bangalore</p>
 
         <div className="img-grid mb-5">
           {images.map((src, i) => (
@@ -69,9 +69,9 @@ const PastEventSection = () => {
         </div>
       </div>
 
-      <div className="container">
-        <h2 className="bento-title mt-5 ">CIO Conclave</h2>
-        <p className="bento-date ">November 2025</p>
+      <div className="container" data-aos="fade-up">
+        <h2 className="bento-title mt-2 ">CIO Conclave</h2>
+        <p className="bento-date ">Ahmedabad, Mumbai</p>
 
         <div className="img-grid mb-5">
           {ceoConclave.map((src, i) => (
@@ -83,9 +83,9 @@ const PastEventSection = () => {
       </div>
 
 
-      <div className="container">
-        <h2 className="bento-title mt-5 ">Elevate X </h2>
-        <p className="bento-date ">May 2025</p>
+      <div className="container" data-aos="fade-up">
+        <h2 className="bento-title mt-2 ">Elevate X </h2>
+        <p className="bento-date ">Pune, Ahmedabad, Kolkata, Chandigarh</p>
 
         <div className="img-grid mb-5">
           {images2.map((src, i) => (

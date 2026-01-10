@@ -79,7 +79,8 @@ const MigrationSection = () => {
     minHeight: "120px",
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center",
+    // justifyContent: "space-between",
+    alignItems: "center",
     cursor: "pointer",
     transform: hoveredMetric === id ? "translateY(-5px)" : "translateY(0)",
     boxShadow:
@@ -116,7 +117,7 @@ const MigrationSection = () => {
   return (
     <div className="container py-5">
 
-      <section style={sectionStyleAlt} id="implementation">
+      <section style={sectionStyleAlt} id="implementation" data-aos="fade-up">
         <div style={containerStyle}>
           <div className="row d-flex flex-column-reverse flex-lg-row g-1 align-items-start mb-5">
             <div
@@ -126,7 +127,7 @@ const MigrationSection = () => {
               <div>
                 <h2 style={h2Style}>SAP Implementation Services</h2>
                 <p style={pStyle}>
-                  Business models are evolving faster than ever, and the real differentiator today is how quickly your systems can adapt. At AeonX Digital, we enable this shift by implementing SAP S/4HANA and SAP Rise as the digital backbone of your operations—making enterprises data-driven, future-ready, and operationally agile.
+                  Business models are evolving faster than ever, and the real differentiator today is how quickly your systems can adapt. At AeonX Digital, we enable this shift by implementing SAP S/4HANA and SAP Rise as the digital backbone of your operations, making enterprises data-driven, future-ready, and operationally agile.
                 </p>
                 
               </div>
@@ -143,12 +144,12 @@ const MigrationSection = () => {
               <div className="row g-1">
                 <div className="col-12 col-sm-6 col-md-4">
                   <div
-                    className="text-center border rounded-3 p-3 h-100"
+                    className="text-center border rounded-3 p-3 h-100" 
                     style={getMetricBoxStyle("i1", "#f8f9fa")}
                     onMouseEnter={() => setHoveredMetric("i1")}
                     onMouseLeave={() => setHoveredMetric(null)}
                   >
-                    <h2 style={metricH2Style}>{inView ? <CountUp end={99} duration={2.5} /> : "0"}%</h2>
+                    <h2 style={metricH2Style}>{inView ? <CountUp end={95} duration={2.5} /> : "0"}%</h2>
                     <p style={metricPStyle}>
                       of projects delivered within agreed timelines
                     </p>
@@ -161,7 +162,7 @@ const MigrationSection = () => {
                     onMouseEnter={() => setHoveredMetric("i2")}
                     onMouseLeave={() => setHoveredMetric(null)}
                   >
-                    <h2 style={metricH2Style}>{inView ? <CountUp end={40} duration={2.5} /> : "0"}+</h2>
+                    <h2 style={metricH2Style}>{inView ? <CountUp end={25} duration={2.5} /> : "0"}+</h2>
                     <p style={metricPStyle}>
                       Go-lives delivered earlier than planned
                     </p>
@@ -174,7 +175,7 @@ const MigrationSection = () => {
                     onMouseEnter={() => setHoveredMetric("i3")}
                     onMouseLeave={() => setHoveredMetric(null)}
                   >
-                    <h2 style={metricH2Style}>{inView ? <CountUp end={30} duration={2.5} /> : "0"}%</h2>
+                    <h2 style={metricH2Style}>{inView ? <CountUp end={25} duration={2.5} /> : "0"}%</h2>
                     <p style={metricPStyle}>
                       Reduction in overall implementation time
                     </p>
@@ -186,7 +187,7 @@ const MigrationSection = () => {
         </div>
       </section>
 
-      <section style={sectionStyle} id="migration">
+      <section style={sectionStyle} id="migration" data-aos="fade-up">
         <div style={containerStyle}>
           <div className="row g-1 d-flex flex-column-reverse flex-lg-row align-items-start mb-5">
             <div className="col-12 col-lg-6 order-1 order-md-1">
@@ -206,7 +207,7 @@ const MigrationSection = () => {
                     onMouseEnter={() => setHoveredMetric("m1")}
                     onMouseLeave={() => setHoveredMetric(null)}
                   >
-                    <h2 style={metricH2Style}>{inView ? <CountUp end={30} duration={2.5} /> : "0"}%</h2>
+                    <h2 style={metricH2Style}>{inView ? <CountUp end={25} duration={2.5} /> : "0"}%</h2>
                     <p style={metricPStyle}>
                       Decrease in infra & maintenance costs
                     </p>
@@ -219,7 +220,7 @@ const MigrationSection = () => {
                     onMouseEnter={() => setHoveredMetric("m2")}
                     onMouseLeave={() => setHoveredMetric(null)}
                   >
-                    <h2 style={metricH2Style}>{inView ? <CountUp end={10} duration={2.5} /> : "0"}%</h2>
+                    <h2 style={metricH2Style}>{inView ? <CountUp end={15} duration={2.5} /> : "0"}%</h2>
                     <p style={metricPStyle}>
                       Improvement in system performance
                     </p>
@@ -232,7 +233,7 @@ const MigrationSection = () => {
                     onMouseEnter={() => setHoveredMetric("m3")}
                     onMouseLeave={() => setHoveredMetric(null)}
                   >
-                    <h2 style={metricH2Style}>{inView ? <CountUp end={50} duration={2.5} /> : "0"}%</h2>
+                    <h2 style={metricH2Style}>{inView ? <CountUp end={40} duration={2.5} /> : "0"}%</h2>
                     <p style={metricPStyle}>
                       Automation achieved during migration
                     </p>
@@ -274,7 +275,7 @@ const MigrationSection = () => {
       </section>
 
       {/* Integration Services */}
-      <section style={sectionStyleAlt} id="integration">
+      <section style={sectionStyleAlt} id="integration" data-aos="fade-up">
         <div style={containerStyle}>
           <div className="row d-flex flex-column-reverse flex-lg-row g-1 align-items-start mb-5">
             <div
@@ -321,7 +322,7 @@ const MigrationSection = () => {
                     onMouseEnter={() => setHoveredMetric("i1")}
                     onMouseLeave={() => setHoveredMetric(null)}
                   >
-                    <h2 style={metricH2Style}>90%</h2>
+                    <h2 style={metricH2Style}>{inView ? <CountUp end={99} duration={2.5} /> : "0"}.9%</h2>
                     <p style={metricPStyle}>
                       Real-time data sync across 5 business-critical platforms
                     </p>
@@ -334,7 +335,7 @@ const MigrationSection = () => {
                     onMouseEnter={() => setHoveredMetric("i2")}
                     onMouseLeave={() => setHoveredMetric(null)}
                   >
-                    <h2 style={metricH2Style}>10%</h2>
+                    <h2 style={metricH2Style}>{inView ? <CountUp end={40} duration={2.5} /> : "0"}%</h2>
                     <p style={metricPStyle}>
                       Manual Data handling Eliminated by
                     </p>
@@ -347,7 +348,7 @@ const MigrationSection = () => {
                     onMouseEnter={() => setHoveredMetric("i3")}
                     onMouseLeave={() => setHoveredMetric(null)}
                   >
-                    <h2 style={metricH2Style}>100%</h2>
+                    <h2 style={metricH2Style}>{inView ? <CountUp end={35} duration={2.5} /> : "0"}%</h2>
                     <p style={metricPStyle}>
                       Faster rollouts than standard timelines
                     </p>
@@ -360,7 +361,7 @@ const MigrationSection = () => {
       </section>
 
       {/* Innovation Services */}
-      <section style={sectionStyle} id="innovation">
+      <section style={sectionStyle} id="innovation" data-aos="fade-up">
         <div style={containerStyle}>
           <div className="row g-1 d-flex flex-column-reverse flex-lg-row align-items-start mb-5">
             <div className="col-12 col-lg-6 order-1 order-md-1">
@@ -380,7 +381,7 @@ const MigrationSection = () => {
                     onMouseEnter={() => setHoveredMetric("in1")}
                     onMouseLeave={() => setHoveredMetric(null)}
                   >
-                    <h2 style={metricH2Style}>{inView ? <CountUp end={30} duration={2.5} /> : "0"}%</h2>
+                    <h2 style={metricH2Style}>{inView ? <CountUp end={50} duration={2.5} /> : "0"}%</h2>
                     <p style={metricPStyle}>
                       functional adoption within 6 months of rollout
                     </p>
@@ -393,7 +394,7 @@ const MigrationSection = () => {
                     onMouseEnter={() => setHoveredMetric("in2")}
                     onMouseLeave={() => setHoveredMetric(null)}
                   >
-                    <h2 style={metricH2Style}>{inView ? <CountUp end={6} duration={2.5} /> : "0"}</h2>
+                    <h2 style={metricH2Style}>{inView ? <CountUp end={10} duration={2.5} /> : "0"}</h2>
                     <p style={metricPStyle}>
                       reusable frameworks deployed across operations and supply
                       chain
@@ -407,7 +408,7 @@ const MigrationSection = () => {
                     onMouseEnter={() => setHoveredMetric("in3")}
                     onMouseLeave={() => setHoveredMetric(null)}
                   >
-                    <h2 style={metricH2Style}>{inView ? <CountUp end={85} duration={2.5} /> : "0"}%</h2>
+                    <h2 style={metricH2Style}>{inView ? <CountUp end={40} duration={2.5} /> : "0"}%</h2>
                     <p style={metricPStyle}>
                       Improved data-led decision accuracy using real-time
                       analytics integration
@@ -448,7 +449,7 @@ const MigrationSection = () => {
       </section>
 
       {/* Staffing Services */}
-      <section className="staffing-services" style={sectionStyleAlt} id="staffing">
+      <section className="staffing-services" style={sectionStyleAlt} id="staffing" data-aos="fade-up">
         <div style={containerStyle}>
           <div className="row g-1 d-flex flex-column-reverse flex-lg-row align-items-start mb-5">
             <div
@@ -494,7 +495,7 @@ const MigrationSection = () => {
                     onMouseEnter={() => setHoveredMetric("s1")}
                     onMouseLeave={() => setHoveredMetric(null)}
                   >
-                    <h2 style={metricH2Style}>{inView ? <CountUp end={30} duration={2.5} /> : "0"}%</h2>
+                    <h2 style={metricH2Style}>{inView ? <CountUp end={25} duration={2.5} /> : "0"}%</h2>
                     <p style={metricPStyle}>
                       reduction in time to deploy talent
                     </p>
@@ -507,7 +508,7 @@ const MigrationSection = () => {
                     onMouseEnter={() => setHoveredMetric("s2")}
                     onMouseLeave={() => setHoveredMetric(null)}
                   >
-                    <h2 style={metricH2Style}>{inView ? <CountUp end={6} duration={2.5} /> : "0"}</h2>
+                    <h2 style={metricH2Style}>{inView ? <CountUp end={15} duration={2.5} /> : "0"}%</h2>
                     <p style={metricPStyle}>
                       Reduction in overheads, training expense and retention
                       cost
@@ -521,7 +522,7 @@ const MigrationSection = () => {
                     onMouseEnter={() => setHoveredMetric("s3")}
                     onMouseLeave={() => setHoveredMetric(null)}
                   >
-                    <h2 style={metricH2Style}>{inView ? <CountUp end={90} duration={2.5} /> : "0"}%</h2>
+                    <h2 style={metricH2Style}>{inView ? <CountUp end={95} duration={2.5} /> : "0"}%</h2>
                     <p style={metricPStyle}>
                       alignment to technical & domain requirements
                     </p>

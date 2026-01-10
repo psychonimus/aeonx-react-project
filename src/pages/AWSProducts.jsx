@@ -148,20 +148,25 @@ const AWSProducts = () => {
             <div className="row">
               <div className="col-12">
                 <div className="life-hero-content text-center d-flex flex-column justify-content-center  h-100">
-                  <p className="eyebrow">AWS-Focused Products</p>
-                  <h1 className="mb-2">
+                  {/* <p className="eyebrow" data-aos="fade-up">AWS-Focused Products</p> */}
+                  <h1 className="mb-2" data-aos="fade-up" data-aos-delay="100">
                     Transform Your Infrastructure and Accelerate Innovation with AWS
                   </h1>
-                  <p className="mb-4">At AeonX Digital, we help organizations modernize their IT landscape and unlock innovation through AWS cloud transformation. Our solutions are designed to simplify operations, reduce costs, and empower businesses with a fully connected, data-driven digital ecosystem.
+                  <p className="mb-4" data-aos="fade-up" data-aos-delay="200">At AeonX Digital, we help organizations modernize their IT landscape and unlock innovation through AWS cloud transformation. Our solutions are designed to simplify operations, reduce costs, and empower businesses with a fully connected, data-driven digital ecosystem.
                   </p>
-                  <p>With proven expertise in SAP on AWS, server migration, backup and disaster recovery, CI/CD automation, managed services, analytics, integration, and machine learning, AeonX enables enterprises to transition seamlessly to a scalable, cloud-native infrastructure.
+                  <p data-aos="fade-up" data-aos-delay="300">With proven expertise in SAP on AWS, server migration, backup and disaster recovery, CI/CD automation, managed services, analytics, integration, and machine learning, AeonX enables enterprises to transition seamlessly to a scalable, cloud-native infrastructure.
                   </p>
 
-                  <div className="event-hero-buttons d-flex justify-content-center">
+                  <div className="event-hero-buttons d-flex justify-content-center" data-aos="fade-up" data-aos-delay="400">
                     <GlassButton
                       title="Explore AWS Products"
                       icon={() => <IoIosArrowDropdownCircle size={30} />}
-                      href="/aws-products#aws-services"
+                      onClick={() => {
+                        window.scrollTo({
+                          top: document.getElementById("aws-services").offsetTop,
+                          behavior: "smooth"
+                        });
+                      }}
                     />
 
                   </div>
@@ -187,7 +192,7 @@ const AWSProducts = () => {
         </div>
 
         {/* WORKSPACE SOLUTIONS */}
-        <section className="rise-with-sap my-5" id="workspace-solutions">
+        <section className="rise-with-sap my-5" id="workspace-solutions" data-aos="fade-up">
           <div className="container">
             <div className="row grey-bg">
               <div className="col-lg-6 left py-4 px-5">
@@ -215,7 +220,7 @@ const AWSProducts = () => {
 
 
 
-        <section className="major-points my-5">
+        <section className="major-points my-5" data-aos="fade-up">
           <div className="container">
             <div className="point-heading ">
               <h2>Why Choose Amazon WorkSpaces with AeonX</h2>
@@ -305,7 +310,7 @@ const AWSProducts = () => {
         </section>
 
         {/* CLOUD SOLUTIONS */}
-        <section className="rise-with-sap my-5" id="cloud-solutions">
+        <section className="rise-with-sap my-5" id="cloud-solutions" data-aos="fade-up">
           <div className="container">
             <div className="row grey-bg">
 
@@ -324,13 +329,13 @@ const AWSProducts = () => {
                 <img src={cloudFront} alt="" />
                 <h2>AWS Cloud Solutions</h2>
                 <p>AeonX delivers robust and scalable AWS CloudFront solutions designed to enhance content delivery performance across the globe. With low latency, high transfer speeds, and a developer-friendly environment, our AWS cloud capabilities ensure secure and seamless distribution of data, applications, videos, and APIs.</p>
-                <p>Built to integrate effortlessly with AWS Shield, AWS Web Application Firewall, and Amazon Route 53, CloudFront provides enterprise-grade protection—offering features like HTTPS support, field-level encryption, and strong defenses against network-level and application-level DDoS attacks. These services operate across globally distributed edge locations, giving users a faster, safer, and more reliable digital experience.</p>
+                <p>Built to integrate effortlessly with AWS Shield, AWS Web Application Firewall, and Amazon Route 53, CloudFront provides enterprise-grade protection offering features like HTTPS support, field-level encryption, and strong defenses against network-level and application-level DDoS attacks. These services operate across globally distributed edge locations, giving users a faster, safer, and more reliable digital experience.</p>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="major-points my-5">
+        <section className="major-points my-5" data-aos="fade-up">
           <div className="container">
             <div className="point-heading ">
               <h2>What you can achieve with AWS Cloud Solutions from AeonX</h2>
@@ -410,17 +415,15 @@ const AWSProducts = () => {
 
         {/* SAP ON AWS */}
 
-        <section className="rise-with-sap my-5" id="sap-on-aws">
+        <section className="rise-with-sap my-5" id="sap-on-aws" data-aos="fade-up">
           <div className="container">
             <div className="row grey-bg">
               <div className="col-lg-6 left py-4 px-5">
                 <img src={saponaws} alt="" style={{ filter: "brightness(0)" }} />
                 <h2>SAP on AWS Capabilities</h2>
-                <p>AeonX is among a select group of SAP partners equipped to manage end-to-end SAP transformations—including implementations, rollouts, cloud migrations, upgrades, and ongoing support—across diverse industries and complex SAP landscapes. Our consultative approach ensures every deployment is tailored, scalable, and aligned with business goals.
-                </p>
-                <p>With deep expertise in running SAP workloads on AWS, our team ensures high availability, strong performance, and seamless integration with AWS services such as Amazon S3, Amazon RDS, and Amazon Redshift. This enables businesses to store, process, and analyze data efficiently while building a reliable and secure SAP environment in the cloud.
-                </p>
-                <p>Our SAP on AWS solutions give enterprises the agility, flexibility, and security required to accelerate growth and support continuous innovation.
+                <p>AeonX is among a select group of SAP partners equipped to manage end-to-end SAP transformations including implementations, rollouts, cloud migrations, upgrades, and ongoing support across diverse industries and complex SAP landscapes. Our consultative approach ensures every deployment is tailored, scalable, and aligned with business goals.
+              <br />With deep expertise in running SAP workloads on AWS, our team ensures high availability, strong performance, and seamless integration with AWS services such as Amazon S3, Amazon RDS, and Amazon Redshift. This enables businesses to store, process, and analyze data efficiently while building a reliable and secure SAP environment in the cloud.
+             <br/>Our SAP on AWS solutions give enterprises the agility, flexibility, and security required to accelerate growth and support continuous innovation.
                 </p>
               </div>
               <div className="col-lg-6 right px-0">
@@ -445,7 +448,7 @@ const AWSProducts = () => {
 
         {/* MACHINE LEARNING */}
 
-        <section className="rise-with-sap my-5" id="machine-learning">
+        <section className="rise-with-sap my-5" id="machine-learning" data-aos="fade-up">
           <div className="container">
             <div className="row grey-bg">
 
@@ -463,9 +466,8 @@ const AWSProducts = () => {
               <div className="col-lg-6 left py-4 px-5 order-1 order-lg-2">
                 <img src={awsmachinelearning} alt="" />
                 <h2>AWS Machine Learning Solutions</h2>
-                <p>Enterprises are increasingly turning to machine learning to solve complex business challenges. AeonX delivers end-to-end AWS machine learning solutions that help organizations unlock insights, automate processes, and drive smarter decisions. Our expertise, strong domain understanding, and collaborative approach enable businesses to innovate faster and scale with confidence.
-                </p>
-                <p>
+                <p >Enterprises are increasingly turning to machine learning to solve complex business challenges. AeonX delivers end-to-end AWS machine learning solutions that help organizations unlock insights, automate processes, and drive smarter decisions. Our expertise, strong domain understanding, and collaborative approach enable businesses to innovate faster and scale with confidence.
+                  <br />
                   By leveraging AWS’s powerful ML ecosystem, we help companies enhance productivity, improve accuracy, and detect anomalies faster using techniques such as mathematical optimization, pattern recognition, and computational intelligence.
                 </p>
               </div>
@@ -473,7 +475,7 @@ const AWSProducts = () => {
           </div>
         </section>
 
-        <section className="major-points my-5">
+        <section className="major-points my-5" data-aos="fade-up">
           <div className="container">
             <div className="point-heading ">
               <h2>What AWS Machine Learning Enables for Your Business:</h2>
@@ -566,15 +568,14 @@ const AWSProducts = () => {
 
         {/* IOT SOLUTIONS */}
 
-        <section className="rise-with-sap my-5" id="iot-solutions">
+        <section className="rise-with-sap my-5" id="iot-solutions" data-aos="fade-up">
           <div className="container">
             <div className="row grey-bg">
               <div className="col-lg-6 left py-4 px-5">
-                <img src={awsIot} alt="" style={{filter: "brightness(0)"}} />
+                <img src={awsIot} alt="" style={{ filter: "brightness(0)" }} />
                 <h2>IoT Solutions</h2>
-                <p>AeonX helps enterprises convert IoT opportunities into real business impact by delivering advanced, cloud-enabled IoT solutions tailored to operational needs.
-                </p>
-                <p>From selecting the right sensors to building intelligent platforms and generating actionable insights, we offer end-to-end IoT services designed to improve efficiency, reduce costs, and enhance customer experiences. Our strong partnerships with leading technology providers, including AWS IoT, Microsoft Azure, PTC ThingWorx, MongoDB, Intel, WindRiver, and others, position us to meet diverse IoT requirements with confidence.</p>
+                <p >AeonX helps enterprises convert IoT opportunities into real business impact by delivering advanced, cloud-enabled IoT solutions tailored to operational needs.
+                  <br />From selecting the right sensors to building intelligent platforms and generating actionable insights, we offer end-to-end IoT services designed to improve efficiency, reduce costs, and enhance customer experiences. Our strong partnerships with leading technology providers, including AWS IoT, Microsoft Azure, PTC ThingWorx, MongoDB, Intel, WindRiver, and others, position us to meet diverse IoT requirements with confidence.</p>
               </div>
               <div className="col-lg-6 right px-0">
                 <div
@@ -591,7 +592,7 @@ const AWSProducts = () => {
           </div>
         </section>
 
-        <section className="major-points my-5">
+        <section className="major-points my-5" data-aos="fade-up">
           <div className="container">
             <div className="point-heading ">
               <h2>Key IoT capabilities we deliver:</h2>
@@ -669,7 +670,7 @@ const AWSProducts = () => {
 
         {/* DEVOPS SOLUTIONS */}
 
-        <section className="rise-with-sap my-5" id="devops-solutions">
+        <section className="rise-with-sap my-5" id="devops-solutions" data-aos="fade-up">
           <div className="container">
             <div className="row grey-bg">
 
@@ -687,9 +688,8 @@ const AWSProducts = () => {
               <div className="col-lg-6 left py-4 px-5 order-1 order-lg-2">
                 <img src={DevOpsLogo} alt="" />
                 <h2>DevOps Solutions</h2>
-                <p>AeonX delivers comprehensive AWS DevOps solutions that streamline development, improve collaboration, and accelerate software delivery. By integrating automation, continuous integration, and lean development practices, we help teams eliminate bottlenecks, enhance operational performance, and respond quickly to changing business needs. Our DevOps approach bridges the gaps between development, IT operations, and quality assurance—enabling faster, more reliable, and scalable application delivery.
-                </p>
-                <p>
+                <p >AeonX delivers comprehensive AWS DevOps solutions that streamline development, improve collaboration, and accelerate software delivery. By integrating automation, continuous integration, and lean development practices, we help teams eliminate bottlenecks, enhance operational performance, and respond quickly to changing business needs. Our DevOps approach bridges the gaps between development, IT operations, and quality assurance enabling faster, more reliable, and scalable application delivery.
+                  <br />
                   With end-to-end AWS DevOps tools and frameworks, we support clients in building, deploying, and managing applications efficiently while strengthening culture, processes, and engineering workflows. The result is continuous delivery, improved stability, and higher customer value.
                 </p>
               </div>
@@ -697,7 +697,7 @@ const AWSProducts = () => {
           </div>
         </section>
 
-        <section className="major-points my-5">
+        <section className="major-points my-5" data-aos="fade-up">
           <div className="container">
             <div className="point-heading ">
               <h2>Our DevOps capabilities on AWS include:</h2>
@@ -775,13 +775,13 @@ const AWSProducts = () => {
 
         {/* DATABASE SOLUTIONS */}
 
-        <section className="rise-with-sap my-5" id="database-solutions">
+        <section className="rise-with-sap my-5" id="database-solutions" data-aos="fade-up">
           <div className="container">
             <div className="row grey-bg">
               <div className="col-lg-6 left py-4 px-5">
                 <img src={awsDatabaseLogo} alt="" />
                 <h2>Database Solutions</h2>
-                <p>Managing the massive volumes of data generated each day has become a major challenge for modern enterprises. AeonX helps organizations unlock the full value of their data with robust AWS Database Solutions designed to support informed decision-making, improve performance, and accelerate business growth. Our experts work across SAP, Sybase, Microsoft SQL, Oracle, MySQL, MongoDB, and other leading database technologies—ensuring a strong and scalable data foundation for every business.</p>
+                <p>Managing the massive volumes of data generated each day has become a major challenge for modern enterprises. AeonX helps organizations unlock the full value of their data with robust AWS Database Solutions designed to support informed decision-making, improve performance, and accelerate business growth. Our experts work across SAP, Sybase, Microsoft SQL, Oracle, MySQL, MongoDB, and other leading database technologies ensuring a strong and scalable data foundation for every business.</p>
                 <p>Our database services support end-to-end data and analytics needs using a hybrid, open-source-friendly approach. With distributed and hybrid data cloud architectures, we help businesses achieve higher performance, greater uptime, and improved cost efficiency across all environments.</p>
               </div>
               <div className="col-lg-6 right px-0">
@@ -799,7 +799,7 @@ const AWSProducts = () => {
           </div>
         </section>
 
-        <section className="major-points my-5">
+        <section className="major-points my-5" data-aos="fade-up">
           <div className="container">
             <div className="point-heading ">
               <h2>Key advantages of database solutions:</h2>
@@ -828,7 +828,7 @@ const AWSProducts = () => {
                   </div>
                   <div className="col-10 point-text d-flex align-items-center">
                     <h4>
-                      Support for all data types—structured, unstructured, SQL, NoSQL, IoT, and blockchain
+                      Support for all data types, structured, unstructured, SQL, NoSQL, IoT, and blockchain
                     </h4>
                   </div>
                 </div>
@@ -875,7 +875,7 @@ const AWSProducts = () => {
           </div>
         </section>
 
-        <section className="major-points my-5">
+        <section className="major-points my-5" data-aos="fade-up">
           <div className="container">
             <div className="point-heading ">
               <h2>Analytics Services</h2>
@@ -954,7 +954,7 @@ const AWSProducts = () => {
 
         {/* CLOUD MIGRATION */}
 
-        <section className="rise-with-sap my-5" id="cloud-migration">
+        <section className="rise-with-sap my-5" id="cloud-migration" data-aos="fade-up">
           <div className="container">
             <div className="row grey-bg">
 
@@ -972,14 +972,16 @@ const AWSProducts = () => {
               <div className="col-lg-6 left py-4 px-5 order-1 order-lg-2">
                 <img src={cloudMigrationBannerTop} alt="" />
                 <h2>Cloud Migration</h2>
-                <p>AeonX enables seamless digital transformation with end-to-end AWS Cloud Migration solutions tailored to your business needs. Through the right strategy, roadmap, and migration framework, we help organizations modernize their infrastructure and move to the cloud with confidence. Our migration approach combines industry-tested methods with pre-configured tools, automation, and best practices across all cloud models—whether IaaS, PaaS, or SaaS.</p>
+                <p
+             
+                >AeonX enables seamless digital transformation with end-to-end AWS Cloud Migration solutions tailored to your business needs. Through the right strategy, roadmap, and migration framework, we help organizations modernize their infrastructure and move to the cloud with confidence. Our migration approach combines industry-tested methods with pre-configured tools, automation, and best practices across all cloud models, whether IaaS, PaaS, or SaaS.</p>
               </div>
             </div>
           </div>
         </section>
 
 
-        <section className="major-points my-5">
+        <section className="major-points my-5" data-aos="fade-up">
           <div className="container">
             <div className="point-heading ">
               <h2>Our Cloud Migration Capabilities Include:</h2>
@@ -1057,7 +1059,7 @@ const AWSProducts = () => {
 
         {/* application modernization  */}
 
-        <section className="rise-with-sap my-5" id="application-modernization">
+        <section className="rise-with-sap my-5" id="application-modernization" data-aos="fade-up">
           <div className="container">
             <div className="row  grey-bg">
 
@@ -1075,16 +1077,26 @@ const AWSProducts = () => {
               <div className="col-lg-6 left py-4 px-5 order-1 order-lg-2">
                 <img src={appModernTop} alt="" />
                 <h2>Application Modernization</h2>
-                <p>We help organizations transform their application landscape through a comprehensive suite of modernization services, including re-platforming, re-hosting, re-architecting, re-coding, re-engineering, interoperability enhancements, and strategic application retirement. We also support architecture evaluations to determine the most effective modernization path for your business.
+                <p
+                  style={{
+                    textAlign: "left",
+                    wordSpacing: "normal",
+                    letterSpacing: "normal",
+                    lineHeight: "1.6",
+                    maxWidth: "65ch",
+                  }}
+                >
+                  We help organizations transform their application landscape through a comprehensive suite of modernization services, including re-platforming, re-hosting, re-architecting, re-coding, re-engineering, interoperability enhancements, and strategic application retirement. We also support architecture evaluations to determine the most effective modernization path for your business.
+                  <br />
+                  Using proven DevOps practices, open-source platforms, and advanced automation tools, we enable faster, secure, and efficient software development. Our modernization approach delivers a consistent development and operations experience, helping organizations innovate quickly while reducing long-term costs.
                 </p>
-                <p>Using proven DevOps practices, open-source platforms, and advanced automation tools, we enable faster, secure, and efficient software development. Our modernization approach delivers a consistent development and operations experience, helping organizations innovate quickly while reducing long-term costs.
-                </p>
+
               </div>
             </div>
           </div>
         </section>
 
-        <section className="major-points my-5">
+        <section className="major-points my-5" data-aos="fade-up">
           <div className="container">
             <div className="point-heading ">
               <h2>Our Application Modernization Capabilities Include:</h2>
@@ -1142,7 +1154,7 @@ const AWSProducts = () => {
                   </div>
                   <div className="col-10 point-text d-flex  align-items-center">
                     <h4>Streamlining developer workflows with serverless architectures and automated event orchestration
-</h4>
+                    </h4>
                   </div>
                 </div>
 
@@ -1165,18 +1177,18 @@ const AWSProducts = () => {
         </section>
 
 
-        
+
 
         {/* AWS MANAGED SERVICES */}
 
-        <section className="rise-with-sap my-5" id="aws-managed-services">
+        <section className="rise-with-sap my-5" id="aws-managed-services" data-aos="fade-up">
           <div className="container">
             <div className="row grey-bg">
 
               <div className="col-lg-6 left py-4 px-5">
                 <img src={managedServiceLogo} alt="" />
                 <h2>AWS Managed Services</h2>
-                <p>AWS Managed Services help businesses maintain control of their cloud environment while reducing operational costs and improving reliability. As an AWS Advanced Tier Partner, AeonX manages your AWS infrastructure end-to-end—ensuring stability, security, and seamless performance across all applications. We set up and administer a wide range of AWS services, including Amazon EC2, Amazon RDS, Amazon S3, Elastic Load Balancing, Amazon ElastiCache, Amazon Route 53, and more.
+                <p>AWS Managed Services help businesses maintain control of their cloud environment while reducing operational costs and improving reliability. As an AWS Advanced Tier Partner, AeonX manages your AWS infrastructure end-to-end, ensuring stability, security, and seamless performance across all applications. We set up and administer a wide range of AWS services, including Amazon EC2, Amazon RDS, Amazon S3, Elastic Load Balancing, Amazon ElastiCache, Amazon Route 53, and more.
                 </p>
                 <p>Our managed services also support smooth workload migration from on-premise or other hosting environments to AWS. Using proven methodologies and industry best practices, we simplify and accelerate migrations, enabling businesses to unlock new opportunities and scale efficiently on the cloud.
                 </p>
@@ -1198,7 +1210,7 @@ const AWSProducts = () => {
           </div>
         </section>
 
-        <section className="major-points my-5">
+        <section className="major-points my-5" data-aos="fade-up">
           <div className="container">
             <div className="point-heading ">
               <h2>Our AWS Managed Services include:</h2>
@@ -1261,7 +1273,7 @@ const AWSProducts = () => {
                 <div className="row point py-4">
                   <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <GiGears size={24} />  
+                      <GiGears size={24} />
                     </div>
                   </div>
                   <div className="col-10 point-text d-flex  align-items-center">
@@ -1275,13 +1287,13 @@ const AWSProducts = () => {
           </div>
         </section>
 
-        
 
 
-        
+
+
         {/* Microsoft on AWS */}
 
-        <section className="rise-with-sap my-5" id="ms-on-aws">
+        <section className="rise-with-sap my-5" id="ms-on-aws" data-aos="fade-up">
           <div className="container">
             <div className="row grey-bg">
 
@@ -1307,7 +1319,7 @@ const AWSProducts = () => {
           </div>
         </section>
 
-        <section className="major-points my-5">
+        <section className="major-points my-5" data-aos="fade-up">
           <div className="container">
             <div className="point-heading ">
               <h2>What Microsoft on AWS Enables:</h2>
@@ -1385,7 +1397,7 @@ const AWSProducts = () => {
 
         {/* CLOUD STORAGE SOLUTIONS */}
 
-        <section className="rise-with-sap my-5" id="cloud-storage-solutions">
+        <section className="rise-with-sap my-5" id="cloud-storage-solutions" data-aos="fade-up">
           <div className="container">
             <div className="row grey-bg">
 
@@ -1414,7 +1426,7 @@ const AWSProducts = () => {
           </div>
         </section>
 
-        <section className="major-points my-5">
+        <section className="major-points my-5" data-aos="fade-up">
           <div className="container">
             <div className="point-heading ">
               <h2>What You Can Achieve with Cloud Storage Solutions:</h2>
@@ -1425,7 +1437,7 @@ const AWSProducts = () => {
                 <div className="row point py-4">
                   <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                     <GiExpand size={24} />
+                      <GiExpand size={24} />
                     </div>
                   </div>
                   <div className="col-10 point-text d-flex align-items-center">
@@ -1496,7 +1508,7 @@ const AWSProducts = () => {
 
         {/* STORAGE SOLUTIONS */}
 
-        <div className="container" id="storage-solutions">
+        <div className="container" id="storage-solutions" data-aos="fade-up">
           <div className="point-heading ">
             <h2>Our Storage Solutions:</h2>
           </div>
@@ -1507,7 +1519,7 @@ const AWSProducts = () => {
 
         {/* aws big data and analytics */}
 
-        <section className="rise-with-sap my-5" id="big-data-solutions">
+        <section className="rise-with-sap my-5" id="big-data-solutions" data-aos="fade-up">
           <div className="container">
             <div className="row grey-bg">
 
@@ -1534,7 +1546,7 @@ const AWSProducts = () => {
           </div>
         </section>
 
-        <section className="major-points my-5">
+        <section className="major-points my-5" data-aos="fade-up">
           <div className="container">
             <div className="point-heading ">
               <h2>What You Can Achieve with AWS Big Data & Analytics:</h2>
@@ -1613,7 +1625,7 @@ const AWSProducts = () => {
 
         {/* SECURITY MANAGEMENT SOLUTIONS */}
 
-        <section className="rise-with-sap my-5" id="security-management-solutions">
+        <section className="rise-with-sap my-5" id="security-management-solutions" data-aos="fade-up">
           <div className="container">
             <div className="row grey-bg">
 
@@ -1642,7 +1654,7 @@ const AWSProducts = () => {
           </div>
         </section>
 
-        <section className="major-points my-5">
+        <section className="major-points my-5" data-aos="fade-up">
           <div className="container">
             <div className="point-heading ">
               <h2>Our Security & Compliance Capabilities Include:</h2>
@@ -1709,7 +1721,7 @@ const AWSProducts = () => {
                 <div className="row point py-4">
                   <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                     <MdSecurity  size={24}/>
+                      <MdSecurity size={24} />
                     </div>
                   </div>
                   <div className="col-10 point-text d-flex  align-items-center">
@@ -1726,7 +1738,7 @@ const AWSProducts = () => {
 
         {/* industry STANDARD SOLUTIONS */}
 
-        <section className="rise-with-sap my-5" id="industry-standard-solutions">
+        <section className="rise-with-sap my-5" id="industry-standard-solutions" data-aos="fade-up">
           <div className="container">
             <div className="row grey-bg">
 
@@ -1753,7 +1765,7 @@ const AWSProducts = () => {
           </div>
         </section>
 
-        <section className="major-points my-5">
+        <section className="major-points my-5" data-aos="fade-up">
           <div className="container">
             <div className="point-heading ">
               <h2>Key Benefits of Industrial Solutions on AWS:
@@ -1765,7 +1777,7 @@ const AWSProducts = () => {
                 <div className="row point py-4">
                   <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <MdSecurity size={24}/>
+                      <MdSecurity size={24} />
                     </div>
                   </div>
                   <div className="col-10 point-text d-flex align-items-center">
@@ -1779,7 +1791,7 @@ const AWSProducts = () => {
                 <div className="row point py-4">
                   <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <MdOutlineSecurity size={24}/>
+                      <MdOutlineSecurity size={24} />
                     </div>
                   </div>
                   <div className="col-10 point-text d-flex align-items-center">
@@ -1793,7 +1805,7 @@ const AWSProducts = () => {
                 <div className="row point py-4">
                   <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <MdOutlineSupportAgent size={24}/>
+                      <MdOutlineSupportAgent size={24} />
                     </div>
                   </div>
                   <div className="col-10 point-text d-flex  align-items-center">
@@ -1808,7 +1820,7 @@ const AWSProducts = () => {
                 <div className="row point py-4">
                   <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <GrDocumentText size={24}/>
+                      <GrDocumentText size={24} />
                     </div>
                   </div>
                   <div className="col-10 point-text d-flex  align-items-center">
@@ -1820,7 +1832,7 @@ const AWSProducts = () => {
                 <div className="row point py-4">
                   <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <MdOutlineAutoGraph size={24}/>
+                      <MdOutlineAutoGraph size={24} />
                     </div>
                   </div>
                   <div className="col-10 point-text d-flex  align-items-center">
@@ -1837,7 +1849,7 @@ const AWSProducts = () => {
 
         {/* DISASTER MANAGEMENT SOLUTIONS */}
 
-        <section className="rise-with-sap my-5" id="disaster-management">
+        <section className="rise-with-sap my-5" id="disaster-management" data-aos="fade-up">
           <div className="container">
             <div className="row grey-bg">
 
@@ -1868,7 +1880,7 @@ const AWSProducts = () => {
           </div>
         </section>
 
-        <section className="major-points my-5">
+        <section className="major-points my-5" data-aos="fade-up">
           <div className="container">
             <div className="point-heading ">
               <h2>Key Advantages of Disaster Recovery on AWS:</h2>
@@ -1879,7 +1891,7 @@ const AWSProducts = () => {
                 <div className="row point py-4">
                   <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <MdOutlineSupportAgent size={24}/>
+                      <MdOutlineSupportAgent size={24} />
                     </div>
                   </div>
                   <div className="col-10 point-text d-flex align-items-center">
@@ -1893,7 +1905,7 @@ const AWSProducts = () => {
                 <div className="row point py-4">
                   <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <FaCodepen size={24}/>
+                      <FaCodepen size={24} />
                     </div>
                   </div>
                   <div className="col-10 point-text d-flex align-items-center">
@@ -1907,7 +1919,7 @@ const AWSProducts = () => {
                 <div className="row point py-4">
                   <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <BsDatabaseFillCheck size={24}/>
+                      <BsDatabaseFillCheck size={24} />
                     </div>
                   </div>
                   <div className="col-10 point-text d-flex  align-items-center">
@@ -1922,7 +1934,7 @@ const AWSProducts = () => {
                 <div className="row point py-4">
                   <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <LuDatabaseBackup size={24}/>
+                      <LuDatabaseBackup size={24} />
                     </div>
                   </div>
                   <div className="col-10 point-text d-flex  align-items-center">
@@ -1936,7 +1948,7 @@ const AWSProducts = () => {
                 <div className="row point py-4">
                   <div className="col-2 d-flex justify-content-start align-items-center">
                     <div className="point-icon">
-                      <IoHardwareChipOutline size={24}/>
+                      <IoHardwareChipOutline size={24} />
                     </div>
                   </div>
                   <div className="col-10 point-text d-flex  align-items-center">

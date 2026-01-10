@@ -116,7 +116,7 @@ export default function AwsTechStack() {
   ];
 
   return (
-    <div className="features-grid-container">
+    <div className="features-grid-container" data-aos="fade-up">
       {features.map((feature, index) => (
         <Feature key={feature.title} {...feature} index={index} />
       ))}

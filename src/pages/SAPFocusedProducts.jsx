@@ -92,19 +92,19 @@ const SAPFocusedProducts = () => {
         />
         <meta name="author" content="AeonX Digital" />
       </Helmet>
-      <section
+      <section 
         className="life-hero sap-focused-products-hero" style={{ backgroundImage: "url(/images/sap-products-banner.webp)" }}
       // style={{ height: "100vh" }}
       >
         <div className="container">
           <div className="row">
             <div className="col-12 ">
-              <div className="life-hero-content text-center d-flex flex-column justify-content-center  h-100" >
+              <div className="life-hero-content text-center d-flex flex-column justify-content-center  h-100">
                 {/* <p className="eyebrow">SAP Focused Products</p> */}
-                <h1 className="mb-2">
+                <h1 className="mb-2" data-aos="fade-up">
                   Empowering Business Growth with Proven SAP Excellence
                 </h1>
-                <p className="mb-4">
+                <p className="mb-4" data-aos="fade-up" data-aos-delay="300">
                   AeonX Digital brings 7+ years of hands-on SAP expertise,
                   delivering next-gen digital transformation, S/4HANA
                   implementation, and high-performance AMS support. With a team
@@ -116,11 +116,17 @@ const SAPFocusedProducts = () => {
                   operations and measurable ROI.
                 </p>
 
-                <div className="event-hero-buttons d-flex justify-content-center">
+                <div className="event-hero-buttons d-flex justify-content-center" data-aos="fade-up" data-aos-delay="400">
                   <GlassButton
                     title="Explore SAP Products"
                     icon={() => <IoIosArrowDropdownCircle size={30} />}
-                    href="/sap-focused-products#rise-with-sap"
+                    
+                    onClick={() => {
+                      window.scrollTo({
+                          top: document.getElementById("rise-with-sap").offsetTop,
+                          behavior: "smooth"
+                      });
+                  }}
                   />
                 </div>
               </div>
@@ -131,7 +137,7 @@ const SAPFocusedProducts = () => {
 
 
 
-      <section className="rise-with-sap my-5" id="rise-with-sap">
+      <section className="rise-with-sap my-5" id="rise-with-sap" data-aos="fade-up">
         <div className="container">
           <div className="row grey-bg">
             <div className="col-lg-6 left py-4 px-5">
@@ -164,7 +170,7 @@ const SAPFocusedProducts = () => {
         </div>
       </section>
 
-      <section className="feature-list my-5">
+      <section className="feature-list my-5" data-aos="fade-up">
         <div className="container">
           <div className="row">
             <div className="col-md-6">
@@ -231,7 +237,7 @@ const SAPFocusedProducts = () => {
 
 
       {/* grow with sap  */}
-      <section className="rise-with-sap my-5" id="grow-with-sap">
+      <section className="rise-with-sap my-5" id="grow-with-sap" data-aos="fade-up">
         <div className="container">
           <div className="row flex-row-reverse grey-bg">
             <div className="col-lg-6 left py-4 px-5">
@@ -259,7 +265,7 @@ const SAPFocusedProducts = () => {
 
       
 
-      <section className="feature-list my-5">
+      <section className="feature-list my-5" data-aos="fade-up">
         <div className="container">
           <div className="row">
             <div className="col-md-6">
@@ -347,7 +353,7 @@ const SAPFocusedProducts = () => {
       </section>
 
       {/* sap success factor section starts  */}
-      <section className="rise-with-sap my-5" id="sap-success-factor">
+      <section className="rise-with-sap my-5" id="sap-success-factor" data-aos="fade-up">
         <div className="container">
           <div className="row flex-row-reverse grey-bg">
             <div className="col-lg-6 right px-0">
@@ -362,7 +368,7 @@ const SAPFocusedProducts = () => {
               </div>
             </div>
             <div className="col-lg-6 left py-4 px-5">
-              <img src={SapSuccess} alt="" />
+              <img src={SapSuccess} alt="" style={{ width: "280px" }} />
               <h2>SAP SuccessFactors</h2>
               <p>
                 SAP SuccessFactors is a leading cloud-based Human Capital
@@ -375,7 +381,7 @@ const SAPFocusedProducts = () => {
               <p>
                 With intuitive, mobile-friendly interfaces, SuccessFactors
                 offers an engaging and personalized experience for employees,
-                managers, and HR leaders—helping them connect, collaborate, and
+                managers, and HR leaders helping them connect, collaborate, and
                 make informed decisions.
               </p>
             </div>
@@ -383,7 +389,7 @@ const SAPFocusedProducts = () => {
         </div>
       </section>
 
-      <section className="feature-list my-5">
+      <section className="feature-list my-5" data-aos="fade-up">
         <div className="container">
           <div className="row">
             <div className="col-md-6">
@@ -452,9 +458,9 @@ const SAPFocusedProducts = () => {
 
       {/* sap-concur section */}
 
-      <section className="rise-with-sap my-5" id="sap-concur">
+      <section className="rise-with-sap my-5" id="sap-concur" data-aos="fade-up">
         <div className="container">
-          <div className="row flex-row-reverse grey-bg">
+          <div className="row flex-row-reverse grey-bg" data-aos="fade-up">
             <div className="col-lg-6 right px-0">
               <div
                 className="img-container"
@@ -479,7 +485,7 @@ const SAPFocusedProducts = () => {
 
       
 
-      <section className="feature-list my-5">
+      <section className="feature-list my-5" data-aos="fade-up">
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
@@ -560,7 +566,7 @@ const SAPFocusedProducts = () => {
 
       {/* sap ariba section starts  */}
 
-      <section className="rise-with-sap my-5" id="sap-ariba">
+      <section className="rise-with-sap my-5" id="sap-ariba" data-aos="fade-up">
         <div className="container">
           <div className="row grey-bg">
             <div className="col-lg-6 left py-4 px-5">
@@ -590,7 +596,7 @@ const SAPFocusedProducts = () => {
       </section>
 
 
-      <section className="feature-list my-5">
+      <section className="feature-list my-5" data-aos="fade-up">
         <div className="container">
           <div className="row">
             <div className="col-md-6">
@@ -652,7 +658,7 @@ const SAPFocusedProducts = () => {
       </section>
 
       {/* sap-btp-section  */}
-      <section className="rise-with-sap my-5" id="sap-btp">
+      <section className="rise-with-sap my-5" id="sap-btp" data-aos="fade-up">
         <div className="container">
           <div className="row grey-bg">
             <div className="col-lg-6 right px-0">
@@ -693,7 +699,7 @@ const SAPFocusedProducts = () => {
 
       
 
-      <section className="feature-list my-5">
+      <section className="feature-list my-5" data-aos="fade-up">
         <div className="container">
           <div className="row">
             <div className="col-md-6">
@@ -756,7 +762,7 @@ const SAPFocusedProducts = () => {
 
 
       {/* sap analytics cloud section starts  */}
-      <section className="rise-with-sap my-5" id="sap-analytics-cloud">
+      <section className="rise-with-sap my-5" id="sap-analytics-cloud" data-aos="fade-up">
         <div className="container">
           <div className="row flex-row-reverse grey-bg">
             <div className="col-lg-6 right px-0">
@@ -772,7 +778,7 @@ const SAPFocusedProducts = () => {
             </div>
 
             <div className="col-lg-6 left py-4 px-5">
-              <img src={cloudAnalytics} alt="" style={{ width: "100px" }} />
+              <img src={cloudAnalytics} alt="" style={{ width: "150px" }} />
               <h2>SAP Analytics Cloud</h2>
               <p>
                 SAP Analytics Cloud combines business intelligence, planning, and predictive analytics in a single, cloud-native platform. It empowers organizations to analyze real-time data, create interactive dashboards, and perform collaborative planning, all while integrating seamlessly with SAP and third-party systems. As a trusted SAP implementation partner, we help companies deploy SAC to unlock data-driven decision-making, enabling leaders to respond quickly to market changes, optimize operations, and identify new growth opportunities. With our guidance, organizations can turn complex data into clear insights, improve forecasting accuracy, and foster a culture of analytics-driven performance.
@@ -783,7 +789,7 @@ const SAPFocusedProducts = () => {
       </section>
 
 
-      <section className="feature-list my-5">
+      <section className="feature-list my-5" data-aos="fade-up">
         <div className="container">
           <div className="row">
             <div className="col-md-6">
@@ -870,7 +876,7 @@ const SAPFocusedProducts = () => {
 
       {/* cta section  */}
 
-      <div className="container sap-cta mb-5 px-3">
+      <div className="container sap-cta mb-5 px-3" data-aos="fade-up">
         <div className="row py-4 px-2 px-md-5 text-white">
           <div className="col-md-6">
             <div className="text-part">

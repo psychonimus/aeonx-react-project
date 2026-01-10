@@ -6,17 +6,23 @@ import GlassButtonLight from '../GlassButton/GlassButtonLight';
 
 const teamImages = [
   "/images/group/team1.webp",
-  "/images/group/team2.webp",
-  "/images/group/team3.webp",
   "/images/group/team4.webp",
+  "/images/group/team14.webp",
+  "/images/group/team8.webp",
+  "/images/group/team2.webp",
   "/images/group/team5.webp",
+  "/images/group/team3.webp",
   "/images/group/team6.webp",
   "/images/group/team7.webp",
-  "/images/group/team8.webp",
-  "/images/group/team9.webp",
-  "/images/group/team10.webp",
   "/images/group/team11.webp",
+  "/images/group/team10.webp",
+  "/images/group/team13.png",
+  "/images/group/team9.webp",
   "/images/group/team12.webp",
+  // "/images/group/team-compressed/team15.webp",
+  // "/images/group/team-compressed/team16.webp",
+  // "/images/group/team-compressed/team17.webp",
+  // "/images/group/team-compressed/team18.webp",
 ];
 
 

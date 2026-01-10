@@ -4,11 +4,11 @@ import Header from "../Header/Header";
 import AeonxX from '/images/x-icon.webp'
 
 const teamMembers = [
-    { name: "Vikas Sharma", role: "Chief Operating Officer", img: "/images/team/vikas-sharma.webp", linkedin: "https://www.linkedin.com/in/vikas--sharma?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
+    { name: "Vikas Sharma", role: "Chief Operating Officer", img: "/images/team/vikas-sharma.png", linkedin: "https://www.linkedin.com/in/vikas--sharma?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
     { name: "Chandresh Acharya", role: "Head of operations", img: "/images/team/chandresh-acharya.webp", linkedin: "https://www.linkedin.com/in/chandresh-acharya-4609031a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
     { name: "Karan Sankhyan", role: "Program Manager - Functional & Pre-sales", img: "/images/team/karan-sankhyan.webp", linkedin: "https://www.linkedin.com/in/karan-sankhyan?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
-    { name: "Chandni Gadhvi", role: "Project Manager - Data and AI", img: "/images/team/chandani-gadhvi.webp", linkedin: "https://www.linkedin.com/in/chandni-gadhvi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
-    { name: "Milan Rathod", role: "Project Manager Cloud", img: "/images/team/milan-rathod.webp", linkedin: "https://www.linkedin.com/in/milanrathod?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+    { name: "Chandni Gadhvi", role: "Project Manager - Data and AI", img: "/images/team/chandani-gadhvi.jpg", linkedin: "https://www.linkedin.com/in/chandni-gadhvi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
+    { name: "Milan Rathod", role: "Project Manager Cloud", img: "/images/team/milan-rathod.png", linkedin: "https://www.linkedin.com/in/milanrathod?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
     { name: "Samudraneel Thakur", role: "Product Manager", img: "/images/team/samudraneel-thakur.webp", linkedin: "https://www.linkedin.com/in/samudraneel-thakur?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
     { name: "Amit Goregaonkar", role: "Senior Project Manager – SAP", img: "/images/team/amit-goregaonkar.webp", linkedin: "https://www.linkedin.com/in/amit-g-921133a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
     { name: "Vicky Gandhi", role: "Head of SAP Projects", img: "/images/team/vicky-gandhi.webp", linkedin: "https://www.linkedin.com/in/vicky-gandhi-5a496928?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
@@ -31,7 +31,7 @@ const OurTeamSection = () => {
 
                 <div className="team-grid">
                     {teamMembers.map((member, index) => (
-                        <div className="team-card" key={index}>
+                        <div className="team-card" key={index} data-aos="fade-up">
                             <div className="team-img">
                                 <img src={member.img} alt={member.name} />
                                 <div className="team-overlay">

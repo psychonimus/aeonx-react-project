@@ -11,6 +11,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { RiFacebookCircleLine } from "react-icons/ri";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { RiYoutubeLine } from "react-icons/ri";
+import { countryCodes } from "../ContactPageComponents/countryData";
 
 const CtaSection = () => {
     const [formData, setFormData] = useState({
@@ -22,7 +23,10 @@ const CtaSection = () => {
         notes: ''
     });
 
+    const [countryCode, setCountryCode] = useState('+91');
+
     const [errors, setErrors] = useState({});
+    const [warnings, setWarnings] = useState({});
     const [loading, setLoading] = useState(false);
     const [message, setMessage] = useState({ type: '', text: '' });
 
@@ -78,19 +82,40 @@ const CtaSection = () => {
         }
 
         if (isValidInput) {
-            setFormData(prev => ({ ...prev, [name]: value }));
-
             if (name === 'phone_no') {
                 const digitCount = (value.match(/\d/g) || []).length;
-                if (digitCount > 10) {
-                    setErrors(prev => ({ ...prev, phone_no: 'Maximum 10 digits allowed' }));
+                if (digitCount > 10) return;
+            }
+
+            if (name === 'company_name' || name === 'contact_name' || name === 'contact_role') {
+                if (value.length > 30) {
+                    setWarnings(prev => ({ ...prev, [name]: 'Maximum characters reached' }));
+                    return;
+                }
+            }
+
+            let finalValue = value;
+            if (name === 'company_name' || name === 'contact_name' || name === 'contact_role') {
+                if (value.length > 30) {
+                    finalValue = value.slice(0, 30);
+                    setWarnings(prev => ({ ...prev, [name]: 'Maximum characters reached' }));
                 } else {
-                    setErrors(prev => {
-                        const newErr = { ...prev };
-                        delete newErr.phone_no;
-                        return newErr;
+                    setWarnings(prev => {
+                        const newWarn = { ...prev };
+                        delete newWarn[name];
+                        return newWarn;
                     });
                 }
+            }
+
+            setFormData(prev => ({ ...prev, [name]: finalValue }));
+
+            if (name === 'phone_no') {
+                setErrors(prev => {
+                    const newErr = { ...prev };
+                    delete newErr.phone_no;
+                    return newErr;
+                });
             }
 
             if (name === 'email' && errors.email) {
@@ -124,7 +149,7 @@ const CtaSection = () => {
                 company_name: formData.company_name,
                 contact_name: formData.contact_name,
                 contact_role: formData.contact_role,
-                phone_no: formData.phone_no,
+                phone_no: `${countryCode} ${formData.phone_no}`,
                 email: formData.email,
                 notes: formData.notes || "",
                 referral: "AeonX Website",
@@ -175,15 +200,15 @@ const CtaSection = () => {
             <section className="cta-section pb-5">
                 <div className="container">
                     <Header
-                        subtext="Contact Us"
+                        highlight="Contact Us"
                         headline="Have a Project? Let’s Talk!"
                     />
 
                     <div className="row">
-                        <div className="col-lg-8">
+                        <div className="col-lg-8" data-aos="fade-up">
                             <div className="contact-form-bg p-4">
                                 <h2>Send us a Message</h2>
-                                <p>Discover how we’ve collaborated with leading startups, scaleups, and enterprises to build next-gen digital solutions—from concept to </p>
+                                <p>Discover how we’ve collaborated with leading startups, scaleups, and enterprises to build next-gen digital solutions, from concept to </p>
 
                                 {message.text && (
                                     <div className={`alert ${message.type === 'success' ? 'alert-success' : 'alert-danger'} mb-4`} role="alert">
@@ -193,24 +218,33 @@ const CtaSection = () => {
 
                                 <form id="cta-contact-form" className="contact-form" onSubmit={handleSubmit}>
                                     <div className="form-row">
-                                        <input
-                                            type="text"
-                                            placeholder="Company Name"
-                                            name="company_name"
-                                            value={formData.company_name}
-                                            onChange={handleInputChange}
-                                            required
-                                            disabled={loading}
-                                        />
-                                        <input
-                                            type="text"
-                                            placeholder="Name"
-                                            name="contact_name"
-                                            value={formData.contact_name}
-                                            onChange={handleInputChange}
-                                            required
-                                            disabled={loading}
-                                        />
+                                        <div className='w-100'>
+                                            <input
+                                            className='w-100'
+                                                type="text"
+                                                placeholder="Company Name"
+                                                name="company_name"
+                                                value={formData.company_name}
+                                                onChange={handleInputChange}
+                                                required
+                                                disabled={loading}
+                                            />
+                                            {warnings.company_name && <small className="text-danger d-block text-start">{warnings.company_name}</small>}
+
+                                        </div>
+                                        <div className='w-100'>
+                                            <input
+                                            className='w-100'
+                                                type="text"
+                                                placeholder="Name"
+                                                name="contact_name"
+                                                value={formData.contact_name}
+                                                onChange={handleInputChange}
+                                                required
+                                                disabled={loading}
+                                            />
+                                            {warnings.contact_name && <small className="text-danger d-block text-start">{warnings.contact_name}</small>}
+                                        </div>
                                     </div>
                                     <div className="form-row">
                                         <input
@@ -222,21 +256,36 @@ const CtaSection = () => {
                                             required
                                             disabled={loading}
                                         />
-
+                                        {warnings.contact_role && <small className="text-danger d-block text-start">{warnings.contact_role}</small>}
                                     </div>
                                     <div className="form-row position-relative">
                                         <div className="w-100 position-relative">
-                                            <input
-                                            style={{width: '100%'}}
-                                                type="text"
-                                                placeholder="Phone"
-                                                name="phone_no"
-                                                className={errors.phone_no ? 'is-invalid' : ''}
-                                                value={formData.phone_no}
-                                                onChange={handleInputChange}
-                                                required
-                                                disabled={loading}
-                                            />
+                                            <div className="input-group h-100">
+                                                <select
+                                                    className="form-select cta-country-code"
+                                                    style={{ maxWidth: '100px'}}
+                                                    value={countryCode}
+                                                    onChange={(e) => setCountryCode(e.target.value)}
+                                                    disabled={loading}
+                                                >
+                                                    {countryCodes.map((country) => (
+                                                        <option key={country.code} value={country.dial_code}>
+                                                            {country.code} ({country.dial_code})
+                                                        </option>
+                                                    ))}
+                                                </select>
+                                                <input
+                                                    style={{ width: 'auto', flex: 1 }}
+                                                    type="text"
+                                                    placeholder="Phone"
+                                                    name="phone_no"
+                                                    className={`form-control ${errors.phone_no ? 'is-invalid' : ''} cta-phone-input`}
+                                                    value={formData.phone_no}
+                                                    onChange={handleInputChange}
+                                                    required
+                                                    disabled={loading}
+                                                />
+                                            </div>
                                             {errors.phone_no && (
                                                 <div className="invalid-tooltip d-block" style={{ right: 0, top: '-10px', width: 'auto' }}>
                                                     {errors.phone_no}
@@ -244,8 +293,8 @@ const CtaSection = () => {
                                             )}
                                         </div>
                                         <div className="w-100 position-relative">
-                                            <input 
-                                                style={{width: '100%'}}
+                                            <input
+                                                style={{ width: '100%' }}
                                                 type="email"
                                                 placeholder="Email"
                                                 name="email"
@@ -282,7 +331,7 @@ const CtaSection = () => {
                             </div>
 
                         </div>
-                        <div className="col-lg-4">
+                        <div className="col-lg-4" data-aos="fade-up">
                             <div className="cta-card h-100 p-4 mt-4 mt-lg-0">
                                 <h2 className='mb-4'>Hii, We are always here to help you!</h2>
                                 <a href="tel:+022-66221640" className='text-decoration-none'>
@@ -315,6 +364,15 @@ const CtaSection = () => {
                     </div>
                 </div>
             </section>
+
+
+
+
+
+
+
+
+            
         </>
     )
 }

@@ -273,8 +273,7 @@ p {
 
 .slide-button {
   background: rgba(255, 255, 255, 0.09);
-  backdrop-filter: blur(11px);
-  -webkit-backdrop-filter: blur(11px);
+ 
   border-radius: 50px;
   border: 0.5px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1),
@@ -506,14 +505,16 @@ p {
 }
 
 .infinite-car-container:hover.infinite-car-container img {
-  scale: 1.1;
+  scale: 1.04;
 }
 
 .infinite-car-img {
   width: 100%;
-  height: 250px;
+  /* height: 280px; */
   object-fit: cover;
 }
+
+
 
 /* .stack-container{
   width: 100%;
@@ -811,7 +812,7 @@ p {
 }
 
 .service-card img {
-  width: 30%;
+  height: 100px;
   margin-bottom: 20px;
 }
 
@@ -1855,6 +1856,11 @@ textarea {
   cursor: not-allowed;
 }
 
+.ceo-msg-img img{
+  width: 100vw;
+  background-repeat: no-repeat;
+}
+
 .ceo-msg {
   background-image: url("../public/images/ceo-bg-2.webp");
   background-position: center;
@@ -2800,6 +2806,11 @@ textarea {
   font-weight: 600;
   margin-bottom: 8px;
 }
+@media(min-width : 992px) and (max-width : 1200px){
+  .event-card .tagSub{
+    font-size: 1rem;
+  }
+}
 
 .event-headline h3 {
   text-transform: uppercase;
@@ -2874,7 +2885,7 @@ textarea {
 }
 
 .bento-date {
-  color: #777;
+  color: #000;
   /* margin-bottom: 40px; */
 }
 
@@ -4369,7 +4380,7 @@ textarea {
 }
 
 .grey-bg p {
-  text-align: justify;
+  text-align: left;
 }
 
 .grey-bg .img-container {
@@ -5424,4 +5435,41 @@ textarea {
   width: 200px;
 }
 }
+
+
+@media(min-width : 992px) and (max-width : 1399px){
+    .nav-link{
+      font-size: 12px;
+    }
+}
+
+
+
+
+.metric-box{
+  display: flex !important;
+  background: red;
+}
+
+
+.cta-country-code{
+  outline: none;
+  border: 1px solid #d4d4d4 !important;
+  border-radius: 25px;
+}
+.cta-phone-input{
+  border-radius: 25px;
+  border: 1px solid #d4d4d4 !important;
+  padding-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
 

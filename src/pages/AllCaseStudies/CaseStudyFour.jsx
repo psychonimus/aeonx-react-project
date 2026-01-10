@@ -108,7 +108,7 @@ const CaseStudyFour = () => {
               <p className="lead mb-5" style={{ opacity: 0.9, fontWeight: 300 }}>
                 Delux Bearings is India's largest manufacturer of Clutch Release Bearings, with the widest range of bearing and precision components, a PAN India presence, and a global footprint with Original Equipment and Tier I manufacturers.  Founded in 1956, the company offers end to end customized engineering solutions to the automotive sector.
               </p>
-              <button className="slide-button">
+              <button className="slide-button" onClick={() => window.scrollTo({ top: document.getElementById("executive-summary").offsetTop, behavior: "smooth" })}>
                 Read Full Story <FaArrowRight className="ms-2" />
               </button>
             </div>
@@ -140,7 +140,7 @@ const CaseStudyFour = () => {
       </section>
 
       {/* ================= EXECUTIVE SUMMARY ================= */}
-      <section className="py-5" style={{ background: "#f8f9fa" }}>
+      <section id="executive-summary" className="py-5" style={{ background: "#f8f9fa" }}>
         <div className="container py-5">
           <div className="row">
             <div className="col-lg-10 mx-auto" ref={addToRefs}>
@@ -355,10 +355,10 @@ const CaseStudyFour = () => {
           </h2>
           <div className="row text-center g-4">
             {[
-              { val: "X", label: "Increase in Agility and Scalability" },
-              { val: "X", label: "Reduction in Operational Costs" },
-              { val: "X", label: "Improved Performance and Reliability" },
-              { val: "X", label: "Higher Flexibility and Faster Response to Market Demands" },
+              { val: "30%", label: "Increase in Agility and Scalability" },
+              { val: "25%", label: "Reduction in Operational Costs" },
+              { val: "20%", label: "Improved Performance and Reliability" },
+              { val: "35%", label: "Higher Flexibility and Faster Response to Market Demands" },
             ].map((res, i) => (
               <div className="col-6 col-md-3" key={i} ref={addToRefs}>
                 <div className="p-3">

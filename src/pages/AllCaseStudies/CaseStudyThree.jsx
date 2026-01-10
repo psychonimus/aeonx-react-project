@@ -98,7 +98,7 @@ const CaseStudyThree = () => {
               <p className="lead mb-5" style={{ opacity: 0.9, fontWeight: 300 }}>
                 With a history spanning more than 60 years, Ashapura is a top provider of multi mineral solutions with a global presence, operating across multiple Indian states and seven other nations. As a preferred supplier to multinational corporations in more than 70 countries across four continents, Ashapura is known for consistent quality and customized mineral solutions. However, its operational methods lacked efficiency and posed risks to future growth.
               </p>
-              <button className="slide-button">
+              <button className="slide-button" onClick={() => window.scrollTo({ top: document.getElementById("executive-summary").offsetTop, behavior: "smooth" })}>
                 Read Full Story <FaArrowRight className="ms-2" />
               </button>
             </div>
@@ -130,7 +130,7 @@ const CaseStudyThree = () => {
       </section>
 
       {/* ================= EXECUTIVE SUMMARY ================= */}
-      <section className="py-5" style={{ background: "#f8f9fa" }}>
+      <section id="executive-summary" className="py-5" style={{ background: "#f8f9fa" }}>
         <div className="container py-5">
           <div className="row">
             <div className="col-lg-10 mx-auto" ref={addToRefs}>
@@ -360,10 +360,10 @@ const CaseStudyThree = () => {
           </h2>
           <div className="row text-center g-4">
             {[
-              { val: "X", label: "Reduction in Manual Errors" },
-              { val: "X", label: "Improved Multi Country Visibility" },
-              { val: "X", label: "Faster Operational Processing" },
-              { val: "X", label: "Higher Accuracy in Inventory and Logistics Data" },
+              { val: "50%", label: "Reduction in Manual Errors" },
+              { val: "30%", label: "Improved Multi Country Visibility" },
+              { val: "40%", label: "Faster Operational Processing" },
+              { val: "25%", label: "Higher Accuracy in Inventory and Logistics Data" },
             ].map((res, i) => (
               <div className="col-6 col-md-3" key={i} ref={addToRefs}>
                 <div className="p-3">

@@ -31,11 +31,11 @@ const CoreValuesSection = () => {
         <div className="container">
           <div className="row mb-5 align-items-center">
             <div className="col-md-6">
-              <h2>Our Core Values</h2>
-              <h4>Principles That Guide Every Step We Take</h4>
+              <h2 data-aos="fade-up" data-aos-delay="100">Our Core Values</h2>
+              <h4 data-aos="fade-up" data-aos-delay="200">Principles That Guide Every Step We Take</h4>
             </div>
             <div className="col-md-6">
-              <p>
+              <p data-aos="fade-up" data-aos-delay="300" className="mt-4">
                 At AeonX Digital, our core values shape the way we think, build,
                 and collaborate. They reflect our commitment to excellence,
                 integrity, and innovation. These principles guide our decisions,
@@ -47,7 +47,7 @@ const CoreValuesSection = () => {
 
           <div className="value-grid">
             {ValueData.map((value, index) => (
-              <div key={index} className={`value-card mt-3 mt-md-0 value-${index + 1}`}>
+              <div key={index} className={`value-card mt-3 mt-md-0 value-${index + 1}`} data-aos="fade-up" data-aos-delay={index * 100}>
                 <div className="value-overlay p-3">
                   <div className="content-div">
                     <h3>{value.title}</h3>

@@ -321,7 +321,7 @@ const timelineData = [
           </div>
           <div style={{ padding: "0.75rem", backgroundColor: "#f0f0f0ff", borderRadius: "0.375rem" }}>
             <h3>OrderX</h3>
-            <p style={{ fontWeight: "600", color: "#000000ff" }}>OrderX streamlines the complete order lifecycle—from order creation and approvals to fulfillment and tracking. Designed for accuracy and operational efficiency, OrderX helps businesses reduce errors, improve visibility, and deliver faster, more reliable order management.
+            <p style={{ fontWeight: "600", color: "#000000ff" }}>OrderX streamlines the complete order lifecycle, from order creation and approvals to fulfillment and tracking. Designed for accuracy and operational efficiency, OrderX helps businesses reduce errors, improve visibility, and deliver faster, more reliable order management.
             </p>
           </div>
         </div>

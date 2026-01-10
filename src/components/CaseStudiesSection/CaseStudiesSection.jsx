@@ -20,7 +20,7 @@ const CaseStudiesSection = () => {
                 />
 
                 <div className="row">
-                    <div className="col-md-4">
+                    <div className="col-md-4" data-aos="fade-up">
                         <Link to="/case-studies?category=SAP">
                         <div className="casestudy-card">
                             <div className="cs-image-container mb-3">
@@ -37,7 +37,7 @@ const CaseStudiesSection = () => {
 
                         </div></Link>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-4" data-aos="fade-up">
                         <Link to="/case-studies?category=AWS">
                         <div className="casestudy-card">
                             <div className="cs-image-container mb-3">
@@ -56,7 +56,7 @@ const CaseStudiesSection = () => {
                         </div>
                         </Link>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-4" data-aos="fade-up">
                         <Link to="/case-studies?category=Aeonx">
                         <div className="casestudy-card">
                             <div className="cs-image-container mb-3">

@@ -3,18 +3,18 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './FlagshipProducts.css';
 
-import project1 from '/images/xpense-bg.webp';
-import project1mob from '/images/xpense-bg-mob.webp';
-import project2 from '/images/supplier-x-bg.webp';
-import project2mob from '/images/supplier-x-bg-mob.webp';
-import project3 from '/images/logystix-bg.webp';
-import project3mob from '/images/logystix-bg-mob.webp';
-import project4 from '/images/manufex-bg.webp';
-import project4mob from '/images/manufex-bg-mob.webp';
-import project5 from '/images/people-connect-bg.webp';
-import project5mob from '/images/people-connect-bg-mob.webp';
-import project6 from '/images/aeonxiq-bg.webp';
-import project6mob from '/images/aeonxiq-bg-mob.webp';
+import project1 from '/images/xpense-bg-2.webp';
+import project1mob from '/images/xpense-bg-2-mob.webp';
+import project2 from '/images/supplier-x-bg-2.webp';
+import project2mob from '/images/supplier-x-bg-2-mob.webp';
+import project3 from '/images/logystix-bg-2.webp';
+import project3mob from '/images/logystix-bg-2-mob.webp';
+import project4 from '../../../public/images/manufex-bg-2.jpg';
+import project4mob from '/images/manufex-bg-2-mob.webp';
+import project5 from '/images/people-connect-bg-2.webp';
+import project5mob from '/images/people-connect-bg-2-mob.webp';
+import project6 from '/images/aeonxiq-bg-2.webp';
+import project6mob from '/images/aeonxiq-bg-2-mob.webp';
 import Header from '../Header/Header';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -136,9 +136,9 @@ const HorizontalAccordion = () => {
                 </div>
 
                 {/* Number */}
-                <span className="accordion-number">
+                {/* <span className="accordion-number">
                   {formatNumber(project.id)}
-                </span>
+                </span> */}
 
                 {/* Title */}
                 <span className="accordion-label">{project.title}</span>
