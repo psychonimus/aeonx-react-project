@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 
 const blogData = [
     {
-        title: "Is Rise with SAP Really OPEX Freindly",
+        title: "Is SAP Business Suite Really OPEX Freindly",
         date: "Jan 18, 2025",
         category: "AI & Tech",
-        desc: "Over the last few years, RISE with SAP has become one of the most discussed transformation offerings in the enterprise world. Positioned as a business-transformation-as-a-service model, RISE promises a faster, smoother, and cost-optimized move to SAP S/4HANA Cloud.",
+        desc: "Over the last few years, SAP Business Suite has become one of the most discussed transformation offerings in the enterprise world. Positioned as a business-transformation-as-a-service model, Business Suite promises a faster, smoother, and cost-optimized move to SAP S/4HANA Cloud.",
         img: "/images/blog-1.webp",
-        url: "/blogs/is-rise-with-sap-really-opex-freindly"
+        url: "/blogs/is-sap-business-suite-really-opex-freindly"
     },
     {
         title: "Common SAP S/4HANA Migration Mistakes Enterprises Must Avoid in 2025",

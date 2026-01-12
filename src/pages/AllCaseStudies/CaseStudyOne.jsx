@@ -77,9 +77,9 @@ const CaseStudyOne = () => {
   return (
     <>
       <Helmet>
-        <title>ITD Cementation Case Study - Modernizing SAP with RISE | AeonX Digital</title>
-        <meta name="description" content="Discover how AeonX helped ITD Cementation migrate from SAP S/4HANA 1709 to RISE with SAP, achieving enhanced system reliability and cloud scalability." />
-        <meta name="keywords" content="ITD Cementation, RISE with SAP, SAP migration, AWS Cloud, SAP S/4HANA, digital transformation, case study, AeonX" />
+        <title>ITD Cementation Case Study - Modernizing SAP with SAP Business Suite | AeonX Digital</title>
+        <meta name="description" content="Discover how AeonX helped ITD Cementation migrate from SAP S/4HANA 1709 to SAP Business Suite, achieving enhanced system reliability and cloud scalability." />
+        <meta name="keywords" content="ITD Cementation, SAP Business Suite, SAP migration, AWS Cloud, SAP S/4HANA, digital transformation, case study, AeonX" />
       </Helmet>
 
       <div ref={containerRef} className="case-study-wrapper">
@@ -101,7 +101,7 @@ const CaseStudyOne = () => {
                   className="display-3 fw-bold mb-4 case-study-title"
                   style={{ fontFamily: "Gilroy-Bold", lineHeight: "1.1" }}
                 >
-                  Modernizing ITD Cementation's SAP Landscape with <span style={{ color: "#f97316" }}>RISE with SAP</span>
+                  Modernizing ITD Cementation's SAP Landscape with <span style={{ color: "#f97316" }}>SAP Business Suite</span>
                 </h1>
                 <p className="lead mb-5 case-study-lead" style={{ opacity: 0.9, fontWeight: 300 }}>
                   In recent years, ITD Cementation India Private Limited has received several awards for their excellent work, including the "Best Infrastructure Company" award from CNBC TV18 and the "Outstanding Concrete Structure Award" from the Indian Concrete Institute.
@@ -162,7 +162,7 @@ const CaseStudyOne = () => {
               <div className="col-lg-6" ref={addToRefs}>
                 <h2 className="mb-4 section-heading" style={{ fontFamily: "Gilroy-Bold" }}>Overview</h2>
                 <p className="text-muted case-study-text">
-                  ITD Cementation Ltd. aimed to migrate their SAP S/4HANA 1709 system to RISE with SAP while ensuring system readiness, safeguarding backups in the landing zone, and maintaining seamless connectivity with non SAP workloads. The company also needed to migrate additional systems to AWS Cloud, requiring meticulous planning to prevent operational disruption.
+                  ITD Cementation Ltd. aimed to migrate their SAP S/4HANA 1709 system to SAP Business Suite while ensuring system readiness, safeguarding backups in the landing zone, and maintaining seamless connectivity with non SAP workloads. The company also needed to migrate additional systems to AWS Cloud, requiring meticulous planning to prevent operational disruption.
                 </p>
                 <p className="text-muted case-study-text">
                   During the Lift and Shift migration, the team anticipated encountering bugs and issues that required prompt resolution. Post-migration, extensive testing was essential to ensure system stability. AeonX supported ITD Cementation Ltd. throughout the process, performing unit testing, assisting with integration testing and UAT, and ensuring a successful transition.
@@ -208,10 +208,10 @@ const CaseStudyOne = () => {
                   Why ITD Cementation Chose AeonX
                 </h2>
                 <p className="text-muted mb-4 case-study-text">
-                  ITD Cementation Ltd. chose AeonX for their unique approach to RISE with SAP migration. AeonX leverages highly automated RISE with SAP Labs, enabling customers to quickly experience their SAP ERP datasets on the latest live version of RISE with SAP on Cloud, identifying remediation and complexity upfront.
+                  ITD Cementation Ltd. chose AeonX for their unique approach to SAP Business Suite migration. AeonX leverages highly automated SAP Business Suite Labs, enabling customers to quickly experience their SAP ERP datasets on the latest live version of SAP Business Suite on Cloud, identifying remediation and complexity upfront.
                 </p>
                 <p className="text-muted case-study-text">
-                  Additionally, AeonX follows an established 6R migration strategy (Rehost, Replatform, Repurchase, Refactor, Retire and Retain) to create a holistic Cloud journey that maximizes the commercial benefits of RISE with SAP. Their capability to deliver tailored, high-quality solutions made AeonX the preferred migration partner.
+                  Additionally, AeonX follows an established 6R migration strategy (Rehost, Replatform, Repurchase, Refactor, Retire and Retain) to create a holistic Cloud journey that maximizes the commercial benefits of SAP Business Suite. Their capability to deliver tailored, high-quality solutions made AeonX the preferred migration partner.
                 </p>
               </div>
             </div>
@@ -231,7 +231,7 @@ const CaseStudyOne = () => {
                 {
                   step: "01",
                   title: "Discovery & Audit",
-                  desc: "Validated the target system and architecture on RISE with SAP, assessed source system, and ensured readiness for migration."
+                  desc: "Validated the target system and architecture on SAP Business Suite, assessed source system, and ensured readiness for migration."
                 },
                 {
                   step: "02",
@@ -241,7 +241,7 @@ const CaseStudyOne = () => {
                 {
                   step: "03",
                   title: "Implementation",
-                  desc: "Transferred and restored backups from on-premise to RISE with SAP, migrated SAP and non SAP workloads, and deployed SAP workloads in a hybrid model."
+                  desc: "Transferred and restored backups from on-premise to SAP Business Suite, migrated SAP and non SAP workloads, and deployed SAP workloads in a hybrid model."
                 },
                 {
                   step: "04",
@@ -284,15 +284,15 @@ const CaseStudyOne = () => {
             <div className="row g-4">
               {[
                 {
-                  title: "Migration from SAP S/4HANA 1709 to RISE with SAP",
+                  title: "Migration from SAP S/4HANA 1709 to SAP Business Suite",
                   desc: ""
                 },
                 {
-                  title: "Backup validation and restoration on RISE with SAP",
+                  title: "Backup validation and restoration on SAP Business Suite",
                   desc: ""
                 },
                 {
-                  title: "Hybrid deployment model (S/4HANA in RISE, EP on one platform, BW and DMS on AWS)",
+                  title: "Hybrid deployment model (S/4HANA in SAP Business Suite, EP on one platform, BW and DMS on AWS)",
                   desc: ""
                 },
                 {
@@ -346,7 +346,7 @@ const CaseStudyOne = () => {
             <div className="d-flex flex-wrap justify-content-center gap-3" ref={addToRefs}>
               {[
                 "SAP S/4HANA",
-                "RISE with SAP",
+                "SAP Business Suite",
                 "AWS Cloud",
                 "6R Migration Framework",
                 "Automation Tools"

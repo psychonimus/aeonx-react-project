@@ -218,7 +218,7 @@ const BlogTwo = () => {
             {/* <h4>Related Blogs</h4>
             <ul>
               <li>→ Migrating to S/4HANA the Right Way</li>
-              <li>→ RISE vs Traditional SAP Licensing</li>
+              <li>→ SAP Business Suite vs Traditional SAP Licensing</li>
               <li>→ OPEX vs CAPEX in Cloud ERP</li>
             </ul> */}
           </div>

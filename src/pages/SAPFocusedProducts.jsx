@@ -7,7 +7,7 @@ import aboutSap from "/images/rise-with-sap.webp";
 import growWithSapAbout from "/images/grow-with-sap.webp";
 import sapSuccessFactor from '/images/SAP-SuccessFactors.webp'
 import sapConcurAbout from '/images/SAP-Concur-full.webp'
-import risewithsap from "/images/risewithsap.webp";
+import risewithsap from "/images/sap-business-suite-dark.png";
 import partnership from "/images/partnership.webp";
 import procurement from "/images/control.webp";
 import implementation from "/images/implementation.webp";
@@ -142,16 +142,16 @@ const SAPFocusedProducts = () => {
           <div className="row grey-bg">
             <div className="col-lg-6 left py-4 px-5">
               <img src={risewithsap} alt="" />
-              <h2>Rise With SAP</h2>
+              <h2>SAP Business Suite</h2>
               <p>
-                RISE with SAP is a powerful business transformation package
+                SAP Business Suite is a powerful business transformation package
                 designed to help companies shift to cloud-based SAP solutions
                 with speed, flexibility, and minimal disruption. It consolidates
                 everything you need from licensing, tools, and services into one
                 subscription contract, making digital transformation easier,
                 faster, and more cost-effective.<br></br>
                 Ideal for organizations with limited IT resources or technical
-                capacity, RISE with SAP enables seamless migration to S/4HANA
+                capacity, SAP Business Suite enables seamless migration to S/4HANA
                 and SAP BTP without impacting ongoing operations or budgets.
               </p>
             </div>

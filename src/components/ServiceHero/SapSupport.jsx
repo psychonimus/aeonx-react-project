@@ -13,7 +13,7 @@ const SapSupport = () => {
                 <div className="container py-5">
                     <div className="sap-support-heading text-center">
                         <h2>SAP SUPPORT SERVICES</h2>
-                        <p>Our SAP support models are designed to give businesses flexibility, control, and long-term value. They are built around agility, transparency, and uninterrupted innovation, leveraging deep expertise across SAP S/4HANA, SAP Rise, SAP Cloud solutions, and managed services.</p>
+                        <p>Our SAP support models are designed to give businesses flexibility, control, and long-term value. They are built around agility, transparency, and uninterrupted innovation, leveraging deep expertise across SAP S/4HANA, SAP Business Suite, SAP Cloud solutions, and managed services.</p>
                     </div>
 
                     <div className="sap-support-parent py-3">

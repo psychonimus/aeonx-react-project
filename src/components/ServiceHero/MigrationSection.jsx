@@ -127,7 +127,7 @@ const MigrationSection = () => {
               <div>
                 <h2 style={h2Style}>SAP Implementation Services</h2>
                 <p style={pStyle}>
-                  Business models are evolving faster than ever, and the real differentiator today is how quickly your systems can adapt. At AeonX Digital, we enable this shift by implementing SAP S/4HANA and SAP Rise as the digital backbone of your operations, making enterprises data-driven, future-ready, and operationally agile.
+                  Business models are evolving faster than ever, and the real differentiator today is how quickly your systems can adapt. At AeonX Digital, we enable this shift by implementing SAP S/4HANA and SAP Business Suite as the digital backbone of your operations, making enterprises data-driven, future-ready, and operationally agile.
                 </p>
                 
               </div>
@@ -251,7 +251,7 @@ const MigrationSection = () => {
                   Migrating to the cloud should unlock potential, not just move
                   systems. We at AeonX deliver high-precision SAP migration
                   using real-world expertise across SAP ECC to S/4HANA
-                  transitions, RISE with SAP adoption, and AWS-driven cloud
+                  transitions, SAP Business Suite adoption, and AWS-driven cloud
                   modernization.
                 </p>
                 <p style={pStyle}>

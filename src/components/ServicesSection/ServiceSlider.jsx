@@ -5,7 +5,7 @@ import sapGoldPartner from "/images/sap-gold-partner.webp"
 import GlassButton from "../GlassButton/GlassButton";
 import { BsArrowUpRightCircleFill } from "react-icons/bs";
 import GlassButtonLight from "../GlassButton/GlassButtonLight";
-import risewithsap from "/images/risewithsap.webp"
+import risewithsap from "/images/sap-business-suite.png"
 import sapbtp from "/images/sap-btp-new-one.png"
 // import sapbtp from "/images/sapbtp-slide.png"
 import sabAriba from '/images/sap-ariba-top.webp'
@@ -65,8 +65,8 @@ const ServiceSlider = () => {
                     <ServiceCard
                         image={risewithsap}
                         // width="25%"
-                        title="RISE with SAP"
-                        description="We help businesses accelerate digital transformation with RISE with SAP, offering a simplified path to Our experts design scalable SAP landscapes that improve operational agility, enhance performance, and support long-term growth. With a focus on business continuity and accelerated value realization, we enable seamless migration to SAP S/4HANA Cloud."
+                        title="SAP Business Suite"
+                        description="We help businesses accelerate digital transformation with SAP Business Suite, offering a simplified path to Our experts design scalable SAP landscapes that improve operational agility, enhance performance, and support long-term growth. With a focus on business continuity and accelerated value realization, we enable seamless migration to SAP S/4HANA Cloud."
                         buttonText="Start Your SAP Transformation"
                         buttonIcon={() => <BsArrowUpRightCircleFill color="#fff" size={28} />}
                         href="/sap-focused-products#rise-with-sap"

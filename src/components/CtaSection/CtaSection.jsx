@@ -11,7 +11,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { RiFacebookCircleLine } from "react-icons/ri";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { RiYoutubeLine } from "react-icons/ri";
-import { countryCodes } from "../ContactPageComponents/countryData";
+
 
 const CtaSection = () => {
     const [formData, setFormData] = useState({
@@ -23,7 +23,6 @@ const CtaSection = () => {
         notes: ''
     });
 
-    const [countryCode, setCountryCode] = useState('+91');
 
     const [errors, setErrors] = useState({});
     const [warnings, setWarnings] = useState({});
@@ -149,7 +148,7 @@ const CtaSection = () => {
                 company_name: formData.company_name,
                 contact_name: formData.contact_name,
                 contact_role: formData.contact_role,
-                phone_no: `${countryCode} ${formData.phone_no}`,
+                phone_no: formData.phone_no,
                 email: formData.email,
                 notes: formData.notes || "",
                 referral: "AeonX Website",
@@ -220,7 +219,7 @@ const CtaSection = () => {
                                     <div className="form-row">
                                         <div className='w-100'>
                                             <input
-                                            className='w-100'
+                                                className='w-100'
                                                 type="text"
                                                 placeholder="Company Name"
                                                 name="company_name"
@@ -234,7 +233,7 @@ const CtaSection = () => {
                                         </div>
                                         <div className='w-100'>
                                             <input
-                                            className='w-100'
+                                                className='w-100'
                                                 type="text"
                                                 placeholder="Name"
                                                 name="contact_name"
@@ -261,19 +260,7 @@ const CtaSection = () => {
                                     <div className="form-row position-relative">
                                         <div className="w-100 position-relative">
                                             <div className="input-group h-100">
-                                                {/* <select
-                                                    className="form-select cta-country-code"
-                                                    style={{ maxWidth: '100px'}}
-                                                    value={countryCode}
-                                                    onChange={(e) => setCountryCode(e.target.value)}
-                                                    disabled={loading}
-                                                >
-                                                    {countryCodes.map((country) => (
-                                                        <option key={country.code} value={country.dial_code}>
-                                                            {country.code} ({country.dial_code})
-                                                        </option>
-                                                    ))}
-                                                </select> */}
+
                                                 <input
                                                     style={{ width: 'auto', flex: 1 }}
                                                     type="text"
@@ -372,7 +359,7 @@ const CtaSection = () => {
 
 
 
-            
+
         </>
     )
 }

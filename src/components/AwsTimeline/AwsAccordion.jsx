@@ -45,19 +45,19 @@ const AwsAccordion = () => {
                         <div className="accordion-item">
                             <h2 className="accordion-header">
                                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Rise with SAP on AWS
+                                    SAP Business Suite on AWS
                                 </button>
                             </h2>
                             <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#mainAwsAccordion">
                                 <div className="accordion-body">
                                     <div>
                                         <p style={{ marginBottom: "1rem" }}>
-                                            RISE with SAP on AWS gives enterprises a powerful foundation to modernize their ERP landscape with the world’s most secure, scalable, and proven cloud platform. AWS brings unmatched expertise, robust architecture, and 200+ services designed to accelerate innovation, reduce risk, and maximize the value of SAP investments. With purpose-built automation and seamless integration, businesses gain the agility needed to support digital transformation at scale.
+                                            SAP Business Suite on AWS gives enterprises a powerful foundation to modernize their ERP landscape with the world’s most secure, scalable, and proven cloud platform. AWS brings unmatched expertise, robust architecture, and 200+ services designed to accelerate innovation, reduce risk, and maximize the value of SAP investments. With purpose-built automation and seamless integration, businesses gain the agility needed to support digital transformation at scale.
 
                                         </p>
 
 
-                                        <h4 className="mb-4">Key benefits of running RISE with SAP on AWS include:</h4>
+                                        <h4 className="mb-4">Key benefits of running SAP Business Suite on AWS include:</h4>
                                         <ul>
                                             <li><b>Scalability:</b> Easily scale infrastructure up or down based on demand, improving efficiency and reducing operational costs.
                                             </li>
@@ -65,7 +65,7 @@ const AwsAccordion = () => {
                                             <li><b>High Availability:</b> Built-in redundancy and comprehensive disaster recovery options ensure continuous uptime and strong data protection.</li>
                                             <li><b>Enhanced Security:</b> Benefit from AWS’s extensive security framework, including encryption, firewalls, IAM controls, and global compliance certifications.</li>
                                             <li><b>Lower Operational Overheads:</b> Reduce the burden of managing on-premise infrastructure and redirect resources toward core business priorities.</li>
-                                            <li><b>Faster Time-to-Value:</b> Preconfigured tools and services in the RISE program accelerate deployment and simplify implementation efforts.</li>
+                                            <li><b>Faster Time-to-Value:</b> Preconfigured tools and services in the Business Suite program accelerate deployment and simplify implementation efforts.</li>
                                             <li><b>Expert Guidance:</b> Gain access to dedicated AWS and SAP specialists who help optimize performance, architecture, and long-term operations.</li>
                                         </ul>
 

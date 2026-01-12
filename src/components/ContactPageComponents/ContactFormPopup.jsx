@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import GlassButtonLight from "../GlassButton/GlassButtonLight";
 import { FaCircleArrowRight } from "react-icons/fa6";
-import { countryCodes } from "./countryData";
+
 
 const ContactForm = ({ onSuccess }) => {
     const [formData, setFormData] = useState({
@@ -13,7 +13,7 @@ const ContactForm = ({ onSuccess }) => {
         notes: ''
     });
 
-    const [countryCode, setCountryCode] = useState('+91');
+
 
     const [errors, setErrors] = useState({});
     const [warnings, setWarnings] = useState({});
@@ -159,7 +159,7 @@ const ContactForm = ({ onSuccess }) => {
                 company_name: formData.company_name,
                 contact_name: formData.contact_name,
                 contact_role: formData.contact_role,
-                phone_no: `${countryCode} ${formData.phone_no}`,
+                phone_no: formData.phone_no,
                 email: formData.email,
                 notes: formData.notes || "",
                 referral: "AeonX Website",
@@ -314,19 +314,7 @@ const ContactForm = ({ onSuccess }) => {
                     <div className="col-md-6 mb-3 position-relative">
                         {/* <label className="form-label">Mobile Number*</label> */}
                         <div className="input-group">
-                            {/* <select
-                                className="form-select underline"
-                                style={{ maxWidth: '120px' }}
-                                value={countryCode}
-                                onChange={(e) => setCountryCode(e.target.value)}
-                                disabled={loading}
-                            >
-                                {countryCodes.map((country) => (
-                                    <option key={country.code} value={country.dial_code}>
-                                        {country.code} ({country.dial_code})
-                                    </option>
-                                ))}
-                            </select> */}
+
                             <input
                                 type="text"
                                 placeholder="Mobile Number"

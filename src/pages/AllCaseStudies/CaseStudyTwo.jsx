@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import RaymondCaseStudy from "/images/Unifying-Raymond.webp"; 
+import RaymondCaseStudy from "/images/Unifying-Raymond.webp";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -73,7 +73,7 @@ const CaseStudyTwo = () => {
   };
 
   return (
-      <div ref={containerRef} className="case-study-wrapper">
+    <div ref={containerRef} className="case-study-wrapper">
       {/* ================= HERO SECTION ================= */}
       <section
         ref={heroRef}
@@ -87,15 +87,15 @@ const CaseStudyTwo = () => {
         <div className="container mt-5">
           <div className="row align-items-center">
             <div className="col-lg-6 mb-5 mb-lg-0">
-              
+
               <h1
                 className="display-3 fw-bold mb-4"
                 style={{ fontFamily: "Gilroy-Bold", lineHeight: "1.1" }}
               >
-                Raymond Engineering SBU: Unifying Operations with <span style={{ color: "#f97316" }}>SAP S/4HANA RISE</span> for a Smarter, Scalable Future
+                Raymond Engineering SBU: Unifying Operations with <span style={{ color: "#f97316" }}>SAP S/4HANA Business Suite</span> for a Smarter, Scalable Future
               </h1>
               <p className="lead mb-5" style={{ opacity: 0.9, fontWeight: 300 }}>
-                Raymond Limited (Engineering SBU) the precision engineering arm of the Raymond Group, unified three diverse verticals (Automobile, Aerospace, Tools & Hardware) into one intelligent digital core. By consolidating two SAP ECC systems and one non-SAP system onto SAP S/4HANA RISE, the organization established a future-ready, scalable platform that harmonizes processes, boosts efficiency, and accelerates decision-making.
+                Raymond Limited (Engineering SBU) the precision engineering arm of the Raymond Group, unified three diverse verticals (Automobile, Aerospace, Tools & Hardware) into one intelligent digital core. By consolidating two SAP ECC systems and one non-SAP system onto SAP S/4HANA Business Suite, the organization established a future-ready, scalable platform that harmonizes processes, boosts efficiency, and accelerates decision-making.
               </p>
               <button className="slide-button" onClick={() => window.scrollTo({ top: document.getElementById("executive-summary").offsetTop, behavior: "smooth" })}>
                 Read Full Story <FaArrowRight className="ms-2" />
@@ -139,7 +139,7 @@ const CaseStudyTwo = () => {
                 </h2>
               </div>
               <p className="lead text-muted text-center">
-                Raymond Limited (Engineering SBU) the precision engineering arm of the Raymond Group,  unified three diverse verticals (Automobile, Aerospace, Tools & Hardware) into one intelligent digital core. By consolidating two SAP ECC systems and one non-SAP system onto SAP S/4HANA RISE, the organization established a future-ready, scalable platform that harmonizes processes, boosts efficiency, and accelerates decision-making.
+                Raymond Limited (Engineering SBU) the precision engineering arm of the Raymond Group,  unified three diverse verticals (Automobile, Aerospace, Tools & Hardware) into one intelligent digital core. By consolidating two SAP ECC systems and one non-SAP system onto SAP S/4HANA Business Suite, the organization established a future-ready, scalable platform that harmonizes processes, boosts efficiency, and accelerates decision-making.
               </p>
             </div>
           </div>
@@ -163,7 +163,7 @@ const CaseStudyTwo = () => {
               <div
                 className="p-5 h-100 rounded-4 text-white case-study-challenge"
                 style={{
-                  
+
                   boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
                 }}
               >
@@ -197,7 +197,7 @@ const CaseStudyTwo = () => {
                 Why SAP?
               </h2>
               <p className="text-muted mb-4">
-                SAP S/4HANA RISE enabled Raymond to:
+                SAP S/4HANA Business Suite enabled Raymond to:
               </p>
               <ul className="text-muted">
                 <li className="mb-2">Adopt clean-core, industry-aligned best practices</li>
@@ -226,7 +226,7 @@ const CaseStudyTwo = () => {
                 Raymond chose AeonX Digital for their:
               </p>
               <ul className="text-muted">
-                <li className="mb-2">Expertise in SAP S/4HANA RISE transformations</li>
+                <li className="mb-2">Expertise in SAP S/4HANA Business Suite transformations</li>
                 <li className="mb-2">Deep experience in multi-division consolidations</li>
                 <li className="mb-2">Strong command of SAP Activate and clean-core design</li>
                 <li className="mb-2">Proven data migration success across heterogeneous systems</li>
@@ -251,30 +251,30 @@ const CaseStudyTwo = () => {
 
           <div className="row g-4">
             {[
-              { 
-                step: "01", 
-                title: "Unified Core Platform", 
-                desc: "Consolidation of 3 business verticals into a single SAP S/4HANA RISE platform. Clean-core aligned processes built through SAP Activate workshops" 
+              {
+                step: "01",
+                title: "Unified Core Platform",
+                desc: "Consolidation of 3 business verticals into a single SAP S/4HANA Business Suite platform. Clean-core aligned processes built through SAP Activate workshops"
               },
-              { 
-                step: "02", 
-                title: "Harmonized Master Data", 
-                desc: "Cleansed, standardized & enriched data from multiple systems. Single unified repository enabling consistent analytics" 
+              {
+                step: "02",
+                title: "Harmonized Master Data",
+                desc: "Cleansed, standardized & enriched data from multiple systems. Single unified repository enabling consistent analytics"
               },
-              { 
-                step: "03", 
-                title: "Smart Automation & Enhancements", 
-                desc: "Automated invoicing using pegging elements. System-driven 'Bill-to / Ship-to' mapping. Automated MRP across international warehouses. Optimized UOM logic & batch classification" 
+              {
+                step: "03",
+                title: "Smart Automation & Enhancements",
+                desc: "Automated invoicing using pegging elements. System-driven 'Bill-to / Ship-to' mapping. Automated MRP across international warehouses. Optimized UOM logic & batch classification"
               },
-              { 
-                step: "04", 
-                title: "Intelligent User Experience", 
-                desc: "Adoption of SAP Fiori, Joule & Business AI. Gamified training and change management. Guided, predictive workflows" 
+              {
+                step: "04",
+                title: "Intelligent User Experience",
+                desc: "Adoption of SAP Fiori, Joule & Business AI. Gamified training and change management. Guided, predictive workflows"
               },
-              { 
-                step: "05", 
-                title: "Embedded Analytics & Reporting", 
-                desc: "Real-time dashboards for sales, inventory, plant operations. Consolidated reporting structure for strategic reviews" 
+              {
+                step: "05",
+                title: "Embedded Analytics & Reporting",
+                desc: "Real-time dashboards for sales, inventory, plant operations. Consolidated reporting structure for strategic reviews"
               },
             ].map((item, i) => (
               <div className="col-md-6 col-lg-4" key={i} ref={addToRefs}>
@@ -312,37 +312,37 @@ const CaseStudyTwo = () => {
           <p className="text-center text-white-50 mb-5" ref={addToRefs}>The transformation delivered clear and measurable impact:</p>
           <div className="row g-4">
             {[
-              { 
-                title: "70% reduction in transaction turnaround time (TAT)", 
-                desc: "" 
+              {
+                title: "70% reduction in transaction turnaround time (TAT)",
+                desc: ""
               },
-              { 
-                title: "30% reduction in reporting effort", 
-                desc: "" 
+              {
+                title: "30% reduction in reporting effort",
+                desc: ""
               },
-              { 
-                title: "25% improvement in user efficiency", 
-                desc: "" 
+              {
+                title: "25% improvement in user efficiency",
+                desc: ""
               },
-              { 
-                title: "100% data consistency through harmonized master data", 
-                desc: "" 
+              {
+                title: "100% data consistency through harmonized master data",
+                desc: ""
               },
-              { 
-                title: "Automated invoicing with zero errors", 
-                desc: "" 
+              {
+                title: "Automated invoicing with zero errors",
+                desc: ""
               },
-              { 
-                title: "Cross-vertical consolidated reporting enabling faster business reviews", 
-                desc: "" 
+              {
+                title: "Cross-vertical consolidated reporting enabling faster business reviews",
+                desc: ""
               },
-              { 
-                title: "Real-time visibility into orders, stock, performance & invoices", 
-                desc: "" 
+              {
+                title: "Real-time visibility into orders, stock, performance & invoices",
+                desc: ""
               },
-              { 
-                title: "Scalable architecture for future multi-country rollouts", 
-                desc: "" 
+              {
+                title: "Scalable architecture for future multi-country rollouts",
+                desc: ""
               },
             ].map((sol, i) => (
               <div className="col-md-6" key={i} ref={addToRefs}>
@@ -396,7 +396,7 @@ const CaseStudyTwo = () => {
                 <li className="mb-2">Training and onboarding overhead</li>
               </ul>
               <p className="text-muted mt-4">
-                A unified S/4HANA RISE platform greatly optimized long-term total cost of ownership.
+                A unified S/4HANA Business Suite platform greatly optimized long-term total cost of ownership.
               </p>
             </div>
           </div>
@@ -405,28 +405,28 @@ const CaseStudyTwo = () => {
 
       {/* ================= TECH STACK ================= */}
       <section className="py-5 bg-light">
-          <div className="container py-5 text-center">
-            <h2 className="mb-5 section-heading" ref={addToRefs} style={{ fontFamily: "Gilroy-Bold" }}>Technology Stack</h2>
-            <div className="d-flex flex-wrap justify-content-center gap-3" ref={addToRefs}>
-              {[
-                "SAP S/4HANA RISE", 
-              "SAP Fiori + Joule + Business AI", 
-              "Embedded Analytics", 
-              "Automated MRP & pegging logic", 
+        <div className="container py-5 text-center">
+          <h2 className="mb-5 section-heading" ref={addToRefs} style={{ fontFamily: "Gilroy-Bold" }}>Technology Stack</h2>
+          <div className="d-flex flex-wrap justify-content-center gap-3" ref={addToRefs}>
+            {[
+              "SAP S/4HANA Business Suite",
+              "SAP Fiori + Joule + Business AI",
+              "Embedded Analytics",
+              "Automated MRP & pegging logic",
               "Unified Master Data Repository",
               "Clean-core aligned processes",
               "Integration with export warehouses & planning board"
-              ].map((tech, i) => (
-                <span
-                  key={i}
-                  className="px-4 py-2 fw-bold tech-stack-item"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
+            ].map((tech, i) => (
+              <span
+                key={i}
+                className="px-4 py-2 fw-bold tech-stack-item"
+              >
+                {tech}
+              </span>
+            ))}
           </div>
-        </section>
+        </div>
+      </section>
 
       {/* ================= RESULTS ================= */}
       <section className="py-5 position-relative overflow-hidden case-study-nums" >

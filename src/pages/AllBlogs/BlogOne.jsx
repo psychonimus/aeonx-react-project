@@ -8,9 +8,9 @@ const BlogOne = () => {
   return (
     <>
       <Helmet>
-        <title>Is RISE with SAP Really OPEX Friendly? - AeonX Digital</title>
-        <meta name="description" content="RISE with SAP is a business transformation package designed to help companies shift to cloud-based SAP solutions with speed, flexibility, and minimal disruption." />
-        <meta name="keywords" content="RISE with SAP, SAP transformation, cloud-based SAP, business transformation, SAP S/4HANA Cloud, SAP BTP, SAP licensing, SAP infrastructure, SAP managed services, SAP tools, SAP business process intelligence" />
+        <title>Is SAP Business Suite Really OPEX Friendly? - AeonX Digital</title>
+        <meta name="description" content="SAP Business Suite is a business transformation package designed to help companies shift to cloud-based SAP solutions with speed, flexibility, and minimal disruption." />
+        <meta name="keywords" content="SAP Business Suite, SAP transformation, cloud-based SAP, business transformation, SAP S/4HANA Cloud, SAP BTP, SAP licensing, SAP infrastructure, SAP managed services, SAP tools, SAP business process intelligence" />
         <meta name="author" content="AeonX Digital" />
       </Helmet>
 
@@ -24,7 +24,7 @@ const BlogOne = () => {
         {/* Breadcrumb */}
         <div className="breadcrumb">
           <a href="/blogs">Blogs</a> / 
-          <span> Is RISE with SAP Really OPEX Friendly?</span>
+          <span> Is SAP Business Suite Really OPEX Friendly?</span>
         </div>
 
         {/* MAIN GRID */}
@@ -33,9 +33,9 @@ const BlogOne = () => {
           {/* LEFT CONTENT */}
           <div className="blog-content">
 
-            <h1 className="blog-title">Is RISE with SAP Really OPEX Friendly?</h1>
+            <h1 className="blog-title">Is SAP Business Suite Really OPEX Friendly?</h1>
             <div className="container px-0">
-              <img className="w-100" src={bannerImg} alt="RISE with SAP Banner" />
+              <img className="w-100" src={bannerImg} alt="SAP Business Suite Banner" />
             </div>
             <p className="blog-subtitle">
               Understanding how SAP’s modern cloud model impacts operational cost and long-term enterprise value.
@@ -52,9 +52,9 @@ const BlogOne = () => {
             {/* ARTICLE CONTENT */}
 
             <p>
-              Over the last few years, <strong>RISE with SAP</strong> has become one of the most discussed 
+              Over the last few years, <strong>SAP Business Suite</strong> has become one of the most discussed 
               transformation offerings in the enterprise world. Positioned as a business-transformation-as-a-service model, 
-              RISE promises a faster, smoother, and cost-optimized move to SAP S/4HANA Cloud.
+              SAP Business Suite promises a faster, smoother, and cost-optimized move to SAP S/4HANA Cloud.
             </p>
 
             <p>
@@ -66,7 +66,7 @@ const BlogOne = () => {
             <div className="highlight-box">
               <h4>Quick Insight</h4>
               <p>
-                RISE with SAP is fundamentally designed to move infrastructure, licensing, 
+                SAP Business Suite is fundamentally designed to move infrastructure, licensing, 
                 and operations into an OPEX model, but the real benefit depends on your 
                 current landscape, migration complexity, and long-term roadmap.
               </p>
@@ -75,7 +75,7 @@ const BlogOne = () => {
             <h2>1. Understanding the OPEX Promise</h2>
             <p>
               Traditionally, SAP landscapes required heavy upfront capital expenditure (CAPEX). 
-              With RISE, companies subscribe to a bundled service model covering:
+              With SAP Business Suite, companies subscribe to a bundled service model covering:
             </p>
 
             <ul>
@@ -91,12 +91,12 @@ const BlogOne = () => {
             </p>
 
             <div className="quote-box">
-              “RISE with SAP shifts your enterprise backbone from a capital-heavy model 
+              “SAP Business Suite shifts your enterprise backbone from a capital-heavy model 
               to a predictable subscription-driven operating model.”
             </div>
 
-            <h2>2. When Is RISE with SAP Most OPEX Friendly?</h2>
-            <p>RISE works best when:</p>
+            <h2>2. When Is SAP Business Suite Most OPEX Friendly?</h2>
+            <p>SAP Business Suite works best when:</p>
             <ul>
               <li>You plan to eliminate on-prem infrastructure</li>
               <li>Your organization wants predictable operational costs</li>
@@ -104,8 +104,8 @@ const BlogOne = () => {
               <li>You seek faster time-to-value</li>
             </ul>
 
-            <h2>3. When Can RISE Become Expensive?</h2>
-            <p>RISE might not be the most cost-efficient choice if:</p>
+            <h2>3. When Can SAP Business Suite Become Expensive?</h2>
+            <p>SAP Business Suite might not be the most cost-efficient choice if:</p>
 
             <ul>
               <li>You already have discounted contracts with hyperscalers</li>
@@ -116,7 +116,7 @@ const BlogOne = () => {
 
             <h2>4. Final Verdict</h2>
             <p>
-              RISE with SAP can absolutely be OPEX-friendly, but only when implemented with a 
+              SAP Business Suite can absolutely be OPEX-friendly, but only when implemented with a 
               clear roadmap, proper landscape assessment, and an experienced SAP partner.
             </p>
 
@@ -140,7 +140,7 @@ const BlogOne = () => {
             <h4>In this article</h4>
             <ul>
               <li>1. Understanding the OPEX Promise</li>
-              <li>2. When RISE is Truly OPEX Friendly</li>
+              <li>2. When SAP Business Suite is Truly OPEX Friendly</li>
               <li>3. When It Can Become Expensive</li>
               <li>4. Final Verdict</li>
             </ul>
@@ -150,7 +150,7 @@ const BlogOne = () => {
             {/* <h4>Related Blogs</h4>
             <ul>
               <li>→ Migrating to S/4HANA the Right Way</li>
-              <li>→ RISE vs Traditional SAP Licensing</li>
+              <li>→ SAP Business Suite vs Traditional SAP Licensing</li>
               <li>→ OPEX vs CAPEX in Cloud ERP</li>
             </ul> */}
           </div>

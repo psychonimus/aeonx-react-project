@@ -110,7 +110,7 @@ const App = () => {
           <Route path="/careers" element={<CareersPage />} />
           <Route path="/events" element={<Events />} />
           <Route path="/blogs" element={<Blogs />} />
-          <Route path="/modernizing-ITD-cementations-SAP-Landscape-with-rise-with-sap" element={<CaseStudyOne />} />
+          <Route path="/modernizing-ITD-cementations-SAP-Landscape-with-sap-business-suite" element={<CaseStudyOne />} />
           <Route path="/raymond-engineering-sbu-unifying-operations-with-sap-s4hana-rise-for-smarter-scalable-future" element={<CaseStudyTwo />} />
           <Route path="/transforming-ashapuras-mineral-operations-with-intelligent-automation" element={<CaseStudyThree />} />
           <Route path="/modernizing-delux-bearings-operations-with-aws-cloud" element={<CaseStudyFour />} />
@@ -122,7 +122,7 @@ const App = () => {
           <Route path="/case-studies" element={<CaseStudiesAll />} />
 
 
-          <Route path="/blogs/is-rise-with-sap-really-opex-freindly" element={<BlogOne />} />
+          <Route path="/blogs/is-sap-business-suite-really-opex-freindly" element={<BlogOne />} />
           <Route path="/blogs/sap-migration-mistakes" element={<BlogTwo />} />
           <Route path="/blogs/how-sap-protect-your-data" element={<BlogThree />} />
           <Route path="/blogs/driving-innovation-with-sap" element={<BlogFour />} />

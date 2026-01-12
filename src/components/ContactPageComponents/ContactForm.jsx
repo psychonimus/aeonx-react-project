@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import GlassButtonLight from "../GlassButton/GlassButtonLight";
 import { FaCircleArrowRight } from "react-icons/fa6";
-import { countryCodes } from "./countryData";
+
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -13,7 +13,7 @@ const ContactForm = () => {
         notes: ''
     });
 
-    const [countryCode, setCountryCode] = useState('+91');
+
 
     const [errors, setErrors] = useState({});
     const [warnings, setWarnings] = useState({});
@@ -161,7 +161,7 @@ const ContactForm = () => {
                 company_name: formData.company_name,
                 contact_name: formData.contact_name,
                 contact_role: formData.contact_role,
-                phone_no: `${countryCode} ${formData.phone_no}`,
+                phone_no: formData.phone_no,
                 email: formData.email,
                 notes: formData.notes || "",
                 referral: "AeonX Website",
@@ -308,19 +308,7 @@ const ContactForm = () => {
                         <div className="col-md-6 mb-3 position-relative">
                             <label className="form-label">Mobile Number*</label>
                             <div className="input-group">
-                                {/* <select
-                                    className="form-select underline"
-                                    style={{ maxWidth: '120px',outline : 'none', borderRight: 'none', borderTop : 'none', borderLeft : 'none', borderRadius : '0' }}
-                                    value={countryCode}
-                                    onChange={(e) => setCountryCode(e.target.value)}
-                                    disabled={loading}
-                                >
-                                    {countryCodes.map((country) => (
-                                        <option key={country.code} value={country.dial_code}>
-                                            {country.code} ({country.dial_code})
-                                        </option>
-                                    ))}
-                                </select> */}
+
                                 <input
                                     type="text"
                                     className={`form-control underline ${errors.phone_no ? 'is-invalid' : ''}`}
@@ -329,7 +317,7 @@ const ContactForm = () => {
                                     onChange={handleInputChange}
                                     required
                                     disabled={loading}
-                                    
+
                                 />
                             </div>
                             {errors.phone_no && (

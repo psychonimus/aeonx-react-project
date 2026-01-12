@@ -38,15 +38,15 @@ const CaseStudiesAll = () => {
         'SAP': [
             {
                 id: 1,
-                headline: "Modernizing ITD Cementation’s SAP Landscape with RISE with SAP",
+                headline: "Modernizing ITD Cementation’s SAP Landscape with SAP Business Suite",
                 date: "Apr 14, 2023 | Success Stories - SAP",
                 desc: "In recent years, ITD Cementation India Private Limited has received several awards for their excellent work, including the “Best Infrastructure Company” award from CNBC TV18 and the “Outstanding Concrete Structure Award” from the Indian Concrete Institute.",
                 img: cs1,
-                link: "/modernizing-ITD-cementations-SAP-Landscape-with-rise-with-sap"
+                link: "/modernizing-ITD-cementations-SAP-Landscape-with-sap-business-suite"
             },
             {
                 id: 2,
-                headline: "Raymond Engineering SBU: Unifying Operations with SAP S/4HANA RISE for a Smarter, Scalable Future",
+                headline: "Raymond Engineering SBU: Unifying Operations with SAP S/4HANA Business Suite for a Smarter, Scalable Future",
                 date: "Sep 6, 2022 | SAP, Success Stories - SAP",
                 desc: "Raymond Limited (Engineering SBU) the precision engineering arm of the Raymond Group,  unified three diverse verticals (Automobile, Aerospace, Tools & Hardware) into one intelligent digital core.",
                 img: cs3,
