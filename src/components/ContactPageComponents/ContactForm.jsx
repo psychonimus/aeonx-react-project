@@ -308,7 +308,7 @@ const ContactForm = () => {
                         <div className="col-md-6 mb-3 position-relative">
                             <label className="form-label">Mobile Number*</label>
                             <div className="input-group">
-                                <select
+                                {/* <select
                                     className="form-select underline"
                                     style={{ maxWidth: '120px',outline : 'none', borderRight: 'none', borderTop : 'none', borderLeft : 'none', borderRadius : '0' }}
                                     value={countryCode}
@@ -320,7 +320,7 @@ const ContactForm = () => {
                                             {country.code} ({country.dial_code})
                                         </option>
                                     ))}
-                                </select>
+                                </select> */}
                                 <input
                                     type="text"
                                     className={`form-control underline ${errors.phone_no ? 'is-invalid' : ''}`}
@@ -329,7 +329,7 @@ const ContactForm = () => {
                                     onChange={handleInputChange}
                                     required
                                     disabled={loading}
-                                    placeholder="Enter number"
+                                    
                                 />
                             </div>
                             {errors.phone_no && (

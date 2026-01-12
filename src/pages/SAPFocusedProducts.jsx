@@ -175,28 +175,28 @@ const SAPFocusedProducts = () => {
           <div className="row">
             <div className="col-md-6">
               <div class="list-timeline">
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><RiContractLine size={20} /></div>
                   <h4>Single contract, single subscription covering cloud editions, SAP BTP, and business network access
                   </h4>
                   
                 </div>
 
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><PiDesktopFill size={20} /></div>
                   <h4>Streamlined procurement & vendor management
                   </h4>
                   
                 </div>
 
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><GrBusinessService size={20} /></div>
                   <h4>Flexible implementation tailored to business-specific needs
                   </h4>
                   
                 </div>
 
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><IoMdBusiness size={20} /></div>
                   <h4>Works for businesses with smaller IT footprints or limited budgets
                   </h4>
@@ -206,7 +206,7 @@ const SAPFocusedProducts = () => {
             </div>
             <div className="col-md-6">
               <div class="list-timeline">
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><IoCloudDownloadSharp size={20} /></div>
                   <h4>Access to SAP Cloud Application Lifecycle Management (CALM) at no cost
 
@@ -214,14 +214,14 @@ const SAPFocusedProducts = () => {
                   
                 </div>
 
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><MdOutlinePriceCheck size={20} /></div>
                   <h4>Reduces maintenance costs for ECC users
                   </h4>
                   
                 </div>
 
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><RiTeamFill size={20} /></div>
                   <h4>Enables collaboration across suppliers and trading partners
                   </h4>
@@ -355,18 +355,8 @@ const SAPFocusedProducts = () => {
       {/* sap success factor section starts  */}
       <section className="rise-with-sap my-5" id="sap-success-factor" data-aos="fade-up">
         <div className="container">
-          <div className="row flex-row-reverse grey-bg">
-            <div className="col-lg-6 right px-0">
-              <div
-                className="img-container"
-                style={{
-                  borderTopRightRadius: "30px",
-                  borderBottomRightRadius: "30px",
-                }}
-              >
-                <img src={sapSuccessFactor} alt="" />
-              </div>
-            </div>
+          <div className="row grey-bg">
+            
             <div className="col-lg-6 left py-4 px-5">
               <img src={SapSuccess} alt="" style={{ width: "280px" }} />
               <h2>SAP SuccessFactors</h2>
@@ -385,6 +375,18 @@ const SAPFocusedProducts = () => {
                 make informed decisions.
               </p>
             </div>
+
+            <div className="col-lg-6 right px-0">
+              <div
+                className="img-container"
+                style={{
+                  borderTopRightRadius: "30px",
+                  borderBottomRightRadius: "30px",
+                }}
+              >
+                <img src={sapSuccessFactor} alt="" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -394,21 +396,21 @@ const SAPFocusedProducts = () => {
           <div className="row">
             <div className="col-md-6">
               <div class="list-timeline">
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><IoCloudDownloadSharp size={20} /></div>
                   <h4>Cloud-based HCM & HXM platform for end-to-end HR transformation
                   </h4>
                   
                 </div>
 
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><PiStarFourFill size={20} /></div>
                   <h4>AI-powered tools, including digital assistants and machine learning
                   </h4>
                   
                 </div>
 
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><MdOutlineDevices size={20} /></div>
                   <h4>User-friendly interfaces across all devices for seamless engagement
                   </h4>
@@ -425,21 +427,21 @@ const SAPFocusedProducts = () => {
             </div>
             <div className="col-md-6">
               <div class="list-timeline">
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><MdOutlineInsights size={20} /></div>
                   <h4>Real-time insights for smarter, faster decision-making
                   </h4>
                   
                 </div>
 
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><GrIntegration size={20} /></div>
                   <h4>Effortless integration with SAP ERP & enterprise systems
                   </h4>
                   
                 </div>
 
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><FaPeopleArrows size={20} /></div>
                   <h4>Supports global HR operations with scalable architecture
                   </h4>
@@ -461,6 +463,14 @@ const SAPFocusedProducts = () => {
       <section className="rise-with-sap my-5" id="sap-concur" data-aos="fade-up">
         <div className="container">
           <div className="row flex-row-reverse grey-bg" data-aos="fade-up">
+            
+            <div className="col-lg-6 left py-4 px-5">
+              <img src={sapConcur} alt="" />
+              <h2>SAP Concur</h2>
+              <p>
+                SAP Concur transforms the way organizations manage travel, expenses, and invoices by providing a fully integrated, cloud-based platform that connects spend data across your enterprise. From automated expense reporting to intelligent travel booking and invoice management, SAP Concur ensures efficiency, transparency, and compliance at every step. As a trusted SAP implementation partner, we guide companies through seamless deployment, customization, and integration with existing ERP systems, enabling faster adoption and maximizing ROI. Our expertise ensures that your workforce can focus on business priorities, while the system manages spend intelligently and accurately.
+              </p>
+            </div>
             <div className="col-lg-6 right px-0">
               <div
                 className="img-container"
@@ -472,13 +482,6 @@ const SAPFocusedProducts = () => {
                 <img src={sapConcurAbout} alt="" />
               </div>
             </div>
-            <div className="col-lg-6 left py-4 px-5">
-              <img src={sapConcur} alt="" />
-              <h2>SAP Concur</h2>
-              <p>
-                SAP Concur transforms the way organizations manage travel, expenses, and invoices by providing a fully integrated, cloud-based platform that connects spend data across your enterprise. From automated expense reporting to intelligent travel booking and invoice management, SAP Concur ensures efficiency, transparency, and compliance at every step. As a trusted SAP implementation partner, we guide companies through seamless deployment, customization, and integration with existing ERP systems, enabling faster adoption and maximizing ROI. Our expertise ensures that your workforce can focus on business priorities, while the system manages spend intelligently and accurately.
-              </p>
-            </div>
           </div>
         </div>
       </section>
@@ -488,9 +491,9 @@ const SAPFocusedProducts = () => {
       <section className="feature-list my-5" data-aos="fade-up">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6">
+            <div className="col-md-6">
               <div class="list-timeline">
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><GiExpense size={20} /></div>
                   <h4>Automated Expense Management
                   </h4>
@@ -498,7 +501,7 @@ const SAPFocusedProducts = () => {
                   
                 </div>
 
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><BsClipboard2Data size={20} /></div>
                   <h4>Real-Time Visibility
                   </h4>
@@ -506,7 +509,7 @@ const SAPFocusedProducts = () => {
                   
                 </div>
 
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><GrCompliance size={20} /></div>
                   <h4>Compliance & Control
                   </h4>
@@ -514,7 +517,7 @@ const SAPFocusedProducts = () => {
                   
                 </div>
 
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><MdModeOfTravel size={20} /></div>
                   <h4>Integrated Travel Booking
                   </h4>
@@ -523,9 +526,9 @@ const SAPFocusedProducts = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-md-6">
               <div class="list-timeline">
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><MdZoomOutMap size={20} /></div>
                   <h4>Scalable & Cloud-Based
                   </h4>
@@ -533,7 +536,7 @@ const SAPFocusedProducts = () => {
                   
                 </div>
 
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><MdOutlineInsights  size={20} /></div>
                   <h4>Actionable Insights
                   </h4>
@@ -541,7 +544,7 @@ const SAPFocusedProducts = () => {
                   
                 </div>
 
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><GrMoney size={20} /></div>
                   <h4>Rapid ROI
                   </h4>
@@ -601,21 +604,21 @@ const SAPFocusedProducts = () => {
           <div className="row">
             <div className="col-md-6">
               <div class="list-timeline">
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><IoGitNetworkSharp size={20} /></div>
                   <h4>Access to the world’s largest supplier network for smarter sourcing
                   </h4>
                   
                 </div>
 
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><RiTeamFill size={20} /></div>
                   <h4>Real-time collaboration with global vendors and trading partners
                   </h4>
                   
                 </div>
 
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><GrBusinessService size={20} /></div>
                   <h4>Streamlined procurement workflows with simplified processes
                   </h4>
@@ -627,21 +630,21 @@ const SAPFocusedProducts = () => {
             </div>
             <div className="col-md-6">
               <div class="list-timeline">
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><IoCloudDownloadSharp size={20} /></div>
                   <h4>Increased efficiency and reduced operational spend
                   </h4>
                   
                 </div>
 
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><FaGears size={20} /></div>
                   <h4>Scalable and dynamic platform connecting millions of suppliers
                   </h4>
                   
                 </div>
 
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><BsClipboard2Data  size={20} /></div>
                   <h4>Improved visibility and control across the supply chain
                   </h4>
@@ -660,18 +663,8 @@ const SAPFocusedProducts = () => {
       {/* sap-btp-section  */}
       <section className="rise-with-sap my-5" id="sap-btp" data-aos="fade-up">
         <div className="container">
-          <div className="row grey-bg">
-            <div className="col-lg-6 right px-0">
-              <div
-                className="img-container"
-                style={{
-                  borderTopLeftRadius: "30px",
-                  borderBottomLeftRadius: "30px",
-                }}
-              >
-                <img src={SapBtpBg} alt="" />
-              </div>
-            </div>
+          <div className="row flex-row-reverse grey-bg">
+            
 
             <div className="col-lg-6 left py-4 px-5">
               <img src={SapBtp} alt="" style={{ width: "100px" }} />
@@ -693,6 +686,18 @@ const SAPFocusedProducts = () => {
                 automate workflows, and drive business growth efficiently.
               </p>
             </div>
+
+            <div className="col-lg-6 right px-0">
+              <div
+                className="img-container"
+                style={{
+                  borderTopLeftRadius: "30px",
+                  borderBottomLeftRadius: "30px",
+                }}
+              >
+                <img src={SapBtpBg} alt="" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -704,21 +709,21 @@ const SAPFocusedProducts = () => {
           <div className="row">
             <div className="col-md-6">
               <div class="list-timeline">
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><TbDeviceDesktopCog size={20} /></div>
                   <h4>Unified platform for data, AI, automation & app development
                   </h4>
                   
                 </div>
 
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><IoCloudDownloadSharp size={20} /></div>
                   <h4>Seamless SAP and multi-cloud integration
                   </h4>
                   
                 </div>
 
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><GrTechnology size={20} /></div>
                   <h4>Enables faster innovation with business context
                   </h4>
@@ -730,21 +735,21 @@ const SAPFocusedProducts = () => {
             </div>
             <div className="col-md-6">
               <div class="list-timeline">
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><MdOutlineDevicesOther size={20} /></div>
                   <h4>Customizable user experiences across SAP applications
                   </h4>
                   
                 </div>
 
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><MdCloudDone size={20} /></div>
                   <h4>Runs on a secure, enterprise-grade cloud infrastructure
                   </h4>
                   
                 </div>
 
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><AiFillCodeSandboxCircle size={20} /></div>
                   <h4>Accelerates digital transformation & IT modernization
                   </h4>
@@ -764,7 +769,17 @@ const SAPFocusedProducts = () => {
       {/* sap analytics cloud section starts  */}
       <section className="rise-with-sap my-5" id="sap-analytics-cloud" data-aos="fade-up">
         <div className="container">
-          <div className="row flex-row-reverse grey-bg">
+          <div className="row  grey-bg">
+            
+
+            <div className="col-lg-6 left py-4 px-5">
+              <img src={cloudAnalytics} alt="" style={{ width: "150px" }} />
+              <h2>SAP Analytics Cloud</h2>
+              <p>
+                SAP Analytics Cloud combines business intelligence, planning, and predictive analytics in a single, cloud-native platform. It empowers organizations to analyze real-time data, create interactive dashboards, and perform collaborative planning, all while integrating seamlessly with SAP and third-party systems. As a trusted SAP implementation partner, we help companies deploy SAC to unlock data-driven decision-making, enabling leaders to respond quickly to market changes, optimize operations, and identify new growth opportunities. With our guidance, organizations can turn complex data into clear insights, improve forecasting accuracy, and foster a culture of analytics-driven performance.
+              </p>
+            </div>
+
             <div className="col-lg-6 right px-0">
               <div
                 className="img-container"
@@ -776,14 +791,6 @@ const SAPFocusedProducts = () => {
                 <img src={SapAnalyticsCloud} alt="" />
               </div>
             </div>
-
-            <div className="col-lg-6 left py-4 px-5">
-              <img src={cloudAnalytics} alt="" style={{ width: "150px" }} />
-              <h2>SAP Analytics Cloud</h2>
-              <p>
-                SAP Analytics Cloud combines business intelligence, planning, and predictive analytics in a single, cloud-native platform. It empowers organizations to analyze real-time data, create interactive dashboards, and perform collaborative planning, all while integrating seamlessly with SAP and third-party systems. As a trusted SAP implementation partner, we help companies deploy SAC to unlock data-driven decision-making, enabling leaders to respond quickly to market changes, optimize operations, and identify new growth opportunities. With our guidance, organizations can turn complex data into clear insights, improve forecasting accuracy, and foster a culture of analytics-driven performance.
-              </p>
-            </div>
           </div>
         </div>
       </section>
@@ -794,7 +801,7 @@ const SAPFocusedProducts = () => {
           <div className="row">
             <div className="col-md-6">
               <div class="list-timeline">
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><IoAnalyticsSharp size={20} /></div>
                   <h4>Unified Analytics & Planning
                   </h4>
@@ -803,7 +810,7 @@ const SAPFocusedProducts = () => {
                   
                 </div>
 
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><MdOutlineInsights  size={20} /></div>
                   <h4>Real-Time Insights
                   </h4>
@@ -812,7 +819,7 @@ const SAPFocusedProducts = () => {
                   
                 </div>
 
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><RiDashboardFill size={20} /></div>
                   <h4>Intuitive Dashboards
                   </h4>
@@ -821,7 +828,7 @@ const SAPFocusedProducts = () => {
                   
                 </div>
 
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><CgInsights size={20} /></div>
                   <h4>Predictive Analytics
                   </h4>
@@ -832,7 +839,7 @@ const SAPFocusedProducts = () => {
             </div>
             <div className="col-md-6">
               <div class="list-timeline">
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><GrIntegration size={20} /></div>
                   <h4>Seamless Integration
                   </h4>
@@ -840,7 +847,7 @@ const SAPFocusedProducts = () => {
                   
                 </div>
 
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><RiTeamFill size={20} /></div>
                   <h4>Collaborative Planning
                   </h4>
@@ -848,7 +855,7 @@ const SAPFocusedProducts = () => {
                   
                 </div>
 
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><RiCloudFill size={20} /></div>
                   <h4>Cloud-Native & Scalable
                   </h4>
@@ -856,7 +863,7 @@ const SAPFocusedProducts = () => {
                   
                 </div>
 
-                <div class="list-timeline-item">
+                <div class="list-timeline-item list-item-single">
                   <div class="icon"><BsFileEarmarkBarGraph size={20} /></div>
                   <h4>Actionable Intelligence
                   </h4>

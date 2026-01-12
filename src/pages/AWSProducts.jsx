@@ -236,7 +236,7 @@ const AWSProducts = () => {
                   </div>
                   <div className="col-10 point-text d-flex align-items-center">
                     <h4>
-                      Deploy secure virtual desktops with Amazon WorkSpaces
+                      Deploy secure virtual desktops with Amazon WorkSpaces  
                     </h4>
                   </div>
                 </div>

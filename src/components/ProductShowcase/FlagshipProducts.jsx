@@ -23,7 +23,7 @@ const projects = [
   { id: 1, title: 'Xpense', image: project1, imageMob: project1mob, link: 'https://xpense.aeonx.digital/' },
   { id: 2, title: 'SupplierX', image: project2, imageMob: project2mob, link: 'https://supplierx.aeonx.digital/' },
   { id: 3, title: 'LOGYSTIX', image: project3, imageMob: project3mob, link: 'https://logystix.cloud/' },
-  { id: 4, title: 'Manufex ', image: project4, imageMob: project4mob, link: 'https://dev.manufex.cloud/' },
+  { id: 4, title: 'Manufex ', image: project4, imageMob: project4mob, link: 'https://manufex.cloud/' },
   { id: 5, title: 'People connect', image: project5, imageMob: project5mob, link: 'https://dev.aeonxus.digital/' },
   { id: 6, title: 'aeonxiq.ai ', image: project6, imageMob: project6mob, link: 'https://aeonxiq.ai/' },
 ];

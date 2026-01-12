@@ -4417,6 +4417,17 @@ textarea {
   background-color: transparent;
   transition: 0.4s all ease;
   border-radius: 20px;
+  height: 120px;
+}
+@media(min-width : 768px) and (max-width : 992px){
+  .point{
+    height: 140px;
+  }
+}
+@media(max-width : 767px){
+  .point{
+    height: auto;
+  }
 }
 
 .point:hover {
@@ -5180,6 +5191,27 @@ textarea {
   padding-left: 80px;
   padding-bottom: 40px;
   transition: 0.5s all ease;
+  /* background-color: red; */
+  height: 100px;
+  margin-bottom:5px;
+}
+
+@media(max-width : 768px){
+  .list-timeline-item {
+    height: auto;
+  }
+}
+
+@media(min-width : 768px) and (max-width : 992px){
+  .list-timeline-item {
+    height: 180px;
+  }
+}
+
+@media(min-width : 768px) and (max-width : 992px){
+  .list-item-single {
+    height: 130px !important;
+  }
 }
 
 .list-timeline-item:hover {

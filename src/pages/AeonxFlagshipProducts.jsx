@@ -52,7 +52,7 @@ const  AeonxFlagshipProducts = () => {
             video: null,
             tags: ['Real-Time Visibility', 'Quality Detection', 'Performance Insights', 'Predictive Analytics'],
             industry: 'ManufeX',
-            url: 'https://dev.manufex.cloud/',
+            url: 'https://manufex.cloud/',
             
         },
 

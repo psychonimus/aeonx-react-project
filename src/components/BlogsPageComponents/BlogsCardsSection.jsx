@@ -67,7 +67,7 @@ const BlogsCardsSection = () => {
                                             <p className="blog-meta">
                                                 {blog.category} • {blog.date}
                                             </p>
-                                            {blog.desc.split(/\s+/).slice(0, 15).join(" ") + (blog.desc.split(/\s+/).length > 15 ? "..." : "")}
+                                            {blog.desc.split(/\s+/).slice(0, 12).join(" ") + (blog.desc.split(/\s+/).length > 12 ? "..." : "")}
                                         </p>
                                     </div>
 

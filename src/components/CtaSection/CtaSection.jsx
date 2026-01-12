@@ -261,7 +261,7 @@ const CtaSection = () => {
                                     <div className="form-row position-relative">
                                         <div className="w-100 position-relative">
                                             <div className="input-group h-100">
-                                                <select
+                                                {/* <select
                                                     className="form-select cta-country-code"
                                                     style={{ maxWidth: '100px'}}
                                                     value={countryCode}
@@ -273,7 +273,7 @@ const CtaSection = () => {
                                                             {country.code} ({country.dial_code})
                                                         </option>
                                                     ))}
-                                                </select>
+                                                </select> */}
                                                 <input
                                                     style={{ width: 'auto', flex: 1 }}
                                                     type="text"

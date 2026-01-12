@@ -314,7 +314,7 @@ const ContactForm = ({ onSuccess }) => {
                     <div className="col-md-6 mb-3 position-relative">
                         {/* <label className="form-label">Mobile Number*</label> */}
                         <div className="input-group">
-                            <select
+                            {/* <select
                                 className="form-select underline"
                                 style={{ maxWidth: '120px' }}
                                 value={countryCode}
@@ -326,7 +326,7 @@ const ContactForm = ({ onSuccess }) => {
                                         {country.code} ({country.dial_code})
                                     </option>
                                 ))}
-                            </select>
+                            </select> */}
                             <input
                                 type="text"
                                 placeholder="Mobile Number"

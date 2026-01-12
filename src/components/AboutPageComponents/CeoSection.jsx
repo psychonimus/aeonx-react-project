@@ -27,11 +27,11 @@ const CeoSection = () => {
                                 <p data-aos="fade-up" data-aos-delay="200" >Our vision is to empower businesses to scale beyond current capabilities through technology and innovation. With five years of expertise in digital transformation, we help companies stay ahead while focusing on their core strengths. Built on experience, integrity, and innovation, AeonX Digital delivers tailored solutions for long-term success. We grow by helping our clients grow.</p>
                                 <div className="d-flex gap-4 justify-content-center" data-aos="fade-up" data-aos-delay="300">
                                     <div className="nameandinfo mt-3" style={{ borderLeft: "none" }}>
-                                        <h3>100+</h3>
+                                        <h3>250+</h3>
                                         <h5>Certified Consultants</h5>
                                     </div>
                                     <div className="nameandinfo my-3">
-                                        <h3>25+</h3>
+                                        <h3>50+</h3>
                                         <h5>AWS Cloud Experts</h5>
                                     </div>
                                 </div>

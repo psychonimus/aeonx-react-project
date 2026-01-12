@@ -813,3 +813,17 @@ const ContactForm = () => {
 
 export default ContactForm;
 
+
+
+
+
+
+changes after code went to backend integration 
+about pae - ceo section numbers changed, both in code and in image
+about page - both ceo images replace with padding
+about page - our team section team memebers positions updated
+sap service page - points layout fixed (css from line - 5187 to 5204) and replace the whole - SAPFocusedProducts.jsx
+aws service page - points layout fixed (css from line - 4420 to 4431)
+blogs page the words limit is 12
+menfuex link is changed to - https://manufex.cloud/ in both dedicated page and in home page
+
