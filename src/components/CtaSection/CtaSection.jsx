@@ -152,10 +152,10 @@ const CtaSection = () => {
                 email: formData.email,
                 notes: formData.notes || "",
                 referral: "AeonX Website",
-                gtm_goal: "GTM000083"
+                gtm_goal: "GTM000030"
             };
 
-            const response = await fetch('https://dev-api.aeonxus.digital/api/general_apis/generate_leads', {
+            const response = await fetch('https://api.aeonxus.digital/api/general_apis/generate_leads', {
                 method: 'POST',
                 mode: 'cors',
                 headers: {
