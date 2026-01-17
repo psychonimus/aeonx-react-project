@@ -37,7 +37,7 @@ const OurTeamSection = () => {
                                 <div className="team-overlay">
                                     <div className="social-icons mb-2 ">
                                         <a target="_blank" href={member.linkedin}><FaLinkedinIn /></a>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -49,7 +49,7 @@ const OurTeamSection = () => {
                                     <h3 className="mt-0 mt-md-3">{member.name}</h3>
                                     <p>{member.role}</p>
                                 </div>
-                                
+
                             </div>
                         </div>
                     ))}
